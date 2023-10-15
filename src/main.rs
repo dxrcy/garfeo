@@ -2,38 +2,40 @@ use ibex::prelude::*;
 
 #[macro_use]
 mod features;
-mod blogs;
-use blogs::BlogPost;
+mod parse;
 
-const URL_ROOT: &str = "/ibex-example";
+use parse::{parse_posts, PostEntry};
+
+const URL_ROOT: &str = "/garfeo-ibex";
 
 fn main() {
-    let blogs = blogs::get_blog_posts();
+    println!("Parsing...");
+    let posts = parse_posts();
 
+    println!("Routing...");
     let routes = routes![
         (/)
-            => index_page(&blogs),
-        (/post/[i])
-            for (i, blog) in blogs.into_iter().enumerate()
-            => blog_page(blog),
+            => index_page(&posts),
+        (/posts/[entry.post.index])
+            for entry in posts.into_iter()
+            => post_page(entry),
     ];
 
+    println!("Rendering...");
     let files = route::render_routes(routes);
+    println!("Writing...");
     route::write_files(files).unwrap();
 }
 
-fn index_page(blogs: &[BlogPost]) -> Document {
+fn index_page(posts: &[PostEntry]) -> Document {
     view! {
         @header[false]
 
-        h2 { "Read blogs posts" }
         ul {
-            [foreach![(i, blog) in blogs.into_iter().enumerate() =>
+            [foreach![PostEntry {post, ..} in posts.into_iter() =>
                 li {
-                    a [href=[:?url!(format!("/post/{i}"))]] {
-                        b { [&blog.title] }
-                        ~ "-" ~
-                        i { [&blog.author] }
+                    a [href=[:?url!(format!("/posts/{}", post.index))]] {
+                        b { [&post.title] }
                     }
                 }
             ]]
@@ -42,24 +44,21 @@ fn index_page(blogs: &[BlogPost]) -> Document {
     .into()
 }
 
-fn blog_page(blog: BlogPost) -> Document {
+fn post_page(entry: PostEntry) -> Document {
+    let PostEntry { post, prev, next } = entry;
+
     view! {
         @header[true]
 
-        h2 { [blog.title] }
-        h3 { i {[blog.author]} }
+        h2 { [post.title] }
 
-        p {
-            [blog.body]
-        }
-
-        img [src=[:?blog.image]]/
+        img [src=[:?format!("https://darccyy.github.io/garfield-eo/public/posts/{}/esperanto.png", post.index)]]/
     }
     .into()
 }
 
 fn header(home_link: bool) -> View {
-    let text = "My Website";
+    let text = "Garfildo Esperanta";
 
     view! {
         HEAD {
