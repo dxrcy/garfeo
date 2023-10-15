@@ -84,7 +84,7 @@ fn url(link: impl Into<String>) -> String {
     let root = if std::env::args().nth(1) == Some("local".to_string()) {
         ""
     } else {
-        "ibex-example"
+        "/ibex-example"
     };
     format!("{}{}", root, link.into())
 }
