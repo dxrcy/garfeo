@@ -5,8 +5,13 @@ version = 3
 [[package]]
 name = "core"
 version = "0.1.0"
+
+[[package]]
+name = "ibex"
+version = "0.1.0"
 dependencies = [
- "proc-macro2",
+ "core",
+ "macros",
 ]
 
 [[package]]
@@ -38,26 +43,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "router"
-version = "0.1.0"
-dependencies = [
- "core",
-]
-
-[[package]]
-name = "ssg"
-version = "0.1.0"
-dependencies = [
- "core",
- "macros",
- "router",
-]
-
-[[package]]
 name = "ssg-test"
 version = "0.1.0"
 dependencies = [
- "ssg",
+ "ibex",
 ]
 
 [[package]]

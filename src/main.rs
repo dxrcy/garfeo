@@ -1,10 +1,10 @@
-use ssg::prelude::*;
+use ibex::prelude::*;
 
 mod blogs;
-use blogs::{get_blog_posts, BlogPost};
+use blogs::BlogPost;
 
 fn main() {
-    let blogs = get_blog_posts();
+    let blogs = blogs::get_blog_posts();
 
     let routes = routes![
         (/)
@@ -14,8 +14,8 @@ fn main() {
             => blog_page(blog),
     ];
 
-    let files = router::render_routes(routes);
-    router::write_files(files).unwrap();
+    let files = route::render_routes(routes);
+    route::write_files(files).unwrap();
 }
 
 fn index_page(blogs: &[BlogPost]) -> Document {
