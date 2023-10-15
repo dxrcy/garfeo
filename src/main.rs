@@ -49,7 +49,7 @@ fn blog_page(blog: BlogPost) -> Document {
             [blog.body]
         }
 
-        image [src=[:?blog.image]]/
+        img [src=[:?blog.image]]/
     }
     .into()
 }
