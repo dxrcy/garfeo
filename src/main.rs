@@ -23,13 +23,12 @@ fn index_page(blogs: &[BlogPost]) -> Document {
         @header[false]
 
         h2 { "Read blogs posts" }
-
         ul {
             [blogs.into_iter().enumerate().map(|(i, blog)| view! {
                 li {
                     a [href=[:?format!("/post/{i}")]] {
                         b { [&blog.title] }
-                        span { " - " }
+                        ~ "-" ~
                         i { [&blog.author] }
                     }
                 }
@@ -50,21 +49,24 @@ fn blog_page(blog: BlogPost) -> Document {
             [blog.body]
         }
 
-        image[src=[:?blog.image]]/
+        image [src=[:?blog.image]]/
     }
     .into()
 }
 
 fn header(home_link: bool) -> View {
-    const TITLE: &str = "My Website";
+    let text = "My Website";
+
     view! {
-        HEAD { title { [TITLE] } }
+        HEAD {
+            title { [text] }
+        }
         h1 {
-            [TITLE]
+            [text]
             [*if (home_link) {
                 small {
-                    span { " - " }
-                    a[href="/"] { "Back to home page" } }
+                    ~ "-" ~
+                    a [href="/"] { "Back to home page" } }
                 }
             ]
         }
