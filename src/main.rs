@@ -79,3 +79,8 @@ fn header(home_link: bool) -> View {
         }
     }
 }
+
+fn url(link: impl Into<String>) -> String{
+    // const ROOT 
+}
+
