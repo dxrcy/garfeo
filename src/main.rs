@@ -18,13 +18,20 @@ fn main() {
     route::write_files(files).unwrap();
 }
 
+macro_rules! foreach {
+    ( $pat:pat in $expr:expr => $($tt:tt)* ) => {
+        ($expr).map(|$pat| view! { $($tt)* }).collect::<Vec<View>>()
+    }
+}
+
 fn index_page(blogs: &[BlogPost]) -> Document {
     view! {
         @header[false]
 
         h2 { "Read blogs posts" }
         ul {
-            [blogs.into_iter().enumerate().map(|(i, blog)| view! {
+            // until `for` works in macro
+            [foreach![(i, blog) in blogs.into_iter().enumerate() =>
                 li {
                     a [href=[:?format!("/post/{i}")]] {
                         b { [&blog.title] }
@@ -32,7 +39,7 @@ fn index_page(blogs: &[BlogPost]) -> Document {
                         i { [&blog.author] }
                     }
                 }
-            }).collect::<Vec<View>>()]
+            ]]
         }
     }
     .into()
