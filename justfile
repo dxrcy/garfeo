@@ -1,5 +1,5 @@
 serve:
-	cargo watch -x run -i build &\
+	cargo watch -x 'run local' -i build &\
 	basic-http-server build
 
 install:

@@ -81,6 +81,10 @@ fn header(home_link: bool) -> View {
 }
 
 fn url(link: impl Into<String>) -> String {
-    let root = "ibex-example/";
+    let root = if std::env::args().next() == Some("local".to_string()) {
+        ""
+    } else {
+        "ibex-example"
+    };
     format!("{}{}", root, link.into())
 }
