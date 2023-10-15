@@ -33,7 +33,7 @@ fn index_page(blogs: &[BlogPost]) -> Document {
             // until `for` works in macro
             [foreach![(i, blog) in blogs.into_iter().enumerate() =>
                 li {
-                    a [href=[:?format!("/post/{i}")]] {
+                    a [href=[:?url(format!("/post/{i}"))]] {
                         b { [&blog.title] }
                         ~ "-" ~
                         i { [&blog.author] }
@@ -56,7 +56,7 @@ fn blog_page(blog: BlogPost) -> Document {
             [blog.body]
         }
 
-        img [src=[:?blog.image]]/
+        img [src=[:?url(blog.image)]]/
     }
     .into()
 }
@@ -73,14 +73,14 @@ fn header(home_link: bool) -> View {
             [*if (home_link) {
                 small {
                     ~ "-" ~
-                    a [href="/"] { "Back to home page" } }
+                    a [href={url("/")}] { "Back to home page" } }
                 }
             ]
         }
     }
 }
 
-fn url(link: impl Into<String>) -> String{
-    // const ROOT 
+fn url(link: impl Into<String>) -> String {
+    let root = "ibex-example/";
+    format!("{}{}", root, link.into())
 }
-
