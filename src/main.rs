@@ -1,7 +1,11 @@
 use ibex::prelude::*;
 
+#[macro_use]
+mod features;
 mod blogs;
 use blogs::BlogPost;
+
+const URL_ROOT: &str = "/ibex-example";
 
 fn main() {
     let blogs = blogs::get_blog_posts();
@@ -18,22 +22,15 @@ fn main() {
     route::write_files(files).unwrap();
 }
 
-macro_rules! foreach {
-    ( $pat:pat in $expr:expr => $($tt:tt)* ) => {
-        ($expr).map(|$pat| view! { $($tt)* }).collect::<Vec<View>>()
-    }
-}
-
 fn index_page(blogs: &[BlogPost]) -> Document {
     view! {
         @header[false]
 
         h2 { "Read blogs posts" }
         ul {
-            // until `for` works in macro
             [foreach![(i, blog) in blogs.into_iter().enumerate() =>
                 li {
-                    a [href=[:?url(format!("/post/{i}"))]] {
+                    a [href=[:?url!(format!("/post/{i}"))]] {
                         b { [&blog.title] }
                         ~ "-" ~
                         i { [&blog.author] }
@@ -73,18 +70,9 @@ fn header(home_link: bool) -> View {
             [*if (home_link) {
                 small {
                     ~ "-" ~
-                    a [href={url("/")}] { "Back to home page" } }
+                    a [href={url!("/")}] { "Back to home page" } }
                 }
             ]
         }
     }
-}
-
-fn url(link: impl Into<String>) -> String {
-    let root = if std::env::args().nth(1) == Some("local".to_string()) {
-        ""
-    } else {
-        "/ibex-example"
-    };
-    format!("{}{}", root, link.into())
 }
