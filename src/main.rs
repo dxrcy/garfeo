@@ -11,7 +11,8 @@ use std::path::Path;
 use features::{use_meta, Meta};
 use parse::{parse_posts, Post, PostEntry};
 
-const URL_ROOT: &str = "/garfeo-ibex/";
+/// Name of github repo
+const URL_ROOT: &str = "/garfeo/";
 
 static mut FIRST_INDEX: String = String::new();
 static mut LAST_INDEX: String = String::new();
