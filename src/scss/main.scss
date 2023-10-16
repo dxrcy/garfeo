@@ -94,4 +94,12 @@ body {
             background-color: #FFF2;
         }
     }
+
+    .links {
+        display: inline-block;
+        text-align: left;
+        p:first-of-type {
+            margin-top: 0;
+        }
+    }
 }
