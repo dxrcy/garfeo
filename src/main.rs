@@ -84,6 +84,7 @@ fn post_page(entry: PostEntry) -> Document {
                 id="image-eo"
                 alt="Esperanto bildstrio"
                 src=[:?url!(format!("static/posts/{}/esperanto.png", &post.index))]
+                height=400
             ]/
 
             [*if (post.english) {
@@ -91,6 +92,7 @@ fn post_page(entry: PostEntry) -> Document {
                     id="image-en"
                     alt="Angla bildstrio"
                     src=[:?url!(format!("static/posts/{}/english.png", &post.index))]
+                    height=400
                 ]/
             } else {
                 br/
