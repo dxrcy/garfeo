@@ -76,6 +76,10 @@ body {
             width: calc(50% - 2 * $padding);
             padding: 0 $padding;
 
+            &:only-child {
+                width: calc(100% - 2 * $padding);
+            }
+
             &.prev {
                 text-align: left;
             }
