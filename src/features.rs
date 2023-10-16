@@ -12,6 +12,6 @@ macro_rules! url {
         format!("{}{}", url!(@root), $path.to_string())
     }};
     (@root) => {
-        if features::is_local() { "" } else { URL_ROOT }
+        if features::is_local() { "/" } else { URL_ROOT }
     };
 }

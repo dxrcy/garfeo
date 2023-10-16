@@ -1,7 +1,7 @@
 use serde::Serialize;
 use std::{fs, path::Path};
 
-const DIR: &str = "../garfeo/assets/public/posts";
+pub const DIR: &str = "../garfeo/assets/public/posts";
 const DEV_MAX_ITEMS: usize = 40;
 
 #[derive(Serialize)]

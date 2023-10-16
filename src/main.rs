@@ -2,9 +2,11 @@ use ibex::prelude::*;
 
 #[macro_use]
 mod features;
+mod files;
 mod parse;
 
 use parse::{parse_posts, Post, PostEntry};
+use std::path::Path;
 
 const URL_ROOT: &str = "/garfeo-ibex";
 
@@ -33,12 +35,17 @@ fn main() {
     let files = route::render_routes(routes);
     println!("Writing...");
     route::write_files(files).unwrap();
+
+    // ONLY COPIES POSTS
+    println!("Copying static files...");
+    files::copy_folder(Path::new(parse::DIR), Path::new("build/public/posts"))
+        .expect("Failed to copy static files");
 }
 
 fn index_page(entries: &[PostEntry]) -> Document {
     let last_index = unsafe { LAST_INDEX.clone() };
     view! {
-        @header
+        @use_basic ["", None]
 
         ol [reversed, start=last_index] {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
@@ -53,7 +60,10 @@ fn post_page(entry: PostEntry) -> Document {
     let post = entry.post;
 
     view! {
-        @header
+        @use_basic [
+            &format!("{} [{}]", post.title, post.index),
+            Some(&format!("/public/posts/{}/esperanto.png", post.index)),
+        ]
 
         h1 [id="title"] {
             @title [&post, false]
@@ -73,14 +83,14 @@ fn post_page(entry: PostEntry) -> Document {
             img [
                 id="image-eo"
                 alt="Esperanto bildstrio"
-                src=[:?format!("https://darccyy.github.io/garfield-eo/public/posts/{}/esperanto.png", &post.index)]
+                src=[:?url!(format!("public/posts/{}/esperanto.png", &post.index))]
             ]/
 
             [*if (post.english) {
                 img [
                     id="image-en"
                     alt="Angla bildstrio"
-                    src=[:?format!("https://darccyy.github.io/garfield-eo/public/posts/{}/esperanto.png", &post.index)]
+                    src=[:?url!(format!("public/posts/{}/english.png", &post.index))]
                 ]/
             } else {
                 br/
@@ -178,15 +188,29 @@ fn slash_date(date: &str) -> String {
     date.replace("-", "/")
 }
 
-fn header() -> View {
+fn use_basic(title: &str, image: Option<&str>) -> View {
     let first_index = unsafe { FIRST_INDEX.clone() };
     let last_index = unsafe { LAST_INDEX.clone() };
 
+    let mut full_title = "Garfildo Esperanta".to_string();
+    if !title.is_empty() {
+        full_title += " - ";
+        full_title += title
+    };
+
     view! {
         HEAD {
-            meta [charset="utf-8"]/
-            meta [name="viewport", content="width=device-width, initial-scale=1"]/
-            title { "NO TITLE" }
+            @use_meta [
+                Some(url!()),
+                Some(&full_title),
+                Some("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"),
+                Some(&url!(image.unwrap_or("public/icon.png"))),
+                Some("#ffb24e"),
+                Some("darcy"),
+            ]
+
+            title { [full_title] }
+
             script { [include_str!("js/random.js")] }
         }
 
@@ -194,13 +218,12 @@ fn header() -> View {
             a [href=[:?url!()]] {
                 "Garfildo Esperanta"
             }
+
             br/
             span [class="subheader"] {
-                "<!-- Requires Javascript :( -->"
                 a [id="random", title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
                 }
-
                 span [class="divider"] { "|" }
                 a [href=[:?url!("informejo")]] {
                     i { "Informejo" }
@@ -212,6 +235,55 @@ fn header() -> View {
             }
 
             script { [format!("set_random_url({:?}, {}, {})", url!(), first_index, last_index)] }
+        }
+    }
+}
+
+fn use_meta(
+    url: Option<&str>,
+    title: Option<&str>,
+    description: Option<&str>,
+    image: Option<&str>,
+    author: Option<&str>,
+    color: Option<&str>,
+) -> View {
+    view! {
+        HEAD {
+            meta [charset="utf-8"]/
+            meta [name="viewport", content="width=device-width, initial-scale=1"]/
+
+            [if let Some(url) = url { view!{
+                meta [name="url",        content=[:?url]]/
+                meta [property="og:url", content=[:?url]]/
+            }} else { view! {}}]
+
+            [if let Some(title) = title { view!{
+                meta [itemprop="name",     content=[:?title]]/
+                meta [property="og:title", content=[:?title]]/
+                meta [name="title",        content=[:?title]]/
+            }} else { view! {}}]
+
+            [if let Some(description) = description { view!{
+                meta [name="description",         content=[:?description]]/
+                meta [itemprop="description",     content=[:?description]]/
+                meta [property="og:description",  content=[:?description]]/
+                meta [name="twitter:description", content=[:?description]]/
+            }} else { view! {}}]
+
+            [if let Some(image) = image { view!{
+                meta [name="image",         content=[:?image]]/
+                meta [itemprop="image",     content=[:?image]]/
+                meta [property="og:image",  content=[:?image]]/
+                meta [name="twitter:image", content=[:?image]]/
+            }} else { view! {}}]
+
+            [if let Some(author) = author { view!{
+                meta [name="author", content=[:?author]]/
+            }} else { view! {}}]
+
+            [if let Some(color) = color { view!{
+                meta [name="theme-color", content=[:?color]]/
+            }} else { view! {}}]
         }
     }
 }
