@@ -23,7 +23,7 @@ pub struct Post {
 }
 
 #[derive(Default, Clone, Serialize)]
-pub struct Errata(Vec<(String, String)>);
+pub struct Errata(pub Vec<(String, String)>);
 
 #[derive(Default, Clone, Copy, Serialize)]
 pub struct Props {
