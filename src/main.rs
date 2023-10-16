@@ -26,6 +26,8 @@ fn main() {
     let routes = routes![
         (/)
             => index_page(&posts),
+        (/informejo)
+            => about_page(),
         (/[entry.post.index])
             for entry in posts.into_iter()
             => post_page(entry),
@@ -147,6 +149,67 @@ fn post_page(entry: PostEntry) -> Document {
                 [&post.title] "💚&#10;&#10;#garfield #esperanto #eo #memeo #memeoj #mdr #esperantisto #language"
             }
             script { [include_str!("js/select.js")] }
+        }
+    }
+    .into()
+}
+
+fn about_page() -> Document {
+    view! {
+        @use_basic ["Informejo", None]
+
+        h1 { "Informejo" }
+
+        h2 { "Kio estas Garfield-EO?" }
+        p {
+            "Mi tradukas bildstriojn de Garfildo en Esperanton."
+            br/
+            "Parto de" ~ i { "Mondo da Komiksoj" } "."
+        }
+
+        h2 { "Ligiloj" }
+        div [class="links"] {
+            p {
+                a [href="https://github.com/darccyy/garfield-eo"] {
+                    b { "Fonta Kodo kaj ĉiu bildstrio" }
+                    "- por ĉi tiu retejo (en la angla)"
+                }
+            }
+            p {
+                a [href="https://github.com/darccyy/garfield-eo/issues/new"] {
+                    b { "Mi havas concernon!" }
+                    "- Informu min per GitHub"
+                }
+            }
+            p {
+                a [href="https://github.com/darccyy/everygarf"] {
+                    b { "EveryGarf" }
+                    "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune"
+                }
+            }
+            p {
+                a [href="https://mastodon.world/@garfieldeo"] {
+                    b { "Mastodon @garfieldeo@mastodon.world" }
+                    "- Esperantaj Garfildaj bildstrioj (Mastodon)"
+                }
+            }
+            p {
+                a [href="https://instagram.com/garfield.eo"] {
+                    b { "Instagram @garfield.eo" }
+                    "- Esperantaj Garfildaj bildstrioj (Instagram)"
+                }
+            }
+        }
+
+        hr/
+        br/
+
+        div {
+            img [
+                src=[:?url!("static/icon.png")]
+                alt="La vizaĝo de Garfildo"
+                height=400
+            ]/
         }
     }
     .into()
