@@ -56,8 +56,6 @@ fn index_page(entries: &[PostEntry]) -> Document {
     view! {
         @use_basic ["", None]
 
-        input [value="what"]/
-
         ol [reversed=true, start=last_index] {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
                 @list_item [post]
@@ -248,12 +246,13 @@ fn list_item(post: &Post) -> View {
             a [href=url!(post.index)] {
                 @title [post, false]
             }
-            br/
-            img [
-                alt="Antaŭrigardo de Esperanta bildstro",
-                src=url!(format!("static/posts/{}/esperanto.png", post.index)),
-                loading="lazy",
-            ]/
+            div {
+                img [
+                    alt="Antaŭrigardo de Esperanta bildstro",
+                    src=url!(format!("static/posts/{}/esperanto.png", post.index)),
+                    loading="lazy",
+                ]/
+            }
         }
     }
 }
