@@ -5,12 +5,12 @@ version = 3
 [[package]]
 name = "core"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#b87b1d33b11ea6c1a9b3a23c56c6412ddee2aa58"
+source = "git+https://github.com/darccyy/ibex#3e971d39db8e3eecc82e32daa39cc4469b61f033"
 
 [[package]]
 name = "ibex"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#b87b1d33b11ea6c1a9b3a23c56c6412ddee2aa58"
+source = "git+https://github.com/darccyy/ibex#3e971d39db8e3eecc82e32daa39cc4469b61f033"
 dependencies = [
  "core",
  "macros",
@@ -19,7 +19,7 @@ dependencies = [
 [[package]]
 name = "macros"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#b87b1d33b11ea6c1a9b3a23c56c6412ddee2aa58"
+source = "git+https://github.com/darccyy/ibex#3e971d39db8e3eecc82e32daa39cc4469b61f033"
 dependencies = [
  "core",
  "proc-macro2",

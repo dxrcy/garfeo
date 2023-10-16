@@ -26,6 +26,8 @@ fn main() {
     let routes = routes![
         (/)
             => index_page(&posts),
+        (/plej-bonaj)
+            => favourites_page(&posts),
         (/informejo)
             => about_page(),
         (/[entry.post.index])
@@ -52,6 +54,21 @@ fn index_page(entries: &[PostEntry]) -> Document {
         ol [reversed, start=last_index] {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
                 @list_item [post]
+            }]
+        }
+    }
+    .into()
+}
+
+fn favourites_page(entries: &[PostEntry]) -> Document {
+    view! {
+        @use_basic ["", None]
+
+        ol {
+            [*for (PostEntry {post, ..}) in (entries.into_iter()) {
+                [*if (post.props.good) {
+                    @list_item [post]
+                }]
             }]
         }
     }
@@ -217,7 +234,7 @@ fn about_page() -> Document {
 
 fn list_item(post: &Post) -> View {
     view! {
-        li {
+        li [value=[:?post.index]] {
             a [href=[:?url!(post.index)]] {
                 @title [post, false]
             }
@@ -308,7 +325,7 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
                     i { "Informejo" }
                 }
                 span [class="divider"] { "|" }
-                a [href=[:?url!("plej-bona")]] {
+                a [href=[:?url!("plej-bonaj")]] {
                     i { "Plej Bonaj" }
                 }
             }
