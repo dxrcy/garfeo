@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ibex = { path = "../ibex" }
-# ibex = { git = "https://github.com/darccyy/ibex" }
+# ibex = { path = "../ibex" }
+ibex = { git = "https://github.com/darccyy/ibex" }
 serde = { version = "1.0.189", features = ["derive"] }
