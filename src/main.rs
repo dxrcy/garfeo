@@ -40,10 +40,15 @@ fn main() {
     println!("Writing...");
     route::write_files(files).unwrap();
 
-    // ONLY COPIES POSTS
     println!("Copying static files...");
     files::copy_folder(Path::new("static"), Path::new("build/static"))
         .expect("Failed to copy static files");
+
+    println!("Compiling css...");
+    let scss = include_str!("scss/main.scss");
+    let css = grass::from_string(scss, &Default::default()).expect("Failed to compile scss to css");
+    std::fs::create_dir("build/css");
+    std::fs::write("build/css/main.css", css);
 }
 
 fn index_page(entries: &[PostEntry]) -> Document {
@@ -160,13 +165,15 @@ fn post_page(entry: PostEntry) -> Document {
         hr/
 
         div [class="captions"] {
+            HEAD {
+                script { [include_str!("js/select.js")] }
+            }
             pre [id="caption-mastodon", onclick="select(this)"] {
                 [&post.title] "💚&#10;#esperanto #garfield" [&post.index]
             }
             pre [id="caption-instagram", onclick="select(this)"] {
                 [&post.title] "💚&#10;&#10;#garfield #esperanto #eo #memeo #memeoj #mdr #esperantisto #language"
             }
-            script { [include_str!("js/select.js")] }
         }
     }
     .into()
@@ -305,10 +312,8 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
             }]
 
             title { [full_title] }
-
-            link [rel=[:?"shortcut icon"], href=[:?url!("static/icon.png")]]/
-
-            script { [include_str!("js/random.js")] }
+            link [rel="shortcut icon", href=[:?url!("static/icon.png")]]/
+            link [rel="stylesheet",    href=[:?url!("css/main.css")]]/
         }
 
         p [class="header"] {
@@ -318,6 +323,9 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
 
             br/
             span [class="subheader"] {
+                HEAD {
+                    script { [include_str!("js/random.js")] }
+                }
                 a [id="random", title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
                 }
