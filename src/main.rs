@@ -190,35 +190,35 @@ fn about_page() -> Document {
         }
 
         h2 { "Ligiloj" }
-        div [class="links"] {
-            p {
+        ul [class="links"] {
+            li {
                 a [href="https://github.com/darccyy/garfield-eo"] {
                     b { "Fonta Kodo kaj ĉiu bildstrio" }
-                    "- por ĉi tiu retejo (en la angla)"
+                    ~ "- por ĉi tiu retejo (en la angla)"
                 }
             }
-            p {
+            li {
                 a [href="https://github.com/darccyy/garfield-eo/issues/new"] {
                     b { "Mi havas concernon!" }
-                    "- Informu min per GitHub"
+                    ~ "- Informu min per GitHub"
                 }
             }
-            p {
+            li {
                 a [href="https://github.com/darccyy/everygarf"] {
                     b { "EveryGarf" }
-                    "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune"
+                    ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune"
                 }
             }
-            p {
+            li {
                 a [href="https://mastodon.world/@garfieldeo"] {
                     b { "Mastodon @garfieldeo@mastodon.world" }
-                    "- Esperantaj Garfildaj bildstrioj (Mastodon)"
+                    ~ "- Esperantaj Garfildaj bildstrioj"
                 }
             }
-            p {
+            li {
                 a [href="https://instagram.com/garfield.eo"] {
                     b { "Instagram @garfield.eo" }
-                    "- Esperantaj Garfildaj bildstrioj (Instagram)"
+                    ~ "- Esperantaj Garfildaj bildstrioj"
                 }
             }
         }

@@ -97,9 +97,13 @@ body {
 
     .links {
         display: inline-block;
+        margin-top: 0;
         text-align: left;
-        p:first-of-type {
-            margin-top: 0;
+        li {
+            margin: 20px 0;
+            &:first-of-type {
+                margin-top: 0;
+            }
         }
     }
 }
