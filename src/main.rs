@@ -200,14 +200,14 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
 
     view! {
         HEAD {
-            @use_meta [
-                Some(url!()),
-                Some(&full_title),
-                Some("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"),
-                Some(&url!(image.unwrap_or("static/icon.png"))),
-                Some("#ffb24e"),
-                Some("darcy"),
-            ]
+            @use_meta [Meta {
+                url:    Some(url!()),
+                title:  Some(&full_title),
+                desc:   Some("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"),
+                image:  Some(&url!(image.unwrap_or("static/icon.png"))),
+                color:  Some("#ffb24e"),
+                author: Some("darcy"),
+            }]
 
             title { [full_title] }
 
@@ -241,49 +241,51 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
     }
 }
 
-fn use_meta(
-    url: Option<&str>,
-    title: Option<&str>,
-    description: Option<&str>,
-    image: Option<&str>,
-    author: Option<&str>,
-    color: Option<&str>,
-) -> View {
+struct Meta<'a> {
+    url: Option<&'a str>,
+    title: Option<&'a str>,
+    desc: Option<&'a str>,
+    image: Option<&'a str>,
+    author: Option<&'a str>,
+    color: Option<&'a str>,
+}
+
+fn use_meta(meta: Meta) -> View {
     view! {
         HEAD {
             meta [charset="utf-8"]/
             meta [name="viewport", content="width=device-width, initial-scale=1"]/
 
-            [if let Some(url) = url { view!{
+            [if let Some(url) = meta.url { view!{
                 meta [name="url",        content=[:?url]]/
                 meta [property="og:url", content=[:?url]]/
             }} else { view! {}}]
 
-            [if let Some(title) = title { view!{
+            [if let Some(title) = meta.title { view!{
                 meta [itemprop="name",     content=[:?title]]/
                 meta [property="og:title", content=[:?title]]/
                 meta [name="title",        content=[:?title]]/
             }} else { view! {}}]
 
-            [if let Some(description) = description { view!{
-                meta [name="description",         content=[:?description]]/
-                meta [itemprop="description",     content=[:?description]]/
-                meta [property="og:description",  content=[:?description]]/
-                meta [name="twitter:description", content=[:?description]]/
+            [if let Some(desc) = meta.desc{ view!{
+                meta [name="description",         content=[:?desc]]/
+                meta [itemprop="description",     content=[:?desc]]/
+                meta [property="og:description",  content=[:?desc]]/
+                meta [name="twitter:description", content=[:?desc]]/
             }} else { view! {}}]
 
-            [if let Some(image) = image { view!{
+            [if let Some(image) = meta.image { view!{
                 meta [name="image",         content=[:?image]]/
                 meta [itemprop="image",     content=[:?image]]/
                 meta [property="og:image",  content=[:?image]]/
                 meta [name="twitter:image", content=[:?image]]/
             }} else { view! {}}]
 
-            [if let Some(author) = author { view!{
+            [if let Some(author) = meta.author { view!{
                 meta [name="author", content=[:?author]]/
             }} else { view! {}}]
 
-            [if let Some(color) = color { view!{
+            [if let Some(color) = meta.color { view!{
                 meta [name="theme-color", content=[:?color]]/
             }} else { view! {}}]
         }
