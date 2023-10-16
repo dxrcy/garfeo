@@ -20,8 +20,24 @@ body img {
   max-width: 95%;
 }
 body ol {
+  margin: none;
   display: inline-block;
 }
 body ol li {
   text-align: initial;
+}
+body ol li a {
+  overflow: none;
+}
+body ol li:not(:hover) img {
+  display: none;
+}
+body ol li img {
+  position: absolute;
+  max-height: 300px;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  z-index: 500;
+  pointer-events: none;
 }
