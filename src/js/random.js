@@ -1,4 +1,4 @@
-/// Set href of random link to a random comic, on page load
+// Set href of random link to a random comic, on page load
 function set_random_url(base_url, first_index, last_index) {
     // Filled at compile time
     // String is 4 digits, and JS parses as non-base10 without stringify

@@ -8,7 +8,7 @@ mod parse;
 use parse::{parse_posts, Post, PostEntry};
 use std::path::Path;
 
-const URL_ROOT: &str = "/garfeo-ibex";
+const URL_ROOT: &str = "/garfeo-ibex/";
 
 static mut FIRST_INDEX: String = String::new();
 static mut LAST_INDEX: String = String::new();
@@ -136,6 +136,18 @@ fn post_page(entry: PostEntry) -> Document {
                 }
             }} else { view!{} }]
         }
+
+        hr/
+
+        div [class="captions"] {
+            pre [id="caption-mastodon", onclick="select(this)"] {
+                [&post.title] "💚&#10;#esperanto #garfield" [&post.index]
+            }
+            pre [id="caption-instagram", onclick="select(this)"] {
+                [&post.title] "💚&#10;&#10;#garfield #esperanto #eo #memeo #memeoj #mdr #esperantisto #language"
+            }
+            script { [include_str!("js/select.js")] }
+        }
     }
     .into()
 }
@@ -240,6 +252,8 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
 
             script { [format!("set_random_url({:?}, {}, {})", url!(), first_index, last_index)] }
         }
+
+        hr/
     }
 }
 
