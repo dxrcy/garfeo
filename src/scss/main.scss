@@ -24,10 +24,27 @@ body {
     }
 
     ol {
+        margin: none;
         display: inline-block;
 
         li {
             text-align: initial;
+
+            a {
+                overflow: none;
+            }
+            &:not(:hover) img {
+                display: none;
+            }
+            img {
+                position: absolute;
+                max-height: 300px;
+                max-width: 300px;
+                width: auto;
+                height: auto;
+                z-index: 500;
+                pointer-events: none;
+            }
         }
     }
 }

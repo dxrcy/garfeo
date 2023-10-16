@@ -26,9 +26,9 @@ fn main() {
     let routes = routes![
         (/)
             => index_page(&posts),
-        (/plej-bonaj)
+        (/"plej-bonaj")
             => favourites_page(&posts),
-        (/informejo)
+        (/"informejo")
             => about_page(),
         (/[entry.post.index])
             for entry in posts.into_iter()
@@ -47,8 +47,8 @@ fn main() {
     println!("Compiling css...");
     let scss = include_str!("scss/main.scss");
     let css = grass::from_string(scss, &Default::default()).expect("Failed to compile scss to css");
-    std::fs::create_dir("build/css");
-    std::fs::write("build/css/main.css", css);
+    std::fs::create_dir("build/css").expect("Failed to create css folder");
+    std::fs::write("build/css/main.css", css).expect("Failed to write css file");
 }
 
 fn index_page(entries: &[PostEntry]) -> Document {
@@ -56,7 +56,9 @@ fn index_page(entries: &[PostEntry]) -> Document {
     view! {
         @use_basic ["", None]
 
-        ol [reversed, start=last_index] {
+        input [value="what"]/
+
+        ol [reversed=true, start=last_index] {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
                 @list_item [post]
             }]
@@ -97,8 +99,8 @@ fn post_page(entry: PostEntry) -> Document {
         p {
             "[" span [id="index"] { [&post.index] } "]" ~
             a [
-                href=[:?format!("https://gocomics.com/garfield/{}", slash_date(&post.date))]
-                title="Spekti je gocomics.com"
+                href=format!("https://gocomics.com/garfield/{}", slash_date(&post.date)),
+                title="Spekti je gocomics.com",
             ] {
                 b [id="date"] { [&post.date] }
             }
@@ -106,18 +108,18 @@ fn post_page(entry: PostEntry) -> Document {
 
         div [class="images"] {
             img [
-                id="image-eo"
-                alt="Esperanto bildstrio"
-                src=[:?url!(format!("static/posts/{}/esperanto.png", &post.index))]
-                height=400
+                id="image-eo",
+                alt="Esperanto bildstrio",
+                src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
+                height=400,
             ]/
 
             [*if (post.english) {
                 img [
-                    id="image-en"
-                    alt="Angla bildstrio"
-                    src=[:?url!(format!("static/posts/{}/english.png", &post.index))]
-                    height=400
+                    id="image-en",
+                    alt="Angla bildstrio",
+                    src=url!(format!("static/posts/{}/english.png", &post.index)),
+                    height=400,
                 ]/
             } else {
                 br/
@@ -143,8 +145,8 @@ fn post_page(entry: PostEntry) -> Document {
         div [class="navigate"] {
             [if let Some(prev) = entry.prev { view! {
                 a [
-                    class="prev"
-                    href=[:?url!(&prev.index)]
+                    class="prev",
+                    href=url!(&prev.index),
                 ] {
                     b { "Antaŭa:" } ~
                     @title [&prev, true]
@@ -153,8 +155,8 @@ fn post_page(entry: PostEntry) -> Document {
 
             [if let Some(next) = entry.next { view! {
                 a [
-                    class="next"
-                    href=[:?url!(&next.index)]
+                    class="next",
+                    href=url!(&next.index),
                 ] {
                     b { "Sekva:" } ~
                     @title [&next, true]
@@ -231,9 +233,9 @@ fn about_page() -> Document {
 
         div {
             img [
-                src=[:?url!("static/icon.png")]
-                alt="La vizaĝo de Garfildo"
-                height=400
+                src=url!("static/icon.png"),
+                alt="La vizaĝo de Garfildo",
+                height=400,
             ]/
         }
     }
@@ -242,10 +244,16 @@ fn about_page() -> Document {
 
 fn list_item(post: &Post) -> View {
     view! {
-        li [value=[:?post.index]] {
-            a [href=[:?url!(post.index)]] {
+        li [value=post.index] {
+            a [href=url!(post.index)] {
                 @title [post, false]
             }
+            br/
+            img [
+                alt="Antaŭrigardo de Esperanta bildstro",
+                src=url!(format!("static/posts/{}/esperanto.png", post.index)),
+                loading="lazy",
+            ]/
         }
     }
 }
@@ -312,13 +320,13 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
             }]
 
             title { [full_title] }
-            link [rel="shortcut icon", href=[:?url!("static/icon.png")]]/
-            link [rel="stylesheet",    href=[:?url!("css/main.css")]]/
+            link [rel="shortcut icon", href=url!("static/icon.png")]/
+            link [rel="stylesheet",    href=url!("css/main.css")]/
         }
 
         p [class="header"] {
-            a [href=[:?url!()]] {
-                "Garfildo Esperanta"
+            a [href=url!()] {
+                b { "Garfildo Esperanta" }
             }
 
             br/
@@ -330,11 +338,11 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
                     i { "Arbitra" }
                 }
                 span [class="divider"] { "|" }
-                a [href=[:?url!("informejo")]] {
+                a [href=url!("informejo")] {
                     i { "Informejo" }
                 }
                 span [class="divider"] { "|" }
-                a [href=[:?url!("plej-bonaj")]] {
+                a [href=url!("plej-bonaj")] {
                     i { "Plej Bonaj" }
                 }
             }
@@ -362,36 +370,36 @@ fn use_meta(meta: Meta) -> View {
             meta [name="viewport", content="width=device-width, initial-scale=1"]/
 
             [if let Some(url) = meta.url { view!{
-                meta [name="url",        content=[:?url]]/
-                meta [property="og:url", content=[:?url]]/
+                meta [name="url",        content=url]/
+                meta [property="og:url", content=url]/
             }} else { view! {}}]
 
             [if let Some(title) = meta.title { view!{
-                meta [itemprop="name",     content=[:?title]]/
-                meta [property="og:title", content=[:?title]]/
-                meta [name="title",        content=[:?title]]/
+                meta [itemprop="name",     content=title]/
+                meta [property="og:title", content=title]/
+                meta [name="title",        content=title]/
             }} else { view! {}}]
 
             [if let Some(desc) = meta.desc{ view!{
-                meta [name="description",         content=[:?desc]]/
-                meta [itemprop="description",     content=[:?desc]]/
-                meta [property="og:description",  content=[:?desc]]/
-                meta [name="twitter:description", content=[:?desc]]/
+                meta [name="description",         content=desc]/
+                meta [itemprop="description",     content=desc]/
+                meta [property="og:description",  content=desc]/
+                meta [name="twitter:description", content=desc]/
             }} else { view! {}}]
 
             [if let Some(image) = meta.image { view!{
-                meta [name="image",         content=[:?image]]/
-                meta [itemprop="image",     content=[:?image]]/
-                meta [property="og:image",  content=[:?image]]/
-                meta [name="twitter:image", content=[:?image]]/
+                meta [name="image",         content=image]/
+                meta [itemprop="image",     content=image]/
+                meta [property="og:image",  content=image]/
+                meta [name="twitter:image", content=image]/
             }} else { view! {}}]
 
             [if let Some(author) = meta.author { view!{
-                meta [name="author", content=[:?author]]/
+                meta [name="author", content=author]/
             }} else { view! {}}]
 
             [if let Some(color) = meta.color { view!{
-                meta [name="theme-color", content=[:?color]]/
+                meta [name="theme-color", content=color]/
             }} else { view! {}}]
         }
     }
