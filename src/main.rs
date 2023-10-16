@@ -5,8 +5,11 @@ mod features;
 mod files;
 mod parse;
 
-use parse::{parse_posts, Post, PostEntry};
+use std::fs;
 use std::path::Path;
+
+use features::{use_meta, Meta};
+use parse::{parse_posts, Post, PostEntry};
 
 const URL_ROOT: &str = "/garfeo-ibex/";
 
@@ -47,8 +50,8 @@ fn main() {
     println!("Compiling css...");
     let scss = include_str!("scss/main.scss");
     let css = grass::from_string(scss, &Default::default()).expect("Failed to compile scss to css");
-    std::fs::create_dir("build/css").expect("Failed to create css folder");
-    std::fs::write("build/css/main.css", css).expect("Failed to write css file");
+    fs::create_dir("build/css").expect("Failed to create css folder");
+    fs::write("build/css/main.css", css).expect("Failed to write css file");
 }
 
 fn index_page(entries: &[PostEntry]) -> Document {
@@ -346,56 +349,5 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
         }
 
         hr/
-    }
-}
-
-struct Meta<'a> {
-    url: Option<&'a str>,
-    title: Option<&'a str>,
-    desc: Option<&'a str>,
-    image: Option<&'a str>,
-    author: Option<&'a str>,
-    color: Option<&'a str>,
-}
-
-fn use_meta(meta: Meta) -> View {
-    view! {
-        HEAD {
-            meta [charset="utf-8"]/
-            meta [name="viewport", content="width=device-width, initial-scale=1"]/
-
-            [if let Some(url) = meta.url { view!{
-                meta [name="url",        content=url]/
-                meta [property="og:url", content=url]/
-            }} else { view! {}}]
-
-            [if let Some(title) = meta.title { view!{
-                meta [itemprop="name",     content=title]/
-                meta [property="og:title", content=title]/
-                meta [name="title",        content=title]/
-            }} else { view! {}}]
-
-            [if let Some(desc) = meta.desc{ view!{
-                meta [name="description",         content=desc]/
-                meta [itemprop="description",     content=desc]/
-                meta [property="og:description",  content=desc]/
-                meta [name="twitter:description", content=desc]/
-            }} else { view! {}}]
-
-            [if let Some(image) = meta.image { view!{
-                meta [name="image",         content=image]/
-                meta [itemprop="image",     content=image]/
-                meta [property="og:image",  content=image]/
-                meta [name="twitter:image", content=image]/
-            }} else { view! {}}]
-
-            [if let Some(author) = meta.author { view!{
-                meta [name="author", content=author]/
-            }} else { view! {}}]
-
-            [if let Some(color) = meta.color { view!{
-                meta [name="theme-color", content=color]/
-            }} else { view! {}}]
-        }
     }
 }
