@@ -64,6 +64,7 @@ fn favourites_page(entries: &[PostEntry]) -> Document {
     view! {
         @use_basic ["", None]
 
+        h1 { "Plej bonaj bildstrioj" }
         ol {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
                 [*if (post.props.good) {
