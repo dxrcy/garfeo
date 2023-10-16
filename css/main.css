@@ -80,8 +80,12 @@ body .captions pre {
 }
 body .links {
   display: inline-block;
+  margin-top: 0;
   text-align: left;
 }
-body .links p:first-of-type {
+body .links li {
+  margin: 20px 0;
+}
+body .links li:first-of-type {
   margin-top: 0;
 }
