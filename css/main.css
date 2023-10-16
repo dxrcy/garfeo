@@ -63,6 +63,9 @@ body .navigate div {
   width: calc(50% - 20px);
   padding: 0 10px;
 }
+body .navigate div:only-child {
+  width: calc(100% - 20px);
+}
 body .navigate div.prev {
   text-align: left;
 }
