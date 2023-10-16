@@ -142,22 +142,19 @@ fn post_page(entry: PostEntry) -> Document {
 
         div [class="navigate"] {
             [if let Some(prev) = entry.prev { view! {
-                a [
-                    class="prev",
-                    href=url!(&prev.index),
-                ] {
-                    b { "Antaŭa:" } ~
-                    @title [&prev, true]
+                div [class="prev"] {
+                    a [href=url!(&prev.index)] {
+                        b { "Antaŭa:" } ~
+                        @title [&prev, true]
+                    }
                 }
             }} else { view!{} }]
-
             [if let Some(next) = entry.next { view! {
-                a [
-                    class="next",
-                    href=url!(&next.index),
-                ] {
-                    b { "Sekva:" } ~
-                    @title [&next, true]
+                div [class="next"] {
+                    a [href=url!(&next.index)] {
+                        b { "Sekva:" } ~
+                        @title [&next, true]
+                    }
                 }
             }} else { view!{} }]
         }
