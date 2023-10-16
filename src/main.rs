@@ -38,7 +38,7 @@ fn main() {
 
     // ONLY COPIES POSTS
     println!("Copying static files...");
-    files::copy_folder(Path::new(parse::DIR), Path::new("build/public/posts"))
+    files::copy_folder(Path::new("static"), Path::new("build/static"))
         .expect("Failed to copy static files");
 }
 
@@ -62,7 +62,7 @@ fn post_page(entry: PostEntry) -> Document {
     view! {
         @use_basic [
             &format!("{} [{}]", post.title, post.index),
-            Some(&format!("/public/posts/{}/esperanto.png", post.index)),
+            Some(&format!("static/posts/{}/esperanto.png", post.index)),
         ]
 
         h1 [id="title"] {
@@ -83,14 +83,14 @@ fn post_page(entry: PostEntry) -> Document {
             img [
                 id="image-eo"
                 alt="Esperanto bildstrio"
-                src=[:?url!(format!("public/posts/{}/esperanto.png", &post.index))]
+                src=[:?url!(format!("static/posts/{}/esperanto.png", &post.index))]
             ]/
 
             [*if (post.english) {
                 img [
                     id="image-en"
                     alt="Angla bildstrio"
-                    src=[:?url!(format!("public/posts/{}/english.png", &post.index))]
+                    src=[:?url!(format!("static/posts/{}/english.png", &post.index))]
                 ]/
             } else {
                 br/
@@ -103,7 +103,7 @@ fn post_page(entry: PostEntry) -> Document {
         }]
 
         [*if (!post.errata.0.is_empty()) { div [class="errata"] {
-            h2 { "Eraroj:" } 
+            h2 { "Eraroj:" }
             ol {
                 [*for ((old, new)) in (post.errata.0.into_iter()) { li {
                     b [class="old"] { [old] }
@@ -204,12 +204,14 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
                 Some(url!()),
                 Some(&full_title),
                 Some("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"),
-                Some(&url!(image.unwrap_or("public/icon.png"))),
+                Some(&url!(image.unwrap_or("static/icon.png"))),
                 Some("#ffb24e"),
                 Some("darcy"),
             ]
 
             title { [full_title] }
+
+            link [rel=[:?"shortcut icon"], href=[:?url!("static/icon.png")]]/
 
             script { [include_str!("js/random.js")] }
         }
