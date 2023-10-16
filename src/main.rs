@@ -320,13 +320,12 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
             link [rel="stylesheet",    href=url!("css/main.css")]/
         }
 
-        p [class="header"] {
+        div [class="header"] {
             a [href=url!()] {
                 b { "Garfildo Esperanta" }
             }
 
-            br/
-            span [class="subheader"] {
+            div [class="subheader"] {
                 HEAD {
                     script { [include_str!("js/random.js")] }
                 }
