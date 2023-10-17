@@ -1,4 +1,5 @@
 use ibex::prelude::*;
+use ibex::{routes, ssg};
 
 mod files;
 mod parse;
@@ -37,13 +38,13 @@ fn main() {
     ];
 
     println!("Rendering...");
-    let files = route::render_routes(routes);
+    let files = ssg::render_routes(routes);
+
     println!("Writing...");
-    route::write_files(files).unwrap();
+    ssg::write_files(files).unwrap();
 
     println!("Copying static files...");
-    files::copy_folder(Path::new("static"), Path::new("build/static"))
-        .expect("Failed to copy static files");
+    ssg::copy_static().unwrap();
 
     println!("Compiling css...");
     let scss = include_str!("scss/main.scss");
