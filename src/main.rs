@@ -1,14 +1,11 @@
 use ibex::prelude::*;
 
-#[macro_use]
-mod features;
 mod files;
 mod parse;
 
 use std::fs;
 use std::path::Path;
 
-use features::{use_meta, Meta};
 use parse::{parse_posts, Post, PostEntry};
 
 /// Name of github repo
@@ -316,14 +313,14 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
 
     view! {
         HEAD {
-            @use_meta [Meta {
-                url:    Some(url!()),
-                title:  Some(&full_title),
-                desc:   Some("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"),
-                image:  Some(&url!(image.unwrap_or("static/icon.png"))),
-                color:  Some("#ffb24e"),
-                author: Some("darcy"),
-            }]
+            @use_meta [ Meta::new()
+                .url(url!())
+                .title(&full_title)
+                .desc("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!")
+                .image(&url!(image.unwrap_or("static/icon.png")))
+                .color("#ffb24e")
+                .author("darcy")
+            ]
 
             title { [full_title] }
             link [rel="shortcut icon", href=url!("static/icon.png")]/

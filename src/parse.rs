@@ -136,7 +136,7 @@ pub fn parse_posts() -> Vec<PostEntry> {
         });
     }
 
-    if super::features::is_local() {
+    if ibex::extras::is_local() {
         posts.truncate(DEV_MAX_ITEMS);
     }
 
