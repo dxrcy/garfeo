@@ -6,3 +6,11 @@ function select(element) {
     selection.removeAllRanges();
     selection.addRange(range);
 }
+
+// Copy element text to clipboard
+function copy(element) {
+  navigator.clipboard.writeText(element.innerText)
+      .catch(function(err) {
+        console.error("Failed to copy text: ", err);
+      });
+} 

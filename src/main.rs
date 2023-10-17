@@ -164,12 +164,12 @@ fn at_post(entry: PostEntry) -> Document {
 
         div [class="captions"] {
             HEAD {
-                script { [include_str!("js/select.js")] }
+                script { [include_str!("js/copy.js")] }
             }
-            pre [id="caption-mastodon", onclick="select(this)"] {
+            pre [id="caption-mastodon", onclick="copy(this)"] {
                 [&post.title] "💚&#10;#esperanto #garfield" [&post.index]
             }
-            pre [id="caption-instagram", onclick="select(this)"] {
+            pre [id="caption-instagram", onclick="copy(this)"] {
                 [&post.title] "💚&#10;&#10;#garfield #esperanto #eo #memeo #memeoj #mdr #esperantisto #language"
             }
         }
