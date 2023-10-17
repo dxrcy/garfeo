@@ -79,7 +79,10 @@ body .captions pre {
   display: inline-block;
   margin: 10px;
   padding: 3px 5px;
-  background-color: #FFF2;
+  background-color: #FFFFFF18;
+}
+body .captions pre:active {
+  background-color: #FFFFFF08;
 }
 body .links {
   display: inline-block;
