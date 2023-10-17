@@ -1,12 +1,9 @@
 use ibex::prelude::*;
 use ibex::{routes, ssg};
 
-mod files;
-mod parse;
-
 use std::fs;
-use std::path::Path;
 
+mod parse;
 use parse::{parse_posts, Post, PostEntry};
 
 /// Name of github repo
