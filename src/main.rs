@@ -29,14 +29,14 @@ fn main() {
     println!("Routing...");
     let routes = routes![
         (/)
-            => index_page(&posts),
+            => at_index(&posts),
         (/"plej-bonaj")
-            => favourites_page(&posts),
+            => at_favourites(&posts),
         (/"informejo")
-            => about_page(),
+            => at_about(),
         (/[entry.post.index])
             for entry in posts.into_iter()
-            => post_page(entry),
+            => at_post(entry),
     ];
 
     println!("Rendering...");
@@ -55,7 +55,7 @@ fn main() {
     fs::write("build/css/main.css", css).expect("Failed to write css file");
 }
 
-fn index_page(entries: &[PostEntry]) -> Document {
+fn at_index(entries: &[PostEntry]) -> Document {
     let last_index = unsafe { LAST_INDEX.clone() };
     view! {
         @use_basic ["", None]
@@ -69,7 +69,7 @@ fn index_page(entries: &[PostEntry]) -> Document {
     .into()
 }
 
-fn favourites_page(entries: &[PostEntry]) -> Document {
+fn at_favourites(entries: &[PostEntry]) -> Document {
     view! {
         @use_basic ["", None]
 
@@ -85,7 +85,7 @@ fn favourites_page(entries: &[PostEntry]) -> Document {
     .into()
 }
 
-fn post_page(entry: PostEntry) -> Document {
+fn at_post(entry: PostEntry) -> Document {
     let post = entry.post;
 
     view! {
@@ -180,7 +180,7 @@ fn post_page(entry: PostEntry) -> Document {
     .into()
 }
 
-fn about_page() -> Document {
+fn at_about() -> Document {
     view! {
         @use_basic ["Informejo", None]
 
@@ -223,6 +223,12 @@ fn about_page() -> Document {
                 a [href="https://instagram.com/garfield.eo"] {
                     b { "Instagram @garfield.eo" }
                     ~ "- Esperantaj Garfildaj bildstrioj"
+                }
+            }
+            li {
+                a [href="https://instagram.com/mondodakomiksoj"] {
+                    b { "Mondo da Komiksoj" }
+                    ~ "- Grupo de tradukistoj"
                 }
             }
         }
