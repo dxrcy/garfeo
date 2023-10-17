@@ -9,6 +9,7 @@ use parse::{parse_posts, Post, PostEntry};
 /// Name of github repo
 const URL_ROOT: &str = "/garfeo/";
 
+// Global variables
 static mut FIRST_INDEX: String = String::new();
 static mut LAST_INDEX: String = String::new();
 
@@ -318,6 +319,7 @@ fn use_basic(title: &str, image: Option<&str>) -> View {
                 .image(&url!(image.unwrap_or("static/icon.png")))
                 .color("#ffb24e")
                 .author("darcy")
+                .large_image(true)
             ]
 
             title { [full_title] }
