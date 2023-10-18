@@ -40,7 +40,7 @@ pub fn parse_posts() -> Vec<PostEntry> {
         .flatten()
         .collect();
 
-    // Sort and reverse order based on folder name
+    // Sort based on folder name
     folders.sort_by_key(|folder| {
         let path = folder.path();
         path.to_string_lossy().to_string()
@@ -143,6 +143,8 @@ pub fn parse_posts() -> Vec<PostEntry> {
     }
 
     posts.reverse();
+
+    // Include previous and next posts with each post
     get_neighbors(posts)
 }
 
