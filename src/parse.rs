@@ -2,7 +2,6 @@ use serde::Serialize;
 use std::{fs, path::Path};
 
 const DIR: &str = "static/posts";
-const DEV_MAX_ITEMS: usize = 40;
 
 #[derive(Serialize)]
 pub struct PostEntry {
@@ -134,10 +133,6 @@ pub fn parse_posts() -> Vec<PostEntry> {
             english,
             sunday,
         });
-    }
-
-    if ibex::extras::is_local() {
-        posts.truncate(DEV_MAX_ITEMS);
     }
 
     get_neighbors(posts)
