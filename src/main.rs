@@ -1,8 +1,6 @@
 use ibex::prelude::*;
 use ibex::{routes, ssg};
 
-use std::fs;
-
 mod parse;
 use parse::{parse_posts, Post, PostEntry};
 
@@ -14,7 +12,6 @@ static mut FIRST_INDEX: String = String::new();
 static mut LAST_INDEX: String = String::new();
 
 fn main() {
-    println!("Parsing...");
     let posts = parse_posts();
 
     unsafe {
@@ -22,7 +19,6 @@ fn main() {
         LAST_INDEX = posts.first().expect("no first post").post.index.clone();
     }
 
-    println!("Routing...");
     let routes = routes![
         (/)
             => at_index(&posts),
@@ -37,20 +33,8 @@ fn main() {
             => at_post(entry),
     ];
 
-    println!("Rendering...");
-    let files = ssg::render_routes(routes);
-
-    println!("Writing...");
-    ssg::write_files(files).unwrap();
-
-    println!("Copying static files...");
-    ssg::copy_static().unwrap();
-
-    println!("Compiling css...");
-    let scss = include_str!("scss/main.scss");
-    let css = grass::from_string(scss, &Default::default()).expect("Failed to compile scss to css");
-    fs::create_dir("build/css").expect("Failed to create css folder");
-    fs::write("build/css/main.css", css).expect("Failed to write css file");
+    ssg::quick_build(routes).expect("Failed to build");
+    println!("All done!");
 }
 
 fn at_404() -> Document {
