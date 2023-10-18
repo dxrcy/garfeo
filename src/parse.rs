@@ -45,7 +45,6 @@ pub fn parse_posts() -> Vec<PostEntry> {
         let path = folder.path();
         path.to_string_lossy().to_string()
     });
-    folders.reverse();
 
     // Keep track of existing titles to check for duplicates
     let mut existing_titles = Vec::new();
@@ -58,6 +57,14 @@ pub fn parse_posts() -> Vec<PostEntry> {
 
         let index = folder.file_name();
         let index = index.to_string_lossy().to_string();
+
+        let index_number: usize = index.parse().expect("Index is not a number [{index}]");
+        assert_eq!(index.len(), 4, "Index is not 4 digits [{index}]");
+        assert_eq!(
+            index_number,
+            posts.len(),
+            "Unexpected index number [{index}]"
+        );
 
         let title = format!("{path}/title");
         assert!(
@@ -135,6 +142,7 @@ pub fn parse_posts() -> Vec<PostEntry> {
         });
     }
 
+    posts.reverse();
     get_neighbors(posts)
 }
 
