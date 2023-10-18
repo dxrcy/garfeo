@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="url" content="/garfeo/"/><meta property="og:url" content="/garfeo/"/><meta itemprop="name" content="Garfildo Esperanta - 404"/><meta property="og:title" content="Garfildo Esperanta - 404"/><meta name="title" content="Garfildo Esperanta - 404"/><meta name="description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta itemprop="description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta property="og:description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta name="twitter:description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta name="image" content="/garfeo/static/icon.png"/><meta itemprop="image" content="/garfeo/static/icon.png"/><meta property="og:image" content="/garfeo/static/icon.png"/><meta name="twitter:image" content="/garfeo/static/icon.png"/><meta name="author" content="darcy"/><meta name="theme-color" content="#ffb24e"/><meta name="twitter:card" content="summary_large_image"/><title>Garfildo Esperanta - 404</title><link rel="shortcut icon" href="/garfeo/static/icon.png"/><link rel="stylesheet" href="/garfeo/css/main.css"/><script>// Set href of random link to a random comic, on page load
+function set_random_url(base_url, first_index, last_index) {
+    // Filled at compile time
+    // String is 4 digits, and JS parses as non-base10 without stringify
+    let min = parseInt(first_index);
+    let max = parseInt(last_index);
+    // Get random number index
+    let random = Math.floor(Math.random() * (max - min + 1) + min).toString();
+    // Add zeros to start
+    let index = "0".repeat(4 - random.length) + random;
+    // Set link href
+    let url = base_url + index;
+    document.querySelector("#random").href = url;
+}
+</script></head><body><div class="header"><a href="/garfeo/"><b>Garfildo Esperanta</b></a><div class="subheader"><a id="random" title="Klaku por iri al iun bildstrio"><i>Arbitra</i></a><span class="divider">|</span><a href="/garfeo/informejo"><i>Informejo</i></a><span class="divider">|</span><a href="/garfeo/plej-bonaj"><i>Plej Bonaj</i></a></div><script>set_random_url("/garfeo/", 0000, 0520)</script></div><hr/><h1>Paĝo ne trovita!</h1><p><a href="/garfeo/">Reiru al ĉefpaĝo?</a></p></body></html>
