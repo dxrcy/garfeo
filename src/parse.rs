@@ -17,7 +17,6 @@ pub struct Post {
     pub errata: Errata,
     pub props: Props,
     pub date: String,
-    pub english: bool,
     pub sunday: bool,
 }
 
@@ -116,8 +115,10 @@ pub fn parse_posts() -> Vec<PostEntry> {
             Path::new(&format!("{path}/esperanto.png")).exists(),
             "Missing Esperanto image [{index}]"
         );
-
-        let english = Path::new(&format!("{path}/english.png")).exists();
+        assert!(
+            Path::new(&format!("{path}/english.png")).exists(),
+            "Missing English image [{index}]"
+        );
 
         let index_int = index
             .parse::<u32>()
@@ -130,7 +131,6 @@ pub fn parse_posts() -> Vec<PostEntry> {
             errata,
             props,
             date,
-            english,
             sunday,
         });
     }

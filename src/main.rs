@@ -128,17 +128,12 @@ fn at_post(entry: PostEntry) -> Document {
                 height=400,
             ]/
 
-            [*if (post.english) {
-                img [
-                    id="image-en",
-                    alt="Angla bildstrio",
-                    src=url!(format!("static/posts/{}/english.png", &post.index)),
-                    height=400,
-                ]/
-            } else {
-                br/
-                span [id="no-image-en"] { "(Mankas angla bildstrio)" }
-            }]
+            img [
+                id="image-en",
+                alt="Angla bildstrio",
+                src=url!(format!("static/posts/{}/english.png", &post.index)),
+                height=400,
+            ]/
         }
 
         [*if (post.props.revised) {

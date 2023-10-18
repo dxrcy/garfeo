@@ -10,7 +10,7 @@ Made with [Ibex](https://github.com/darccyy/ibex)
 /static/posts
     /<index>        Index in order of creation date
         /esperanto.png
-        /english.png    (optional for legacy)
+        /english.png
         /esperanto.svg  (optional) - Unexported SVG of text replacement
         /title      Post title/caption
                         eg. Garfildo ŝatas lasagnon
