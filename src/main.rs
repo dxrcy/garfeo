@@ -26,6 +26,8 @@ fn main() {
     let routes = routes![
         (/)
             => at_index(&posts),
+        (/404)
+            => at_404(),
         (/"plej-bonaj")
             => at_favourites(&posts),
         (/"informejo")
@@ -49,6 +51,20 @@ fn main() {
     let css = grass::from_string(scss, &Default::default()).expect("Failed to compile scss to css");
     fs::create_dir("build/css").expect("Failed to create css folder");
     fs::write("build/css/main.css", css).expect("Failed to write css file");
+}
+
+fn at_404() -> Document {
+    view! {
+        @use_basic ["404", None]
+
+        h1 { "Paĝo ne trovita!" }
+        p {
+            a [href=url!()] {
+                "Reiru al ĉefpaĝo?"
+            }
+        }
+    }
+    .into()
 }
 
 fn at_index(entries: &[PostEntry]) -> Document {
