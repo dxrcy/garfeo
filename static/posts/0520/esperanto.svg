@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.55625733"
-     inkscape:cx="582.46423"
-     inkscape:cy="459.31979"
+     inkscape:zoom="0.39333333"
+     inkscape:cx="388.98305"
+     inkscape:cy="169.0678"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -84,22 +84,26 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:34.6667px;line-height:0.95;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.3px;word-spacing:0.62px;text-anchor:middle;fill:#000000;stroke-width:1.2;stroke-linecap:round"
+       style="font-size:34.6667px;line-height:0.9;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.3px;word-spacing:0.62px;text-anchor:middle;fill:#000000;stroke-width:1.2;stroke-linecap:round"
        x="315.24744"
-       y="61.871094"
+       y="50.073364"
        id="text3"><tspan
          sodipodi:role="line"
          x="315.24744"
-         y="61.871094"
-         id="tspan4">BALDAŬ MI ESTOS 24 JAROJ.</tspan><tspan
+         y="50.073364"
+         id="tspan4">BALDAŬ MI ESTOS 24</tspan><tspan
          sodipodi:role="line"
          x="315.24744"
-         y="94.804459"
-         id="tspan6">TIO SIGNIFAS, KE MI PLI</tspan><tspan
+         y="81.273392"
+         id="tspan6">JARAĜA. TIO SIGNIFAS, KE</tspan><tspan
+         sodipodi:role="line"
+         x="315.24744"
+         y="112.47342"
+         id="tspan7">MI PLI MALJUNOS KAJ</tspan><tspan
          sodipodi:role="line"
          x="315.09744"
-         y="127.73782"
-         id="tspan7">MALJUNOS KAJ PLI SAĜOS...</tspan></text>
+         y="143.67345"
+         id="tspan5">PLI SAĜOS...</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.95;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.3px;word-spacing:0.62px;text-anchor:middle;fill:#000000;stroke-width:1.2;stroke-linecap:round"
