@@ -164,10 +164,14 @@ fn at_post(entry: &PostEntry) -> Document {
                 script { [include_str!("js/copy.js")] }
             }
             pre [id="caption-mastodon", onclick="copy(this)"] {
-                [&post.title] "💚&#10;#esperanto #garfield #mondodakomiksoj" [&post.index]
+                [&post.title] "💚" "&#10;&#10;"
+                 "#esperanto #garfield #mondodakomiksoj"
+                ~ "[" [&post.index] "]"
             }
             pre [id="caption-instagram", onclick="copy(this)"] {
-                [&post.title] "💚&#10;&#10;#esperanto #garfield #mondodakomiksoj #memeo #memeoj #bildstrio #garf #esperantomemes" [&post.index]
+                [&post.title] "💚" "&#10;&#10;"
+                "#esperanto #garfield #mondodakomiksoj #memeo #memeoj #bildstrio #garf #esperantomemes"
+                ~ "[" [&post.index] "]"
             }
         }
     }
