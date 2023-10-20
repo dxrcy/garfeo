@@ -14,9 +14,10 @@ static mut LAST_INDEX: String = String::new();
 fn main() {
     let posts = parse_posts();
 
+    let last_post_entry = posts.first().expect("no last post");
     unsafe {
-        FIRST_INDEX = posts.last().expect("no last post").post.index.clone();
-        LAST_INDEX = posts.first().expect("no first post").post.index.clone();
+        FIRST_INDEX = posts.last().expect("no first post").post.index.clone();
+        LAST_INDEX = last_post_entry.post.index.clone();
     }
 
     let routes = routes![
@@ -29,8 +30,10 @@ fn main() {
         (/"informejo")
             => at_about(),
         (/[entry.post.index])
-            for entry in posts.into_iter()
+            for entry in posts.iter()
             => at_post(entry),
+        (/"lasta")
+            => at_post(&last_post_entry),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
@@ -81,8 +84,8 @@ fn at_favourites(entries: &[PostEntry]) -> Document {
     .into()
 }
 
-fn at_post(entry: PostEntry) -> Document {
-    let post = entry.post;
+fn at_post(entry: &PostEntry) -> Document {
+    let post = &entry.post;
 
     view! {
         @use_basic [
@@ -127,7 +130,7 @@ fn at_post(entry: PostEntry) -> Document {
         [*if (!post.errata.0.is_empty()) { div [class="errata"] {
             h2 { "Eraroj:" }
             ol {
-                [*for ((old, new)) in (post.errata.0.into_iter()) { li {
+                [*for ((old, new)) in (post.errata.0.iter()) { li {
                     b [class="old"] { [old] }
                     "->"
                     b [class="new"] { [new] }
@@ -136,7 +139,7 @@ fn at_post(entry: PostEntry) -> Document {
         } }]
 
         div [class="navigate"] {
-            [if let Some(prev) = entry.prev { view! {
+            [if let Some(prev) = &entry.prev { view! {
                 div [class="prev"] {
                     a [href=url!(&prev.index)] {
                         b { "Antaŭa:" } ~
@@ -144,7 +147,7 @@ fn at_post(entry: PostEntry) -> Document {
                     }
                 }
             }} else { view!{} }]
-            [if let Some(next) = entry.next { view! {
+            [if let Some(next) = &entry.next { view! {
                 div [class="next"] {
                     a [href=url!(&next.index)] {
                         b { "Sekva:" } ~
