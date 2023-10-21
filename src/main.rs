@@ -194,13 +194,13 @@ fn at_about() -> Document {
         h2 { "Ligiloj" }
         ul [class="links"] {
             li {
-                a [href="https://github.com/darccyy/garfield-eo"] {
+                a [href="https://github.com/darccyy/garfeo"] {
                     b { "Fonta Kodo kaj ĉiu bildstrio" }
                     ~ "- por ĉi tiu retejo (en la angla)"
                 }
             }
             li {
-                a [href="https://github.com/darccyy/garfield-eo/issues/new"] {
+                a [href="https://github.com/darccyy/garfeo/issues/new"] {
                     b { "Mi havas concernon!" }
                     ~ "- Informu min per GitHub"
                 }
