@@ -56,8 +56,18 @@ fn at_404() -> Document {
 
 fn at_index(entries: &[PostEntry]) -> Document {
     let last_index = unsafe { LAST_INDEX.clone() };
+    let preview_post = &entries.first().expect("no first post").post;
     view! {
         @use_basic ["", None]
+
+        div {
+            img [
+                class="comic preview",
+                alt="Esperanto bildstrio de la plej lasta bildstrio",
+                src=url!(format!("static/posts/{}/esperanto.png", &preview_post.index)),
+                height=200,
+            ]/
+        }
 
         ol [reversed=true, start=last_index] {
             [*for (PostEntry {post, ..}) in (entries.into_iter()) {
@@ -107,9 +117,10 @@ fn at_post(entry: &PostEntry) -> Document {
             }
         }
 
-        div [class="images"] {
+        div {
             img [
                 id="image-eo",
+                class="comic",
                 alt="Esperanto bildstrio",
                 src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
                 height=400,
@@ -117,6 +128,7 @@ fn at_post(entry: &PostEntry) -> Document {
 
             img [
                 id="image-en",
+                class="comic",
                 alt="Angla bildstrio",
                 src=url!(format!("static/posts/{}/english.png", &post.index)),
                 height=400,

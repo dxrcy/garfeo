@@ -13,13 +13,6 @@ body {
         }
     }
 
-    img {
-        height: 100%;
-        max-height: 450px;
-        min-width: 200px;
-        max-width: 95%;
-    }
-
     .gray {
         color: #AAA;
     }
@@ -38,7 +31,7 @@ body {
     }
 
     ol {
-        margin: none;
+        margin: 0px;
         display: inline-block;
 
         li {
@@ -62,9 +55,15 @@ body {
         }
     }
 
-    .images {
-        img {
-            margin: 5px;
+    .comic {
+        height: 100%;
+        max-height: 450px;
+        min-width: 200px;
+        max-width: 95%;
+        margin: 5px;
+
+        &.preview {
+            width: 200px;
         }
     }
 
