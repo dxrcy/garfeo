@@ -70,7 +70,7 @@ fn at_index(entries: &[PostEntry]) -> Document {
         }
 
         ol [reversed=true, start=last_index] {
-            [:for (PostEntry {post, ..}) in (entries.into_iter()) {
+            [:for PostEntry {post, ..} in entries {
                 @list_item [post]
             }]
         }
@@ -84,8 +84,8 @@ fn at_favourites(entries: &[PostEntry]) -> Document {
 
         h1 { "Plej bonaj bildstrioj" }
         ol {
-            [:for (PostEntry {post, ..}) in (entries.into_iter()) {
-                [:if (post.props.good) {
+            [:for PostEntry {post, ..} in entries {
+                [:if post.props.good {
                     @list_item [post]
                 }]
             }]
@@ -135,14 +135,14 @@ fn at_post(entry: &PostEntry) -> Document {
             ]/
         }
 
-        [:if (post.props.revised) {
+        [:if post.props.revised {
             p { i { "(Retradukita post originala)" } }
         }]
 
-        [:if (!post.errata.0.is_empty()) { div [class="errata"] {
+        [:if !post.errata.0.is_empty() { div [class="errata"] {
             h2 { "Eraroj:" }
             ol {
-                [:for ((old, new)) in (post.errata.0.iter()) { li {
+                [:for (old, new) in &post.errata.0 { li {
                     b [class="old"] { [old] }
                     "->"
                     b [class="new"] { [new] }
@@ -151,22 +151,22 @@ fn at_post(entry: &PostEntry) -> Document {
         } }]
 
         div [class="navigate"] {
-            [if let Some(prev) = &entry.prev { view! {
+            [:if let Some(prev) = &entry.prev {
                 div [class="prev"] {
                     a [href=url!(&prev.index)] {
                         b { "Antaŭa:" } ~
                         @title [&prev, true]
                     }
                 }
-            }} else { view!{} }]
-            [if let Some(next) = &entry.next { view! {
+            }]
+            [:if let Some(next) = &entry.next {
                 div [class="next"] {
                     a [href=url!(&next.index)] {
                         b { "Sekva:" } ~
                         @title [&next, true]
                     }
                 }
-            }} else { view!{} }]
+            }]
         }
 
         hr/
@@ -277,7 +277,7 @@ fn list_item(post: &Post) -> View {
 fn title(post: &Post, italic: bool) -> View {
     let inner = view! {
         // Bold if sunday
-        [:if (post.sunday) {
+        [:if post.sunday {
             b { [ &post.title ] }
         } else {
             [ &post.title ]
@@ -286,7 +286,7 @@ fn title(post: &Post, italic: bool) -> View {
 
     let inner = view! {
         // Grey if no text
-        [:if (post.props.notext) {
+        [:if post.props.notext {
             span [class="gray"] { [inner] }
         } else {
             [inner]
@@ -296,14 +296,14 @@ fn title(post: &Post, italic: bool) -> View {
     view! {
         span [class="title"] {
             // Italic if argument given
-            [:if (italic) {
+            [:if italic {
                 i { [inner] }
             } else {
                 [inner]
             }]
 
             // Star if favorite
-            [:if (post.props.good) {
+            [:if post.props.good {
                 span [id="good", title="Bona bildstrio"] { "⭐" }
             }]
         }
