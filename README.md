@@ -1,26 +1,28 @@
 # Garfield Esperanto
 
-Made with [Ibex](https://github.com/darccyy/ibex)
+500+ *Garfield* comics translated to Esperanto.
 
--   [Live on GitHub Pages](https://darccyy.github.io/garfeo)
+-   [See website live now!](https://darccyy.github.io/garfeo)
+
+Made with [Ibex](https://github.com/darccyy/ibex)
 
 # File Structure
 
 ```
 /static/posts
-    /<index>        Index in order of creation date
+    /<index>        Index in order of creation date, padded to 4 digits
         /esperanto.png
         /english.png
-        /esperanto.svg  (optional) - Unexported SVG of text replacement
+        /esperanto.svg  Unexported SVG of *text replacement* (only for recent entries)
         /title      Post title/caption
-                        eg. Garfildo ŝatas lasagnon
+                        eg. Garfildo ŝatas lazanjon
         /date       Date of original comic YYYY-MM-DD
                         eg. 2012-10-01
         /errata     If any errors exist in the translation (optional)
-                        eg. lasgano >> lasagno
-                            garflob >> garfield
+                        eg. lasagno >> lazanjo
+                            garfish >> garfield
         /props      If any special properties (optional)
                         possible values (separated by linebreak):
-                            good, nogarfield, notext, revised
+                            good, nogarfield, notext, revised, earsback
 ```
 
