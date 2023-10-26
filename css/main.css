@@ -73,16 +73,16 @@ body .navigate div.prev {
 body .navigate div.next {
   text-align: right;
 }
-body .captions {
+body .caption {
   overflow: scroll;
 }
-body .captions pre {
+body .caption pre {
   display: inline-block;
   margin: 10px;
   padding: 3px 5px;
   background-color: #FFFFFF18;
 }
-body .captions pre:active {
+body .caption pre:active {
   background-color: #FFFFFF08;
 }
 body .links {
