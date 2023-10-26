@@ -35,6 +35,21 @@ fn main() {
     println!("All done!");
 }
 
+fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
+    view! {
+        @use_basic ["", None, first_last]
+
+        @comic_preview [first_last]
+
+        ol [reversed=true, start=first_last[0].post.index] {
+            [:for PostEntry {post, ..} in entries {
+                @list_item [post]
+            }]
+        }
+    }
+    .into()
+}
+
 fn at_404(first_last: [&PostEntry; 2]) -> Document {
     view! {
         @use_basic ["404", None, first_last]
@@ -49,21 +64,6 @@ fn at_404(first_last: [&PostEntry; 2]) -> Document {
         hr/
         @comic_preview [first_last]
         @post_title[&first_last[0].post, true]
-    }
-    .into()
-}
-
-fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
-    view! {
-        @use_basic ["", None, first_last]
-
-        @comic_preview [first_last]
-
-        ol [reversed=true, start=first_last[0].post.index] {
-            [:for PostEntry {post, ..} in entries {
-                @list_item [post]
-            }]
-        }
     }
     .into()
 }
@@ -116,7 +116,6 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
                 src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
                 height=400,
             ]/
-
             img [
                 id="image-en",
                 class="comic",
@@ -135,7 +134,7 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
             ol {
                 [:for (old, new) in &post.errata.0 { li {
                     b [class="old"] { [old] }
-                    "->"
+                    ~ "&rarr;" ~
                     b [class="new"] { [new] }
                 } }]
             }
@@ -162,16 +161,11 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
 
         hr/
 
-        div [class="captions"] {
+        div [class="caption"] {
             HEAD { script { [include_str!("js/copy.js")] } }
-            pre [id="caption-mastodon", onclick="copy(this)"] {
+            pre [id="caption", onclick="copy(this)"] {
                 [&post.title] "💚" "&#10;&#10;"
                  "#esperanto #garfield #mondodakomiksoj"
-                ~ "[" [&post.index] "]"
-            }
-            pre [id="caption-instagram", onclick="copy(this)"] {
-                [&post.title] "💚" "&#10;&#10;"
-                "#esperanto #garfield #mondodakomiksoj #memeo #memeoj #bildstrio #garf #esperantomemes"
                 ~ "[" [&post.index] "]"
             }
         }
@@ -182,7 +176,6 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
 fn at_about(first_last: [&PostEntry; 2]) -> Document {
     view! {
         @use_basic ["Informejo", None, first_last]
-
         h1 { "Informejo" }
 
         h2 { "Kio estas Garfield-EO?" }
@@ -234,7 +227,6 @@ fn at_about(first_last: [&PostEntry; 2]) -> Document {
 
         hr/
         br/
-
         div {
             img [
                 src=url!("static/icon.png"),
