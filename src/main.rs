@@ -7,42 +7,37 @@ use parse::{parse_posts, Post, PostEntry};
 /// Name of github repo
 const URL_ROOT: &str = "/garfeo/";
 
-// Global variables
-static mut FIRST_INDEX: String = String::new();
-static mut LAST_INDEX: String = String::new();
-
 fn main() {
     let posts = parse_posts();
 
-    let last_post_entry = posts.first().expect("no last post");
-    unsafe {
-        FIRST_INDEX = posts.last().expect("no first post").post.index.clone();
-        LAST_INDEX = last_post_entry.post.index.clone();
-    }
+    let first_last = [
+        posts.last().expect("no first post"),
+        posts.first().expect("no last post"),
+    ];
 
     let routes = routes![
         (/)
-            => at_index(&posts),
+            => at_index(&posts, first_last),
         (/404)
-            => at_404(),
+            => at_404(first_last),
         (/"plej-bonaj")
-            => at_favourites(&posts),
+            => at_favourites(&posts, first_last),
         (/"informejo")
-            => at_about(),
+            => at_about(first_last),
         (/[entry.post.index])
             for entry in posts.iter()
-            => at_post(entry),
+            => at_post(entry, first_last),
         (/"lasta")
-            => at_post(&last_post_entry),
+            => at_post(first_last[1], first_last),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
     println!("All done!");
 }
 
-fn at_404() -> Document {
+fn at_404(first_last: [&PostEntry; 2]) -> Document {
     view! {
-        @use_basic ["404", None]
+        @use_basic ["404", None, first_last]
 
         h1 { "Paĝo ne trovita!" }
         p {
@@ -50,26 +45,21 @@ fn at_404() -> Document {
                 "Reiru al ĉefpaĝo?"
             }
         }
+
+        hr/
+        @comic_preview [first_last]
+        @post_title[&first_last[0].post, true]
     }
     .into()
 }
 
-fn at_index(entries: &[PostEntry]) -> Document {
-    let last_index = unsafe { LAST_INDEX.clone() };
-    let preview_post = &entries.first().expect("no first post").post;
+fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
     view! {
-        @use_basic ["", None]
+        @use_basic ["", None, first_last]
 
-        div {
-            img [
-                class="comic preview",
-                alt="Esperanto bildstrio de la plej lasta bildstrio",
-                src=url!(format!("static/posts/{}/esperanto.png", &preview_post.index)),
-                height=200,
-            ]/
-        }
+        @comic_preview [first_last]
 
-        ol [reversed=true, start=last_index] {
+        ol [reversed=true, start=first_last[0].post.index] {
             [:for PostEntry {post, ..} in entries {
                 @list_item [post]
             }]
@@ -78,9 +68,9 @@ fn at_index(entries: &[PostEntry]) -> Document {
     .into()
 }
 
-fn at_favourites(entries: &[PostEntry]) -> Document {
+fn at_favourites(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
     view! {
-        @use_basic ["", None]
+        @use_basic ["", None, first_last]
 
         h1 { "Plej bonaj bildstrioj" }
         ol {
@@ -94,23 +84,24 @@ fn at_favourites(entries: &[PostEntry]) -> Document {
     .into()
 }
 
-fn at_post(entry: &PostEntry) -> Document {
+fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
     let post = &entry.post;
 
     view! {
         @use_basic [
             &format!("{} [{}]", post.title, post.index),
             Some(&format!("static/posts/{}/esperanto.png", post.index)),
+            first_last,
         ]
 
         h1 [id="title"] {
-            @title [&post, false]
+            @post_title [&post, false]
         }
 
         p {
             "[" span [id="index"] { [&post.index] } "]" ~
             a [
-                href=format!("https://gocomics.com/garfield/{}", slash_date(&post.date)),
+                href=format!("https://gocomics.com/garfield/{}", post.date.replace("-", "/")),
                 title="Spekti je gocomics.com",
             ] {
                 b [id="date"] { [&post.date] }
@@ -155,7 +146,7 @@ fn at_post(entry: &PostEntry) -> Document {
                 div [class="prev"] {
                     a [href=url!(&prev.index)] {
                         b { "Antaŭa:" } ~
-                        @title [&prev, true]
+                        @post_title [&prev, true]
                     }
                 }
             }]
@@ -163,7 +154,7 @@ fn at_post(entry: &PostEntry) -> Document {
                 div [class="next"] {
                     a [href=url!(&next.index)] {
                         b { "Sekva:" } ~
-                        @title [&next, true]
+                        @post_title [&next, true]
                     }
                 }
             }]
@@ -172,9 +163,7 @@ fn at_post(entry: &PostEntry) -> Document {
         hr/
 
         div [class="captions"] {
-            HEAD {
-                script { [include_str!("js/copy.js")] }
-            }
+            HEAD { script { [include_str!("js/copy.js")] } }
             pre [id="caption-mastodon", onclick="copy(this)"] {
                 [&post.title] "💚" "&#10;&#10;"
                  "#esperanto #garfield #mondodakomiksoj"
@@ -190,9 +179,9 @@ fn at_post(entry: &PostEntry) -> Document {
     .into()
 }
 
-fn at_about() -> Document {
+fn at_about(first_last: [&PostEntry; 2]) -> Document {
     view! {
-        @use_basic ["Informejo", None]
+        @use_basic ["Informejo", None, first_last]
 
         h1 { "Informejo" }
 
@@ -257,11 +246,79 @@ fn at_about() -> Document {
     .into()
 }
 
+fn use_basic(title: &str, image: Option<&str>, first_last: [&PostEntry; 2]) -> View {
+    let mut full_title = "Garfildo Esperanta".to_string();
+    if !title.is_empty() {
+        full_title += " - ";
+        full_title += title
+    };
+
+    view! {
+        HEAD {
+            @use_meta [ Meta::new()
+                .url(url!())
+                .title(&full_title)
+                .desc("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!")
+                .image(&url!(image.unwrap_or("static/icon.png")))
+                .color("#ffb24e")
+                .author("darcy")
+                .large_image(true)
+            ]
+
+            title { [full_title] }
+            link [rel="shortcut icon", href=url!("static/icon.png")]/
+            link [rel="stylesheet",    href=url!("css/main.css")]/
+        }
+
+        div [class="header"] {
+            a [href=url!()] {
+                b { "Garfildo Esperanta" }
+            }
+
+            div [class="subheader"] {
+                HEAD { script { [include_str!("js/random.js")] } }
+                a [id="random", title="Klaku por iri al iun bildstrio"] {
+                    i { "Arbitra" }
+                }
+                span [class="divider"] { "|" }
+                a [href=url!("informejo")] {
+                    i { "Informejo" }
+                }
+                span [class="divider"] { "|" }
+                a [href=url!("plej-bonaj")] {
+                    i { "Plej Bonaj" }
+                }
+            }
+
+            [:use {
+                let first = &first_last[0].post.index;
+                let last = &first_last[1].post.index;
+            } {
+                script { [format!("set_random_url('{}', '{}', '{}')", url!(), first, last)] }
+            }]
+        }
+        hr/
+    }
+}
+
+fn comic_preview(post: [&PostEntry; 2]) -> View {
+    view! {
+        div [class="comic-preview"] {
+            img [
+                class="comic preview",
+                alt="Esperanto bildstrio de la plej lasta bildstrio",
+                src=url!(format!("static/posts/{}/esperanto.png", &post[0].post.index)),
+                height=200,
+            ]/
+        }
+    }
+}
+
 fn list_item(post: &Post) -> View {
     view! {
         li [value=post.index] {
             a [href=url!(post.index)] {
-                @title [post, false]
+                @post_title [post, false]
             }
             div {
                 img [
@@ -274,7 +331,7 @@ fn list_item(post: &Post) -> View {
     }
 }
 
-fn title(post: &Post, italic: bool) -> View {
+fn post_title(post: &Post, italic: bool) -> View {
     let inner = view! {
         // Bold if sunday
         [:if post.sunday {
@@ -307,65 +364,5 @@ fn title(post: &Post, italic: bool) -> View {
                 span [id="good", title="Bona bildstrio"] { "⭐" }
             }]
         }
-    }
-}
-
-fn slash_date(date: &str) -> String {
-    date.replace("-", "/")
-}
-
-fn use_basic(title: &str, image: Option<&str>) -> View {
-    let first_index = unsafe { FIRST_INDEX.clone() };
-    let last_index = unsafe { LAST_INDEX.clone() };
-
-    let mut full_title = "Garfildo Esperanta".to_string();
-    if !title.is_empty() {
-        full_title += " - ";
-        full_title += title
-    };
-
-    view! {
-        HEAD {
-            @use_meta [ Meta::new()
-                .url(url!())
-                .title(&full_title)
-                .desc("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!")
-                .image(&url!(image.unwrap_or("static/icon.png")))
-                .color("#ffb24e")
-                .author("darcy")
-                .large_image(true)
-            ]
-
-            title { [full_title] }
-            link [rel="shortcut icon", href=url!("static/icon.png")]/
-            link [rel="stylesheet",    href=url!("css/main.css")]/
-        }
-
-        div [class="header"] {
-            a [href=url!()] {
-                b { "Garfildo Esperanta" }
-            }
-
-            div [class="subheader"] {
-                HEAD {
-                    script { [include_str!("js/random.js")] }
-                }
-                a [id="random", title="Klaku por iri al iun bildstrio"] {
-                    i { "Arbitra" }
-                }
-                span [class="divider"] { "|" }
-                a [href=url!("informejo")] {
-                    i { "Informejo" }
-                }
-                span [class="divider"] { "|" }
-                a [href=url!("plej-bonaj")] {
-                    i { "Plej Bonaj" }
-                }
-            }
-
-            script { [format!("set_random_url({:?}, {}, {})", url!(), first_index, last_index)] }
-        }
-
-        hr/
     }
 }
