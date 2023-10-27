@@ -39,18 +39,30 @@ body {
 
             a {
                 overflow: none;
+                img {
+                    display: block;
+                    max-height: 300px;
+                    max-width: 300px;
+                    width: auto;
+                    height: auto;
+                }
             }
-            &:not(:hover) img {
-                display: none;
+
+            &:first-of-type a {
+                img {
+                    margin: 5px 0;
+                }
             }
-            img {
-                position: absolute;
-                max-height: 300px;
-                max-width: 300px;
-                width: auto;
-                height: auto;
-                z-index: 500;
-                pointer-events: none;
+
+            &:not(:first-of-type) a {
+                &:not(:hover) img {
+                    display: none;
+                }
+                img {
+                    position: absolute;
+                    z-index: 500;
+                    pointer-events: none;
+                }
             }
         }
     }

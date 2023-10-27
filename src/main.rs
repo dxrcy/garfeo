@@ -39,8 +39,6 @@ fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
     view! {
         @use_basic ["", None, first_last]
 
-        @comic_preview [first_last]
-
         ol [reversed=true, start=first_last[0].post.index] {
             [:for PostEntry {post, ..} in entries {
                 @list_item [post]
@@ -51,6 +49,7 @@ fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
 }
 
 fn at_404(first_last: [&PostEntry; 2]) -> Document {
+    let last_post = &first_last[1].post;
     view! {
         @use_basic ["404", None, first_last]
 
@@ -62,8 +61,10 @@ fn at_404(first_last: [&PostEntry; 2]) -> Document {
         }
 
         hr/
-        @comic_preview [first_last]
-        @post_title[&first_last[0].post, true]
+        p { b { "Lasta bildstrio:" } }
+        ol [start=last_post.index] {
+            @list_item [last_post]
+        }
     }
     .into()
 }
@@ -293,26 +294,11 @@ fn use_basic(title: &str, image: Option<&str>, first_last: [&PostEntry; 2]) -> V
     }
 }
 
-fn comic_preview(post: [&PostEntry; 2]) -> View {
-    view! {
-        div [class="comic-preview"] {
-            img [
-                class="comic preview",
-                alt="Esperanto bildstrio de la plej lasta bildstrio",
-                src=url!(format!("static/posts/{}/esperanto.png", &post[0].post.index)),
-                height=200,
-            ]/
-        }
-    }
-}
-
 fn list_item(post: &Post) -> View {
     view! {
         li [value=post.index] {
             a [href=url!(post.index)] {
                 @post_title [post, false]
-            }
-            div {
                 img [
                     alt="Antaŭrigardo de Esperanta bildstro",
                     src=url!(format!("static/posts/{}/esperanto.png", post.index)),
