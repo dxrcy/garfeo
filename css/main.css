@@ -34,15 +34,21 @@ body ol li {
 body ol li a {
   overflow: none;
 }
-body ol li:not(:hover) img {
-  display: none;
-}
-body ol li img {
-  position: absolute;
+body ol li a img {
+  display: block;
   max-height: 300px;
   max-width: 300px;
   width: auto;
   height: auto;
+}
+body ol li:first-of-type a img {
+  margin: 5px 0;
+}
+body ol li:not(:first-of-type) a:not(:hover) img {
+  display: none;
+}
+body ol li:not(:first-of-type) a img {
+  position: absolute;
   z-index: 500;
   pointer-events: none;
 }
