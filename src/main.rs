@@ -134,7 +134,7 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
             ol {
                 [:for (old, new) in &post.errata.0 { li {
                     b [class="old"] { [old] }
-                    ~ "&rarr;" ~
+                    ~ &rarr ~
                     b [class="new"] { [new] }
                 } }]
             }
