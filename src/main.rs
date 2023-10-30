@@ -156,7 +156,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             [:if let Some(prev) = &entry.prev {
                 div [class="prev"] {
                     a [href=url!(&prev.index)] {
-                        b { "Antaŭa:" } ~
+                        strong { "Antaŭa:" } ~
                         @post_title [&prev, true]
                     }
                 }
@@ -164,7 +164,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             [:if let Some(next) = &entry.next {
                 div [class="next"] {
                     a [href=url!(&next.index)] {
-                        b { "Sekva:" } ~
+                        strong { "Sekva:" } ~
                         @post_title [&next, true]
                     }
                 }
@@ -204,37 +204,37 @@ fn at_about(first_last: &FirstLast) -> Document {
         ul [class="links"] {
             li {
                 a [href="https://github.com/darccyy/garfeo"] {
-                    b { "Fonta Kodo kaj ĉiu bildstrio" }
+                    strong { "Fonta Kodo kaj ĉiu bildstrio" }
                     ~ "- por ĉi tiu retejo (en la angla)"
                 }
             }
             li {
                 a [href="https://github.com/darccyy/garfeo/issues/new"] {
-                    b { "Mi havas concernon!" }
+                    strong { "Mi havas concernon!" }
                     ~ "- Informu min per GitHub"
                 }
             }
             li {
                 a [href="https://github.com/darccyy/everygarf"] {
-                    b { "EveryGarf" }
+                    strong { "EveryGarf" }
                     ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune"
                 }
             }
             li {
                 a [href="https://mastodon.world/@garfieldeo"] {
-                    b { "Mastodon @garfieldeo@mastodon.world" }
+                    strong { "Mastodon @garfieldeo@mastodon.world" }
                     ~ "- Esperantaj Garfildaj bildstrioj"
                 }
             }
             li {
                 a [href="https://instagram.com/garfield.eo"] {
-                    b { "Instagram @garfield.eo" }
+                    strong { "Instagram @garfield.eo" }
                     ~ "- Esperantaj Garfildaj bildstrioj"
                 }
             }
             li {
                 a [href="https://instagram.com/mondodakomiksoj"] {
-                    b { "Mondo da Komiksoj" }
+                    strong { "Mondo da Komiksoj" }
                     ~ "- Grupo de tradukistoj"
                 }
             }
@@ -283,7 +283,7 @@ fn use_basic(
             link [rel="stylesheet",    href=url!("css/main.css")]/
         }
 
-        div [class="header"] {
+        div [class="top-header"] {
             a [class="title", href=url!()] {
                 b { "Garfildo Esperanta" }
             }
@@ -314,10 +314,12 @@ fn use_basic(
         }
         hr/
 
-        div [class="content"] {
-            h1 { [header] }
+        div [class="content-container"] { div [class="content"] {
+            h1 [class="header"] {
+                [header]
+            }
             [children]
-        }
+        } }
     }
 }
 

@@ -1,26 +1,38 @@
+$c-background: #1d2328;
+$c-article:    #232C33;
+$c-text:       #E6E6E6;
+$c-header:     #86b1b0;
+$c-subtle:     #3d605f;
+$c-grey:       #91a1a0;
+$c-accent:     #FF8C8C;
+$c-accent2:    #af7fa8;
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #111;
-    color: white;
+    background-color: $c-background;
+    color: $c-text;
 
     padding-bottom: 300px;
     text-align: center;
 
     a {
         color: inherit;
+        text-decoration-color: $c-accent;
         &:not(:hover) {
             text-decoration: none;
         }
     }
 
     .gray {
-        color: #AAA;
+        color: $c-grey;
     }
 
-    .header {
+    .top-header {
         padding: 10px 0 5px 0;
 
-        // .title { }
+        .title {
+            color: $c-header;
+        }
 
         .actions {
             margin: 5px 0;
@@ -37,13 +49,45 @@ body {
                 &::before {
                     content: "|";
                     margin: 0 10px;
-                    opacity: 0.5;
+                    color: $c-subtle;
                 }
             }
         }
     }
 
-    // .page-header { }
+    >hr {
+        display: none;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        .content {
+            background-color: red;
+            padding: 0px 40px 20px 40px;
+            background-color: $c-article;
+            min-width: 400px;
+
+            hr {
+                color: $c-subtle;
+            }
+        }
+    }
+
+    .header {
+        color: $c-accent;
+        b {
+            font-family: Arial;
+            font-weight: 700;
+        }
+    }
+    h2 {
+        color: $c-header;
+    }
+    strong {
+        color: $c-accent2;
+    }
  
     ol {
         margin: 0px;
@@ -65,7 +109,7 @@ body {
 
             &:first-of-type a {
                 img {
-                    margin: 5px 0;
+                    margin: 5px 0 10px 0;
                 }
             }
 
@@ -88,14 +132,11 @@ body {
         min-width: 200px;
         max-width: 95%;
         margin: 5px;
-
-        &.preview {
-            width: 300px;
-        }
     }
 
     .navigate {
         width: 100%;
+        padding: 10px 0;
         div {
             display: inline-block;
             $padding: 10px;
@@ -105,7 +146,6 @@ body {
             &:only-child {
                 width: calc(100% - 2 * $padding);
             }
-
             &.prev {
                 text-align: left;
             }
@@ -121,9 +161,9 @@ body {
             display: inline-block;
             margin: 10px;
             padding: 3px 5px;
-            background-color: #FFFFFF18;
+            background-color: $c-background;
             &:active {
-                background-color: #FFFFFF08;
+                filter: brightness(90%);
             }
         }
     }
