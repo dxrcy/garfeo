@@ -36,24 +36,33 @@ fn main() {
 }
 
 fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
-    view! {
-        @use_basic ["", None, first_last]
-
-        ol [reversed=true, start=first_last[0].post.index] {
+    view! { @use_basic [
+        "",
+        view!{},
+        None,
+        first_last,
+    ] {
+        ol [
+            class="post-list",
+            reversed=true,
+            start=first_last[0].post.index,
+        ] {
             [:for PostEntry {post, ..} in entries {
                 @list_item [post]
             }]
         }
-    }
+    }}
     .into()
 }
 
 fn at_404(first_last: [&PostEntry; 2]) -> Document {
     let last_post = &first_last[1].post;
-    view! {
-        @use_basic ["404", None, first_last]
-
-        h1 { "Paĝo ne trovita!" }
+    view! { @use_basic [
+        "404",
+        view! { "Paĝo ne trovita!" },
+        None,
+        first_last,
+    ] {
         p {
             a [href=url!()] {
                 "Reiru al ĉefpaĝo?"
@@ -65,40 +74,37 @@ fn at_404(first_last: [&PostEntry; 2]) -> Document {
         ol [start=last_post.index] {
             @list_item [last_post]
         }
-    }
+    }}
     .into()
 }
 
 fn at_favourites(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
-    view! {
-        @use_basic ["", None, first_last]
-
-        h1 { "Plej bonaj bildstrioj" }
-        ol {
+    view! { @use_basic [
+        "",
+        view! { "Plej bonaj bildstrioj" },
+        None,
+        first_last,
+    ] {
+        ol [class="post-list"] {
             [:for PostEntry {post, ..} in entries {
                 [:if post.props.good {
                     @list_item [post]
                 }]
             }]
         }
-    }
+    }}
     .into()
 }
 
 fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
     let post = &entry.post;
 
-    view! {
-        @use_basic [
+    view! { @use_basic [
             &format!("{} [{}]", post.title, post.index),
+            view!{ @post_title [&post, false] },
             Some(&format!("static/posts/{}/esperanto.png", post.index)),
             first_last,
-        ]
-
-        h1 [id="title"] {
-            @post_title [&post, false]
-        }
-
+        ] {
         p {
             "[" span [id="index"] { [&post.index] } "]" ~
             a [
@@ -170,14 +176,17 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
                 ~ "[" [&post.index] "]"
             }
         }
-    }
+    }}
     .into()
 }
 
 fn at_about(first_last: [&PostEntry; 2]) -> Document {
-    view! {
-        @use_basic ["Informejo", None, first_last]
-        h1 { "Informejo" }
+    view! { @use_basic [
+        "Informejo",
+        view! { "Informejo" },
+        None,
+        first_last,
+    ] {
 
         h2 { "Kio estas Garfield-EO?" }
         p {
@@ -235,11 +244,17 @@ fn at_about(first_last: [&PostEntry; 2]) -> Document {
                 height=400,
             ]/
         }
-    }
+    }}
     .into()
 }
 
-fn use_basic(title: &str, image: Option<&str>, first_last: [&PostEntry; 2]) -> View {
+fn use_basic(
+    title: &str,
+    header: View,
+    image: Option<&str>,
+    first_last: [&PostEntry; 2],
+    children: View,
+) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
     if !title.is_empty() {
         full_title += " - ";
@@ -264,20 +279,22 @@ fn use_basic(title: &str, image: Option<&str>, first_last: [&PostEntry; 2]) -> V
         }
 
         div [class="header"] {
-            a [href=url!()] {
+            a [class="title", href=url!()] {
                 b { "Garfildo Esperanta" }
             }
 
-            div [class="subheader"] {
+            div [class="actions"] {
                 HEAD { script { [include_str!("js/random.js")] } }
                 a [id="random", title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
                 }
-                span [class="divider"] { "|" }
+
+                span [class="fallback-divider"] { ~"|"~ } // fallback for css
                 a [href=url!("informejo")] {
                     i { "Informejo" }
                 }
-                span [class="divider"] { "|" }
+
+                span [class="fallback-divider"] { ~"|"~ }
                 a [href=url!("plej-bonaj")] {
                     i { "Plej Bonaj" }
                 }
@@ -291,6 +308,11 @@ fn use_basic(title: &str, image: Option<&str>, first_last: [&PostEntry; 2]) -> V
             }]
         }
         hr/
+
+        div [class="content"] {
+            h1 { [header] }
+            [children]
+        }
     }
 }
 
@@ -303,6 +325,7 @@ fn list_item(post: &Post) -> View {
                     alt="Antaŭrigardo de Esperanta bildstro",
                     src=url!(format!("static/posts/{}/esperanto.png", post.index)),
                     loading="lazy",
+                    height=200, // fallback for css
                 ]/
             }
         }

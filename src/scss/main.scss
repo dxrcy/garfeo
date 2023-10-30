@@ -20,16 +20,31 @@ body {
     .header {
         padding: 10px 0 5px 0;
 
-        .subheader {
+        // .title { }
+
+        .actions {
             margin: 5px 0;
 
             .divider {
                 margin: 0 10px;
                 opacity: 0.5;
             }
+
+            .fallback-divider {
+                display: none;
+            }
+            a:not(:first-of-type) {
+                &::before {
+                    content: "|";
+                    margin: 0 10px;
+                    opacity: 0.5;
+                }
+            }
         }
     }
 
+    // .page-header { }
+ 
     ol {
         margin: 0px;
         display: inline-block;

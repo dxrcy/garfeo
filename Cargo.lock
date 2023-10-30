@@ -115,7 +115,7 @@ checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 [[package]]
 name = "core"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#1e23b2ed29636ea07ad415558aa25ebdf56d6caf"
+source = "git+https://github.com/darccyy/ibex#de4ffc6c41e43c802df45647e3f03293935a7f6b"
 
 [[package]]
 name = "garfeo"
@@ -179,7 +179,7 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 [[package]]
 name = "ibex"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#1e23b2ed29636ea07ad415558aa25ebdf56d6caf"
+source = "git+https://github.com/darccyy/ibex#de4ffc6c41e43c802df45647e3f03293935a7f6b"
 dependencies = [
  "core",
  "grass",
@@ -215,7 +215,7 @@ checksum = "a08173bc88b7955d1b3145aa561539096c421ac8debde8cbc3612ec635fee29b"
 [[package]]
 name = "macros"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#1e23b2ed29636ea07ad415558aa25ebdf56d6caf"
+source = "git+https://github.com/darccyy/ibex#de4ffc6c41e43c802df45647e3f03293935a7f6b"
 dependencies = [
  "core",
  "proc-macro2",
