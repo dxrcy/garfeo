@@ -17,10 +17,18 @@ body .gray {
 body .header {
   padding: 10px 0 5px 0;
 }
-body .header .subheader {
+body .header .actions {
   margin: 5px 0;
 }
-body .header .subheader .divider {
+body .header .actions .divider {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+body .header .actions .fallback-divider {
+  display: none;
+}
+body .header .actions a:not(:first-of-type)::before {
+  content: "|";
   margin: 0 10px;
   opacity: 0.5;
 }
