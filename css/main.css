@@ -31,10 +31,31 @@ body .top-header .actions .divider {
 body .top-header .actions .fallback-divider {
   display: none;
 }
+body .top-header .actions a {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+body .top-header .actions a:hover, body .top-header .actions a:focus-within {
+  text-decoration: none;
+}
+body .top-header .actions a:hover i, body .top-header .actions a:focus-within i {
+  text-decoration: underline;
+  text-decoration-color: #FF8C8C;
+}
+body .top-header .actions a .icon {
+  color: #af7fa8;
+}
+body .top-header .actions a:not(:first-of-type) {
+  margin-left: 20px;
+}
 body .top-header .actions a:not(:first-of-type)::before {
-  content: "|";
-  margin: 0 10px;
-  color: #3d605f;
+  content: "";
+  position: absolute;
+  height: 70%;
+  top: 15%;
+  left: -10px;
+  border-left: 2px solid #3d605f;
 }
 body > hr {
   display: none;
@@ -42,7 +63,7 @@ body > hr {
 body .content-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 body .content-container .content {
   padding: 0px clamp(5px, 5%, 40px);
