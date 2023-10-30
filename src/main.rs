@@ -138,7 +138,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
         }
 
         [:if post.props.revised {
-            p { i { "(Retradukita post originala)" } }
+            p [class="gray"] { i { "(Retradukita post originala)" } }
         }]
 
         [:if !post.errata.0.is_empty() { div [class="errata"] {
