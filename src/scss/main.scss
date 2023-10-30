@@ -45,11 +45,36 @@ body {
             .fallback-divider {
                 display: none;
             }
-            a:not(:first-of-type) {
-                &::before {
-                    content: "|";
-                    margin: 0 10px;
-                    color: $c-subtle;
+            a {
+                display: inline-flex;
+                flex-direction: column;
+                position: relative;
+
+                &:hover, &:focus-within {
+                    text-decoration: none;
+                    i {
+                        text-decoration: underline;
+                        text-decoration-color: $c-accent;
+                    }
+                }
+
+                .icon {
+                    color: $c-accent2;
+                }
+
+                &:not(:first-of-type) {
+                    $margin: 10px;
+                    $height: 70%;
+                    margin-left: calc($margin * 2);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: $height;
+                        top: #{50% - $height / 2};
+                        left: - $margin;
+                        border-left: 2px solid $c-subtle;
+                    }
                 }
             }
         }
@@ -62,7 +87,7 @@ body {
     .content-container {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 5px;
         .content {
             padding: 0px clamp(5px, 5%, 40px);
             padding-bottom: 20px;
