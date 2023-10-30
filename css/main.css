@@ -45,10 +45,10 @@ body .content-container {
   margin-top: 10px;
 }
 body .content-container .content {
-  background-color: red;
-  padding: 0px 40px 20px 40px;
+  padding: 0px clamp(5px, 5%, 40px);
+  padding-bottom: 20px;
+  width: min 600px, 100%, auto;
   background-color: #232C33;
-  min-width: 400px;
 }
 body .content-container .content hr {
   color: #3d605f;
@@ -66,6 +66,16 @@ body h2 {
 body strong {
   color: #af7fa8;
 }
+body .details .navigate {
+  color: #3d605f;
+  font-weight: 600;
+}
+body .details .navigate:first-of-type {
+  margin-right: 5px;
+}
+body .details .navigate:last-of-type {
+  margin-left: 5px;
+}
 body ol {
   margin: 0px;
   display: inline-block;
@@ -79,7 +89,7 @@ body ol li a {
 body ol li a img {
   display: block;
   max-height: 300px;
-  max-width: 300px;
+  max-width: min(300px, 100%);
   width: auto;
   height: auto;
 }
