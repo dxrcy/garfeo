@@ -10,10 +10,10 @@ const URL_ROOT: &str = "/garfeo/";
 fn main() {
     let posts = parse_posts();
 
-    let first_last = [
-        posts.last().expect("no first post"),
-        posts.first().expect("no last post"),
-    ];
+    let first_last = &FirstLast {
+        first: posts.last().expect("no first post"),
+        last: posts.first().expect("no last post"),
+    };
 
     let routes = routes![
         (/)
@@ -28,14 +28,19 @@ fn main() {
             for entry in posts.iter()
             => at_post(entry, first_last),
         (/"lasta")
-            => at_post(first_last[1], first_last),
+            => at_post(first_last.last, first_last),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
     println!("All done!");
 }
 
-fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
+struct FirstLast<'a> {
+    first: &'a PostEntry,
+    last: &'a PostEntry,
+}
+
+fn at_index(entries: &[PostEntry], first_last: &FirstLast) -> Document {
     view! { @use_basic [
         "",
         view!{},
@@ -45,7 +50,7 @@ fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
         ol [
             class="post-list",
             reversed=true,
-            start=first_last[0].post.index,
+            start=first_last.first.post.index,
         ] {
             [:for PostEntry {post, ..} in entries {
                 @list_item [post]
@@ -55,8 +60,8 @@ fn at_index(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
     .into()
 }
 
-fn at_404(first_last: [&PostEntry; 2]) -> Document {
-    let last_post = &first_last[1].post;
+fn at_404(first_last: &FirstLast) -> Document {
+    let last_post = &first_last.last.post;
     view! { @use_basic [
         "404",
         view! { "Paĝo ne trovita!" },
@@ -78,7 +83,7 @@ fn at_404(first_last: [&PostEntry; 2]) -> Document {
     .into()
 }
 
-fn at_favourites(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document {
+fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
     view! { @use_basic [
         "",
         view! { "Plej bonaj bildstrioj" },
@@ -96,7 +101,7 @@ fn at_favourites(entries: &[PostEntry], first_last: [&PostEntry; 2]) -> Document
     .into()
 }
 
-fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
+fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
     let post = &entry.post;
 
     view! { @use_basic [
@@ -180,7 +185,7 @@ fn at_post(entry: &PostEntry, first_last: [&PostEntry; 2]) -> Document {
     .into()
 }
 
-fn at_about(first_last: [&PostEntry; 2]) -> Document {
+fn at_about(first_last: &FirstLast) -> Document {
     view! { @use_basic [
         "Informejo",
         view! { "Informejo" },
@@ -252,7 +257,7 @@ fn use_basic(
     title: &str,
     header: View,
     image: Option<&str>,
-    first_last: [&PostEntry; 2],
+    first_last: &FirstLast,
     children: View,
 ) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
@@ -301,8 +306,8 @@ fn use_basic(
             }
 
             [:use {
-                let first = &first_last[0].post.index;
-                let last = &first_last[1].post.index;
+                let first = &first_last.first.post.index;
+                let last = &first_last.last.post.index;
             } {
                 script { [format!("set_random_url('{}', '{}', '{}')", url!(), first, last)] }
             }]
