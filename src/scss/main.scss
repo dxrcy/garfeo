@@ -64,10 +64,11 @@ body {
         justify-content: center;
         margin-top: 10px;
         .content {
-            background-color: red;
-            padding: 0px 40px 20px 40px;
+            padding: 0px clamp(5px, 5%, 40px);
+            padding-bottom: 20px;
+            // https://github.com/connorskees/grass/issues/87
+            width: min 600px, 100%, auto;
             background-color: $c-article;
-            min-width: 400px;
 
             hr {
                 color: $c-subtle;
@@ -101,7 +102,7 @@ body {
                 img {
                     display: block;
                     max-height: 300px;
-                    max-width: 300px;
+                    max-width: min(300px, 100%);
                     width: auto;
                     height: auto;
                 }
