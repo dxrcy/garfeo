@@ -202,41 +202,29 @@ fn at_about(first_last: &FirstLast) -> Document {
 
         h2 { "Ligiloj" }
         ul [class="links"] {
-            li {
-                a [href="https://github.com/darccyy/garfeo"] {
-                    strong { "Fonta Kodo kaj ĉiu bildstrio" }
-                    ~ "- por ĉi tiu retejo (en la angla)"
-                }
+            li { a [href="https://github.com/darccyy/garfeo"]
+                { strong { "Fonta Kodo kaj ĉiu bildstrio" }
+                    ~ "- por ĉi tiu retejo (en la angla)" }
             }
-            li {
-                a [href="https://github.com/darccyy/garfeo/issues/new"] {
-                    strong { "Mi havas concernon!" }
-                    ~ "- Informu min per GitHub"
-                }
+            li { a [href="https://github.com/darccyy/garfeo/issues/new"]
+                { strong { "Mi havas concernon!" }
+                    ~ "- Informu min per GitHub" }
             }
-            li {
-                a [href="https://github.com/darccyy/everygarf"] {
-                    strong { "EveryGarf" }
-                    ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune"
-                }
+            li { a [href="https://github.com/darccyy/everygarf"]
+                { strong { "EveryGarf" }
+                    ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune" }
             }
-            li {
-                a [href="https://mastodon.world/@garfieldeo"] {
-                    strong { "Mastodon @garfieldeo@mastodon.world" }
-                    ~ "- Esperantaj Garfildaj bildstrioj"
-                }
+            li { a [href="https://mastodon.world/@garfieldeo"]
+                { strong { "Mastodon @garfieldeo@mastodon.world" }
+                    ~ "- Esperantaj Garfildaj bildstrioj" }
             }
-            li {
-                a [href="https://instagram.com/garfield.eo"] {
-                    strong { "Instagram @garfield.eo" }
-                    ~ "- Esperantaj Garfildaj bildstrioj"
-                }
+            li { a [href="https://instagram.com/garfield.eo"]
+                { strong { "Instagram @garfield.eo" }
+                    ~ "- Esperantaj Garfildaj bildstrioj" }
             }
-            li {
-                a [href="https://instagram.com/mondodakomiksoj"] {
-                    strong { "Mondo da Komiksoj" }
-                    ~ "- Grupo de tradukistoj"
-                }
+            li { a [href="https://instagram.com/mondodakomiksoj"]
+                { strong { "Mondo da Komiksoj" }
+                    ~ "- Grupo de tradukistoj" }
             }
         }
 
