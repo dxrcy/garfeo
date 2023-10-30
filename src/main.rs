@@ -110,14 +110,23 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             Some(&format!("static/posts/{}/esperanto.png", post.index)),
             first_last,
         ] {
-        p {
-            "[" span [id="index"] { [&post.index] } "]" ~
+        p [class="details"] {
+            [:if let Some(prev) = &entry.prev {
+                span [class="navigate prev"] { a [href=url!(&prev.index)] { &laquo } }
+            }]
+            ~
+            "[" span [id="index"] { [&post.index] } "]"
+            ~
             a [
                 href=format!("https://gocomics.com/garfield/{}", post.date.replace("-", "/")),
-                title="Spekti je gocomics.com",
+                title="Spekti je GoComics.com",
             ] {
                 b [id="date"] { [&post.date] }
             }
+            ~
+            [:if let Some(next) = &entry.next {
+                span [class="navigate next"] { a [href=url!(&next.index)] { &raquo } }
+            }]
         }
 
         div {

@@ -89,7 +89,22 @@ body {
     strong {
         color: $c-accent2;
     }
- 
+
+    .details {
+        .navigate {
+            color: $c-subtle;
+            font-weight: 600;
+
+            $margin: 5px;
+            &:first-of-type {
+                margin-right: $margin;
+            }
+            &:last-of-type {
+                margin-left: $margin;
+            }
+        }
+    }
+
     ol {
         margin: 0px;
         display: inline-block;
