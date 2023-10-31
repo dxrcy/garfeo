@@ -245,13 +245,12 @@ fn at_about(first_last: &FirstLast) -> Document {
 
         hr/
         br/
-        div {
-            img [
-                src=url!("static/icon.png"),
-                alt="La vizaĝo de Garfildo",
-                height=400,
-            ]/
-        }
+        img [
+            class="icon-image",
+            src=url!("static/icon.png"),
+            alt="La vizaĝo de Garfildo",
+            height=400,
+        ]/
     }}
     .into()
 }

@@ -226,4 +226,10 @@ body {
             }
         }
     }
+
+    .icon-image {
+        max-width: min(100%, 600px);
+        width: auto;
+        height: auto;
+    }
 }
