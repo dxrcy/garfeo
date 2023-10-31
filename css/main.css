@@ -44,17 +44,23 @@ body .top-header .actions a:hover i, body .top-header .actions a:focus-within i 
   text-decoration-color: #FF8C8C;
 }
 body .top-header .actions a .icon {
+  display: inline-block;
+  height: 1.1em;
   color: #af7fa8;
 }
+body .top-header .actions a .icon.smaller {
+  font-size: 80%;
+  padding-bottom: 0.25em;
+}
 body .top-header .actions a:not(:first-of-type) {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 body .top-header .actions a:not(:first-of-type)::before {
   content: "";
   position: absolute;
   height: 70%;
   top: 15%;
-  left: -10px;
+  left: -15px;
   border-left: 2px solid #3d605f;
 }
 body > hr {
@@ -88,14 +94,16 @@ body strong {
   color: #af7fa8;
 }
 body .details .navigate {
-  color: #3d605f;
+  display: inline-block;
+  width: 0.8em;
+  text-align: center;
   font-weight: 600;
+  color: #3d605f;
+  padding: 0px;
 }
-body .details .navigate:first-of-type {
-  margin-right: 5px;
-}
-body .details .navigate:last-of-type {
-  margin-left: 5px;
+body .details .text {
+  display: inline-block;
+  width: 9em;
 }
 body ol {
   margin: 0px;
