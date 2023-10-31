@@ -191,7 +191,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
         div [class="caption"] {
             HEAD { script { [include_str!("js/copy.js")] } }
             pre [id="caption", onclick="copy(this)"] {
-                [&post.title] "💚" "&#10;&#10;"
+                [&post.title] ~ "💚" "&#10;&#10;"
                  "#esperanto #garfield #mondodakomiksoj"
                 ~ "[" [&post.index] "]"
             }
