@@ -181,3 +181,8 @@ body .links li {
 body .links li:first-of-type {
   margin-top: 0;
 }
+body .icon-image {
+  max-width: min(100%, 600px);
+  width: auto;
+  height: auto;
+}
