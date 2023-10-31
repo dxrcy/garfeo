@@ -117,16 +117,16 @@ body {
 
     .details {
         .navigate {
-            color: $c-subtle;
+            display: inline-block;
+            width: 0.8em;
+            text-align: center;
             font-weight: 600;
-
-            $margin: 5px;
-            &:first-of-type {
-                margin-right: $margin;
-            }
-            &:last-of-type {
-                margin-left: $margin;
-            }
+            color: $c-subtle;
+            padding: 0px;
+        }
+        .text {
+            display: inline-block;
+            width: 9em;
         }
     }
 
