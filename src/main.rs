@@ -295,13 +295,13 @@ fn use_basic(
                 HEAD { script { [include_str!("js/random.js")] } }
                 a [id="random", title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
-                    span [class="icon"] { "🗘" }
+                    span [class="icon"] { "⚄" }
                 }
 
                 span [class="fallback-divider"] { ~ } // fallback for css
                 a [href=url!("informejo")] {
                     i { "Informejo" }
-                    span [class="icon"] { "🛈" }
+                    span [class="icon smaller"] { "🛈 " }
                 }
 
                 span [class="fallback-divider"] { ~ }

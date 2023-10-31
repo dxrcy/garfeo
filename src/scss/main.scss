@@ -59,7 +59,13 @@ body {
                 }
 
                 .icon {
+                    display: inline-block; 
+                    height: 1.1em;
                     color: $c-accent2;
+                    &.smaller {
+                        font-size: 80%;
+                        padding-bottom: 0.25em;
+                    }
                 }
 
                 &:not(:first-of-type) {
