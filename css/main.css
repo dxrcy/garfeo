@@ -75,6 +75,7 @@ body .content-container .content {
   padding: 0px clamp(5px, 5%, 40px);
   padding-bottom: 20px;
   width: min 600px, 100%, auto;
+  min-width: 30%;
   background-color: #232C33;
 }
 body .content-container .content hr {
