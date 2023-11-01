@@ -374,7 +374,7 @@ fn post_title(post: &Post, italic: bool) -> View {
 
             // Star if favorite
             [:if post.props.good {
-                span [id="good", title="Bona bildstrio"] { "⭐" }
+                ~ span [id="good", title="Bona bildstrio"] { "⭐" }
             }]
         }
     }
