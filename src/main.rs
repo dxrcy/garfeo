@@ -1,4 +1,4 @@
-use std::fs;
+use std::{fs, process};
 
 use ibex::prelude::*;
 use ibex::{routes, ssg};
@@ -17,7 +17,7 @@ fn main() {
         Err(err) => {
             eprintln!("\x1b[31;1mFailed to parse posts\x1b[0m");
             eprintln!("\x1b[31m{}\x1b[0m", err);
-            std::process::exit(1)
+            process::exit(1)
         }
     };
 
@@ -251,6 +251,10 @@ fn at_about(first_last: &FirstLast) -> Document {
             li { a [href="https://instagram.com/mondodakomiksoj"]
                 { strong { "Mondo da Komiksoj" }
                     ~ "- Grupo de tradukistoj" }
+            }
+            li { a [href=url!("rss.xml")]
+                { strong { "RSS-fluo" }
+                    ~ "- Aboni la RSS-fluon por novajn bildstriojn" }
             }
         }
 
