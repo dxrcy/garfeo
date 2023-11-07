@@ -1,8 +1,12 @@
+use std::fs;
+
 use ibex::prelude::*;
 use ibex::{routes, ssg};
 
 mod parse;
 use parse::{parse_posts, Post, PostEntry};
+mod rss;
+use rss::generate_rss;
 
 /// Name of github repo
 const URL_ROOT: &str = "/garfeo/";
@@ -38,11 +42,15 @@ fn main() {
             => at_post(first_last.last, first_last),
     ];
 
+    let rss = generate_rss(&posts, first_last);
+
     ssg::quick_build(routes).expect("Failed to build");
+    fs::write("build/rss.xml", rss).expect("Failed to write RSS file");
+
     println!("\x1b[34;1mBuilt successfully!\x1b[0m");
 }
 
-struct FirstLast<'a> {
+pub struct FirstLast<'a> {
     first: &'a PostEntry,
     last: &'a PostEntry,
 }

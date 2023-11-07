@@ -1,0 +1,9 @@
+<item>
+    <title> {title} </title>
+    <link> {url}/{index} </link>
+    <guid> {index} </guid>
+    <description>
+        {title} [{index}] {date} 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+</item>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+    <channel>
+        <title> {title} </title>
+        <link> {url} </link>
+        <description> {description} </description>
+        <image>
+            <url> {url}/static/{last_index}/esperanto.png </url>
+            <title> Lasta bildstrio [{last_index}] </title>
+            <link> {url} </link>
+        </image>
+
+{items}
+
+    </channel>
+</rss>
