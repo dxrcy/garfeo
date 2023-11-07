@@ -8,7 +8,14 @@ use parse::{parse_posts, Post, PostEntry};
 const URL_ROOT: &str = "/garfeo/";
 
 fn main() {
-    let posts = parse_posts();
+    let posts = match parse_posts() {
+        Ok(posts) => posts,
+        Err(err) => {
+            eprintln!("\x1b[31;1mFailed to parse posts\x1b[0m");
+            eprintln!("\x1b[31m{}\x1b[0m", err);
+            std::process::exit(1)
+        }
+    };
 
     let first_last = &FirstLast {
         first: posts.last().expect("no first post"),
@@ -32,7 +39,7 @@ fn main() {
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
-    println!("All done!");
+    println!("\x1b[32m -- All done! -- \x1b[0m");
 }
 
 struct FirstLast<'a> {

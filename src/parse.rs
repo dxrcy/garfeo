@@ -32,7 +32,7 @@ pub struct Props {
     pub earsback: bool,
 }
 
-pub fn parse_posts() -> Vec<PostEntry> {
+pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
     let mut posts = Vec::new();
 
     let mut folders: Vec<_> = fs::read_dir(DIR)
@@ -60,40 +60,48 @@ pub fn parse_posts() -> Vec<PostEntry> {
         let index = folder.file_name();
         let index = index.to_string_lossy().to_string();
 
-        let index_number: usize = index.parse().expect("Index is not a number [{index}]");
-        assert_eq!(index.len(), 4, "Index is not 4 digits [{index}]");
-        assert_eq!(
-            index_number,
-            posts.len(),
-            "Unexpected index number [{index}]"
-        );
+        let Ok(index_number) = index.parse::<usize>() else {
+            return Err(format!("Index is not a number [{index}]"));
+        };
+        if index.len() != 4 {
+            return Err(format!("Index is not 4 digits [{index}]"));
+        }
+        if index_number != posts.len() {
+            return Err(format!("Unexpected index number [{index}]"));
+        }
 
         let title = format!("{path}/title");
-        assert!(
-            Path::new(&title).exists(),
-            "Title file does not exist [{index}]"
-        );
+
+        if !Path::new(&title).exists() {
+            return Err(format!("Title file does not exist [{index}]"));
+        }
         let title = fs::read_to_string(&title)
             .expect("[IO fail] reading title file")
             .trim()
             .to_string();
 
         if !title.starts_with("Garfildo ") {
-            panic!("Title of {index} does not start with Garfildo [{index}]");
+            return Err(format!(
+                "Title of {index} does not start with 'Garfildo' [{index}]"
+            ));
+        }
+        if existing_titles.contains(&title) {
+            return Err(format!("Multiple posts have '{title}' as title [{index}]"));
         }
 
-        assert!(
-            !existing_titles.contains(&title),
-            "Multiple posts have '{title}' as title [{index}]"
-        );
         existing_titles.push(title.clone());
 
         let errata = format!("{path}/errata");
         let errata = if Path::new(&errata).exists() {
             let file = fs::read_to_string(&errata).expect("[IO fail] reading errata file");
-            println!("warning: post {index} has an error");
+            println!("\x1b[33mwarning: post {index} has an error\x1b[0m");
             errata_count += 1;
-            parse_errata(file).expect(&format!("Failed to parse errrata file [{index}]"))
+            match parse_errata(file) {
+                Ok(errata) => errata,
+                Err(err) => {
+                    return Err(format!("Failed to parse errrata file [{index}] - {}", err))
+                }
+            }
         } else {
             Errata::default()
         };
@@ -101,39 +109,38 @@ pub fn parse_posts() -> Vec<PostEntry> {
         let props = format!("{path}/props");
         let props = if Path::new(&props).exists() {
             let file = fs::read_to_string(&props).expect("[IO fail] reading props file");
-            parse_props(file).expect(&format!("Failed to parse props file [{index}]"))
+            match parse_props(file) {
+                Ok(props) => props,
+                Err(err) => return Err(format!("Failed to parse props file [{index}] - {}", err)),
+            }
         } else {
             Props::default()
         };
 
         let date = format!("{path}/date");
-        assert!(
-            Path::new(&date).exists(),
-            "Title file does not exist [{index}]"
-        );
+        if !Path::new(&date).exists() {
+            return Err(format!("Date file does not exist [{index}]"));
+        }
         let date = fs::read_to_string(&date)
             .expect("[IO fail] reading date file")
             .trim()
             .to_string();
         //TODO: check if date is valid
-        assert!(
-            !existing_dates.contains(&date),
-            "Multiple posts have '{date}' as date [{index}]"
-        );
+        if existing_dates.contains(&date) {
+            return Err(format!("Multiple posts have '{date}' as date [{index}]"));
+        }
         existing_dates.push(date.clone());
 
-        assert!(
-            Path::new(&format!("{path}/esperanto.png")).exists(),
-            "Missing Esperanto image [{index}]"
-        );
-        assert!(
-            Path::new(&format!("{path}/english.png")).exists(),
-            "Missing English image [{index}]"
-        );
+        if !Path::new(&format!("{path}/esperanto.png")).exists() {
+            return Err(format!("Missing Esperanto image [{index}]"));
+        }
+        if !Path::new(&format!("{path}/english.png")).exists() {
+            return Err(format!("Missing English image [{index}]"));
+        }
 
-        let index_int = index
-            .parse::<u32>()
-            .expect("Index is not an integer [{index}]");
+        let Ok(index_int) = index.parse::<u32>() else {
+            return Err(format!("Index is not an integer [{index}]"));
+        };
         let sunday = (index_int + 1) % 7 == 0;
 
         posts.push(Post {
@@ -147,18 +154,18 @@ pub fn parse_posts() -> Vec<PostEntry> {
     }
 
     if errata_count > 0 {
-        println!("warning: {} posts have errors", errata_count);
+        println!("\x1b[33mwarning: {} posts have errors\x1b[0m", errata_count);
     }
 
     posts.reverse();
 
     // Include previous and next posts with each post
-    get_neighbors(posts)
+    Ok(get_neighbors(posts))
 }
 
-fn parse_errata(file: String) -> Result<Errata, &'static str> {
+fn parse_errata(file: String) -> Result<Errata, String> {
     if file.trim().is_empty() {
-        return Err("Empty errata file");
+        return Err("Empty errata file".to_string());
     }
 
     let mut entries = Vec::new();
@@ -171,10 +178,10 @@ fn parse_errata(file: String) -> Result<Errata, &'static str> {
         let mut split = line.split(">>");
 
         let Some(bad) = split.next() else {
-            return Err("Missing incorrect phrase");
+            return Err("Missing incorrect phrase".to_string());
         };
         let Some(good) = split.next() else {
-            return Err("Missing correct phrase");
+            return Err(format!("Missing correct phrase for '{}'", bad));
         };
 
         entries.push((bad.trim().to_string(), good.trim().to_string()));
