@@ -51,6 +51,8 @@ pub fn parse_posts() -> Vec<PostEntry> {
     // Keep track of existing dates to check for duplicates
     let mut existing_dates = Vec::new();
 
+    let mut errata_count = 0;
+
     for folder in folders {
         let path = folder.path();
         let path = path.to_string_lossy().to_string();
@@ -89,6 +91,8 @@ pub fn parse_posts() -> Vec<PostEntry> {
         let errata = format!("{path}/errata");
         let errata = if Path::new(&errata).exists() {
             let file = fs::read_to_string(&errata).expect("[IO fail] reading errata file");
+            println!("warning: post {index} has an error");
+            errata_count += 1;
             parse_errata(file).expect(&format!("Failed to parse errrata file [{index}]"))
         } else {
             Errata::default()
@@ -140,6 +144,10 @@ pub fn parse_posts() -> Vec<PostEntry> {
             date,
             sunday,
         });
+    }
+
+    if errata_count > 0 {
+        println!("warning: {} posts have errors", errata_count);
     }
 
     posts.reverse();
