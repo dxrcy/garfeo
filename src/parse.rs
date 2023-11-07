@@ -18,6 +18,7 @@ pub struct Post {
     pub props: Props,
     pub date: String,
     pub sunday: bool,
+    pub image_bytes: u64,
 }
 
 #[derive(Default, Clone, Serialize)]
@@ -131,12 +132,16 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
         }
         existing_dates.push(date.clone());
 
-        if !Path::new(&format!("{path}/esperanto.png")).exists() {
+        let esperanto = format!("{path}/esperanto.png");
+        if !Path::new(&esperanto).exists() {
             return Err(format!("Missing Esperanto image [{index}]"));
         }
+        let image_bytes = fs::metadata(esperanto).expect("[IO fail] reading esperanto image metadata").len();
+
         if !Path::new(&format!("{path}/english.png")).exists() {
             return Err(format!("Missing English image [{index}]"));
         }
+
 
         let Ok(index_int) = index.parse::<u32>() else {
             return Err(format!("Index is not an integer [{index}]"));
@@ -150,6 +155,7 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             props,
             date,
             sunday,
+            image_bytes,
         });
     }
 

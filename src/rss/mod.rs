@@ -21,6 +21,7 @@ pub fn generate_rss(entries: &[PostEntry], first_last: &FirstLast) -> String {
                     title = post.title,
                     index = post.index,
                     date = post.date,
+                    image_bytes = post.image_bytes,
                 )
             })
             .collect::<Vec<_>>()
