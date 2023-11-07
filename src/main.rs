@@ -39,7 +39,7 @@ fn main() {
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
-    println!("\x1b[32m -- All done! -- \x1b[0m");
+    println!("\x1b[34;1mBuilt successfully!\x1b[0m");
 }
 
 struct FirstLast<'a> {
