@@ -23,6 +23,6 @@ Made with [Ibex](https://github.com/darccyy/ibex)
                             garfish >> garfield
         /props      If any special properties (optional)
                         possible values (separated by linebreak):
-                            good, nogarfield, notext, revised, earsback
+                            good, nogarfield, notext, earsback
 ```
 
