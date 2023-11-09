@@ -94,6 +94,10 @@ body h2 {
 body strong {
   color: #af7fa8;
 }
+body p.small {
+  font-size: small;
+  margin: 0px;
+}
 body .details .navigate {
   display: inline-block;
   width: 0.8em;
