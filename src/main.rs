@@ -169,10 +169,8 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
 
         [:if post.version > 0 {
             p [class="small gray"] {
-                i {
-                    b { "Versio:" }
-                    ~ [post.version]
-                }
+                b { "Revizio:" }
+                ~ [post.version]
             }
         }]
 
