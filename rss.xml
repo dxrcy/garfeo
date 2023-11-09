@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0535/esperanto.png </url>
-            <title> Lasta bildstrio [0535] </title>
+            <url> https://darccyy.github.io/garfeo/static/0536/esperanto.png </url>
+            <title> Lasta bildstrio [0536] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo provas trompi birdon </title>
+    <link> https://darccyy.github.io/garfeo/0536 </link>
+    <guid> 0536 </guid>
+    <description>
+        Garfildo provas trompi birdon [0536] 2013-10-15 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0536/esperanto.png"
+        length="1076854"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo volas pufmaizon </title>
