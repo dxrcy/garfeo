@@ -255,7 +255,6 @@ fn parse_props(file: String) -> Result<Props, String> {
             "nogarfield" => props.nogarfield = true,
             "notext" => props.notext = true,
             "earsback" => props.earsback = true,
-            "revised" => println!("\x1b[33mwarning: deprecated prop `revised`\x1b[0m",),
             "" => continue,
             prop => return Err(format!("Unknown property '{prop}'")),
         }
