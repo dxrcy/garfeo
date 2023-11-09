@@ -1,7 +1,8 @@
 use serde::Serialize;
-use std::{fs, path::Path};
+use std::{collections::HashMap, fs, path::Path};
 
 const DIR: &str = "static/posts";
+const DIR_OLD: &str = "static/old";
 
 #[derive(Serialize)]
 pub struct PostEntry {
@@ -19,6 +20,7 @@ pub struct Post {
     pub date: String,
     pub sunday: bool,
     pub image_bytes: u64,
+    pub version: u32,
 }
 
 #[derive(Default, Clone, Serialize)]
@@ -26,7 +28,6 @@ pub struct Errata(pub Vec<(String, String)>);
 
 #[derive(Default, Clone, Copy, Serialize)]
 pub struct Props {
-    pub revised: bool,
     pub nogarfield: bool,
     pub notext: bool,
     pub good: bool,
@@ -53,6 +54,44 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
     let mut existing_dates = Vec::new();
 
     let mut errata_count = 0;
+
+    let mut old_folders: Vec<_> = fs::read_dir(DIR_OLD)
+        .expect("[IO fail] reading old posts directory")
+        .flatten()
+        .collect();
+    // Sort based on folder name
+    old_folders.sort_by_key(|folder| {
+        let path = folder.path();
+        path.to_string_lossy().to_string()
+    });
+
+    let mut old_versions = HashMap::<String, u32>::new();
+    for folder in old_folders {
+        let name = folder.file_name();
+        let name = name.to_string_lossy().to_string();
+        let mut split = name.split(':');
+
+        let index = split.next().expect("Old post should have index");
+        let version = split
+            .next()
+            .expect("Old post should have version")
+            .parse::<u32>()
+            .expect("Old post version should be number");
+
+        let expected = match old_versions.get(index) {
+            Some(prev) => prev + 1,
+            None => 0,
+        };
+
+        if version != expected {
+            return Err(format!(
+                "Revised post version out of order. Should be `:{}`, not `:{}`",
+                expected, version
+            ));
+        }
+
+        old_versions.insert(index.to_string(), version);
+    }
 
     for folder in folders {
         let path = folder.path();
@@ -136,17 +175,23 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
         if !Path::new(&esperanto).exists() {
             return Err(format!("Missing Esperanto image [{index}]"));
         }
-        let image_bytes = fs::metadata(esperanto).expect("[IO fail] reading esperanto image metadata").len();
+        let image_bytes = fs::metadata(esperanto)
+            .expect("[IO fail] reading esperanto image metadata")
+            .len();
 
         if !Path::new(&format!("{path}/english.png")).exists() {
             return Err(format!("Missing English image [{index}]"));
         }
 
-
         let Ok(index_int) = index.parse::<u32>() else {
             return Err(format!("Index is not an integer [{index}]"));
         };
         let sunday = (index_int + 1) % 7 == 0;
+
+        let version = match old_versions.get(&index) {
+            Some(prev) => prev + 1,
+            None => 0,
+        };
 
         posts.push(Post {
             index,
@@ -156,6 +201,7 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             date,
             sunday,
             image_bytes,
+            version,
         });
     }
 
@@ -206,11 +252,10 @@ fn parse_props(file: String) -> Result<Props, String> {
     for line in file.lines() {
         match line.trim() {
             "good" => props.good = true,
-            "revised" => props.revised = true,
             "nogarfield" => props.nogarfield = true,
             "notext" => props.notext = true,
             "earsback" => props.earsback = true,
-
+            "revised" => println!("\x1b[33mwarning: deprecated prop `revised`\x1b[0m",),
             "" => continue,
             prop => return Err(format!("Unknown property '{prop}'")),
         }
