@@ -121,7 +121,7 @@ fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
 fn at_list(entries: &[PostEntry], first_last: &FirstLast) -> Document {
     view! { @use_basic [
         "Alia listo",
-        view!{ "Alia listo" },
+        view!{},
         None,
         first_last,
     ] {
