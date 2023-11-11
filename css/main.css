@@ -191,3 +191,13 @@ body .icon-image {
   max-width: 400px;
   height: auto;
 }
+body table.graph {
+  display: inline-block;
+  font-size: x-small;
+}
+body table.graph tr td {
+  text-align: left;
+}
+body table.graph tr td span:not(:first-of-type) {
+  margin-left: 0.5em;
+}
