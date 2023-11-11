@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0536/esperanto.png </url>
-            <title> Lasta bildstrio [0536] </title>
+            <url> https://darccyy.github.io/garfeo/static/0537/esperanto.png </url>
+            <title> Lasta bildstrio [0537] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo amas limonadon </title>
+    <link> https://darccyy.github.io/garfeo/0537 </link>
+    <guid> 0537 </guid>
+    <description>
+        Garfildo amas limonadon [0537] 2020-07-07 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0537/esperanto.png"
+        length="1204331"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo provas trompi birdon </title>
@@ -7715,7 +7730,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0023/esperanto.png"
-        length="1192760"
+        length="1590279"
         type="image/png"
     />
 </item>
@@ -7820,7 +7835,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0016/esperanto.png"
-        length="1249369"
+        length="1662148"
         type="image/png"
     />
 </item>
@@ -8060,7 +8075,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0000/esperanto.png"
-        length="903918"
+        length="1185245"
         type="image/png"
     />
 </item>
