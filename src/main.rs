@@ -35,11 +35,13 @@ fn main() {
             => at_favourites(&posts, first_last),
         (/"informejo")
             => at_about(first_last),
+        (/"listo")
+            => at_list(&posts, first_last),
+        (/"lasta")
+            => at_post(first_last.last, first_last),
         (/[entry.post.index])
             for entry in posts.iter()
             => at_post(entry, first_last),
-        (/"lasta")
-            => at_post(first_last.last, first_last),
     ];
 
     let rss = generate_rss(&posts, first_last);
@@ -100,7 +102,7 @@ fn at_404(first_last: &FirstLast) -> Document {
 
 fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
     view! { @use_basic [
-        "",
+        "Plej bonaj",
         view! { "Plej bonaj bildstrioj" },
         None,
         first_last,
@@ -112,6 +114,32 @@ fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
                 }]
             }]
         }
+    }}
+    .into()
+}
+
+fn at_list(entries: &[PostEntry], first_last: &FirstLast) -> Document {
+    view! { @use_basic [
+        "Alia listo",
+        view!{ "Alia listo" },
+        None,
+        first_last,
+    ] {
+        table [class="graph"] {
+            [:for PostEntry { post, .. } in entries {
+                tr {
+                    td { [:if post.props.good { [STAR] }] }
+                    td { a [href=url!(post.index), title=post.title] {
+                        [:if post.sunday
+                            { b  { [&post.index] } }
+                            else { [&post.index] }
+                        ]
+                    }}
+                    td { [:for _ in 0..post.version { span { "🟥" } }] }
+                }
+            }]
+        }
+
     }}
     .into()
 }
@@ -366,6 +394,8 @@ fn list_item(post: &Post) -> View {
     }
 }
 
+const STAR: &str = "⭐";
+
 fn post_title(post: &Post, italic: bool) -> View {
     let inner = view! {
         // Bold if sunday
@@ -396,7 +426,7 @@ fn post_title(post: &Post, italic: bool) -> View {
 
             // Star if favorite
             [:if post.props.good {
-                ~ span [id="good", title="Bona bildstrio"] { "⭐" }
+                ~ span [id="good", title="Bona bildstrio"] { [STAR] }
             }]
         }
     }

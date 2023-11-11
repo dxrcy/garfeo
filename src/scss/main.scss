@@ -238,4 +238,23 @@ body {
         max-width: 400px;
         height: auto;
     }
+
+    table.graph {
+        display: inline-block;
+        font-size: x-small;
+        // background-color: black;
+        tr {
+            // background-color: blue;
+            td {
+                // background-color: green;
+                text-align: left;
+
+                span {
+                    &:not(:first-of-type) {
+                        margin-left: 0.5em;
+                    }
+                }
+            }
+        }
+    }
 }
