@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0537/esperanto.png </url>
-            <title> Lasta bildstrio [0537] </title>
+            <url> https://darccyy.github.io/garfeo/static/0538/esperanto.png </url>
+            <title> Lasta bildstrio [0538] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo ne volas aŭskulti pri ŝulaĉoj </title>
+    <link> https://darccyy.github.io/garfeo/0538 </link>
+    <guid> 0538 </guid>
+    <description>
+        Garfildo ne volas aŭskulti pri ŝulaĉoj [0538] 2012-10-14 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0538/esperanto.png"
+        length="1875049"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo amas limonadon </title>
@@ -5600,7 +5615,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0165/esperanto.png"
-        length="424229"
+        length="877397"
         type="image/png"
     />
 </item>
