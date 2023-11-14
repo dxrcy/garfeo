@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0539/esperanto.png </url>
-            <title> Lasta bildstrio [0539] </title>
+            <url> https://darccyy.github.io/garfeo/static/0540/esperanto.png </url>
+            <title> Lasta bildstrio [0540] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo sugestas al Odio </title>
+    <link> https://darccyy.github.io/garfeo/0540 </link>
+    <guid> 0540 </guid>
+    <description>
+        Garfildo sugestas al Odio [0540] 2017-12-19 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0540/esperanto.png"
+        length="1113584"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo ne faras sukokon </title>
@@ -20,7 +35,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0539/esperanto.png"
-        length="1422923"
+        length="1420273"
         type="image/png"
     />
 </item>
