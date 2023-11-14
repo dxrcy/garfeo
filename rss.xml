@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0540/esperanto.png </url>
-            <title> Lasta bildstrio [0540] </title>
+            <url> https://darccyy.github.io/garfeo/static/0542/esperanto.png </url>
+            <title> Lasta bildstrio [0542] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo ja estis surprizita </title>
+    <link> https://darccyy.github.io/garfeo/0542 </link>
+    <guid> 0542 </guid>
+    <description>
+        Garfildo ja estis surprizita [0542] 2011-09-09 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0542/esperanto.png"
+        length="1253565"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo havas rakontojn pri harbuloj </title>
+    <link> https://darccyy.github.io/garfeo/0541 </link>
+    <guid> 0541 </guid>
+    <description>
+        Garfildo havas rakontojn pri harbuloj [0541] 2009-01-24 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0541/esperanto.png"
+        length="1188693"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo sugestas al Odio </title>
