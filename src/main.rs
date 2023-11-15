@@ -7,7 +7,6 @@ use ibex::{routes, ssg};
 mod parse;
 use parse::{parse_posts, Post, PostEntry};
 mod rss;
-use rss::generate_rss;
 
 /// Name of github repo
 const URL_ROOT: &str = "/garfeo/";
@@ -27,8 +26,6 @@ fn main() {
         last: posts.first().expect("no last post"),
     };
 
-    let rss = generate_rss(&posts, first_last);
-
     let routes = routes![
         (/)
             => at_index(&posts, first_last),
@@ -46,7 +43,7 @@ fn main() {
             for entry in posts.iter()
             => at_post(entry, first_last),
          (/"rss.xml")
-             => ssg::raw(rss),
+             => ssg::raw(rss::generate_rss(&posts, first_last)),
          (/"api"/[i])
              for i in ["latest", "lasta"]
              => ssg::raw(&first_last.last.post.index),
