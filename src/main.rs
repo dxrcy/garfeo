@@ -164,7 +164,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
                 "[" span #"index" { [&post.index] } "]"
                 ~
                 a [
-                    href=format!("https://gocomics.com/garfield/{}", post.date.replace("-", "/")),
+                    href=format!("https://gocomics.com/garfield/{}", post.date.replace('-', "/")),
                     title="Spekti je GoComics.com",
                 ] {
                     b #"date" { [&post.date] }
@@ -319,7 +319,7 @@ fn use_basic(
                 .url(url!())
                 .title(&full_title)
                 .desc("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!")
-                .image(&url!(image.unwrap_or("static/icon.png")))
+                .image(url!(image.unwrap_or("static/icon.png")))
                 .color("#ffb24e")
                 .author("darcy")
                 .large_image(true)

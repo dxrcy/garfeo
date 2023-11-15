@@ -244,7 +244,7 @@ fn parse_errata(file: String) -> Result<Errata, String> {
 
 fn parse_props(file: String) -> Result<Props, String> {
     if file.trim().is_empty() {
-        return Err(format!("Empty properties file"));
+        return Err("Empty properties file".to_string());
     }
 
     let mut props = Props::default();
