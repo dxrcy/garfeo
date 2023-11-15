@@ -64,8 +64,7 @@ fn at_index(entries: &[PostEntry], first_last: &FirstLast) -> Document {
         None,
         first_last,
     ] {
-        ol [
-            class="post-list",
+        ol ."post-list" [
             reversed=true,
             start=first_last.first.post.index,
         ] {
@@ -107,7 +106,7 @@ fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
         None,
         first_last,
     ] {
-        ol [class="post-list"] {
+        ol ."post-list" {
             [:for PostEntry {post, ..} in entries {
                 [:if post.props.good {
                     @list_item [post]
@@ -125,7 +124,7 @@ fn at_list(entries: &[PostEntry], first_last: &FirstLast) -> Document {
         None,
         first_last,
     ] {
-        table [class="graph"] {
+        table ."graph" {
             [:for PostEntry { post, .. } in entries {
                 tr {
                     td { [:if post.props.good { [STAR] }] }
@@ -153,25 +152,25 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             Some(&format!("static/posts/{}/esperanto.png", post.index)),
             first_last,
         ] {
-        p [class="details"] {
-            span [class="navigate prev"] {
+        p ."details" {
+            span ."navigate prev" {
                 [:if let Some(prev) = &entry.prev {
                     a [href=url!(&prev.index)] { &laquo }
                 }]
             }
             ~
-            span [class="text"] {
-                "[" span [id="index"] { [&post.index] } "]"
+            span ."text" {
+                "[" span #"index" { [&post.index] } "]"
                 ~
                 a [
                     href=format!("https://gocomics.com/garfield/{}", post.date.replace("-", "/")),
                     title="Spekti je GoComics.com",
                 ] {
-                    b [id="date"] { [&post.date] }
+                    b #"date" { [&post.date] }
                 }
             }
             ~
-            span [class="navigate next"] {
+            span ."navigate next" {
                 [:if let Some(next) = &entry.next {
                     a [href=url!(&next.index)] { &raquo }
                 }]
@@ -179,16 +178,12 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
         }
 
         div {
-            img [
-                id="image-eo",
-                class="comic",
+            img #"image-eo" ."comic" [
                 alt="Esperanto bildstrio",
                 src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
                 height=400,
             ]/
-            img [
-                id="image-en",
-                class="comic",
+            img #"image-en" ."comic" [
                 alt="Angla bildstrio",
                 src=url!(format!("static/posts/{}/english.png", &post.index)),
                 height=400,
@@ -196,26 +191,26 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
         }
 
         [:if post.version > 0 {
-            p [class="small gray"] {
+            p ."small gray" {
                 b { "Revizio:" }
                 ~ [post.version]
             }
         }]
 
-        [:if !post.errata.0.is_empty() { div [class="errata"] {
+        [:if !post.errata.0.is_empty() { div ."errata" {
             h2 { "Eraroj:" }
             ol {
                 [:for (old, new) in &post.errata.0 { li {
-                    b [class="old"] { [old] }
+                    b ."old" { [old] }
                     ~ &rarr ~
-                    b [class="new"] { [new] }
+                    b ."new" { [new] }
                 } }]
             }
         } }]
 
-        div [class="navigate"] {
+        div ."navigate" {
             [:if let Some(prev) = &entry.prev {
-                div [class="prev"] {
+                div ."prev" {
                     a [href=url!(&prev.index)] {
                         strong { "Antaŭa:" } ~
                         @post_title [&prev, true]
@@ -223,7 +218,7 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
                 }
             }]
             [:if let Some(next) = &entry.next {
-                div [class="next"] {
+                div ."next" {
                     a [href=url!(&next.index)] {
                         strong { "Sekva:" } ~
                         @post_title [&next, true]
@@ -234,9 +229,9 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
 
         hr/
 
-        div [class="caption"] {
+        div ."caption" {
             HEAD { script { [include_str!("js/copy.js")] } }
-            pre [id="caption", onclick="copy(this)"] {
+            pre #"caption" [onclick="copy(this)"] {
                 [&post.title] ~ "💚" "&#10;&#10;"
                  "#esperanto #garfield #mondodakomiksoj"
                 ~ "[" [&post.index] "]"
@@ -262,7 +257,7 @@ fn at_about(first_last: &FirstLast) -> Document {
         }
 
         h2 { "Ligiloj" }
-        ul [class="links"] {
+        ul ."links" {
             li { a [href="https://github.com/darccyy/garfeo"]
                 { strong { "Fonta Kodo kaj ĉiu bildstrio" }
                     ~ "- por ĉi tiu retejo (en la angla)" }
@@ -295,8 +290,7 @@ fn at_about(first_last: &FirstLast) -> Document {
 
         hr/
         br/
-        img [
-            class="icon-image",
+        img ."icon-image" [
             src=url!("static/icon.png"),
             alt="La vizaĝo de Garfildo",
             height=400,
@@ -335,28 +329,28 @@ fn use_basic(
             link [rel="stylesheet",    href=url!("css/main.css")]/
         }
 
-        div [class="top-header"] {
-            a [class="title", href=url!()] {
+        div ."top-header" {
+            a ."title" [href=url!()] {
                 b { "Garfildo Esperanta" }
             }
 
-            div [class="actions"] {
+            div ."actions" {
                 HEAD { script { [include_str!("js/random.js")] } }
-                a [id="random", title="Klaku por iri al iun bildstrio"] {
+                a #"random" [title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
-                    span [class="icon"] { "⚄" }
+                    span ."icon" { "⚄" }
                 }
 
-                span [class="fallback-divider"] { ~ } // fallback for css
+                span ."fallback-divider" { ~ } // fallback for css
                 a [href=url!("informejo")] {
                     i { "Informejo" }
-                    span [class="icon smaller"] { "🛈 " }
+                    span ."icon smaller" { "🛈 " }
                 }
 
-                span [class="fallback-divider"] { ~ }
+                span ."fallback-divider" { ~ }
                 a [href=url!("plej-bonaj")] {
                     i { "Plej Bonaj" }
-                    span [class="icon"] { "★" }
+                    span ."icon" { "★" }
                 }
             }
 
@@ -369,8 +363,8 @@ fn use_basic(
         }
         hr/
 
-        div [class="content-container"] { div [class="content"] {
-            h1 [class="header"] {
+        div ."content-container" { div ."content" {
+            h1 ."header" {
                 [header]
             }
             [children]
@@ -409,14 +403,14 @@ fn post_title(post: &Post, italic: bool) -> View {
     let inner = view! {
         // Grey if no text
         [:if post.props.notext {
-            span [class="gray"] { [inner] }
+            span ."gray" { [inner] }
         } else {
             [inner]
         }]
     };
 
     view! {
-        span [class="title"] {
+        span ."title" {
             // Italic if argument given
             [:if italic {
                 i { [inner] }
@@ -426,7 +420,7 @@ fn post_title(post: &Post, italic: bool) -> View {
 
             // Star if favorite
             [:if post.props.good {
-                ~ span [id="good", title="Bona bildstrio"] { [STAR] }
+                ~ span #"good" [title="Bona bildstrio"] { [STAR] }
             }]
         }
     }
