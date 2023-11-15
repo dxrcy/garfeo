@@ -45,7 +45,11 @@ fn main() {
         (/[entry.post.index])
             for entry in posts.iter()
             => at_post(entry, first_last),
-         (/"rss.xml") => ssg::raw(rss),
+         (/"rss.xml")
+             => ssg::raw(rss),
+         (/"api"/[i])
+             for i in ["latest", "lasta"]
+             => ssg::raw(&first_last.last.post.index),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
