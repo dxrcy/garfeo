@@ -1,4 +1,4 @@
-use std::{fs, process};
+use std::process;
 
 use ibex::extras::wrap_if;
 use ibex::prelude::*;
@@ -27,6 +27,8 @@ fn main() {
         last: posts.first().expect("no last post"),
     };
 
+    let rss = generate_rss(&posts, first_last);
+
     let routes = routes![
         (/)
             => at_index(&posts, first_last),
@@ -43,12 +45,10 @@ fn main() {
         (/[entry.post.index])
             for entry in posts.iter()
             => at_post(entry, first_last),
+         (/"rss.xml") => ssg::raw(rss),
     ];
 
-    let rss = generate_rss(&posts, first_last);
-
     ssg::quick_build(routes).expect("Failed to build");
-    fs::write("build/rss.xml", rss).expect("Failed to write RSS file");
 
     println!("\x1b[34;1mBuilt successfully!\x1b[0m");
 }
