@@ -1,5 +1,6 @@
 use std::{fs, process};
 
+use ibex::extras::wrap_if;
 use ibex::prelude::*;
 use ibex::{routes, ssg};
 
@@ -391,32 +392,15 @@ fn list_item(post: &Post) -> View {
 const STAR: &str = "⭐";
 
 fn post_title(post: &Post, italic: bool) -> View {
-    let inner = view! {
-        // Bold if sunday
-        [:if post.sunday {
-            b { [ &post.title ] }
-        } else {
-            [ &post.title ]
-        }]
-    };
-
-    let inner = view! {
-        // Grey if no text
-        [:if post.props.notext {
-            span ."gray" { [inner] }
-        } else {
-            [inner]
-        }]
-    };
-
     view! {
         span ."title" {
-            // Italic if argument given
-            [:if italic {
-                i { [inner] }
-            } else {
-                [inner]
-            }]
+            [wrap_if(       italic,            |x| view! { i           {[x]} },
+                wrap_if(    post.props.notext, |x| view! {span ."gray" {[x]} },
+                    wrap_if(post.sunday,       |x| view! { b           {[x]} },
+                        view! { [&post.title] }
+                    )
+               )
+            )]
 
             // Star if favorite
             [:if post.props.good {
