@@ -42,11 +42,13 @@ fn main() {
         (/[entry.post.index])
             for entry in posts.iter()
             => at_post(entry, first_last),
-         (/"rss.xml")
-             => ssg::raw(rss::generate_rss(&posts, first_last)),
-         (/"api"/[i])
-             for i in ["latest", "lasta"]
-             => ssg::raw(&first_last.last.post.index),
+        (/"rss.xml")
+            => ssg::raw(rss::generate_rss(&posts, first_last)),
+        (/[entry.post.index]".json")
+            for entry in posts.iter()
+            => ssg::raw(entry.to_json()),
+        (/"lasta.json")
+            => ssg::raw(first_last.last.to_json()),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");

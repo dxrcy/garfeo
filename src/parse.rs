@@ -283,3 +283,70 @@ fn get_neighbors(posts: Vec<Post>) -> Vec<PostEntry> {
 
     neighbors
 }
+
+impl PostEntry {
+    pub fn to_json(&self) -> String {
+        let Self { post, prev, next } = self;
+        let Post {
+            index,
+            title,
+            date,
+            version,
+            errata,
+            sunday,
+            image_bytes,
+            props:
+                Props {
+                    nogarfield,
+                    notext,
+                    good,
+                    earsback,
+                },
+        } = post;
+
+        let prev = match &prev {
+            Some(post) => format!("{:?}", post.index),
+            None => "null".to_string(),
+        };
+        let next = match &next {
+            Some(post) => format!("{:?}", post.index),
+            None => "null".to_string(),
+        };
+
+        let errata = if errata.0.is_empty() {
+            "[]".to_string()
+        } else {
+            format!(
+                r#"[
+        {}
+    ]"#,
+                errata
+                    .0
+                    .iter()
+                    .map(|(old, new)| format!(r#"["{}", "{}"]"#, old, new))
+                    .collect::<Vec<_>>()
+                    .join(",\n        ")
+            )
+        };
+
+        format!(
+            r#"{{
+    "index": "{index}",
+    "prev": {prev},
+    "next": {next},
+    "title": "{title}",
+    "date": "{date}",
+    "version": {version},
+    "sunday": "{sunday}",
+    "image_bytes": {image_bytes},
+    "errata": {errata},
+    "props": {{
+        "nogarfield": {nogarfield},
+        "notext": {notext},
+        "good": {good},
+        "earsback": {earsback}
+    }}
+}}"#,
+        )
+    }
+}
