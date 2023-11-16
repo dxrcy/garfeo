@@ -27,6 +27,7 @@ fn main() {
     };
 
     let routes = routes![
+        // Normal pages
         (/)
             => at_index(&posts, first_last),
         (/404)
@@ -37,18 +38,24 @@ fn main() {
             => at_about(first_last),
         (/"listo")
             => at_list(&posts, first_last),
-        (/"lasta")
-            => at_post(first_last.last, first_last),
+
+        // Posts (HTML)
         (/[entry.post.index])
             for entry in posts.iter()
             => at_post(entry, first_last),
-        (/"rss.xml")
-            => ssg::raw(rss::generate_rss(&posts, first_last)),
+        (/"lasta")
+            => at_post(first_last.last, first_last),
+
+        // Posts (JSON)
         (/[entry.post.index]".json")
             for entry in posts.iter()
             => ssg::raw(entry.to_json()),
         (/"lasta.json")
             => ssg::raw(first_last.last.to_json()),
+
+        // RSS file
+        (/"rss.xml")
+            => ssg::raw(rss::generate_rss(&posts, first_last)),
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
