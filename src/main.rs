@@ -47,10 +47,12 @@ fn main() {
             => at_post(first_last.last, first_last),
 
         // Posts (JSON)
+        (/"index.json") | (/"posts.json")
+            => ssg::raw(json_index(&posts)),
         (/[entry.post.index]".json")
             for entry in posts.iter()
             => ssg::raw(entry.to_json()),
-        (/"lasta.json")
+        (/"latest.json")
             => ssg::raw(first_last.last.to_json()),
 
         // RSS file
@@ -60,6 +62,18 @@ fn main() {
 
     ssg::quick_build(routes).expect("Failed to build");
     println!("\x1b[34;1mBuilt successfully!\x1b[0m");
+}
+
+fn json_index(entries: &[PostEntry]) -> String {
+    format!(
+        "[\n    {}\n]",
+        entries
+            .into_iter()
+            .map(|entry| entry.post.to_json())
+            .collect::<Vec<_>>()
+            .join(",\n")
+            .replace('\n', "\n    "),
+    )
 }
 
 pub struct FirstLast<'a> {
