@@ -1,0 +1,17 @@
+{
+    "index": "0016",
+    "prev": "0015",
+    "next": "0017",
+    "title": "Garfildo ŝatas teron",
+    "date": "1990-11-27",
+    "version": 2,
+    "sunday": "false",
+    "image_bytes": 1662148,
+    "errata": [],
+    "props": {
+        "nogarfield": true,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

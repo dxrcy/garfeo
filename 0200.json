@@ -1,0 +1,17 @@
+{
+    "index": "0200",
+    "prev": "0199",
+    "next": "0201",
+    "title": "Garfildo ŝatas la semajnfino",
+    "date": "2014-07-18",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 700286,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

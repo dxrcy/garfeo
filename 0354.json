@@ -1,0 +1,17 @@
+{
+    "index": "0354",
+    "prev": "0353",
+    "next": "0355",
+    "title": "Garfildo ne ŝatas homojn aŭ hundojn evidente",
+    "date": "2023-04-12",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 986540,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

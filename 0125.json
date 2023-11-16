@@ -1,0 +1,17 @@
+{
+    "index": "0125",
+    "prev": "0124",
+    "next": "0126",
+    "title": "Garfildo devas surhavi puloveron",
+    "date": "2021-12-26",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1318739,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

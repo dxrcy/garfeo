@@ -1,0 +1,17 @@
+{
+    "index": "0014",
+    "prev": "0013",
+    "next": "0015",
+    "title": "Garfildo ne ŝatas difektan lakton",
+    "date": "1995-12-02",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1004256,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

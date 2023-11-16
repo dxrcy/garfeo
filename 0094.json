@@ -1,0 +1,17 @@
+{
+    "index": "0094",
+    "prev": "0093",
+    "next": "0095",
+    "title": "Garfildo ne ekzercas",
+    "date": "2022-08-27",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 969324,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

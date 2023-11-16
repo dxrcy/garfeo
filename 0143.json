@@ -1,0 +1,17 @@
+{
+    "index": "0143",
+    "prev": "0142",
+    "next": "0144",
+    "title": "Garfildo ne estas instruita",
+    "date": "2021-08-17",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1171660,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

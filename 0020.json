@@ -1,0 +1,17 @@
+{
+    "index": "0020",
+    "prev": "0019",
+    "next": "0021",
+    "title": "Garfildo ignoras sian pilkon da lano",
+    "date": "2013-12-01",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 2173842,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

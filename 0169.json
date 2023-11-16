@@ -1,0 +1,17 @@
+{
+    "index": "0169",
+    "prev": "0168",
+    "next": "0170",
+    "title": "Garfildo ne havis okupatan tagon",
+    "date": "2016-10-14",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1137398,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "index": "0002",
+    "prev": "0001",
+    "next": "0003",
+    "title": "Garfildo timas por la panrostilo",
+    "date": "2001-08-09",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1333573,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

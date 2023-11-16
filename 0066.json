@@ -1,0 +1,17 @@
+{
+    "index": "0066",
+    "prev": "0065",
+    "next": "0067",
+    "title": "Garfildo ne ŝatas ekzerci",
+    "date": "2022-08-13",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1092937,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

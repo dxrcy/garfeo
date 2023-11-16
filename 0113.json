@@ -1,0 +1,17 @@
+{
+    "index": "0113",
+    "prev": "0112",
+    "next": "0114",
+    "title": "Garfildo ne timas monstron",
+    "date": "2012-10-18",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1269833,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

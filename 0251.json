@@ -1,0 +1,17 @@
+{
+    "index": "0251",
+    "prev": "0250",
+    "next": "0252",
+    "title": "Garfildo timas la laŭtan televidilon",
+    "date": "2010-07-18",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 2797540,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

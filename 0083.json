@@ -1,0 +1,17 @@
+{
+    "index": "0083",
+    "prev": "0082",
+    "next": "0084",
+    "title": "Garfildo ne kaptas musojn",
+    "date": "1995-04-23",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1125561,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

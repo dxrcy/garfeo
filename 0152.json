@@ -1,0 +1,17 @@
+{
+    "index": "0152",
+    "prev": "0151",
+    "next": "0153",
+    "title": "Garfildo ne volas uzi la pezilon",
+    "date": "1992-07-18",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1622691,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

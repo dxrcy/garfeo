@@ -1,0 +1,17 @@
+{
+    "index": "0111",
+    "prev": "0110",
+    "next": "0112",
+    "title": "Garfildo mendas picon",
+    "date": "2020-11-22",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 997256,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

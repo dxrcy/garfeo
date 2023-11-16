@@ -1,0 +1,17 @@
+{
+    "index": "0003",
+    "prev": "0002",
+    "next": "0004",
+    "title": "Garfildo disvastigas feliĉon",
+    "date": "1998-01-06",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 2429190,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

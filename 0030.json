@@ -1,0 +1,17 @@
+{
+    "index": "0030",
+    "prev": "0029",
+    "next": "0031",
+    "title": "Garfildo perdis pezon",
+    "date": "1995-10-06",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1152388,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "index": "0342",
+    "prev": "0341",
+    "next": "0343",
+    "title": "Garfildo estas disponebla por manĝo",
+    "date": "2023-03-05",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 1966553,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

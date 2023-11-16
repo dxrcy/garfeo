@@ -1,0 +1,17 @@
+{
+    "index": "0105",
+    "prev": "0104",
+    "next": "0106",
+    "title": "Garfildo ne atentas",
+    "date": "2009-01-01",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 774239,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

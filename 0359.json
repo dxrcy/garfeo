@@ -1,0 +1,17 @@
+{
+    "index": "0359",
+    "prev": "0358",
+    "next": "0360",
+    "title": "Garfildo ne aperas ĉi tiu",
+    "date": "1989-03-16",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 627032,
+    "errata": [],
+    "props": {
+        "nogarfield": true,
+        "notext": true,
+        "good": false,
+        "earsback": false
+    }
+}

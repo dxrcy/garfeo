@@ -1,0 +1,17 @@
+{
+    "index": "0028",
+    "prev": "0027",
+    "next": "0029",
+    "title": "Garfildo forirus Jonon",
+    "date": "2014-03-24",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 752214,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

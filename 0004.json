@@ -1,0 +1,17 @@
+{
+    "index": "0004",
+    "prev": "0003",
+    "next": "0005",
+    "title": "Garfildo ne kuras",
+    "date": "2002-05-21",
+    "version": 2,
+    "sunday": "false",
+    "image_bytes": 1496398,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": true,
+        "earsback": false
+    }
+}

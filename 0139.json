@@ -1,0 +1,17 @@
+{
+    "index": "0139",
+    "prev": "0138",
+    "next": "0140",
+    "title": "Garfildo ludas damludon",
+    "date": "2002-05-05",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 2440535,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

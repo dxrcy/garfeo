@@ -1,0 +1,17 @@
+{
+    "index": "0012",
+    "prev": "0011",
+    "next": "0013",
+    "title": "Garfildo malamas Odion",
+    "date": "2022-07-06",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1200094,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

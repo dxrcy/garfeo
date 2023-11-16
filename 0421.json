@@ -1,0 +1,17 @@
+{
+    "index": "0421",
+    "prev": "0420",
+    "next": "0422",
+    "title": "Garfildo ne aperis en ĉi tiu bildstrio",
+    "date": "2013-02-14",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1536225,
+    "errata": [],
+    "props": {
+        "nogarfield": true,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

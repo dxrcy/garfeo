@@ -1,0 +1,17 @@
+{
+    "index": "0130",
+    "prev": "0129",
+    "next": "0131",
+    "title": "Garfildo ne volas aĉajn sukojn",
+    "date": "1999-07-15",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1496921,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

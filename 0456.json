@@ -1,0 +1,17 @@
+{
+    "index": "0456",
+    "prev": "0455",
+    "next": "0457",
+    "title": "Garfildo ne povas esti gaja",
+    "date": "2023-07-03",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 885532,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

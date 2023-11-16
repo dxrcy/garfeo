@@ -1,0 +1,17 @@
+{
+    "index": "0319",
+    "prev": "0318",
+    "next": "0320",
+    "title": "Garfildo nur dormas",
+    "date": "2022-10-13",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 711489,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

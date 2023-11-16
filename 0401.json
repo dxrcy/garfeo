@@ -1,0 +1,17 @@
+{
+    "index": "0401",
+    "prev": "0400",
+    "next": "0402",
+    "title": "Garfildo rektigis la pentraĵon",
+    "date": "1993-07-16",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1017672,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": true,
+        "good": false,
+        "earsback": false
+    }
+}

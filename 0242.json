@@ -1,0 +1,17 @@
+{
+    "index": "0242",
+    "prev": "0241",
+    "next": "0243",
+    "title": "Garfildo bezonas varmegan kafon",
+    "date": "2023-01-04",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 779272,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

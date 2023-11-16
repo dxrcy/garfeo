@@ -1,0 +1,17 @@
+{
+    "index": "0123",
+    "prev": "0122",
+    "next": "0124",
+    "title": "Garfildo estas dormema",
+    "date": "2000-08-02",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 679054,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

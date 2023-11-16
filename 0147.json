@@ -1,0 +1,17 @@
+{
+    "index": "0147",
+    "prev": "0146",
+    "next": "0148",
+    "title": "Garfildo kaj Odio ne stiras aŭtojn",
+    "date": "2017-06-28",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1272567,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": true,
+        "earsback": false
+    }
+}

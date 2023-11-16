@@ -1,0 +1,17 @@
+{
+    "index": "0080",
+    "prev": "0079",
+    "next": "0081",
+    "title": "Garfildo estas mava",
+    "date": "2007-11-08",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 745355,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

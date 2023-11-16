@@ -1,0 +1,17 @@
+{
+    "index": "0517",
+    "prev": "0516",
+    "next": "0518",
+    "title": "Garfildo ne povas timigi",
+    "date": "2005-10-30",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 2941441,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "index": "0124",
+    "prev": "0123",
+    "next": "0125",
+    "title": "Garfildo manĝis fiŝon",
+    "date": "1996-02-01",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1317792,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

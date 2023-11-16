@@ -1,0 +1,17 @@
+{
+    "index": "0103",
+    "prev": "0102",
+    "next": "0104",
+    "title": "Garfildo malpurigas la domon",
+    "date": "2022-09-08",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 2006291,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "index": "0073",
+    "prev": "0072",
+    "next": "0074",
+    "title": "Garfildo ne estas tro enua",
+    "date": "2022-08-15",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 697128,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

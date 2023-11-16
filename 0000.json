@@ -1,0 +1,17 @@
+{
+    "index": "0000",
+    "prev": null,
+    "next": "0001",
+    "title": "Garfildo faras ion mavan",
+    "date": "2012-10-01",
+    "version": 2,
+    "sunday": "false",
+    "image_bytes": 1185245,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

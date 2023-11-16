@@ -1,0 +1,17 @@
+{
+    "index": "0384",
+    "prev": "0383",
+    "next": "0385",
+    "title": "Garfildo ne volas fari ion amuzan",
+    "date": "2012-04-01",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1203272,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": true,
+        "earsback": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "index": "0010",
+    "prev": "0009",
+    "next": "0011",
+    "title": "Garfildo estas inteligenta",
+    "date": "1986-07-25",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1465927,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

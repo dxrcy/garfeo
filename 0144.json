@@ -1,0 +1,17 @@
+{
+    "index": "0144",
+    "prev": "0143",
+    "next": "0145",
+    "title": "Garfildo mensogas",
+    "date": "2020-08-07",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1297818,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

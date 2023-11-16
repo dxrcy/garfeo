@@ -1,0 +1,17 @@
+{
+    "index": "0168",
+    "prev": "0167",
+    "next": "0169",
+    "title": "Garfildo ruktas",
+    "date": "2020-06-27",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 524677,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

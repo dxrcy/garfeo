@@ -1,0 +1,17 @@
+{
+    "index": "0011",
+    "prev": "0010",
+    "next": "0012",
+    "title": "Garfildo trompas Odion",
+    "date": "2002-10-02",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1352101,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

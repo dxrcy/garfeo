@@ -1,0 +1,17 @@
+{
+    "index": "0538",
+    "prev": "0537",
+    "next": "0539",
+    "title": "Garfildo ne volas aŭskulti pri ŝulaĉoj",
+    "date": "2012-10-14",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1875049,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

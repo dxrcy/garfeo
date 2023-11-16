@@ -1,0 +1,17 @@
+{
+    "index": "0203",
+    "prev": "0202",
+    "next": "0204",
+    "title": "Garfildo donis iom al Jon",
+    "date": "2019-12-25",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1188231,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": true,
+        "earsback": false
+    }
+}

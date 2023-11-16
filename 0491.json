@@ -1,0 +1,17 @@
+{
+    "index": "0491",
+    "prev": "0490",
+    "next": "0492",
+    "title": "Garfildo estas fiksita",
+    "date": "2001-03-10",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1019024,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

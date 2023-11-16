@@ -1,0 +1,17 @@
+{
+    "index": "0221",
+    "prev": "0220",
+    "next": "0222",
+    "title": "Garfildo ne estas ŝatata de la publiko",
+    "date": "2003-01-11",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1277931,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

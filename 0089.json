@@ -1,0 +1,17 @@
+{
+    "index": "0089",
+    "prev": "0088",
+    "next": "0090",
+    "title": "Garfildo ne estas maljuna",
+    "date": "2021-06-18",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1166457,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

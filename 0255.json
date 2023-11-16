@@ -1,0 +1,17 @@
+{
+    "index": "0255",
+    "prev": "0254",
+    "next": "0256",
+    "title": "Garfildo ne volas ordi ŝtrumpetojn",
+    "date": "2023-01-20",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 860572,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

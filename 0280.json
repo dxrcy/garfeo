@@ -1,0 +1,17 @@
+{
+    "index": "0280",
+    "prev": "0279",
+    "next": "0281",
+    "title": "Garfildo ne estas impresita",
+    "date": "2020-02-13",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 454946,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

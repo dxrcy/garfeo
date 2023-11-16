@@ -1,0 +1,17 @@
+{
+    "index": "0021",
+    "prev": "0020",
+    "next": "0022",
+    "title": "Garfildo pigras",
+    "date": "1990-08-30",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1442544,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

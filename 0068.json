@@ -1,0 +1,17 @@
+{
+    "index": "0068",
+    "prev": "0067",
+    "next": "0069",
+    "title": "Garfildo fiksrigardas al spaco",
+    "date": "2004-03-26",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 675326,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

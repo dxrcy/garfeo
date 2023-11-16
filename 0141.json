@@ -1,0 +1,17 @@
+{
+    "index": "0141",
+    "prev": "0140",
+    "next": "0142",
+    "title": "Garfildo rigardas sin mem",
+    "date": "1999-06-10",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1268274,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": true,
+        "earsback": false
+    }
+}

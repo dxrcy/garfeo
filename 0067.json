@@ -1,0 +1,17 @@
+{
+    "index": "0067",
+    "prev": "0066",
+    "next": "0068",
+    "title": "Garfildo ne zorgas",
+    "date": "2011-01-07",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 617332,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

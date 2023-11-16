@@ -1,0 +1,17 @@
+{
+    "index": "0120",
+    "prev": "0119",
+    "next": "0121",
+    "title": "Garfildo perdas dormon",
+    "date": "1990-08-29",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 829602,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

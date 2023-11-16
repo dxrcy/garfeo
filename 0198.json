@@ -1,0 +1,17 @@
+{
+    "index": "0198",
+    "prev": "0197",
+    "next": "0199",
+    "title": "Garfildo ne sonĝas",
+    "date": "2003-10-04",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 705007,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

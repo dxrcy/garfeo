@@ -1,0 +1,17 @@
+{
+    "index": "0096",
+    "prev": "0095",
+    "next": "0097",
+    "title": "Garfildo estas logika",
+    "date": "2019-08-16",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 766033,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

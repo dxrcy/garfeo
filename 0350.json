@@ -1,0 +1,17 @@
+{
+    "index": "0350",
+    "prev": "0349",
+    "next": "0351",
+    "title": "Garfildo malamas Nermalon",
+    "date": "2023-04-04",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 747869,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

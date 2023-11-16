@@ -1,0 +1,17 @@
+{
+    "index": "0165",
+    "prev": "0164",
+    "next": "0166",
+    "title": "Garfildo ne zorgas pri la tago",
+    "date": "2020-04-06",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 877397,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

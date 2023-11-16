@@ -1,0 +1,17 @@
+{
+    "index": "0260",
+    "prev": "0259",
+    "next": "0261",
+    "title": "Garfildo ne supozis tiel",
+    "date": "2016-07-27",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 454335,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

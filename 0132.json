@@ -1,0 +1,17 @@
+{
+    "index": "0132",
+    "prev": "0131",
+    "next": "0133",
+    "title": "Garfildo ne ŝatas la aĉetadon",
+    "date": "2017-11-26",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 1905389,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

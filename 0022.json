@@ -1,0 +1,17 @@
+{
+    "index": "0022",
+    "prev": "0021",
+    "next": "0023",
+    "title": "Garfildo ne fidas Odion",
+    "date": "1994-03-31",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1501109,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

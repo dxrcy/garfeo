@@ -1,0 +1,17 @@
+{
+    "index": "0192",
+    "prev": "0191",
+    "next": "0193",
+    "title": "Garfildo ne volas troveki",
+    "date": "2017-04-24",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 537581,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

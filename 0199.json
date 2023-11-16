@@ -1,0 +1,17 @@
+{
+    "index": "0199",
+    "prev": "0198",
+    "next": "0200",
+    "title": "Garfildo ne ĉesas musojn",
+    "date": "2004-06-29",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1232593,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

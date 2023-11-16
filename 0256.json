@@ -1,0 +1,17 @@
+{
+    "index": "0256",
+    "prev": "0255",
+    "next": "0257",
+    "title": "Garfildo ne riskos",
+    "date": "2022-12-08",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 628231,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

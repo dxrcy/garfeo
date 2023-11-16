@@ -1,0 +1,17 @@
+{
+    "index": "0400",
+    "prev": "0399",
+    "next": "0401",
+    "title": "Garfildo ne povus instrui",
+    "date": "1993-06-02",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 753699,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

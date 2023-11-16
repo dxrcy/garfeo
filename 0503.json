@@ -1,0 +1,17 @@
+{
+    "index": "0503",
+    "prev": "0502",
+    "next": "0504",
+    "title": "Garfildo bezonas kafon",
+    "date": "2021-07-18",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 2087665,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

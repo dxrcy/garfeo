@@ -1,0 +1,17 @@
+{
+    "index": "0008",
+    "prev": "0007",
+    "next": "0009",
+    "title": "Garfildo amas la pluŝurson",
+    "date": "2000-01-31",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1248802,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

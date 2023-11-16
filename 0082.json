@@ -1,0 +1,17 @@
+{
+    "index": "0082",
+    "prev": "0081",
+    "next": "0083",
+    "title": "Garfildo ĉiam havas deserton",
+    "date": "1988-02-29",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1017140,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

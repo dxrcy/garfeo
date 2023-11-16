@@ -1,0 +1,17 @@
+{
+    "index": "0009",
+    "prev": "0008",
+    "next": "0010",
+    "title": "Garfildo ne konfidas brakumojn",
+    "date": "2013-09-11",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1103119,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

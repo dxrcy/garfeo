@@ -1,0 +1,17 @@
+{
+    "index": "0501",
+    "prev": "0500",
+    "next": "0502",
+    "title": "Garfildo evitas la vivon",
+    "date": "2013-03-02",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 893385,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

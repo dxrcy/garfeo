@@ -1,0 +1,17 @@
+{
+    "index": "0101",
+    "prev": "0100",
+    "next": "0102",
+    "title": "Garfildo bezonas sian manĝaĵon",
+    "date": "2005-09-02",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 693256,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

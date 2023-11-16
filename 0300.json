@@ -1,0 +1,17 @@
+{
+    "index": "0300",
+    "prev": "0299",
+    "next": "0301",
+    "title": "Garfildo estas tro dika",
+    "date": "1990-09-30",
+    "version": 1,
+    "sunday": "true",
+    "image_bytes": 2504063,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

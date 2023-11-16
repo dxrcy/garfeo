@@ -1,0 +1,17 @@
+{
+    "index": "0127",
+    "prev": "0126",
+    "next": "0128",
+    "title": "Garfildo ne portas ŝuojn",
+    "date": "2022-09-22",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 951394,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

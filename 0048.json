@@ -1,0 +1,17 @@
+{
+    "index": "0048",
+    "prev": "0047",
+    "next": "0049",
+    "title": "Garfildo eble havas koramikon",
+    "date": "2009-04-05",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1352731,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

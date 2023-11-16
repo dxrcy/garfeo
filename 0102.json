@@ -1,0 +1,17 @@
+{
+    "index": "0102",
+    "prev": "0101",
+    "next": "0103",
+    "title": "Garfildo ne havas novjarajn promesojn",
+    "date": "2007-01-01",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1277289,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

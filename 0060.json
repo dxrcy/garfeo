@@ -1,0 +1,17 @@
+{
+    "index": "0060",
+    "prev": "0059",
+    "next": "0061",
+    "title": "Garfildo estas enuigita pro la konversacio",
+    "date": "2022-01-21",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 778767,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

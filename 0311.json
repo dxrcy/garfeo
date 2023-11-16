@@ -1,0 +1,17 @@
+{
+    "index": "0311",
+    "prev": "0310",
+    "next": "0312",
+    "title": "Garfildo ne kuras rapide",
+    "date": "2016-07-25",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 595727,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

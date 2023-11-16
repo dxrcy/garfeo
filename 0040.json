@@ -1,0 +1,17 @@
+{
+    "index": "0040",
+    "prev": "0039",
+    "next": "0041",
+    "title": "Garfildo ne povas kuiri panon",
+    "date": "1990-06-11",
+    "version": 1,
+    "sunday": "false",
+    "image_bytes": 1487816,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

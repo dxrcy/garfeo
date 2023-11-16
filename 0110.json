@@ -1,0 +1,17 @@
+{
+    "index": "0110",
+    "prev": "0109",
+    "next": "0111",
+    "title": "Garfildo scias",
+    "date": "2019-11-05",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 622433,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

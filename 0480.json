@@ -1,0 +1,17 @@
+{
+    "index": "0480",
+    "prev": "0479",
+    "next": "0481",
+    "title": "Garfildo ne estas bezonata",
+    "date": "2016-05-04",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1217619,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

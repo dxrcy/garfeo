@@ -1,0 +1,17 @@
+{
+    "index": "0160",
+    "prev": "0159",
+    "next": "0161",
+    "title": "Garfildo ekscitas Odion",
+    "date": "2022-10-16",
+    "version": 0,
+    "sunday": "true",
+    "image_bytes": 1351941,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

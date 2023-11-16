@@ -1,0 +1,17 @@
+{
+    "index": "0269",
+    "prev": "0268",
+    "next": "0270",
+    "title": "Garfildo ne krias nokte",
+    "date": "2010-09-28",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 614125,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}

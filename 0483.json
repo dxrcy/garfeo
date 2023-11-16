@@ -1,0 +1,17 @@
+{
+    "index": "0483",
+    "prev": "0482",
+    "next": "0484",
+    "title": "Garfildo direktas la hundon",
+    "date": "2016-03-16",
+    "version": 0,
+    "sunday": "false",
+    "image_bytes": 1019979,
+    "errata": [],
+    "props": {
+        "nogarfield": false,
+        "notext": false,
+        "good": false,
+        "earsback": false
+    }
+}
