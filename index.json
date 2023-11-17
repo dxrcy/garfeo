@@ -1,5 +1,20 @@
 [
     {
+        "index": "0543",
+        "title": "Garfildo manĝas ŝiman kukon",
+        "date": "2002-03-14",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1061992,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0542",
         "title": "Garfildo ja estis surprizita",
         "date": "2011-09-09",

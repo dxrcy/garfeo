@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0542/esperanto.png </url>
-            <title> Lasta bildstrio [0542] </title>
+            <url> https://darccyy.github.io/garfeo/static/0543/esperanto.png </url>
+            <title> Lasta bildstrio [0543] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo manĝas ŝiman kukon </title>
+    <link> https://darccyy.github.io/garfeo/0543 </link>
+    <guid> 0543 </guid>
+    <description>
+        Garfildo manĝas ŝiman kukon [0543] 2002-03-14 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0543/esperanto.png"
+        length="1061992"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo ja estis surprizita </title>
