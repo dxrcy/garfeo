@@ -326,15 +326,15 @@ fn use_basic(
 
     view! {
         HEAD {
-            @use_meta [ Meta::new()
-                .url(url!())
-                .title(&full_title)
-                .desc("Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!")
-                .image(url!(image.unwrap_or("static/icon.png")))
-                .color("#ffb24e")
-                .author("darcy")
-                .large_image(true)
-            ]
+            @use_meta [ibex::meta! {
+                url: url!(),
+                title: &full_title,
+                desc: "Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!",
+                image: url!(image.unwrap_or("static/icon.png")),
+                author: "darcy",
+                color: "#ffb24e",
+                large_image: true,
+            }]
 
             title { [full_title] }
             link [rel="shortcut icon", href=url!("static/icon.png")]/
