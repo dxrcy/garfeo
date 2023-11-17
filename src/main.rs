@@ -64,18 +64,6 @@ fn main() {
     println!("\x1b[34;1mBuilt successfully!\x1b[0m");
 }
 
-fn json_index(entries: &[PostEntry]) -> String {
-    format!(
-        "[\n    {}\n]",
-        entries
-            .into_iter()
-            .map(|entry| entry.post.to_json())
-            .collect::<Vec<_>>()
-            .join(",\n")
-            .replace('\n', "\n    "),
-    )
-}
-
 pub struct FirstLast<'a> {
     first: &'a PostEntry,
     last: &'a PostEntry,
@@ -431,4 +419,16 @@ fn post_title(post: &Post, italic: bool) -> View {
             }]
         }
     }
+}
+
+fn json_index(entries: &[PostEntry]) -> String {
+    format!(
+        "[\n    {}\n]",
+        entries
+            .into_iter()
+            .map(|entry| entry.post.to_json())
+            .collect::<Vec<_>>()
+            .join(",\n")
+            .replace('\n', "\n    "),
+    )
 }
