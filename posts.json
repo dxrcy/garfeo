@@ -5,7 +5,7 @@
         "date": "2002-03-14",
         "version": 0,
         "sunday": "false",
-        "image_bytes": 1061992,
+        "image_bytes": 1061385,
         "errata": [],
         "props": {
             "nogarfield": false,
@@ -6438,9 +6438,9 @@
         "index": "0114",
         "title": "Garfildo manĝis la tutan torton",
         "date": "2002-07-03",
-        "version": 0,
+        "version": 1,
         "sunday": "false",
-        "image_bytes": 1000891,
+        "image_bytes": 1310628,
         "errata": [],
         "props": {
             "nogarfield": false,

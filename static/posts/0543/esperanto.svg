@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.69146006"
-     inkscape:cx="569.08566"
-     inkscape:cy="719.49203"
+     inkscape:cx="568.36255"
+     inkscape:cy="720.93824"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -104,20 +104,24 @@
        transform="translate(20.120454,0.41168646)"><tspan
          x="277.40475"
          y="596.25543"
-         id="tspan2"><tspan
-           dx="0 0 0 -0.62 0.62000561 0 0 0 -0.6200105 0.62000561 0 0 -0.61999428 0.62000561 0 0 0 0 -0.61999047"
-           id="tspan1">pro tio, ĜIN ESTAS</tspan><tspan
+         id="tspan11"><tspan
+           dx="0 0 0 -0.62 0.62000561 0 0 0 -0.6200105 0.62000561 0 -0.62000763 0.62000561"
+           id="tspan4">pro tio, ĜI ESTAS</tspan><tspan
+           dx="-0.61999047"
+           id="tspan10"></tspan><tspan
            y="596.25543"
-           id="tspan5"> </tspan></tspan><tspan
+           id="tspan12"> </tspan></tspan><tspan
          x="277.40475"
          y="625.58874"
-         id="tspan7"><tspan
-           dx="0 0 0 0 0 0 0 0 0 0 0 -0.61999238 0.62000561 0 0 0 -0.61998093"
-           id="tspan6">konsideraTA kiel</tspan><tspan
+         id="tspan15"><tspan
+           dx="0 0 0 0 0 0 0 0 0 0 0 -0.61999238 0.62000561"
+           id="tspan13">konsideraTA kiel</tspan><tspan
+           dx="-0.61998093"
+           id="tspan14"></tspan><tspan
            y="625.58874"
-           id="tspan8"> </tspan></tspan><tspan
+           id="tspan16"> </tspan></tspan><tspan
          x="277.40475"
          y="654.92205"
-         id="tspan9">legomo</tspan></text>
+         id="tspan17">legomo</tspan></text>
   </g>
 </svg>
