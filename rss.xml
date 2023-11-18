@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0543/esperanto.png </url>
-            <title> Lasta bildstrio [0543] </title>
+            <url> https://darccyy.github.io/garfeo/static/0545/esperanto.png </url>
+            <title> Lasta bildstrio [0545] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo kisas post manĝo </title>
+    <link> https://darccyy.github.io/garfeo/0545 </link>
+    <guid> 0545 </guid>
+    <description>
+        Garfildo kisas post manĝo [0545] 2023-08-20 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0545/esperanto.png"
+        length="1811917"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo dormas kun sonoj </title>
+    <link> https://darccyy.github.io/garfeo/0544 </link>
+    <guid> 0544 </guid>
+    <description>
+        Garfildo dormas kun sonoj [0544] 2022-10-22 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0544/esperanto.png"
+        length="1130043"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo manĝas ŝiman kukon </title>

@@ -1,5 +1,35 @@
 [
     {
+        "index": "0545",
+        "title": "Garfildo kisas post manĝo",
+        "date": "2023-08-20",
+        "version": 0,
+        "sunday": "true",
+        "image_bytes": 1811917,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0544",
+        "title": "Garfildo dormas kun sonoj",
+        "date": "2022-10-22",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1130043,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0543",
         "title": "Garfildo manĝas ŝiman kukon",
         "date": "2002-03-14",
