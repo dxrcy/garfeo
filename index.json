@@ -1608,14 +1608,14 @@
         "index": "0438",
         "title": "Garfildo ŝatis grimpi tiun arbon",
         "date": "2012-04-04",
-        "version": 0,
+        "version": 1,
         "sunday": "false",
-        "image_bytes": 1694615,
+        "image_bytes": 1194139,
         "errata": [],
         "props": {
             "nogarfield": false,
             "notext": false,
-            "good": false,
+            "good": true,
             "earsback": false
         }
     },
