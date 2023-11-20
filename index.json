@@ -1,5 +1,20 @@
 [
     {
+        "index": "0546",
+        "title": "Garfildo estas stranga kaj ruza",
+        "date": "1990-05-12",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1602696,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": true,
+            "earsback": false
+        }
+    },
+    {
         "index": "0545",
         "title": "Garfildo kisas post manĝo",
         "date": "2023-08-20",

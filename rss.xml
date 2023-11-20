@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0545/esperanto.png </url>
-            <title> Lasta bildstrio [0545] </title>
+            <url> https://darccyy.github.io/garfeo/static/0546/esperanto.png </url>
+            <title> Lasta bildstrio [0546] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo estas stranga kaj ruza </title>
+    <link> https://darccyy.github.io/garfeo/0546 </link>
+    <guid> 0546 </guid>
+    <description>
+        Garfildo estas stranga kaj ruza [0546] 1990-05-12 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0546/esperanto.png"
+        length="1602696"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo kisas post manĝo </title>
