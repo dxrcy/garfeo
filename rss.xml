@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0546/esperanto.png </url>
-            <title> Lasta bildstrio [0546] </title>
+            <url> https://darccyy.github.io/garfeo/static/0547/esperanto.png </url>
+            <title> Lasta bildstrio [0547] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo malŝatas striktajn ŝuojn </title>
+    <link> https://darccyy.github.io/garfeo/0547 </link>
+    <guid> 0547 </guid>
+    <description>
+        Garfildo malŝatas striktajn ŝuojn [0547] 2009-08-07 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0547/esperanto.png"
+        length="1258090"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo estas stranga kaj ruza </title>

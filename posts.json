@@ -1,5 +1,20 @@
 [
     {
+        "index": "0547",
+        "title": "Garfildo malŝatas striktajn ŝuojn",
+        "date": "2009-08-07",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1258090,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0546",
         "title": "Garfildo estas stranga kaj ruza",
         "date": "1990-05-12",
