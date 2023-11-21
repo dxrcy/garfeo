@@ -242,11 +242,8 @@ body {
     table.graph {
         display: inline-block;
         font-size: x-small;
-        // background-color: black;
         tr {
-            // background-color: blue;
             td {
-                // background-color: green;
                 text-align: left;
 
                 span {
@@ -254,6 +251,18 @@ body {
                         margin-left: 0.5em;
                     }
                 }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 30px;
+        color: mix($c-header, $c-background, 50%);
+        a {
+            &::before, &::after { 
+                content: "\2014";
+                padding: 10px;
+                color: mix($c-header, $c-background, 20%);
             }
         }
     }

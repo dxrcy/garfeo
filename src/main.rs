@@ -381,6 +381,12 @@ fn use_basic(
             }
             [children]
         } }
+
+        footer ."footer" {
+            a [href="https://darccyy.github.io"] {
+                "kreita de darcio"
+            }
+        }
     }
 }
 
