@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1d2328;
@@ -200,4 +201,13 @@ body table.graph tr td {
 }
 body table.graph tr td span:not(:first-of-type) {
   margin-left: 0.5em;
+}
+body .footer {
+  margin-top: 30px;
+  color: #526a6c;
+}
+body .footer a::before, body .footer a::after {
+  content: "—";
+  padding: 10px;
+  color: #323f43;
 }
