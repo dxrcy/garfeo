@@ -1,17 +1,15 @@
-use serde::Serialize;
 use std::{collections::HashMap, fs, path::Path};
 
 const DIR: &str = "static/posts";
 const DIR_OLD: &str = "static/old";
 
-#[derive(Serialize)]
 pub struct PostEntry {
     pub post: Post,
     pub prev: Option<Post>,
     pub next: Option<Post>,
 }
 
-#[derive(Clone, Serialize)]
+#[derive(Clone)]
 pub struct Post {
     pub index: String,
     pub title: String,
@@ -23,10 +21,10 @@ pub struct Post {
     pub version: u32,
 }
 
-#[derive(Default, Clone, Serialize)]
+#[derive(Default, Clone)]
 pub struct Errata(pub Vec<(String, String)>);
 
-#[derive(Default, Clone, Copy, Serialize)]
+#[derive(Default, Clone, Copy)]
 pub struct Props {
     pub nogarfield: bool,
     pub notext: bool,
