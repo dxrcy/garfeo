@@ -339,6 +339,7 @@ fn use_basic(
             title { [full_title] }
             link [rel="shortcut icon", href=url!("static/icon.png")]/
             link [rel="stylesheet",    href=url!("css/main.css")]/
+            @ssg::use_autoreload
         }
 
         div ."top-header" {
@@ -366,10 +367,10 @@ fn use_basic(
                 }
             }
 
-            [:use {
+            [:where
                 let first = &first_last.first.post.index;
                 let last = &first_last.last.post.index;
-            } {
+             {
                 script { [format!("set_random_url('{}', '{}', '{}')", url!(), first, last)] }
             }]
         }
