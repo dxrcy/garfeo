@@ -1,5 +1,35 @@
 [
     {
+        "index": "0549",
+        "title": "Garfildo mortigos pulon",
+        "date": "2008-11-05",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1105715,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0548",
+        "title": "Garfildo ne volas priparoli emociojn",
+        "date": "2016-10-04",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1136809,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0547",
         "title": "Garfildo malŝatas striktajn ŝuojn",
         "date": "2009-08-07",

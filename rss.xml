@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0547/esperanto.png </url>
-            <title> Lasta bildstrio [0547] </title>
+            <url> https://darccyy.github.io/garfeo/static/0549/esperanto.png </url>
+            <title> Lasta bildstrio [0549] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo mortigos pulon </title>
+    <link> https://darccyy.github.io/garfeo/0549 </link>
+    <guid> 0549 </guid>
+    <description>
+        Garfildo mortigos pulon [0549] 2008-11-05 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0549/esperanto.png"
+        length="1105715"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo ne volas priparoli emociojn </title>
+    <link> https://darccyy.github.io/garfeo/0548 </link>
+    <guid> 0548 </guid>
+    <description>
+        Garfildo ne volas priparoli emociojn [0548] 2016-10-04 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0548/esperanto.png"
+        length="1136809"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo malŝatas striktajn ŝuojn </title>
