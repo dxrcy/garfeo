@@ -1,5 +1,20 @@
 [
     {
+        "index": "0550",
+        "title": "Garfildo eble ne mendis picon",
+        "date": "2014-08-19",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1162908,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0549",
         "title": "Garfildo mortigos pulon",
         "date": "2008-11-05",

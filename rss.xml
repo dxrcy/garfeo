@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0549/esperanto.png </url>
-            <title> Lasta bildstrio [0549] </title>
+            <url> https://darccyy.github.io/garfeo/static/0550/esperanto.png </url>
+            <title> Lasta bildstrio [0550] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo eble ne mendis picon </title>
+    <link> https://darccyy.github.io/garfeo/0550 </link>
+    <guid> 0550 </guid>
+    <description>
+        Garfildo eble ne mendis picon [0550] 2014-08-19 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0550/esperanto.png"
+        length="1162908"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo mortigos pulon </title>
