@@ -1,0 +1,221 @@
+@import "src/scss/ibexus.scss";
+$c-grey:       #91a1a0;
+
+body {
+    .gray {
+        color: $c-grey;
+    }
+
+    .header {
+        margin: 15px 0;
+
+        h1.title {
+            font-size: medium;
+        }
+
+        h2.actions {
+            font-size: medium;
+            margin: 5px 0;
+            color: $c-text;
+            font-family: $f-sans;
+            font-weight: normal;
+
+            .divider {
+                margin: 0 10px;
+                opacity: 0.5;
+            }
+
+            .fallback-divider {
+                display: none;
+            }
+            a {
+                display: inline-flex;
+                flex-direction: column;
+                position: relative;
+
+                &:hover, &:focus-within {
+                    text-decoration: none;
+                    i {
+                        text-decoration: underline;
+                        text-decoration-color: $c-accent-a;
+                    }
+                }
+
+                .icon {
+                    display: inline-block; 
+                    height: 1.1em;
+                    color: $c-accent-b;
+                    &.smaller {
+                        font-size: 80%;
+                        padding-bottom: 0.25em;
+                    }
+                }
+
+                &:not(:first-of-type) {
+                    $margin: 15px;
+                    $height: 70%;
+                    margin-left: calc($margin * 2);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: $height;
+                        top: #{50% - $height / 2};
+                        left: - $margin;
+                        border-left: 2px solid $c-subtle;
+                    }
+                }
+            }
+        }
+    }
+
+    >hr {
+        display: none;
+    }
+
+    article {
+        // https://github.com/connorskees/grass/issues/87
+        width: min 600px, 100%, auto;
+        min-width: 30%;
+
+        padding: 0px clamp(5px, 5%, 40px);
+        padding-bottom: 20px;
+
+        text-align: center;
+
+        hr {
+            color: $c-subtle;
+        }
+
+        ol {
+            display: inline-block;
+            text-align: initial;
+
+            margin-top: 0px;
+            &:first-child {
+                margin-top: 20px;
+            }
+
+            li {
+                a {
+                    overflow: none;
+                    img {
+                        display: block;
+                        max-height: 300px;
+                        max-width: min(300px, 100%);
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                &:first-of-type a {
+                    img {
+                        margin: 5px 0 10px 0;
+                    }
+                }
+                &:not(:first-of-type) a {
+                    &:not(:hover) img {
+                        display: none;
+                    }
+                    img {
+                        position: absolute;
+                        z-index: 500;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+
+        .details {
+            .navigate {
+                display: inline-block;
+                width: 0.8em;
+                text-align: center;
+                font-weight: 600;
+                color: $c-subtle;
+                padding: 0px;
+            }
+            .text {
+                display: inline-block;
+                width: 9em;
+            }
+        }
+
+        .comic {
+            height: 100%;
+            max-height: 450px;
+            min-width: 200px;
+            max-width: 95%;
+            margin: 5px;
+        }
+
+        .navigate {
+            width: 100%;
+            padding: 10px 0;
+            div {
+                display: inline-block;
+                $padding: 10px;
+                width: calc(50% - 2 * $padding);
+                padding: 0 $padding;
+
+                &:only-child {
+                    width: calc(100% - 2 * $padding);
+                }
+                &.prev {
+                    text-align: left;
+                }
+                &.next {
+                    text-align: right;
+                }
+            }
+        }
+
+        .caption {
+            overflow: scroll;
+            pre {
+                display: inline-block;
+                margin: 10px;
+                padding: 3px 5px;
+                background-color: $c-background;
+                &:active {
+                    filter: brightness(90%);
+                }
+            }
+        }
+
+        .links {
+            display: inline-block;
+            margin-top: 0;
+            text-align: left;
+            li {
+                margin: 20px 0;
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .icon-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        table.graph {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: x-small;
+
+            tr {
+                td {
+                    text-align: left;
+
+                    span {
+                        &:not(:first-of-type) {
+                            margin-left: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

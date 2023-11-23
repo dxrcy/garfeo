@@ -70,7 +70,7 @@ pub struct FirstLast<'a> {
 }
 
 fn at_index(entries: &[PostEntry], first_last: &FirstLast) -> Document {
-    view! { @use_basic [
+    view! { @use_base [
         "",
         view!{},
         None,
@@ -90,7 +90,7 @@ fn at_index(entries: &[PostEntry], first_last: &FirstLast) -> Document {
 
 fn at_404(first_last: &FirstLast) -> Document {
     let last_post = &first_last.last.post;
-    view! { @use_basic [
+    view! { @use_base [
         "404",
         view! { "Paĝo ne trovita!" },
         None,
@@ -112,7 +112,7 @@ fn at_404(first_last: &FirstLast) -> Document {
 }
 
 fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
-    view! { @use_basic [
+    view! { @use_base [
         "Plej bonaj",
         view! { "Plej bonaj bildstrioj" },
         None,
@@ -130,7 +130,7 @@ fn at_favourites(entries: &[PostEntry], first_last: &FirstLast) -> Document {
 }
 
 fn at_list(entries: &[PostEntry], first_last: &FirstLast) -> Document {
-    view! { @use_basic [
+    view! { @use_base [
         "Alia listo",
         view!{},
         None,
@@ -158,7 +158,7 @@ fn at_list(entries: &[PostEntry], first_last: &FirstLast) -> Document {
 fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
     let post = &entry.post;
 
-    view! { @use_basic [
+    view! { @use_base [
             &format!("{} [{}]", post.title, post.index),
             view!{ @post_title [&post, false] },
             Some(&format!("static/posts/{}/esperanto.png", post.index)),
@@ -254,21 +254,21 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
 }
 
 fn at_about(first_last: &FirstLast) -> Document {
-    view! { @use_basic [
+    view! { @use_base [
         "Informejo",
         view! { "Informejo" },
         None,
         first_last,
     ] {
 
-        h2 { "Kio estas Garfield-EO?" }
+        h3 { "Kio estas Garfield-EO?" }
         p {
             "Mi tradukas bildstriojn de Garfildo en Esperanton."
             br/
             "Parto de" ~ i { "Mondo da Komiksoj" } "."
         }
 
-        h2 { "Ligiloj" }
+        h3 { "Ligiloj" }
         ul ."links" {
             li { a [href="https://github.com/darccyy/garfeo"]
                 { strong { "Fonta Kodo kaj ĉiu bildstrio" }
@@ -311,7 +311,7 @@ fn at_about(first_last: &FirstLast) -> Document {
     .into()
 }
 
-fn use_basic(
+fn use_base(
     title: &str,
     header: View,
     image: Option<&str>,
@@ -338,16 +338,18 @@ fn use_basic(
 
             title { [full_title] }
             link [rel="shortcut icon", href=url!("static/icon.png")]/
-            link [rel="stylesheet",    href=url!("css/main.css")]/
+            link [rel="stylesheet",    href=url!("css/base.css")]/
             @ssg::use_autoreload
         }
 
-        div ."top-header" {
-            a ."title" [href=url!()] {
-                b { "Garfildo Esperanta" }
+        div ."header" {
+            h1 ."title" {
+                a [href=url!()] {
+                    "Garfildo Esperanta"
+                }
             }
 
-            div ."actions" {
+            h2 ."actions" {
                 HEAD { script { [include_str!("js/random.js")] } }
                 a #"random" [title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
@@ -376,14 +378,14 @@ fn use_basic(
         }
         hr/
 
-        div ."content-container" { div ."content" {
-            h1 ."header" {
-                [header]
-            }
+        article ."manual-width" {
+            [:if !header.is_empty() {
+                h2 { [header] }
+            }]
             [children]
-        } }
+        }
 
-        footer ."footer" {
+        footer {
             a [href="https://darccyy.github.io"] {
                 "kreita de darcio"
             }
