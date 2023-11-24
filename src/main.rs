@@ -272,7 +272,7 @@ fn at_about(first_last: &FirstLast) -> Document {
 
         p {
             "Vidu kiel mi kreas kaj alŝutas tradukojn,"
-            ~ a [href=url!("instrukcioj")] { i{"ĉi tie"} } "."
+            ~ a [href=url!("instrukcio")] { i{"ĉi tie"} } "."
         }
 
         h3 { "Ligiloj" }
