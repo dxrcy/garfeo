@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0550/esperanto.png </url>
-            <title> Lasta bildstrio [0550] </title>
+            <url> https://darccyy.github.io/garfeo/static/0552/esperanto.png </url>
+            <title> Lasta bildstrio [0552] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo estas majstro de dormo </title>
+    <link> https://darccyy.github.io/garfeo/0552 </link>
+    <guid> 0552 </guid>
+    <description>
+        Garfildo estas majstro de dormo [0552] 2014-05-18 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0552/esperanto.png"
+        length="2329716"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo bezonas lavi sin </title>
+    <link> https://darccyy.github.io/garfeo/0551 </link>
+    <guid> 0551 </guid>
+    <description>
+        Garfildo bezonas lavi sin [0551] 2006-11-10 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0551/esperanto.png"
+        length="1325660"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo eble ne mendis picon </title>
