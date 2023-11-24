@@ -1,5 +1,35 @@
 [
     {
+        "index": "0554",
+        "title": "Garfildo fieras ĉar li ne moviĝas",
+        "date": "2022-12-05",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1020201,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0553",
+        "title": "Garfildo ne scias pri bovaĵo",
+        "date": "2018-07-11",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1179565,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0552",
         "title": "Garfildo estas majstro de dormo",
         "date": "2014-05-18",

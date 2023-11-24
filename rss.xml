@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0552/esperanto.png </url>
-            <title> Lasta bildstrio [0552] </title>
+            <url> https://darccyy.github.io/garfeo/static/0554/esperanto.png </url>
+            <title> Lasta bildstrio [0554] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo fieras ĉar li ne moviĝas </title>
+    <link> https://darccyy.github.io/garfeo/0554 </link>
+    <guid> 0554 </guid>
+    <description>
+        Garfildo fieras ĉar li ne moviĝas [0554] 2022-12-05 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0554/esperanto.png"
+        length="1020201"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo ne scias pri bovaĵo </title>
+    <link> https://darccyy.github.io/garfeo/0553 </link>
+    <guid> 0553 </guid>
+    <description>
+        Garfildo ne scias pri bovaĵo [0553] 2018-07-11 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0553/esperanto.png"
+        length="1179565"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo estas majstro de dormo </title>
