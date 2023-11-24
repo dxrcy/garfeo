@@ -36,6 +36,8 @@ fn main() {
             => at_favourites(&posts, first_last),
         (/"informejo")
             => at_about(first_last),
+        (/"instrukcioj")
+            => at_instructions(first_last),
         (/"listo")
             => at_list(&posts, first_last),
 
@@ -265,7 +267,12 @@ fn at_about(first_last: &FirstLast) -> Document {
         p {
             "Mi tradukas bildstriojn de Garfildo en Esperanton."
             br/
-            "Parto de" ~ i { "Mondo da Komiksoj" } "."
+            "Parto de" ~ i{"Mondo da Komiksoj"} "."
+        }
+
+        p {
+            "Vidu kiel mi kreas kaj alŝutas tradukojn,"
+            ~ a [href=url!("instrukcioj")] { i{"ĉi tie"} } "."
         }
 
         h3 { "Ligiloj" }
@@ -308,6 +315,20 @@ fn at_about(first_last: &FirstLast) -> Document {
             height=400,
         ]/
     }}
+    .into()
+}
+
+fn at_instructions(first_last: &FirstLast) -> Document {
+    view! { @use_base [
+        "Instrukcioj",
+        view! {"Instrukcioj"},
+        None,
+        first_last,
+        view! {
+            p { "Nenio estas ĉi tie..." }
+            p { "Revenu baldaŭ..." }
+        }
+    ]}
     .into()
 }
 
