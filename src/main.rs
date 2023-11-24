@@ -36,7 +36,7 @@ fn main() {
             => at_favourites(&posts, first_last),
         (/"informejo")
             => at_about(first_last),
-        (/"instrukcioj")
+        (/"instrukcio")
             => at_instructions(first_last),
         (/"listo")
             => at_list(&posts, first_last),
@@ -320,8 +320,8 @@ fn at_about(first_last: &FirstLast) -> Document {
 
 fn at_instructions(first_last: &FirstLast) -> Document {
     view! { @use_base [
-        "Instrukcioj",
-        view! {"Instrukcioj"},
+        "Instrukcio",
+        view! {"Instrukcio"},
         None,
         first_last,
         view! {
