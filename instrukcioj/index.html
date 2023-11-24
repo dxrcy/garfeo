@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="url" content="/garfeo/"/><meta property="og:url" content="/garfeo/"/><meta itemprop="name" content="Garfildo Esperanta - Instrukcioj"/><meta property="og:title" content="Garfildo Esperanta - Instrukcioj"/><meta name="title" content="Garfildo Esperanta - Instrukcioj"/><meta name="description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta itemprop="description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta property="og:description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta name="twitter:description" content="Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!"/><meta name="image" content="/garfeo/static/icon.png"/><meta itemprop="image" content="/garfeo/static/icon.png"/><meta property="og:image" content="/garfeo/static/icon.png"/><meta name="twitter:image" content="/garfeo/static/icon.png"/><meta name="author" content="darcy"/><meta name="theme-color" content="#ffb24e"/><meta name="twitter:card" content="summary_large_image"/><title>Garfildo Esperanta - Instrukcioj</title><link rel="shortcut icon" href="/garfeo/static/icon.png"/><link rel="stylesheet" href="/garfeo/css/base.css"/><script>// Set href of random link to a random comic, on page load
+function set_random_url(base_url, first_index, last_index) {
+    // Filled at compile time
+    // String is 4 digits, and JS parses as non-base10 without stringify
+    let min = parseInt(first_index);
+    let max = parseInt(last_index);
+    // Get random number index
+    let random = Math.floor(Math.random() * (max - min + 1) + min).toString();
+    // Add zeros to start
+    let index = "0".repeat(4 - random.length) + random;
+    // Set link href
+    let url = base_url + index;
+    document.querySelector("#random").href = url;
+}
+</script></head><body><div class="header"><h1 class="title"><a href="/garfeo/">Garfildo Esperanta</a></h1><h2 class="actions"><a id="random" title="Klaku por iri al iun bildstrio"><i>Arbitra</i><span class="icon">⚄</span></a><span class="fallback-divider"> </span><a href="/garfeo/informejo"><i>Informejo</i><span class="icon smaller">🛈 </span></a><span class="fallback-divider"> </span><a href="/garfeo/plej-bonaj"><i>Plej Bonaj</i><span class="icon">★</span></a></h2><script>set_random_url('/garfeo/', '0000', '0550')</script></div><hr/><article class="manual-width"><h2>Instrukcioj</h2><p>Nenio estas ĉi tie...</p><p>Revenu baldaŭ...</p></article><footer><a href="https://darccyy.github.io">kreita de darcio</a></footer></body></html>
