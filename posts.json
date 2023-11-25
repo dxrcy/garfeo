@@ -1,5 +1,20 @@
 [
     {
+        "index": "0555",
+        "title": "Garfildo uzas harreton",
+        "date": "2013-10-26",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1246562,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0554",
         "title": "Garfildo fieras ĉar li ne moviĝas",
         "date": "2022-12-05",
