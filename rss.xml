@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0555/esperanto.png </url>
-            <title> Lasta bildstrio [0555] </title>
+            <url> https://darccyy.github.io/garfeo/static/0556/esperanto.png </url>
+            <title> Lasta bildstrio [0556] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo priscias la festojn de la blatoj </title>
+    <link> https://darccyy.github.io/garfeo/0556 </link>
+    <guid> 0556 </guid>
+    <description>
+        Garfildo priscias la festojn de la blatoj [0556] 2013-04-09 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0556/esperanto.png"
+        length="1148747"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo uzas harreton </title>

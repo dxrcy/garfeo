@@ -1,5 +1,20 @@
 [
     {
+        "index": "0556",
+        "title": "Garfildo priscias la festojn de la blatoj",
+        "date": "2013-04-09",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1148747,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0555",
         "title": "Garfildo uzas harreton",
         "date": "2013-10-26",
