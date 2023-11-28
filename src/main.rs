@@ -360,7 +360,7 @@ fn use_base(
             title { [full_title] }
             link [rel="shortcut icon", href=url!("static/icon.png")]/
             link [rel="stylesheet",    href=url!("css/base.css")]/
-            @ssg::use_autoreload
+            @ssg::use_autoreload []
         }
 
         div ."header" {
