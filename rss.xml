@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0556/esperanto.png </url>
-            <title> Lasta bildstrio [0556] </title>
+            <url> https://darccyy.github.io/garfeo/static/0558/esperanto.png </url>
+            <title> Lasta bildstrio [0558] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo aĉetis fortan kafon </title>
+    <link> https://darccyy.github.io/garfeo/0558 </link>
+    <guid> 0558 </guid>
+    <description>
+        Garfildo aĉetis fortan kafon [0558] 1989-01-25 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0558/esperanto.png"
+        length="1672320"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo solvas problemojn </title>
+    <link> https://darccyy.github.io/garfeo/0557 </link>
+    <guid> 0557 </guid>
+    <description>
+        Garfildo solvas problemojn [0557] 2015-05-18 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0557/esperanto.png"
+        length="977633"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo priscias la festojn de la blatoj </title>

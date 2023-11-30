@@ -1,5 +1,35 @@
 [
     {
+        "index": "0558",
+        "title": "Garfildo aĉetis fortan kafon",
+        "date": "1989-01-25",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1672320,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0557",
+        "title": "Garfildo solvas problemojn",
+        "date": "2015-05-18",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 977633,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0556",
         "title": "Garfildo priscias la festojn de la blatoj",
         "date": "2013-04-09",
