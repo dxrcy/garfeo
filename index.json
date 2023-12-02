@@ -1,5 +1,35 @@
 [
     {
+        "index": "0560",
+        "title": "Garfildo atendas eĥon",
+        "date": "2015-05-06",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1060468,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0559",
+        "title": "Garfildo havas problemon",
+        "date": "2023-10-16",
+        "version": 0,
+        "sunday": "true",
+        "image_bytes": 902644,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0558",
         "title": "Garfildo aĉetis fortan kafon",
         "date": "1989-01-25",
