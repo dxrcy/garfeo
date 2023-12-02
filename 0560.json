@@ -1,12 +1,12 @@
 {
     "index": "0560",
     "prev": "0559",
-    "next": null,
-    "title": "Garfildo atendas eĥon",
-    "date": "2015-05-06",
+    "next": "0561",
+    "title": "Garfildo havas problemon",
+    "date": "2023-10-16",
     "version": 0,
     "sunday": "false",
-    "image_bytes": 1060468,
+    "image_bytes": 902644,
     "errata": [],
     "props": {
         "nogarfield": false,

@@ -1,6 +1,6 @@
 [
     {
-        "index": "0560",
+        "index": "0561",
         "title": "Garfildo atendas eĥon",
         "date": "2015-05-06",
         "version": 0,
@@ -15,12 +15,27 @@
         }
     },
     {
-        "index": "0559",
+        "index": "0560",
         "title": "Garfildo havas problemon",
         "date": "2023-10-16",
         "version": 0,
-        "sunday": "true",
+        "sunday": "false",
         "image_bytes": 902644,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0559",
+        "title": "Garfildo preferas sonĝi pri plaĝo",
+        "date": "2010-01-24",
+        "version": 0,
+        "sunday": "true",
+        "image_bytes": 2559584,
         "errata": [],
         "props": {
             "nogarfield": false,

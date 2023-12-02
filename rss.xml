@@ -5,21 +5,21 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0560/esperanto.png </url>
-            <title> Lasta bildstrio [0560] </title>
+            <url> https://darccyy.github.io/garfeo/static/0561/esperanto.png </url>
+            <title> Lasta bildstrio [0561] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
 
 <item>
     <title> Garfildo atendas eĥon </title>
-    <link> https://darccyy.github.io/garfeo/0560 </link>
-    <guid> 0560 </guid>
+    <link> https://darccyy.github.io/garfeo/0561 </link>
+    <guid> 0561 </guid>
     <description>
-        Garfildo atendas eĥon [0560] 2015-05-06 💚
+        Garfildo atendas eĥon [0561] 2015-05-06 💚
         Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
     </description>
     <enclosure
-        url="https://darccyy.github.io/garfeo/static/posts/0560/esperanto.png"
+        url="https://darccyy.github.io/garfeo/static/posts/0561/esperanto.png"
         length="1060468"
         type="image/png"
     />
@@ -27,15 +27,30 @@
 
 <item>
     <title> Garfildo havas problemon </title>
+    <link> https://darccyy.github.io/garfeo/0560 </link>
+    <guid> 0560 </guid>
+    <description>
+        Garfildo havas problemon [0560] 2023-10-16 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0560/esperanto.png"
+        length="902644"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo preferas sonĝi pri plaĝo </title>
     <link> https://darccyy.github.io/garfeo/0559 </link>
     <guid> 0559 </guid>
     <description>
-        Garfildo havas problemon [0559] 2023-10-16 💚
+        Garfildo preferas sonĝi pri plaĝo [0559] 2010-01-24 💚
         Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0559/esperanto.png"
-        length="902644"
+        length="2559584"
         type="image/png"
     />
 </item>
