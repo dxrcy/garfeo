@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0561/esperanto.png </url>
-            <title> Lasta bildstrio [0561] </title>
+            <url> https://darccyy.github.io/garfeo/static/0563/esperanto.png </url>
+            <title> Lasta bildstrio [0563] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo scias pri kaŝanta vosto </title>
+    <link> https://darccyy.github.io/garfeo/0563 </link>
+    <guid> 0563 </guid>
+    <description>
+        Garfildo scias pri kaŝanta vosto [0563] 2004-02-13 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0563/esperanto.png"
+        length="1260761"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo ne miras pri malŝtopilo </title>
+    <link> https://darccyy.github.io/garfeo/0562 </link>
+    <guid> 0562 </guid>
+    <description>
+        Garfildo ne miras pri malŝtopilo [0562] 2004-03-15 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0562/esperanto.png"
+        length="1283655"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo atendas eĥon </title>

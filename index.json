@@ -1,5 +1,35 @@
 [
     {
+        "index": "0563",
+        "title": "Garfildo scias pri kaŝanta vosto",
+        "date": "2004-02-13",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1260761,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0562",
+        "title": "Garfildo ne miras pri malŝtopilo",
+        "date": "2004-03-15",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1283655,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0561",
         "title": "Garfildo atendas eĥon",
         "date": "2015-05-06",
