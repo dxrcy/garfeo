@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0563/esperanto.png </url>
-            <title> Lasta bildstrio [0563] </title>
+            <url> https://darccyy.github.io/garfeo/static/0564/esperanto.png </url>
+            <title> Lasta bildstrio [0564] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo devus gluti pilolon </title>
+    <link> https://darccyy.github.io/garfeo/0564 </link>
+    <guid> 0564 </guid>
+    <description>
+        Garfildo devus gluti pilolon [0564] 2014-03-26 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0564/esperanto.png"
+        length="1033064"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo scias pri kaŝanta vosto </title>
@@ -7370,7 +7385,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0073/esperanto.png"
-        length="697128"
+        length="1003033"
         type="image/png"
     />
 </item>
@@ -8375,7 +8390,7 @@
     </description>
     <enclosure
         url="https://darccyy.github.io/garfeo/static/posts/0006/esperanto.png"
-        length="2295515"
+        length="2286989"
         type="image/png"
     />
 </item>

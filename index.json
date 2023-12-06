@@ -1,5 +1,20 @@
 [
     {
+        "index": "0564",
+        "title": "Garfildo devus gluti pilolon",
+        "date": "2014-03-26",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1033064,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0563",
         "title": "Garfildo scias pri kaŝanta vosto",
         "date": "2004-02-13",
@@ -7353,9 +7368,9 @@
         "index": "0073",
         "title": "Garfildo ne estas tro enua",
         "date": "2022-08-15",
-        "version": 0,
+        "version": 1,
         "sunday": "false",
-        "image_bytes": 697128,
+        "image_bytes": 1003033,
         "errata": [],
         "props": {
             "nogarfield": false,
@@ -8358,9 +8373,9 @@
         "index": "0006",
         "title": "Garfildo estas pli bonŝanca ol Jon'",
         "date": "2004-08-08",
-        "version": 1,
+        "version": 2,
         "sunday": "true",
-        "image_bytes": 2295515,
+        "image_bytes": 2286989,
         "errata": [],
         "props": {
             "nogarfield": false,
