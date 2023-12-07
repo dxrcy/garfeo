@@ -1,5 +1,35 @@
 [
     {
+        "index": "0566",
+        "title": "Garfildo parolas al komputilo",
+        "date": "2008-02-24",
+        "version": 0,
+        "sunday": "true",
+        "image_bytes": 2839090,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
+        "index": "0565",
+        "title": "Garfildo manĝis biskviton",
+        "date": "2007-10-13",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1470327,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0564",
         "title": "Garfildo devus gluti pilolon",
         "date": "2014-03-26",

@@ -5,10 +5,40 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0564/esperanto.png </url>
-            <title> Lasta bildstrio [0564] </title>
+            <url> https://darccyy.github.io/garfeo/static/0566/esperanto.png </url>
+            <title> Lasta bildstrio [0566] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo parolas al komputilo </title>
+    <link> https://darccyy.github.io/garfeo/0566 </link>
+    <guid> 0566 </guid>
+    <description>
+        Garfildo parolas al komputilo [0566] 2008-02-24 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0566/esperanto.png"
+        length="2839090"
+        type="image/png"
+    />
+</item>
+
+<item>
+    <title> Garfildo manĝis biskviton </title>
+    <link> https://darccyy.github.io/garfeo/0565 </link>
+    <guid> 0565 </guid>
+    <description>
+        Garfildo manĝis biskviton [0565] 2007-10-13 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0565/esperanto.png"
+        length="1470327"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo devus gluti pilolon </title>
