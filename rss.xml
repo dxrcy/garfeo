@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0567/esperanto.png </url>
-            <title> Lasta bildstrio [0567] </title>
+            <url> https://darccyy.github.io/garfeo/static/0568/esperanto.png </url>
+            <title> Lasta bildstrio [0568] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo surhavas taŭgan ĉemizon </title>
+    <link> https://darccyy.github.io/garfeo/0568 </link>
+    <guid> 0568 </guid>
+    <description>
+        Garfildo surhavas taŭgan ĉemizon [0568] 2006-07-11 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0568/esperanto.png"
+        length="2019234"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo ne ĉeestas la rendevuon </title>

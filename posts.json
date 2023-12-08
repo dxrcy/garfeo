@@ -1,5 +1,20 @@
 [
     {
+        "index": "0568",
+        "title": "Garfildo surhavas taŭgan ĉemizon",
+        "date": "2006-07-11",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 2019234,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0567",
         "title": "Garfildo ne ĉeestas la rendevuon",
         "date": "2012-02-14",
