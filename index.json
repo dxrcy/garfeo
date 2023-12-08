@@ -1,5 +1,20 @@
 [
     {
+        "index": "0567",
+        "title": "Garfildo ne ĉeestas la rendevuon",
+        "date": "2012-02-14",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1611399,
+        "errata": [],
+        "props": {
+            "nogarfield": true,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0566",
         "title": "Garfildo parolas al komputilo",
         "date": "2008-02-24",
