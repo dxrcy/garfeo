@@ -1,5 +1,20 @@
 [
     {
+        "index": "0570",
+        "title": "Garfildo pakas donacon per rubando",
+        "date": "2021-12-22",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1154812,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0569",
         "title": "Garfildo amas siajn bildojn",
         "date": "2022-12-15",

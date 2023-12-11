@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0569/esperanto.png </url>
-            <title> Lasta bildstrio [0569] </title>
+            <url> https://darccyy.github.io/garfeo/static/0570/esperanto.png </url>
+            <title> Lasta bildstrio [0570] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo pakas donacon per rubando </title>
+    <link> https://darccyy.github.io/garfeo/0570 </link>
+    <guid> 0570 </guid>
+    <description>
+        Garfildo pakas donacon per rubando [0570] 2021-12-22 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0570/esperanto.png"
+        length="1154812"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo amas siajn bildojn </title>
