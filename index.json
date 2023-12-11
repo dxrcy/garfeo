@@ -1,5 +1,20 @@
 [
     {
+        "index": "0569",
+        "title": "Garfildo amas siajn bildojn",
+        "date": "2022-12-15",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1020465,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0568",
         "title": "Garfildo ne estis plaĉa",
         "date": "2004-12-09",
