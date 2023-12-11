@@ -1,26 +1,11 @@
 [
     {
-        "index": "0569",
-        "title": "Garfildo riparis signon",
-        "date": "2006-02-02",
-        "version": 0,
-        "sunday": "false",
-        "image_bytes": 1170019,
-        "errata": [],
-        "props": {
-            "nogarfield": false,
-            "notext": false,
-            "good": false,
-            "earsback": false
-        }
-    },
-    {
         "index": "0568",
-        "title": "Garfildo surhavas taŭgan ĉemizon",
-        "date": "2006-07-11",
+        "title": "Garfildo ne estis plaĉa",
+        "date": "2004-12-09",
         "version": 0,
         "sunday": "false",
-        "image_bytes": 2019234,
+        "image_bytes": 1383976,
         "errata": [],
         "props": {
             "nogarfield": false,
