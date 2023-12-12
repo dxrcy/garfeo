@@ -220,6 +220,35 @@ body article .caption pre {
 body article .caption pre:active {
   filter: brightness(90%);
 }
+body article .transcript {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: initial;
+  background-color: #1d2328;
+}
+body article .transcript h2 {
+  margin: 0;
+  margin-top: 10px;
+}
+body article .transcript .panel h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+body article .transcript .panel .texts h4 {
+  margin: 0;
+  color: #b686b6;
+}
+body article .transcript .panel .texts p {
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+body article .transcript .panel .texts p em {
+  color: inherit;
+  font-style: inherit;
+  font-weight: bold;
+}
 body article .links {
   display: inline-block;
   margin-top: 0;

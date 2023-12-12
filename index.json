@@ -1,5 +1,20 @@
 [
     {
+        "index": "0571",
+        "title": "Garfildo havas grandan nazon",
+        "date": "2006-12-12",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1523112,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0570",
         "title": "Garfildo pakas donacon per rubando",
         "date": "2021-12-22",
@@ -5011,7 +5026,7 @@
     },
     {
         "index": "0236",
-        "title": "Garfildo kaj arlino manĝas viandon",
+        "title": "Garfildo kaj Arlino manĝas viandon",
         "date": "2020-09-11",
         "version": 0,
         "sunday": "false",
