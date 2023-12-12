@@ -87,11 +87,7 @@ impl Panel {
             let Some(text) = lines.next() else {
                 return Err(format!("expected text line after `{}`", line));
             };
-            let text = if matches!(speaker, Speaker::Character(_)) {
-                text.to_uppercase()
-            } else {
-                text.to_string()
-            };
+            let text = text.to_string();
 
             texts.push(Text { speaker, text });
         }

@@ -5,6 +5,7 @@ use ibex::prelude::*;
 use ibex::{routes, ssg};
 
 mod parse;
+use parse::transcript;
 use parse::{parse_posts, Post, PostEntry};
 mod rss;
 
@@ -241,6 +242,10 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             }]
         }
 
+        [:if let Some(transcript) = &post.transcript {
+            @post_transcript [transcript]
+        }]
+
         hr/
 
         div ."caption" {
@@ -253,6 +258,54 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
         }
     }}
     .into()
+}
+
+fn post_transcript(transcript: &transcript::Transcript) -> View {
+    use transcript::{Character::*, Speaker::*, Text};
+
+    fn render_speaker(speaker: &transcript::Speaker) -> impl Into<View> {
+        match speaker {
+            Sound => "[sono]",
+            Text => "[skribo]",
+            Character(Garfield) => "Garfildo:",
+            Character(Jon) => "Jono:",
+            Character(Odie) => "Odio:",
+            Character(Liz) => "Lizo:",
+            Character(Nermal) => "Nermalo:",
+            Character(Arlene) => "Arlino:",
+        }
+    }
+
+    fn format_emphasis(string: &str) -> String {
+        let mut output = String::new();
+        let mut is_emphasis = false;
+        for ch in string.chars() {
+            if ch == '*' {
+                output += if is_emphasis { "</em>" } else { "<em>" };
+                is_emphasis ^= true;
+                continue;
+            }
+            output.push(ch);
+        }
+        output
+    }
+
+    view! {
+        div ."transcript" {
+            h2 { "Transskribo" }
+            [:for (i, panel) in transcript.panels.iter().enumerate() {
+                div ."panel" {
+                    h3 { "Bildo " [i+1] }
+                    div ."texts" {
+                        [:for Text { speaker, text } in &panel.texts {
+                            h4 { @render_speaker [&speaker] }
+                            p { [format_emphasis(text)] }
+                        }]
+                    }
+                }
+            }]
+        }
+    }
 }
 
 fn at_about(first_last: &FirstLast) -> Document {
