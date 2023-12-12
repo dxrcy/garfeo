@@ -1,3 +1,6 @@
+pub mod transcript;
+use transcript::Transcript;
+
 use std::{collections::HashMap, fs, path::Path};
 
 const DIR: &str = "static/posts";
@@ -19,6 +22,7 @@ pub struct Post {
     pub sunday: bool,
     pub image_bytes: u64,
     pub version: u32,
+    pub transcript: Option<Transcript>,
 }
 
 #[derive(Default, Clone)]
@@ -191,6 +195,22 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             None => 0,
         };
 
+        let transcript = format!("{path}/transcript");
+        let transcript = if Path::new(&transcript).exists() {
+            let file = fs::read_to_string(&transcript).expect("[IO fail] reading transcript file");
+            match Transcript::from_file(&file) {
+                Ok(props) => Some(props),
+                Err(err) => {
+                    return Err(format!(
+                        "Failed to parse transcript file [{index}] - {}",
+                        err
+                    ))
+                }
+            }
+        } else {
+            None
+        };
+
         posts.push(Post {
             index,
             title,
@@ -200,6 +220,7 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             sunday,
             image_bytes,
             version,
+            transcript,
         });
     }
 
@@ -299,6 +320,7 @@ impl Post {
                     good,
                     earsback,
                 },
+            transcript: _,
         } = self;
 
         let errata = if errata.0.is_empty() {
@@ -355,6 +377,7 @@ impl PostEntry {
                     good,
                     earsback,
                 },
+            transcript: _,
         } = post;
 
         let prev = match &prev {
