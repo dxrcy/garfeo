@@ -1,7 +1,13 @@
 #[derive(Clone, Debug)]
-pub struct Transcript {
-    pub panels: [Panel; 3],
+pub enum Transcript {
+    Normal([Panel; 3]),
+    Sunday([Panel; 7]),
 }
+
+// #[derive(Clone, Debug)]
+// pub struct Transcript {
+//     pub panels: [Panel; 3],
+// }
 
 #[derive(Clone, Debug)]
 pub struct Panel {
@@ -50,13 +56,21 @@ impl Transcript {
 
         let panels: Vec<_> =
             extract_first_error(panels.into_iter().map(Panel::from_lines))?.collect();
-        let Ok(panels) = panels.try_into() else {
-            return Err(format!("must be 3 panels"));
+
+        let transcript = match panels.len() {
+            3 => Transcript::Normal(panels.try_into().expect("panels should convert to array")),
+            7 => Transcript::Sunday(panels.try_into().expect("panels should convert to array")),
+            _ => return Err(format!("must be 3 or 7 panels")),
         };
 
-        println!("{:#?}", panels);
+        Ok(transcript)
+    }
 
-        Ok(Transcript { panels })
+    pub fn panels(&self) -> &[Panel] {
+        match self {
+            Self::Normal(panels) => panels,
+            Self::Sunday(panels) => panels,
+        }
     }
 }
 

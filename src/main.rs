@@ -293,7 +293,7 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
     view! {
         div ."transcript" {
             h2 { "Transskribo" }
-            [:for (i, panel) in transcript.panels.iter().enumerate() {
+            [:for (i, panel) in transcript.panels().iter().enumerate() {
                 div ."panel" {
                     h3 { "Bildo " [i+1] }
                     div ."texts" {
