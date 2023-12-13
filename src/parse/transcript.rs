@@ -105,6 +105,11 @@ fn remove_last_char(string: &str) -> &str {
     chars.next_back();
     chars.as_str()
 }
+fn remove_first_char(string: &str) -> &str {
+    let mut chars = string.chars();
+    chars.next();
+    chars.as_str()
+}
 
 impl Speaker {
     fn from_string(string: &str) -> Result<Self, String> {
@@ -117,12 +122,17 @@ impl Speaker {
         }
 
         let character = remove_last_char(&string).to_lowercase();
-        if !KNOWN_CHARACTERS.contains(&character.as_str()) {
-            println!(
-                "\x1b[33mwarning: transcription contains unknown character: `{}`\x1b[0m",
-                character
-            );
-        }
+        let character = if character.starts_with('~') {
+            remove_first_char(&character).to_string()
+        } else {
+            if !KNOWN_CHARACTERS.contains(&character.as_str()) {
+                println!(
+                    "\x1b[33mwarning: transcription contains unknown character: `{}`\x1b[0m",
+                    character
+                );
+            }
+            character
+        };
 
         Ok(Self::Character(character))
     }
