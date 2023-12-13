@@ -80,10 +80,7 @@ impl Panel {
         let mut texts = Vec::new();
 
         while let Some(line) = lines.next() {
-            if !line.ends_with(':') {
-                return Err(format!("expected character definition"));
-            }
-            let speaker = Speaker::from_string(remove_last_char(line));
+            let speaker = Speaker::from_string(line)?;
 
             let Some(text) = lines.next() else {
                 return Err(format!("expected text line after `{}`", line));
@@ -104,12 +101,16 @@ fn remove_last_char(string: &str) -> &str {
 }
 
 impl Speaker {
-    fn from_string(string: &str) -> Self {
-        let string = string.to_lowercase();
-        match string.as_str() {
-            "[sound]" => Self::Sound,
-            "[text]" => Self::Text,
-            _ => Self::Character(string),
+    fn from_string(string: &str) -> Result<Self, String> {
+        if !string.ends_with(':') {
+            return Ok(match string.to_lowercase().as_str() {
+                "[sono]" => Self::Sound,
+                "[skribo]" => Self::Text,
+                _ => return Err(format!("not a valid speaker `{}`", string)),
+            });
         }
+
+        let string = remove_last_char(&string).to_lowercase();
+        Ok(Self::Character(string))
     }
 }

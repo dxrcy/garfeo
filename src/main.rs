@@ -271,11 +271,11 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
         first.to_string().to_uppercase() + &chars.as_str().to_lowercase()
     }
 
-    fn render_speaker(speaker: &transcript::Speaker) -> impl Into<View> {
+    fn render_speaker(speaker: &transcript::Speaker) -> View {
         match speaker {
-            Sound => "[sono]".to_string(),
-            Text => "[skribo]".to_string(),
-            Character(name) => format!("{}:", sentence_case(name)),
+            Sound => view! { em {"[Sono]"} },
+            Text => view! { em {"[Skribo]"} },
+            Character(name) => view! { [sentence_case(name)] ":" },
         }
     }
 
