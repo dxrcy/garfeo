@@ -110,7 +110,18 @@ impl Speaker {
             });
         }
 
-        let string = remove_last_char(&string).to_lowercase();
-        Ok(Self::Character(string))
+        const KNOWN_CHARACTERS: &[&str] = &[
+            "garfildo", "jono", "lizo", "odio", "nermalo", "arlino", "hundo",
+        ];
+
+        let character = remove_last_char(&string).to_lowercase();
+        if !KNOWN_CHARACTERS.contains(&character.as_str()) {
+            println!(
+                "\x1b[33mwarning: transcription contains unknown character: `{}`\x1b[0m",
+                character
+            );
+        }
+
+        Ok(Self::Character(character))
     }
 }
