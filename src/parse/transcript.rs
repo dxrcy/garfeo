@@ -24,17 +24,7 @@ pub struct Text {
 pub enum Speaker {
     Sound,
     Text,
-    Character(Character),
-}
-
-#[derive(Clone, Debug, Copy)]
-pub enum Character {
-    Garfield,
-    Jon,
-    Liz,
-    Odie,
-    Nermal,
-    Arlene,
+    Character(String),
 }
 
 impl Transcript {
@@ -93,10 +83,7 @@ impl Panel {
             if !line.ends_with(':') {
                 return Err(format!("expected character definition"));
             }
-            let speaker = remove_last_char(line);
-            let Some(speaker) = Speaker::from_string(speaker) else {
-                return Err(format!("unknown speaker `{}`", speaker));
-            };
+            let speaker = Speaker::from_string(remove_last_char(line));
 
             let Some(text) = lines.next() else {
                 return Err(format!("expected text line after `{}`", line));
@@ -117,17 +104,12 @@ fn remove_last_char(string: &str) -> &str {
 }
 
 impl Speaker {
-    fn from_string(string: &str) -> Option<Self> {
-        Some(match string.to_lowercase().as_str() {
+    fn from_string(string: &str) -> Self {
+        let string = string.to_lowercase();
+        match string.as_str() {
             "[sound]" => Self::Sound,
             "[text]" => Self::Text,
-            "garfield" => Self::Character(Character::Garfield),
-            "jon" => Self::Character(Character::Jon),
-            "odie" => Self::Character(Character::Odie),
-            "liz" => Self::Character(Character::Liz),
-            "nermal" => Self::Character(Character::Nermal),
-            "arlene" => Self::Character(Character::Arlene),
-            _ => return None,
-        })
+            _ => Self::Character(string),
+        }
     }
 }

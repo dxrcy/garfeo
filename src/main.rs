@@ -261,18 +261,21 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
 }
 
 fn post_transcript(transcript: &transcript::Transcript) -> View {
-    use transcript::{Character::*, Speaker::*, Text};
+    use transcript::{Speaker::*, Text};
+
+    fn sentence_case(string: &str) -> String {
+        let mut chars = string.chars();
+        let Some(first) = chars.next() else {
+            return String::new();
+        };
+        first.to_string().to_uppercase() + &chars.as_str().to_lowercase()
+    }
 
     fn render_speaker(speaker: &transcript::Speaker) -> impl Into<View> {
         match speaker {
-            Sound => "[sono]",
-            Text => "[skribo]",
-            Character(Garfield) => "Garfildo:",
-            Character(Jon) => "Jono:",
-            Character(Odie) => "Odio:",
-            Character(Liz) => "Lizo:",
-            Character(Nermal) => "Nermalo:",
-            Character(Arlene) => "Arlino:",
+            Sound => "[sono]".to_string(),
+            Text => "[skribo]".to_string(),
+            Character(name) => format!("{}:", sentence_case(name)),
         }
     }
 
@@ -296,12 +299,16 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
             [:for (i, panel) in transcript.panels().iter().enumerate() {
                 div ."panel" {
                     h3 { "Bildo " [i+1] }
-                    div ."texts" {
-                        [:for Text { speaker, text } in &panel.texts {
-                            h4 { @render_speaker [&speaker] }
-                            p { [format_emphasis(text)] }
-                        }]
-                    }
+                    [:if panel.texts.is_empty() {
+                        div ."empty" { "(nenio)" }
+                    } else {
+                        div ."texts" {
+                            [:for Text { speaker, text } in &panel.texts {
+                                h4 { @render_speaker [&speaker] }
+                                p { [format_emphasis(text)] }
+                            }]
+                        }
+                    }]
                 }
             }]
         }
