@@ -34,6 +34,9 @@ impl Transcript {
 
         for line in file.lines() {
             let line = line.trim();
+            if line.is_empty() {
+                continue;
+            }
 
             if line == "---" {
                 panels.push(panel_lines);
@@ -43,6 +46,10 @@ impl Transcript {
             }
         }
         panels.push(panel_lines);
+
+        if panels.is_empty() {
+            return Err(format!("empty file"));
+        }
 
         let panels: Vec<_> =
             extract_first_error(panels.into_iter().map(Panel::from_lines))?.collect();
