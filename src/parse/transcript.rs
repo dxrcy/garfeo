@@ -1,13 +1,12 @@
+const KNOWN_CHARACTERS: &[&str] = &[
+    "garfildo", "jono", "lizo", "odio", "nermalo", "arlino", "hundo", "kimio",
+];
+
 #[derive(Clone, Debug)]
 pub enum Transcript {
     Normal([Panel; 3]),
     Sunday([Panel; 7]),
 }
-
-// #[derive(Clone, Debug)]
-// pub struct Transcript {
-//     pub panels: [Panel; 3],
-// }
 
 #[derive(Clone, Debug)]
 pub struct Panel {
@@ -116,10 +115,6 @@ impl Speaker {
                 _ => return Err(format!("not a valid speaker `{}`", string)),
             });
         }
-
-        const KNOWN_CHARACTERS: &[&str] = &[
-            "garfildo", "jono", "lizo", "odio", "nermalo", "arlino", "hundo",
-        ];
 
         let character = remove_last_char(&string).to_lowercase();
         if !KNOWN_CHARACTERS.contains(&character.as_str()) {
