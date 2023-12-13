@@ -234,6 +234,10 @@ body article .transcript .panel h3 {
   text-align: center;
   margin-bottom: 0;
 }
+body article .transcript .panel .empty {
+  text-align: center;
+  color: #3e6265;
+}
 body article .transcript .panel .texts h4 {
   margin: 0;
   color: #b686b6;
