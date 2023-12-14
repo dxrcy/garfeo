@@ -263,28 +263,6 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
 fn post_transcript(transcript: &transcript::Transcript) -> View {
     use transcript::{Speaker::*, Text};
 
-    fn sentence_case(string: &str) -> String {
-        let mut chars = string.chars();
-        let Some(first) = chars.next() else {
-            return String::new();
-        };
-        first.to_string().to_uppercase() + &chars.as_str().to_lowercase()
-    }
-
-    fn format_emphasis(string: &str) -> String {
-        let mut output = String::new();
-        let mut is_emphasis = false;
-        for ch in string.chars() {
-            if ch == '*' {
-                output += if is_emphasis { "</em>" } else { "<em>" };
-                is_emphasis ^= true;
-                continue;
-            }
-            output.push(ch);
-        }
-        output
-    }
-
     view! {
         div ."transcript" {
             h2 { "Transskribo" }
@@ -304,7 +282,7 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
                                         p ."text" { code { [text] } }
                                     },
                                     Character(name) => view! {
-                                        h4 { [name] }
+                                        h4 { [sentence_case(name)] }
                                         p ."speech" {
                                             [format_emphasis(&sentence_case(&text))]
                                         }
@@ -525,4 +503,42 @@ fn json_index(entries: &[PostEntry]) -> String {
             .join(",\n")
             .replace('\n', "\n    "),
     )
+}
+
+fn sentence_case(string: &str) -> String {
+    let mut output = String::new();
+    let mut was_punctuation = true;
+
+    for ch in string.chars() {
+        let is_uppercase = was_punctuation;
+        match ch {
+            // End of sentence
+            '.' | '!' | '?' => was_punctuation = true,
+            // Ignore any punctuation
+            _ if ch.is_ascii_punctuation() => (),
+            // Any other character
+            _ => was_punctuation = false,
+        }
+        output.push(if is_uppercase {
+            ch.to_ascii_uppercase()
+        } else {
+            ch
+        });
+    }
+
+    output
+}
+
+fn format_emphasis(string: &str) -> String {
+    let mut output = String::new();
+    let mut is_emphasis = false;
+    for ch in string.chars() {
+        if ch == '*' {
+            output += if is_emphasis { "</em>" } else { "<em>" };
+            is_emphasis ^= true;
+            continue;
+        }
+        output.push(ch);
+    }
+    output
 }
