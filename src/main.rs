@@ -271,14 +271,6 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
         first.to_string().to_uppercase() + &chars.as_str().to_lowercase()
     }
 
-    fn render_speaker(speaker: &transcript::Speaker) -> View {
-        match speaker {
-            Sound => view! { em {"[Sono]"} },
-            Text => view! { em {"[Skribo]"} },
-            Character(name) => view! { [sentence_case(name)] ":" },
-        }
-    }
-
     fn format_emphasis(string: &str) -> String {
         let mut output = String::new();
         let mut is_emphasis = false;
@@ -304,8 +296,20 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
                     } else {
                         div ."texts" {
                             [:for Text { speaker, text } in &panel.texts {
-                                h4 { @render_speaker [&speaker] }
-                                p { [format_emphasis(text)] }
+                                [match speaker {
+                                    Sound => view! {
+                                        p ."sound" { em { [text] } }
+                                    },
+                                    Text => view! {
+                                        p ."text" { code { [text] } }
+                                    },
+                                    Character(name) => view! {
+                                        h4 { [name] }
+                                        p ."speech" {
+                                            [format_emphasis(&sentence_case(&text))]
+                                        }
+                                    }
+                                }]
                             }]
                         }
                     }]
