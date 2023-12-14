@@ -281,8 +281,16 @@ fn post_transcript(transcript: &transcript::Transcript) -> View {
                                     Text => view! {
                                         p ."text" { code { [text] } }
                                     },
-                                    Character(name) => view! {
-                                        h4 { [sentence_case(name)] }
+                                    Character(name, is_special) => view! {
+                                        h4 {
+                                            [:where let name = sentence_case(&name) {
+                                                [:if *is_special {
+                                                    em { [name] }
+                                                } else {
+                                                    [name]
+                                                }]
+                                            }]
+                                        }
                                         p ."speech" {
                                             [format_emphasis(&sentence_case(&text))]
                                         }

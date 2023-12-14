@@ -23,7 +23,7 @@ pub struct Text {
 pub enum Speaker {
     Sound,
     Text,
-    Character(String),
+    Character(String, bool),
 }
 
 impl Transcript {
@@ -122,8 +122,8 @@ impl Speaker {
         }
 
         let character = remove_last_char(&string).to_lowercase();
-        let character = if character.starts_with('~') {
-            remove_first_char(&character).to_string()
+        let (character, is_special) = if character.starts_with('~') {
+            (remove_first_char(&character).to_string(), true)
         } else {
             if !KNOWN_CHARACTERS.contains(&character.as_str()) {
                 println!(
@@ -131,9 +131,9 @@ impl Speaker {
                     character
                 );
             }
-            character
+            (character, false)
         };
 
-        Ok(Self::Character(character))
+        Ok(Self::Character(character, is_special))
     }
 }
