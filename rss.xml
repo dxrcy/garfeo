@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0571/esperanto.png </url>
-            <title> Lasta bildstrio [0571] </title>
+            <url> https://darccyy.github.io/garfeo/static/0572/esperanto.png </url>
+            <title> Lasta bildstrio [0572] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo antaŭĝojas pri Kristnasko </title>
+    <link> https://darccyy.github.io/garfeo/0572 </link>
+    <guid> 0572 </guid>
+    <description>
+        Garfildo antaŭĝojas pri Kristnasko [0572] 2003-12-24 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0572/esperanto.png"
+        length="1479816"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo havas grandan nazon </title>

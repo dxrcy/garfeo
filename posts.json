@@ -1,5 +1,20 @@
 [
     {
+        "index": "0572",
+        "title": "Garfildo antaŭĝojas pri Kristnasko",
+        "date": "2003-12-24",
+        "version": 0,
+        "sunday": "false",
+        "image_bytes": 1479816,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0571",
         "title": "Garfildo havas grandan nazon",
         "date": "2006-12-12",
