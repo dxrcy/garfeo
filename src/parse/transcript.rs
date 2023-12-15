@@ -1,5 +1,13 @@
 const KNOWN_CHARACTERS: &[&str] = &[
-    "garfildo", "jono", "lizo", "odio", "nermalo", "arlino", "hundo", "kimio",
+    "garfildo",
+    "jono",
+    "lizo",
+    "odio",
+    "nermalo",
+    "arlino",
+    "hundo",
+    "kimio",
+    "televidilo",
 ];
 
 #[derive(Clone, Debug)]
