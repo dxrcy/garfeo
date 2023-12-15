@@ -256,6 +256,12 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
                 ~ "[" [&post.index] "]"
             }
         }
+
+        a ."source" [
+            href=format!("https://github.com/darccyy/garfeo/tree/master/static/posts/{}", post.index),
+        ] {
+            "Vidu fonton"
+        }
     }}
     .into()
 }
