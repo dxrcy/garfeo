@@ -231,12 +231,12 @@ body article .transcript .panel .texts h4 {
   color: #b686b6;
 }
 body article .transcript .panel .texts p {
-  max-width: 20em;
+  max-width: 17em;
   margin-top: 7px;
+  margin-bottom: 10px;
 }
 body article .transcript .panel .texts p.speech {
   margin-left: 20px;
-  margin-bottom: 10px;
 }
 body article .transcript .panel .texts p.speech em {
   color: inherit;
@@ -244,8 +244,10 @@ body article .transcript .panel .texts p.speech em {
   font-weight: bold;
 }
 body article .transcript .panel .texts p.sound, body article .transcript .panel .texts p.text {
-  margin-bottom: 0px;
   text-align: center;
+}
+body article .transcript .panel .texts p.sound:not(:last-child), body article .transcript .panel .texts p.text:not(:last-child) {
+  margin-bottom: 0px;
 }
 body article .transcript .panel .texts p.sound em, body article .transcript .panel .texts p.text em {
   font-weight: bold;

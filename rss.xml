@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0572/esperanto.png </url>
-            <title> Lasta bildstrio [0572] </title>
+            <url> https://darccyy.github.io/garfeo/static/0573/esperanto.png </url>
+            <title> Lasta bildstrio [0573] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo ricevis bonegan donacon </title>
+    <link> https://darccyy.github.io/garfeo/0573 </link>
+    <guid> 0573 </guid>
+    <description>
+        Garfildo ricevis bonegan donacon [0573] 2022-12-25 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0573/esperanto.png"
+        length="2286800"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo antaŭĝojas pri Kristnasko </title>

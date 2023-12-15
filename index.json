@@ -1,5 +1,20 @@
 [
     {
+        "index": "0573",
+        "title": "Garfildo ricevis bonegan donacon",
+        "date": "2022-12-25",
+        "version": 0,
+        "sunday": "true",
+        "image_bytes": 2286800,
+        "errata": [],
+        "props": {
+            "nogarfield": false,
+            "notext": false,
+            "good": false,
+            "earsback": false
+        }
+    },
+    {
         "index": "0572",
         "title": "Garfildo antaŭĝojas pri Kristnasko",
         "date": "2003-12-24",
