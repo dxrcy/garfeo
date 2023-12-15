@@ -197,12 +197,12 @@ body {
                         color: $c-accent-b;
                     }
                     p {
-                        max-width: 20em;
+                        max-width: 17em;
                         margin-top: 7px;
+                        margin-bottom: 10px;
 
                         &.speech {
                             margin-left: 20px;
-                            margin-bottom: 10px;
                             em {
                                 color: inherit;
                                 font-style: inherit;
@@ -211,7 +211,10 @@ body {
                         }
 
                         &.sound, &.text {
-                            margin-bottom: 0px;
+                            &:not(:last-child) {
+                                margin-bottom: 0px;
+                            }
+
                             text-align: center;
                             em {
                                 font-weight: bold;
