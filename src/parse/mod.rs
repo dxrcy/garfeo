@@ -23,6 +23,7 @@ pub struct Post {
     pub image_bytes: u64,
     pub version: u32,
     pub transcript: Option<Transcript>,
+    pub special: Option<Special>,
 }
 
 #[derive(Default, Clone)]
@@ -34,6 +35,12 @@ pub struct Props {
     pub notext: bool,
     pub good: bool,
     pub earsback: bool,
+}
+
+#[derive(Clone, Copy)]
+pub enum Special {
+    Christmas,
+    Halloween,
 }
 
 pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
@@ -211,6 +218,19 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             None
         };
 
+        let special = format!("{path}/special");
+        let special = if Path::new(&special).exists() {
+            let file = fs::read_to_string(&special).expect("[IO fail] reading special file");
+            match Special::from_file(&file) {
+                Ok(props) => Some(props),
+                Err(err) => {
+                    return Err(format!("Failed to parse special file [{index}] - {}", err))
+                }
+            }
+        } else {
+            None
+        };
+
         posts.push(Post {
             index,
             title,
@@ -221,6 +241,7 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             image_bytes,
             version,
             transcript,
+            special,
         });
     }
 
@@ -282,6 +303,16 @@ fn parse_props(file: String) -> Result<Props, String> {
     Ok(props)
 }
 
+impl Special {
+    pub fn from_file(file: &str) -> Result<Self, String> {
+        Ok(match file.trim() {
+            "christmas" => Self::Christmas,
+            "halloween" => Self::Halloween,
+            file => return Err(format!("not a special occasion `{}`", file)),
+        })
+    }
+}
+
 fn get_neighbors(posts: Vec<Post>) -> Vec<PostEntry> {
     let mut neighbors = Vec::new();
 
@@ -321,6 +352,7 @@ impl Post {
                     earsback,
                 },
             transcript: _,
+            special: _,
         } = self;
 
         let errata = if errata.0.is_empty() {
@@ -378,6 +410,7 @@ impl PostEntry {
                     earsback,
                 },
             transcript: _,
+            special: _,
         } = post;
 
         let prev = match &prev {

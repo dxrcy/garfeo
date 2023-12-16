@@ -5,8 +5,8 @@ use ibex::prelude::*;
 use ibex::{routes, ssg};
 
 mod parse;
-use parse::transcript;
 use parse::{parse_posts, Post, PostEntry};
+use parse::{transcript, Special};
 mod rss;
 
 /// Name of github repo
@@ -239,6 +239,14 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
                         @post_title [&next, true]
                     }
                 }
+            }]
+        }
+
+        div ."special" {
+            [match &post.special {
+                Some(Special::Christmas) => view! { "Feliĉan Kristnaskon!" },
+                Some(Special::Halloween) => view! { "Feliĉan Halovenon!" },
+                _ => view! {},
             }]
         }
 
