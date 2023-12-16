@@ -13,5 +13,19 @@
         "notext": false,
         "good": true,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Ah..."]
+        ],
+        [
+            ["GARFILDO", "Kia bela tago!"]
+        ],
+        [
+            ["JONO", "Pluvas"],
+            ["GARFILDO", "Ne en la kuirejo"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

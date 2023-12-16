@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Ekveku kaj ekbrilu, Garfildo!"]
+        ],
+        [
+            ["JONO", "Estas granda, vasta, mirinda mondo ekstere!"],
+            ["GARFILDO", "Vera..."]
+        ],
+        [
+            ["GARFILDO", "Sed, estas malgranda, mola, varma lito en ĉi tie"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

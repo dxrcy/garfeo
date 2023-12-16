@@ -13,5 +13,17 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Mi havas postenon por vi, Garfildo"]
+        ],
+        [],
+        [
+            ["JONO", "Vi nun estas mia paperpremilo"],
+            ["GARFILDO", "Kiam mi paŭzos por kafo?"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

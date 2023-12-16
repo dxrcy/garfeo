@@ -13,5 +13,25 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [],
+        [
+            ["JONO", "Garfildo, vekiĝu. Preskaŭ estas meztago"]
+        ],
+        [],
+        [
+            ["JONO", "Mi scias, ke malvarmas, sed vi ne povas resti enlite *eterne*!"]
+        ],
+        [
+            ["JONO", "Ĉu vi vintrodormos la tutan vintron?!"],
+            ["[sonod]", "Piko piko piko"]
+        ],
+        [],
+        [
+            ["GARFILDO", "Mi scias, ke la masko de urso estus utila"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

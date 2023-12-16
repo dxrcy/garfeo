@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "La lakto putris"]
+        ],
+        [
+            ["GARFILDO", ""Kiel vi scias?" vi demandas?"]
+        ],
+        [
+            ["GARFILDO", "La fakto, ke ĝi sidas tie sen glaso duondiras"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

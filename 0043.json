@@ -13,5 +13,16 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Mortigu la muson!"]
+        ],
+        [],
+        [
+            ["GARFILDO", "Kiel vi pensus, se mi interesigus lin pri ŝnursaltado, kaj esperus akcidenton?"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

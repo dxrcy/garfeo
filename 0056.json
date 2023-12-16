@@ -13,5 +13,20 @@
         "notext": false,
         "good": false,
         "earsback": true
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Nu, Garfildo, la tuta tago estas antaŭ ni"]
+        ],
+        [
+            ["JONO", "Ni povas marŝadi"],
+            ["GARFILDO", "Mi refuzos"]
+        ],
+        [
+            ["JONO", "Aŭ ni povas sidi ĉi tie kaj manĝi ĉipsojn ĝis [kiam] ni malsaniĝos"],
+            ["GARFILDO", "Ho... estos glora tago!"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

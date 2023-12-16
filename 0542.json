@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["LIZO", "Sal', Garfildo!"]
+        ],
+        [
+            ["LIZO", "Ĉu vi estas surprizita, vidi min?"],
+            ["GARFILDO", "Ne"]
+        ],
+        [
+            ["GARFILDO", "Sed *li* ja estas"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

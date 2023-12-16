@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Ahhh, 6:00ATM"]
+        ],
+        [
+            ["GARFILDO", "Estas mia plej ŝatata tempo de la tago"]
+        ],
+        [
+            ["GARFILDO", "Por dormi"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

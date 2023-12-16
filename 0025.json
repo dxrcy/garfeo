@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Lizo, ni ne disputu"]
+        ],
+        [
+            ["LIZO", "Disputu? Kial ni disputus?"]
+        ],
+        [
+            ["JONO", "Ĉar mi estas parolonta ion, kio estas stultega"],
+            ["GARFILDO", "Ankoraŭ estas espero por tiu knabo"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

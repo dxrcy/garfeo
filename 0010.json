@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Imagu, ke vi devas suferi dum tuta semajno de lundoj. Nu, oni ne venkos kontraŭ mi!"]
+        ],
+        [
+            ["GARFILDO", "Mi pasigas la reston de la semajno enlite"]
+        ],
+        [
+            ["GARFILDO", "Oni devus vekiĝi tre frue por trompi oldan Garfildon"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

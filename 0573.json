@@ -13,5 +13,27 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [],
+        [],
+        [
+            ["GARFILDO", "*Spiro!*"],
+            ["[sonod]", "Frap'! Frap'!"]
+        ],
+        [
+            ["GARFILDO", "Jon'! Jon'! Jon'!"]
+        ],
+        [
+            ["GARFILDO", "Ĝi estas mia plej ŝatata kristnaska donaco...*de ĉiam*!"]
+        ],
+        [
+            ["LIZO", "Ŭaŭ... Kion vi donacis al li?"]
+        ],
+        [
+            ["JONO", "Skatolo"]
+        ]
+    ],
+    "special": "kristnasko",
+    "is_old": false
 }

@@ -13,5 +13,29 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["FADENBULO", "Suspiro"]
+        ],
+        [
+            ["FADENBULO", "Vi delonge ne ludis kun mi"]
+        ],
+        [
+            ["FADENBULO", "Vi kutimis *bati* min ĉirkaŭ la tutan tagon... Nun vi simple *ignoras* min!"]
+        ],
+        [
+            ["GARFILDO", "Ho, mi petas..."],
+            ["FADENBULO", "Nu, mi scias kiam min oni ne volas!"]
+        ],
+        [
+            ["FADENBULO", "Mi iru hejmen al *patrino*!"]
+        ],
+        [
+            ["GARFILDO", "...Patrino?"]
+        ],
+        []
+    ],
+    "special": null,
+    "is_old": false
 }

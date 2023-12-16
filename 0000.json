@@ -13,5 +13,15 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [],
+        [],
+        [
+            ["JONO", "Nu, mi scias, ke vi faras ion aĉe"],
+            ["GARFILDO", "Sed kiooon?"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

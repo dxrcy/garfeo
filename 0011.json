@@ -13,5 +13,20 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Odio, via vosto diras, ke vi estas nudela-kolo stulta kapo"]
+        ],
+        [
+            ["GARFILDO", "Ĉu vi akceptos tion?"]
+        ],
+        [
+            ["JONO", "Mi scivolas kial hundoj ĉasas la vostojn"],
+            ["[sonod]", "Jip! Jip! Jip!"],
+            ["GARFILDO", "Estas mistero!"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

@@ -4,14 +4,27 @@
     "next": "0009",
     "title": "Garfildo amas la pluŝurson",
     "date": "2000-01-31",
-    "version": 1,
+    "version": 2,
     "sunday": "false",
-    "image_bytes": 1248802,
+    "image_bytes": 1255956,
     "errata": [],
     "props": {
         "nogarfield": false,
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Amikoj eblas veni kaj amikoj eblas iri..."]
+        ],
+        [
+            ["GARFILDO", "Sed pluŝurseto eternas"]
+        ],
+        [
+            ["[sonod]", "Pojt!"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

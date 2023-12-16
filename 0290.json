@@ -13,5 +13,8 @@
         "notext": true,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": null,
+    "special": null,
+    "is_old": true
 }

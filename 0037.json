@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Okej, kiu malligis la kovrilon de mia salujo?!"]
+        ],
+        [
+            ["JONO", "Garfildo, tio ne estis tre afabla"],
+            ["GARFILDO", "Vi pravas, ĝi ne estis tre afabla"]
+        ],
+        [
+            ["GARFILDO", "Sed ĝi estis tre amuza"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

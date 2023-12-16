@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Malhelas kaj pluvas ekstere"]
+        ],
+        [
+            ["JONO", "Sur la fenestrobreto sidas muso..."]
+        ],
+        [
+            ["JONO", "*Ludante etan saksofonon!*"],
+            ["GARFILDO", "Bona tago por bluso"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

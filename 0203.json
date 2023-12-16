@@ -13,5 +13,8 @@
         "notext": false,
         "good": true,
         "earsback": false
-    }
+    },
+    "transcript": null,
+    "special": "kristnasko",
+    "is_old": false
 }

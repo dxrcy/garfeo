@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Ho, Garfildo..."]
+        ],
+        [
+            ["JONO", "Surprizo! Ĝi estas pomo!"]
+        ],
+        [
+            ["GARFILDO", "Mi preferas, ke surprizo estu la formo de torto!"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

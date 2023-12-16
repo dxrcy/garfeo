@@ -13,5 +13,21 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Garfildo perdos iom da pezon"],
+            ["GARFILDO", "Hej!"]
+        ],
+        [
+            ["JONO", "La dieto estas erarimuna"],
+            ["GARFILDO", "Jo!"]
+        ],
+        [
+            ["JONO", "La dieto "tro-dika-por-atingi-manĝaĵon""],
+            ["GARFILDO", "Ĉu vi helpos ĉi tie?"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

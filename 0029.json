@@ -13,5 +13,19 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Jen duoble porcio da lazanjo, Garfildo, kun bifsteko flanke"]
+        ],
+        [
+            ["GARFILDO", "Nu, dankon tre al vi!"]
+        ],
+        [
+            ["GARFILDO", "Kaj jen viaj aŭtoŝlosiloj"],
+            ["JONO", "Dankon tre al vi"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

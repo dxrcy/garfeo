@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Sinjorinoj kaj sinjoroj... Odio!"]
+        ],
+        [
+            ["[sonod]", "Tud!"]
+        ],
+        [
+            ["GARFILDO", "Malfermu la pordon, poste eniru!"]
+        ]
+    ],
+    "special": null,
+    "is_old": true
 }

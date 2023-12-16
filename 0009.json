@@ -4,14 +4,28 @@
     "next": "0010",
     "title": "Garfildo ne konfidas brakumojn",
     "date": "2013-09-11",
-    "version": 1,
+    "version": 2,
     "sunday": "false",
-    "image_bytes": 1103119,
+    "image_bytes": 1112043,
     "errata": [],
     "props": {
         "nogarfield": false,
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Tio estis stranga"]
+        ],
+        [
+            ["JONO", "Fremdulo ĵus min brakumis"]
+        ],
+        [
+            ["JONO", "Devus esti nacia tago de brakumo!"],
+            ["GARFILDO", "Fakte, estas nacia tago por kontrolu la monujon"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

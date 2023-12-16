@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Ĉio ŝanĝiĝas"]
+        ],
+        [
+            ["JONO", "Mi scivolas kiel estas naĝi tra pudingo"]
+        ],
+        [
+            ["GARFILDO", "Krom Jono"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

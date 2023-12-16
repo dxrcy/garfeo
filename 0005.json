@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Ĉu vi scipovas distingi sekvinberan kuketon kaj ĉokoladan kuketon?"]
+        ],
+        [
+            ["[sonod]", "Puj!"]
+        ],
+        [
+            ["GARFILDO", "mi ankaŭ ne"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Estas Kristnaskvespere... donacoj estas pakitaj, ĥoraĵoj kantitaj, kaj la manĝetoj por Sankta Nikolao atendas"]
+        ],
+        [
+            ["GARFILDO", "Estas nur unu ago farota..."]
+        ],
+        [
+            ["GARFILDO", "-Ne kapabli ekdormi la tutan nokton"]
+        ]
+    ],
+    "special": "kristnasko",
+    "is_old": false
 }

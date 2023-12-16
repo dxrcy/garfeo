@@ -13,5 +13,18 @@
         "notext": false,
         "good": false,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["GARFILDO", "Kiel lunda mateno estas malsama de aliaj matenoj?"]
+        ],
+        [
+            ["[sonod]", "Blut!"]
+        ],
+        [
+            ["GARFILDO", "Dum aliaj matenoj, mi ŝmirus ternuksbuteron sur la pano *post kiam* mi rostis ĝin"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }

@@ -13,5 +13,18 @@
         "notext": false,
         "good": true,
         "earsback": false
-    }
+    },
+    "transcript": [
+        [
+            ["JONO", "Mi kuras senmove!"]
+        ],
+        [
+            ["GARFILDO", "Mi nur staras ĉi tie"]
+        ],
+        [
+            ["GARFILDO", "Kaj mi venkas"]
+        ]
+    ],
+    "special": null,
+    "is_old": false
 }
