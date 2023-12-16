@@ -5,7 +5,7 @@ mod routes;
 mod rss;
 mod views;
 
-const URL_ROOT: &str = "/garfeo2/";
+const URL_ROOT: &str = "/garfeo/";
 
 fn main() {
     let posts = posts::parse_posts().expect("Failed to parse posts");
