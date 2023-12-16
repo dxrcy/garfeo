@@ -338,64 +338,6 @@ fn get_neighbors(posts: Vec<Post>) -> Vec<PostEntry> {
     neighbors
 }
 
-impl Post {
-    pub fn to_json(&self) -> String {
-        let Post {
-            index,
-            title,
-            date,
-            version,
-            errata,
-            sunday,
-            image_bytes,
-            props:
-                Props {
-                    nogarfield,
-                    notext,
-                    good,
-                    earsback,
-                },
-            transcript: _,
-            special: _,
-            is_old: _,
-        } = self;
-
-        let errata = if errata.0.is_empty() {
-            "[]".to_string()
-        } else {
-            format!(
-                r#"[
-        {}
-    ]"#,
-                errata
-                    .0
-                    .iter()
-                    .map(|(old, new)| format!(r#"["{}", "{}"]"#, old, new))
-                    .collect::<Vec<_>>()
-                    .join(",\n        ")
-            )
-        };
-
-        format!(
-            r#"{{
-    "index": "{index}",
-    "title": "{title}",
-    "date": "{date}",
-    "version": {version},
-    "sunday": "{sunday}",
-    "image_bytes": {image_bytes},
-    "errata": {errata},
-    "props": {{
-        "nogarfield": {nogarfield},
-        "notext": {notext},
-        "good": {good},
-        "earsback": {earsback}
-    }}
-}}"#,
-        )
-    }
-}
-
 impl PostEntry {
     pub fn to_json(&self) -> String {
         let Self { post, prev, next } = self;
@@ -414,9 +356,9 @@ impl PostEntry {
                     good,
                     earsback,
                 },
-            transcript: _,
-            special: _,
-            is_old: _,
+            transcript,
+            special,
+            is_old,
         } = post;
 
         let prev = match &prev {
@@ -444,6 +386,52 @@ impl PostEntry {
             )
         };
 
+        let transcript = match transcript.as_ref().map(|transcript| transcript.panels()) {
+            None => "null".to_string(),
+            Some(panels) => {
+                format!(
+                    r#"[
+        {}
+    ]"#,
+                    panels
+                        .into_iter()
+                        .map(|panel| if panel.texts.is_empty() {
+                            "[]".to_string()
+                        } else {
+                            format!(
+                                r#"[
+            {}
+        ]"#,
+                                panel
+                                    .texts
+                                    .clone()
+                                    .into_iter()
+                                    .map(|text| format!(
+                                        r#"["{}", "{}"]"#,
+                                        match text.speaker {
+                                            transcript::Speaker::Text => "[teksto]".to_string(),
+                                            transcript::Speaker::Sound => "[sonod]".to_string(),
+                                            transcript::Speaker::Character(character, _) =>
+                                                character.to_uppercase(),
+                                        },
+                                        text.text
+                                    ))
+                                    .collect::<Vec<_>>()
+                                    .join(",\n            ")
+                            )
+                        })
+                        .collect::<Vec<_>>()
+                        .join(",\n        ")
+                )
+            }
+        };
+
+        let special = match special {
+            Some(Special::Christmas) => "\"kristnasko\"",
+            Some(Special::Halloween) => "\"haloveno\"",
+            None => "null",
+        };
+
         format!(
             r#"{{
     "index": "{index}",
@@ -460,7 +448,10 @@ impl PostEntry {
         "notext": {notext},
         "good": {good},
         "earsback": {earsback}
-    }}
+    }},
+    "transcript": {transcript},
+    "special": {special},
+    "is_old": {is_old}
 }}"#,
         )
     }

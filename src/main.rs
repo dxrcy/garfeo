@@ -524,7 +524,7 @@ fn json_index(entries: &[PostEntry]) -> String {
         "[\n    {}\n]",
         entries
             .into_iter()
-            .map(|entry| entry.post.to_json())
+            .map(|entry| entry.to_json())
             .collect::<Vec<_>>()
             .join(",\n")
             .replace('\n', "\n    "),
