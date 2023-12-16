@@ -409,8 +409,8 @@ impl PostEntry {
                                     .map(|text| format!(
                                         r#"["{}", "{}"]"#,
                                         match text.speaker {
-                                            transcript::Speaker::Text => "[teksto]".to_string(),
-                                            transcript::Speaker::Sound => "[sonod]".to_string(),
+                                            transcript::Speaker::Text => "<teksto>".to_string(),
+                                            transcript::Speaker::Sound => "<sono>".to_string(),
                                             transcript::Speaker::Character(character, _) =>
                                                 character.to_uppercase(),
                                         },
