@@ -306,8 +306,8 @@ fn parse_props(file: String) -> Result<Props, String> {
 impl Special {
     pub fn from_file(file: &str) -> Result<Self, String> {
         Ok(match file.trim() {
-            "christmas" => Self::Christmas,
-            "halloween" => Self::Halloween,
+            "kristnasko" => Self::Christmas,
+            "haloveno" => Self::Halloween,
             file => return Err(format!("not a special occasion `{}`", file)),
         })
     }
