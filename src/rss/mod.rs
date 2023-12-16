@@ -1,6 +1,6 @@
-use crate::{parse::PostEntry, FirstLast};
+use crate::posts::PostList;
 
-pub fn generate_rss(entries: &[PostEntry], first_last: &FirstLast) -> String {
+pub fn generate_rss(posts: PostList) -> String {
     let title = "Garfildo Esperanta";
     let url = "https://darccyy.github.io/garfeo";
     let description = "Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!";
@@ -10,11 +10,11 @@ pub fn generate_rss(entries: &[PostEntry], first_last: &FirstLast) -> String {
         title = title,
         url = url,
         description = description,
-        last_index = first_last.last.post.index,
-        items = entries
-            .iter()
-            .map(|entry| {
-                let post = &entry.post;
+        last_index = posts.first().index(),
+        items = posts
+            .into_iter()
+            .map(|post| {
+                let post = post.get();
                 format!(
                     include_str!("item.rss"),
                     url = url,

@@ -1,32 +1,42 @@
-name: Build
+name: Build & Deploy
 
+  # Triggers the workflow on push or pull request events but only for the "master" branch
 on:
-    # Triggers the workflow on push or pull request events but only for the "master" branch
     push:
-        branches: ["master"]
+        branches: ["master", "main"]
     pull_request:
-        branches: ["master"]
+        branches: ["master", "main"]
 
 # Requires content write permission
 permissions:
     contents: write
+    pages: write
+    id-token: write
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
-            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            # Access workspace files
             - name: Checkout 🛎️
               uses: actions/checkout@v3
 
             # Run compilation script with Rust
             - name: Build 🔧
               run: cargo run
-
-            # Push changes with plugin
-            - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4
+            
+            # Deploy to GitHub pages
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
               with:
-                  # This must be the build directory
-                  folder: ./build
+                # Build path
+                path: 'build'
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v3

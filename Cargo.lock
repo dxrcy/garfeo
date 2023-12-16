@@ -62,6 +62,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "anyhow"
+version = "1.0.75"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4668cab20f66d8d020e1fbc0ebe47217433c1b6c8f2040faf858554e394ace6"
+
+[[package]]
 name = "autocfg"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -115,13 +121,13 @@ checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 [[package]]
 name = "core"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#3760bcca2263f01447d8bda39e74e731d2e1db0d"
+source = "git+https://github.com/darccyy/ibex#7b55e8595235062f9fc1575d4df7018b4e6cd222"
 
 [[package]]
 name = "garfeo"
 version = "0.1.0"
 dependencies = [
- "grass",
+ "anyhow",
  "ibex",
 ]
 
@@ -178,7 +184,7 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 [[package]]
 name = "ibex"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#3760bcca2263f01447d8bda39e74e731d2e1db0d"
+source = "git+https://github.com/darccyy/ibex#7b55e8595235062f9fc1575d4df7018b4e6cd222"
 dependencies = [
  "core",
  "grass",
@@ -214,7 +220,7 @@ checksum = "a08173bc88b7955d1b3145aa561539096c421ac8debde8cbc3612ec635fee29b"
 [[package]]
 name = "macros"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#3760bcca2263f01447d8bda39e74e731d2e1db0d"
+source = "git+https://github.com/darccyy/ibex#7b55e8595235062f9fc1575d4df7018b4e6cd222"
 dependencies = [
  "core",
  "proc-macro2",
