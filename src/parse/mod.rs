@@ -24,6 +24,7 @@ pub struct Post {
     pub version: u32,
     pub transcript: Option<Transcript>,
     pub special: Option<Special>,
+    pub is_old: bool,
 }
 
 #[derive(Default, Clone)]
@@ -231,6 +232,8 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             None
         };
 
+        let is_old = !Path::new(&format!("{path}/esperanto.svg")).exists();
+
         posts.push(Post {
             index,
             title,
@@ -242,6 +245,7 @@ pub fn parse_posts() -> Result<Vec<PostEntry>, String> {
             version,
             transcript,
             special,
+            is_old,
         });
     }
 
@@ -353,6 +357,7 @@ impl Post {
                 },
             transcript: _,
             special: _,
+            is_old: _,
         } = self;
 
         let errata = if errata.0.is_empty() {
@@ -411,6 +416,7 @@ impl PostEntry {
                 },
             transcript: _,
             special: _,
+            is_old: _,
         } = post;
 
         let prev = match &prev {

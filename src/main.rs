@@ -205,12 +205,16 @@ fn at_post(entry: &PostEntry, first_last: &FirstLast) -> Document {
             ]/
         }
 
-        [:if post.version > 0 {
-            p ."small gray" {
+        p ."small gray" {
+            [:if post.version > 0 {
                 b { "Revizio:" }
                 ~ [post.version]
-            }
-        }]
+            }]
+            ~
+            [:if post.is_old {
+                "(olda)"
+            }]
+        }
 
         [:if !post.errata.0.is_empty() { div ."errata" {
             h2 { "Eraroj:" }
