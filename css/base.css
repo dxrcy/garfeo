@@ -208,6 +208,11 @@ body article .navigate div.prev {
 body article .navigate div.next {
   text-align: right;
 }
+body article .special:not(:empty) {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #b686b6;
+}
 body article .transcript {
   display: inline-block;
   padding: 10px 20px;

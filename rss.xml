@@ -5,10 +5,25 @@
         <link> https://darccyy.github.io/garfeo </link>
         <description> Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton! </description>
         <image>
-            <url> https://darccyy.github.io/garfeo/static/0573/esperanto.png </url>
-            <title> Lasta bildstrio [0573] </title>
+            <url> https://darccyy.github.io/garfeo/static/0574/esperanto.png </url>
+            <title> Lasta bildstrio [0574] </title>
             <link> https://darccyy.github.io/garfeo </link>
         </image>
+
+<item>
+    <title> Garfildo amas esti kun siaj amikoj </title>
+    <link> https://darccyy.github.io/garfeo/0574 </link>
+    <guid> 0574 </guid>
+    <description>
+        Garfildo amas esti kun siaj amikoj [0574] 2021-12-25 💚
+        Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
+    </description>
+    <enclosure
+        url="https://darccyy.github.io/garfeo/static/posts/0574/esperanto.png"
+        length="1329719"
+        type="image/png"
+    />
+</item>
 
 <item>
     <title> Garfildo ricevis bonegan donacon </title>
@@ -2426,11 +2441,11 @@
 </item>
 
 <item>
-    <title> Garfildo ne aĉetas por kristnasko </title>
+    <title> Garfildo ne aĉetas por Kristnasko </title>
     <link> https://darccyy.github.io/garfeo/0412 </link>
     <guid> 0412 </guid>
     <description>
-        Garfildo ne aĉetas por kristnasko [0412] 2018-12-09 💚
+        Garfildo ne aĉetas por Kristnasko [0412] 2018-12-09 💚
         Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
     </description>
     <enclosure
@@ -5546,11 +5561,11 @@
 </item>
 
 <item>
-    <title> Garfildo amas kristnaskon </title>
+    <title> Garfildo amas Kristnaskon </title>
     <link> https://darccyy.github.io/garfeo/0204 </link>
     <guid> 0204 </guid>
     <description>
-        Garfildo amas kristnaskon [0204] 2007-12-26 💚
+        Garfildo amas Kristnaskon [0204] 2007-12-26 💚
         Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!
     </description>
     <enclosure
