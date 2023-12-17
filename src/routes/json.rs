@@ -60,7 +60,7 @@ pub fn json_post(post_ref: PostRef) -> String {
                             .map(|line| format!(
                                 "[\"{}\",\"{}\"]",
                                 match &line.speaker {
-                                    Speaker::Text => "[teksto]".to_string(),
+                                    Speaker::Text => "[skribo]".to_string(),
                                     Speaker::Sound => "[sono]".to_string(),
                                     Speaker::Character { name, .. } => name.to_uppercase(),
                                 },
