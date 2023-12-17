@@ -18,11 +18,10 @@ Made with [Ibex](https://github.com/darccyy/ibex)
                         eg. Garfildo ŝatas lazanjon
         /date       Date of original comic YYYY-MM-DD
                         eg. 2012-10-01
-        /errata     If any errors exist in the translation (optional)
-                        eg. lasagno >> lazanjo
-                            garfish >> garfield
+        /transcipt  Transcription of speech in comic
         /props      If any special properties (optional)
                         possible values (separated by linebreak):
                             good, nogarfield, notext, earsback
+        /special    If comic is for a special occasion (Eg. Christmas)
 ```
 
