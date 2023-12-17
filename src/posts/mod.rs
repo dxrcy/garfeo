@@ -19,7 +19,6 @@ pub struct Post {
     pub transcript: Option<Transcript>,
     pub props: Props,
     pub special: Option<Special>,
-    pub errata: Errata,
     pub version: u32,
     pub is_old: bool,
     pub image_bytes: u64,
@@ -40,11 +39,6 @@ pub struct Props {
 pub enum Special {
     Christmas,
     Halloween,
-}
-
-#[derive(Debug, Default)]
-pub struct Errata {
-    pub items: Vec<(String, String)>,
 }
 
 impl Post {

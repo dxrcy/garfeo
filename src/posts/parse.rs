@@ -5,7 +5,7 @@ use std::{
     path::Path,
 };
 
-use super::{Errata, Index, Post, PostList, Props, Special, Transcript};
+use super::{ Index, Post, PostList, Props, Special, Transcript};
 
 pub fn parse_posts() -> Result<PostList> {
     let dir_posts = Path::new("static/posts");
@@ -108,14 +108,6 @@ fn parse_post(
         None
     };
 
-    let path = folder_path.join(Path::new("errata"));
-    let errata = if path.exists() {
-        let file = fs::read_to_string(&path)?;
-        Errata::try_from(file).with_context(|| "Failed to parse errata file")?
-    } else {
-        Errata::default()
-    };
-
     let image_path = folder_path.join(Path::new("esperanto.png"));
     if !image_path.exists() {
         bail!("Missing `esperanto.png`");
@@ -138,7 +130,6 @@ fn parse_post(
         transcript,
         props,
         special,
-        errata,
         version,
         is_old,
         image_bytes,
@@ -228,34 +219,5 @@ impl TryFrom<String> for Special {
             "haloveno" => Self::Halloween,
             file => bail!("Not a special occasion `{}`", file),
         })
-    }
-}
-
-impl TryFrom<String> for Errata {
-    type Error = anyhow::Error;
-    fn try_from(file: String) -> Result<Self> {
-        if file.trim().is_empty() {
-            bail!("Empty errata file".to_string());
-        }
-
-        let mut items = Vec::new();
-        for line in file.lines() {
-            if line.trim().is_empty() {
-                continue;
-            }
-
-            let mut split = line.split(">>");
-
-            let Some(bad) = split.next() else {
-                bail!("Missing incorrect phrase".to_string());
-            };
-            let Some(good) = split.next() else {
-                bail!(format!("Missing correct phrase for '{}'", bad));
-            };
-
-            items.push((bad.trim().to_string(), good.trim().to_string()));
-        }
-
-        Ok(Errata { items })
     }
 }

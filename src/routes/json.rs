@@ -27,7 +27,6 @@ pub fn json_post(post_ref: PostRef) -> String {
             "\"transcript\":{transcript},",
             "\"props\":{props},",
             "\"special\":{special},",
-            "\"errata\":{errata},",
             "\"version\":{version},",
             "\"is_old\":{is_old},",
             "\"image_bytes\":{image_bytes}",
@@ -92,15 +91,6 @@ pub fn json_post(post_ref: PostRef) -> String {
             Some(Special::Christmas) => "\"kristnasko\"",
             Some(Special::Halloween) => "\"haloveno\"",
         },
-        errata = format!(
-            "[{}]",
-            post.errata
-                .items
-                .iter()
-                .map(|(old, new)| format!("[{},{}]", old, new))
-                .collect::<Vec<_>>()
-                .join(",")
-        ),
         version = post.version,
         is_old = post.is_old,
         image_bytes = post.image_bytes,

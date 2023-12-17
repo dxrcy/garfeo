@@ -63,17 +63,6 @@ pub fn at_post(post_ref: PostRef) -> Document {
             }]
         }
 
-        [:if !post.errata.items.is_empty() { div ."errata" {
-            h2 { "Eraroj:" }
-            ol {
-                [:for (old, new) in &post.errata.items { li {
-                    b ."old" { [old] }
-                    ~ &rarr ~
-                    b ."new" { [new] }
-                } }]
-            }
-        } }]
-
         div ."navigate" {
             [:if let Some(prev) = &post_ref.next_ref() {
                 div ."prev" {
