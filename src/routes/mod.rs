@@ -143,7 +143,8 @@ pub fn at_list(posts: &PostList) -> Document {
                                 else { [&post.index()] }
                             ]
                         }}
-                        td { [:for _ in 0..post.version { span { "🟥" } }] }
+                        td { [:if post.is_old { "🟥" } else { "✅" }] } 
+                        td { [:for _ in 0..post.version { span { "🔃" } }] }
                     }
                 }]
             }]
