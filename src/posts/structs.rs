@@ -68,6 +68,14 @@ impl<T> List<T> {
         let last = self.last();
         ListEnds { first, last }
     }
+
+    pub fn iter(&self) -> impl Iterator<Item = ItemRef<T>> {
+        self.into_iter()
+    }
+
+    pub fn len(&self) -> usize {
+        self.items.len()
+    }
 }
 
 impl<'a, T> ItemRef<'a, T> {

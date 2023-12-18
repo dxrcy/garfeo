@@ -3,7 +3,7 @@ mod json;
 
 use ibex::prelude::*;
 
-use crate::posts::PostList;
+use crate::posts::{Post, PostList};
 use crate::views::{icons, list_item, use_base};
 use crate::URL_ROOT;
 
@@ -127,6 +127,13 @@ pub fn at_instructions(posts: &PostList) -> Document {
     .into()
 }
 
+fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
+where
+    F: Fn(&Post) -> bool,
+{
+    posts.iter().filter(|post| predicate(post.get())).count() * 100 / posts.len()
+}
+
 pub fn at_list(posts: &PostList) -> Document {
     view! { @use_base [
         "Alia listo",
@@ -135,17 +142,34 @@ pub fn at_list(posts: &PostList) -> Document {
         posts,
     ] {
         div ."big-list" {
+            div ."stats" {
+                table {
+                    [:where
+                        let percent_new = posts_percent(posts, |post| !post.is_old);
+                        let percent_transcribed = posts_percent(posts, |post| post.transcript.is_some());
+                    {
+                        tr {
+                            td { "Novaj:" }
+                            td { b { [percent_new] "%" } }
+                        }
+                        tr {
+                            td { "Transskribitaj:" }
+                            td { b { [percent_transcribed] "%" } }
+                        }
+                    }]
+                }
+            }
             div ."legend" {
                 p {
-                    [icons::GOOD]       ": Plej bona" br/
-                    [icons::TRANSCRIPT] ": Havas transskribon" br/
-                    [icons::OLD]        ": Estas olda" br/
-                    [icons::NOT_OLD]    ": Estas nova" br/
+                    [icons::GOOD]       ": Plej bona"     br/
+                    [icons::TRANSCRIPT] ": Transskribita" br/
+                    [icons::OLD]        ": Estas olda"    br/
+                    [icons::NOT_OLD]    ": Estas nova"    br/
                     [icons::REVISED]    ": Retradukita"
                 }
             }
             table ."graph" {
-                [:for post in posts { [:where let post = post.get(); {
+                [:for post in posts.into_iter().rev() { [:where let post = post.get(); {
                         tr {
                             td { [:if post.props.good { [icons::GOOD] }] }
                             td { a [href=url!(post.index()), title=post.title] {

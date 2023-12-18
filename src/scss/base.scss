@@ -276,8 +276,10 @@ body {
         }
 
         .big-list {
-            .legend {
-                p {
+            margin-top: 20px;
+
+            div {
+                p, table {
                     display: inline-block;
                     text-align: left;
                 }
