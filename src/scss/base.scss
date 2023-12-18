@@ -198,12 +198,13 @@ body {
                 }
 
                 .texts {
+                    max-width: 17em;
+
                     h4 {
                         margin: 0;
                         color: $c-accent-b;
                     }
                     p {
-                        max-width: 17em;
                         margin-top: 7px;
                         margin-bottom: 10px;
 
