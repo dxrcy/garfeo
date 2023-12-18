@@ -36,6 +36,7 @@ pub fn at_favorites(posts: &PostList) -> Document {
         None,
         posts,
     ] {
+        h3 { "(Laŭ mia opinio)" }
         ol ."post-list" [
             reversed=true,
             start=posts.first().index,
