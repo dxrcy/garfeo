@@ -4,7 +4,7 @@ mod json;
 use ibex::prelude::*;
 
 use crate::posts::PostList;
-use crate::views::{list_item, use_base, STAR};
+use crate::views::{icons, list_item, use_base};
 use crate::URL_ROOT;
 
 pub use at_post::*;
@@ -133,21 +133,33 @@ pub fn at_list(posts: &PostList) -> Document {
         None,
         posts,
     ] {
-        table ."graph" {
-            [:for post in posts { [:where let post = post.get(); {
-                    tr {
-                        td { [:if post.props.good { [STAR] }] }
-                        td { a [href=url!(post.index()), title=post.title] {
-                            [:if post.is_sunday
-                                { b  { [&post.index()] } }
-                                else { [&post.index()] }
-                            ]
-                        }}
-                        td { [:if post.is_old { "🟥" } else { "✅" }] } 
-                        td { [:for _ in 0..post.version { span { "🔃" } }] }
-                    }
+        div ."big-list" {
+            div ."legend" {
+                p {
+                    [icons::GOOD]       ": Plej bona" br/
+                    [icons::TRANSCRIPT] ": Havas transskribon" br/
+                    [icons::OLD]        ": Estas olda" br/
+                    [icons::NOT_OLD]    ": Estas nova" br/
+                    [icons::REVISED]    ": Retradukita"
+                }
+            }
+            table ."graph" {
+                [:for post in posts { [:where let post = post.get(); {
+                        tr {
+                            td { [:if post.props.good { [icons::GOOD] }] }
+                            td { a [href=url!(post.index()), title=post.title] {
+                                [:if post.is_sunday
+                                    { b  { [&post.index()] } }
+                                    else { [&post.index()] }
+                                ]
+                            }}
+                            td { [:if post.transcript.is_some() { [icons::TRANSCRIPT] }] }
+                            td { [:if post.is_old { [icons::OLD] } else { [icons::NOT_OLD] }] }
+                            td { [:for _ in 0..post.version { span { [icons::REVISED] } }] }
+                        }
+                    }]
                 }]
-            }]
+            }
         }
 
     }}

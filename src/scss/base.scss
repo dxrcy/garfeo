@@ -274,18 +274,26 @@ body {
             height: auto;
         }
 
-        table.graph {
-            display: inline-block;
-            margin-top: 20px;
-            font-size: x-small;
-
-            tr {
-                td {
+        .big-list {
+            .legend {
+                p {
+                    display: inline-block;
                     text-align: left;
+                }
+            }
 
-                    span {
-                        &:not(:first-of-type) {
-                            margin-left: 0.5em;
+            table.graph {
+                display: inline-block;
+                font-size: x-small;
+
+                tr {
+                    td {
+                        text-align: left;
+
+                        span {
+                            &:not(:first-of-type) {
+                                margin-left: 0.5em;
+                            }
                         }
                     }
                 }

@@ -7,7 +7,13 @@ use crate::posts::PostRef;
 use super::posts::{transcript, PostList};
 use super::URL_ROOT;
 
-pub const STAR: &str = "⭐";
+pub mod icons {
+    pub const GOOD: char = '⭐';
+    pub const TRANSCRIPT: char = '📜';
+    pub const OLD: char = '🟥';
+    pub const NOT_OLD: char = '✅';
+    pub const REVISED: char = '🔃';
+}
 
 pub fn use_base(
     title: &str,
@@ -129,7 +135,7 @@ pub fn post_title(post: &PostRef, italic: bool) -> View {
 
             // Star if favorite
             [:if post.props.good {
-                ~ span #"good" [title="Bona bildstrio"] { [STAR] }
+                ~ span #"good" [title="Bona bildstrio"] { [icons::GOOD] }
             }]
         }
     }
