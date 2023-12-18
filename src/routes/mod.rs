@@ -147,25 +147,23 @@ pub fn at_list(posts: &PostList) -> Document {
                     [:where
                         let percent_new = posts_percent(posts, |post| !post.is_old);
                         let percent_transcribed = posts_percent(posts, |post| post.transcript.is_some());
+                        let percent_total = (percent_new + percent_transcribed) / 2;
                     {
-                        tr {
-                            td { "Novaj:" }
-                            td { b { [percent_new] "%" } }
-                        }
-                        tr {
-                            td { "Transskribitaj:" }
-                            td { b { [percent_transcribed] "%" } }
-                        }
+                        tr { td/        td { b { [percent_new]         "%" } } td { "Novaj" } }
+                        tr { td/        td { b { [percent_transcribed] "%" } } td { "Transskribitaj" } }
+                        tr { td { "=" } td { b { i { [percent_total]   "%" }}} td/ }
                     }]
                 }
             }
             div ."legend" {
-                p {
-                    [icons::GOOD]       ": Plej bona"     br/
-                    [icons::TRANSCRIPT] ": Transskribita" br/
-                    [icons::OLD]        ": Estas olda"    br/
-                    [icons::NOT_OLD]    ": Estas nova"    br/
-                    [icons::REVISED]    ": Retradukita"
+                table {
+                    tr { td { [icons::GOOD] }       td { "Bona" } }
+                    tr { td { [icons::TRANSCRIPT] } td { "Transskribita" } }
+                    tr { td { [icons::OLD] }        td { "Estas olda" } }
+                    tr { td { [icons::NOT_OLD] }    td { "Estas nova" } }
+                    tr { td { [icons::REVISED] }    td { "Retradukita" } }
+                    tr { td { [icons::CHRISTMAS] }  td { "Por Kristnasko" } }
+                    tr { td { [icons::HALLOWEEN] }  td { "Por Haloveno" } }
                 }
             }
             table ."graph" {
