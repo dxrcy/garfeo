@@ -21,7 +21,7 @@ pub fn at_index(posts: &PostList) -> Document {
             reversed=true,
             start=posts.first().index,
         ] {
-            [:for post in posts {
+            [:for post in posts.into_iter().rev() {
                 @list_item [&post]
             }]
         }
@@ -40,7 +40,7 @@ pub fn at_favorites(posts: &PostList) -> Document {
             reversed=true,
             start=posts.first().index,
         ] {
-            [:for post in posts {
+            [:for post in posts.into_iter().rev() {
                 [:if post.get().props.good {
                     @list_item [&post]
                 }]

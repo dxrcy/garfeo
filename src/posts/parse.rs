@@ -40,7 +40,7 @@ pub fn parse_posts() -> Result<PostList> {
         posts.push(post);
     }
 
-    posts.reverse();
+    // posts.reverse();
     Ok(PostList::new(posts))
 }
 

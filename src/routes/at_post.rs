@@ -64,7 +64,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         div ."navigate" {
-            [:if let Some(prev) = &post_ref.next_ref() {
+            [:if let Some(prev) = &post_ref.prev_ref() {
                 div ."prev" {
                     a [href=url!(&prev.get().index())] {
                         strong { "Antaŭa:" } ~
@@ -72,7 +72,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
                     }
                 }
             }]
-            [:if let Some(next) = &post_ref.prev_ref() {
+            [:if let Some(next) = &post_ref.next_ref() {
                 div ."next" {
                     a [href=url!(&next.get().index())] {
                         strong { "Sekva:" } ~

@@ -33,11 +33,11 @@ pub fn json_post(post_ref: PostRef) -> String {
             "}}"
         ),
         index = post.index(),
-        prev = match post_ref.next() {
+        prev = match post_ref.prev() {
             None => "null".to_string(),
             Some(post) => format!("{:?}", post.index()),
         },
-        next = match post_ref.prev() {
+        next = match post_ref.next() {
             None => "null".to_string(),
             Some(post) => format!("{:?}", post.index()),
         },
