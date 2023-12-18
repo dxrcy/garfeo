@@ -217,5 +217,8 @@ fn format_emphasis(string: &str) -> String {
         }
         output.push(ch);
     }
+    if is_emphasis {
+        output += "</em>";
+    }
     output
 }
