@@ -3,7 +3,7 @@ mod json;
 
 use ibex::prelude::*;
 
-use crate::posts::{Post, PostList};
+use crate::posts::{Post, PostList, Special};
 use crate::views::{icons, list_item, use_base};
 use crate::URL_ROOT;
 
@@ -171,14 +171,22 @@ pub fn at_list(posts: &PostList) -> Document {
             table ."graph" {
                 [:for post in posts.into_iter().rev() { [:where let post = post.get(); {
                         tr {
+                            td { [:if let Some(special) = post.special { [match special {
+                                Special::Christmas => icons::CHRISTMAS,
+                                Special::Halloween => icons::HALLOWEEN,
+                            }] }] }
+
                             td { [:if post.props.good { [icons::GOOD] }] }
+
                             td { a [href=url!(post.index()), title=post.title] {
                                 [:if post.is_sunday
-                                    { b  { [&post.index()] } }
+                                     { b { [&post.index()] } }
                                     else { [&post.index()] }
                                 ]
                             }}
+
                             td { [:if post.transcript.is_some() { [icons::TRANSCRIPT] }] }
+
                             td { [:if post.is_old { [icons::OLD] } else { [icons::NOT_OLD] }] }
                             td { [:for _ in 0..post.version { span { [icons::REVISED] } }] }
                         }
