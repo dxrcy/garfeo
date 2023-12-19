@@ -1,8 +1,8 @@
 ---
 JONO:
-    Ĉu vi iras al la barilo por vidi vian koramikinon?
+    Iras al la barilo por vidi vian koramikinon?
 GARFILDO:
-    Ĥa-ĥa
+    Ĥa ĥa
 ---
 GARFILDO:
     Sal', Arlino
@@ -12,7 +12,7 @@ ARLINO:
 GARFILDO:
     Jono pensas, ke vi estas mia koramikino
 ARLINO:
-    Ĉu mi estas?
+    Ĉu mi ja?
 ---
 GARFILDO:
     Mi tuj revenos
@@ -21,4 +21,4 @@ GARFILDO:
 [sono]
     Bato
 GARFILDO:
-    Ĉu vi vidas, kion vi komencis?!
+    Ĉu vidas vi kion vi komencigis?!
