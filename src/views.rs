@@ -46,6 +46,9 @@ pub fn use_base(
             link [rel="shortcut icon", href=url!("static/icon.png")]/
             link [rel="stylesheet",    href=url!("css/base.css")]/
             @ssg::use_autoreload []
+
+            script { [include_str!("js/navigate.js")] }
+            script { [include_str!("js/random.js")] }
         }
 
         @top_header [posts]
@@ -75,7 +78,6 @@ fn top_header(posts: &PostList) -> View {
             }
 
             h2 ."actions" {
-                HEAD { script { [include_str!("js/random.js")] } }
                 a #"random" [title="Klaku por iri al iun bildstrio"] {
                     i { "Arbitra" }
                     span ."icon" { "⚄" }

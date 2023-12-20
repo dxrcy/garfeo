@@ -11,4 +11,6 @@ function set_random_url(base_url, first_index, last_index) {
     // Set link href
     let url = base_url + index;
     document.querySelector("#random").href = url;
+
+    register_navigation_key(base_url, "r", index);
 }
