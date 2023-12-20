@@ -65,6 +65,9 @@ fn parse_post(
     }
 
     let path = folder_path.join(Path::new("title"));
+    if !path.exists() {
+        bail!("Missing `title` file");
+    }
     let title = fs::read_to_string(path)?.trim().to_string();
     if !title.starts_with("Garfildo ") {
         bail!("Title of {index} does not start with 'Garfildo'");
@@ -74,6 +77,9 @@ fn parse_post(
     }
 
     let path = folder_path.join(Path::new("date"));
+    if !path.exists() {
+        bail!("Missing `date` file");
+    }
     let date = fs::read_to_string(path)?.trim().to_string();
     if !is_valid_date(&date) {
         bail!("Invalid date `{}`", date);
@@ -110,10 +116,10 @@ fn parse_post(
 
     let image_path = folder_path.join(Path::new("esperanto.png"));
     if !image_path.exists() {
-        bail!("Missing `esperanto.png`");
+        bail!("Missing `esperanto.png` file");
     }
     if !folder_path.join(Path::new("english.png")).exists() {
-        bail!("Missing `english.png`");
+        bail!("Missing `english.png` file");
     }
 
     let is_old = !folder_path.join(Path::new("esperanto.svg")).exists();
