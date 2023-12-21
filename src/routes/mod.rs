@@ -157,7 +157,8 @@ pub fn at_list(posts: &PostList) -> Document {
             }
             div ."legend" {
                 table {
-                    tr { td { [icons::GOOD] }       td { "Bona" } }
+                    [:where let percent_good = posts_percent(posts, |post| post.props.good); {
+                        tr { td { [icons::GOOD] }   td { "Bona" ~ i { "(" [percent_good] "%)" } } } }]
                     tr { td { [icons::TRANSCRIPT] } td { "Transskribita" } }
                     tr { td { [icons::OLD] }        td { "Estas olda" } }
                     tr { td { [icons::NOT_OLD] }    td { "Estas nova" } }
