@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.3953574"
-     inkscape:cx="364.7811"
-     inkscape:cy="239.72353"
+     inkscape:cx="364.78109"
+     inkscape:cy="655.38764"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -94,14 +94,14 @@
        transform="translate(9.719426,1.8145326)"><tspan
          x="898.48926"
          y="58.259167"
-         id="tspan2"><tspan
-           dx="0 0 0 0 0 0 0 -0.569996"
-           id="tspan1">pardonu</tspan><tspan
-           y="58.259167"
-           id="tspan7"> </tspan></tspan><tspan
+         id="tspan4">pardonu<tspan
+   dx="-0.569996"
+   id="tspan3"></tspan><tspan
+   y="58.259167"
+   id="tspan11"> </tspan></tspan><tspan
          x="898.48926"
          y="89.619167"
-         id="tspan8">min...</tspan></text>
+         id="tspan12">min...</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;line-height:0.98;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.66px;word-spacing:0.57px;text-anchor:middle;white-space:pre;inline-size:455.983;fill:#000000;fill-opacity:1;stroke-width:0.9"
@@ -111,16 +111,14 @@
        transform="translate(13.596815,-2.6719522)"><tspan
          x="368.81177"
          y="595.59741"
-         id="tspan10"><tspan
-           dx="0 0 -0.56999981 0.56999987 0 -0.57000363 0.57000369 0 0 0 0 -0.56998837 0.56998843 0 0 0 0 0 0 0 0 0 -0.57000363"
-           id="tspan9">ĉu vi vidis fadenbulon</tspan><tspan
-           y="595.59741"
-           id="tspan11"> </tspan></tspan><tspan
+         id="tspan14"><tspan
+           dx="0 0 -0.56999981 0.56999987 0 -0.57000363 0.57000369 0 0 0 0 -0.56998837 0.56998843 0 0 0 -0.57000363 0.57000369"
+           id="tspan13">ĉu vi vidis mian faden-</tspan></tspan><tspan
          x="368.81177"
          y="626.95741"
-         id="tspan13"><tspan
-           dx="0 0 0 0 0 -0.57000363 0.57000369"
-           id="tspan12">mian, sinjorino?</tspan></tspan></text>
+         id="tspan16"><tspan
+           dx="0 0 0 0 0 0 -0.569996 0.56999606"
+           id="tspan15">bulon, sinjorino?</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:87.677px;line-height:0.98;font-family:Komika;-inkscape-font-specification:Komika;text-align:center;text-decoration-color:#000000;letter-spacing:-1.80833px;word-spacing:1.56174px;text-anchor:middle;fill:#1e1b20;fill-opacity:1;stroke-width:0.900003"
