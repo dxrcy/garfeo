@@ -186,12 +186,13 @@ body {
                 margin-top: 10px;
             }
 
-            .panel {
-                h3 {
-                    text-align: center;
-                    margin-bottom: 0;
-                }
+            hr.separator {
+                width: 50%;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
 
+            .panel {
                 .empty {
                     text-align: center;
                     color: $c-subtle;

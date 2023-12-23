@@ -150,9 +150,12 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
     view! {
         div ."transcript" {
             h2 { "Transskribo" }
+            br/
+
             [:for (i, panel) in transcript.panels().iter().enumerate() {
+                [:if i > 0 { hr ."separator"/ }]
+
                 div ."panel" {
-                    h3 { "Bildo " [i+1] }
                     [:if panel.lines.is_empty() {
                         div ."empty" { "(nenio)" }
                     } else {
