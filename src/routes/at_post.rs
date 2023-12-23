@@ -23,13 +23,13 @@ pub fn at_post(post_ref: PostRef) -> Document {
             }
             ~
             span ."text" {
-                "[" span #"index" { [&post.index()] } "]"
+                "[" span { [&post.index()] } "]"
                 ~
                 a [
                     href=format!("https://gocomics.com/garfield/{}", post.date.replace('-', "/")),
                     title="Spekti je GoComics.com",
                 ] {
-                    b #"date" { [&post.date] }
+                    b { [&post.date] }
                 }
             }
             ~
@@ -42,12 +42,12 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         div {
-            img #"image-eo" ."comic" [
+            img ."comic" [
                 alt="Esperanto bildstrio",
                 src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
                 height=400,
             ]/
-            img #"image-en" ."comic" [
+            img ."comic" [
                 alt="Angla bildstrio",
                 src=url!(format!("static/posts/{}/english.png", &post.index)),
                 height=400,
@@ -101,7 +101,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
         div ."caption" {
             HEAD { script { [include_str!("../js/copy.js")] } }
-            pre #"caption" [onclick="copy(this)"] {
+            pre [onclick="copy(this)"] {
                 [&post.title] ~ "💚" "&#10;&#10;"
                  "#esperanto #garfield #mondodakomiksoj"
                 ~ "[" [&post.index()] "]"

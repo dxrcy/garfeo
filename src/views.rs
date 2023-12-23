@@ -140,7 +140,7 @@ pub fn post_title(post: &PostRef, italic: bool) -> View {
 
             // Star if favorite
             [:if post.props.good {
-                ~ span #"good" [title="Bona bildstrio"] { [icons::GOOD] }
+                ~ span [title="Bona bildstrio"] { [icons::GOOD] }
             }]
         }
     }
