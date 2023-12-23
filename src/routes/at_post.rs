@@ -86,8 +86,9 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
         div ."special" {
             [match &post.special {
-                Some(Special::Christmas) => view! { "Feliĉan Kristnaskon!" },
                 Some(Special::Halloween) => view! { "Feliĉan Halovenon!" },
+                Some(Special::Christmas) => view! { "Feliĉan Kristnaskon!" },
+                Some(Special::NewYears) => view! { "Feliĉan Novjaron!" },
                 _ => view! {},
             }]
         }

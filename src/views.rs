@@ -13,8 +13,9 @@ pub mod icons {
     pub const OLD: char = '🟥';
     pub const NOT_OLD: char = '✅';
     pub const REVISED: char = '🔃';
-    pub const CHRISTMAS: char = '🎅';
     pub const HALLOWEEN: char = '🎃';
+    pub const CHRISTMAS: char = '🎅';
+    pub const NEW_YEARS: char = '🎉';
 }
 
 pub fn use_base(

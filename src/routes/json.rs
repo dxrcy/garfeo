@@ -88,8 +88,9 @@ pub fn json_post(post_ref: PostRef) -> String {
         },
         special = match post.special {
             None => "null",
-            Some(Special::Christmas) => "\"kristnasko\"",
             Some(Special::Halloween) => "\"haloveno\"",
+            Some(Special::Christmas) => "\"kristnasko\"",
+            Some(Special::NewYears) => "\"novjaro\"",
         },
         version = post.version,
         is_old = post.is_old,

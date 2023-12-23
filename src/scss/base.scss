@@ -284,6 +284,12 @@ body {
                     text-align: left;
                     margin-bottom: 10px;
                 }
+
+                &.legend {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
             }
 
             table.graph {

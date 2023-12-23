@@ -163,16 +163,20 @@ pub fn at_list(posts: &PostList) -> Document {
                     tr { td { [icons::OLD] }        td { "Estas olda" } }
                     tr { td { [icons::NOT_OLD] }    td { "Estas nova" } }
                     tr { td { [icons::REVISED] }    td { "Retradukita" } }
+                }
+                table {
                     tr { td { [icons::CHRISTMAS] }  td { "Por Kristnasko" } }
                     tr { td { [icons::HALLOWEEN] }  td { "Por Haloveno" } }
+                    tr { td { [icons::NEW_YEARS] }  td { "Por Novjaron" } }
                 }
             }
             table ."graph" {
                 [:for post in posts.into_iter().rev() { [:where let post = post.get(); {
                         tr {
                             td { [:if let Some(special) = post.special { [match special {
-                                Special::Christmas => icons::CHRISTMAS,
                                 Special::Halloween => icons::HALLOWEEN,
+                                Special::Christmas => icons::CHRISTMAS,
+                                Special::NewYears => icons::NEW_YEARS,
                             }] }] }
 
                             td { [:if post.props.good { [icons::GOOD] }] }

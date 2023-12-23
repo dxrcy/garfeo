@@ -221,8 +221,9 @@ impl TryFrom<String> for Special {
     type Error = anyhow::Error;
     fn try_from(file: String) -> Result<Self> {
         Ok(match file.trim() {
-            "kristnasko" => Self::Christmas,
             "haloveno" => Self::Halloween,
+            "kristnasko" => Self::Christmas,
+            "novjaro" => Self::NewYears,
             file => bail!("Not a special occasion `{}`", file),
         })
     }

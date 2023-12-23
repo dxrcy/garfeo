@@ -37,8 +37,9 @@ pub struct Props {
 
 #[derive(Clone, Copy, Debug)]
 pub enum Special {
-    Christmas,
     Halloween,
+    Christmas,
+    NewYears,
 }
 
 impl Post {
