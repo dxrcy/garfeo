@@ -108,9 +108,27 @@ impl TryFrom<&str> for Speaker {
         let name = remove_last_char(string).to_lowercase();
         let uncommon = name.starts_with('~');
 
+        const COMMON_NAMES: &[&str] = &[
+            "garfildo",
+            "jono",
+            "lizo",
+            "odio",
+            "nermalo",
+            "arlino",
+            "hundo",
+            "televidilo",
+            "irma",
+            "muso",
+            "araneo",
+        ];
+
         let name = if uncommon {
+            // println!("{}", name);
             remove_first_char(&name).to_string()
         } else {
+            if !COMMON_NAMES.contains(&name.as_str()) {
+                println!("? \x1b[33m{}\x1b[0m", name.to_uppercase());
+            }
             name
         };
 
