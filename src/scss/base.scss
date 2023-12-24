@@ -280,16 +280,29 @@ body {
             margin-top: 20px;
 
             div {
+                margin-bottom: 10px;
+
                 table {
                     display: inline-block;
                     text-align: left;
-                    margin-bottom: 10px;
                 }
 
                 &.legend {
                     display: flex;
                     justify-content: center;
                     gap: 20px;
+                }
+
+                &.names{ 
+                    div {
+                        h3 {
+                            margin: 0;
+                        }
+                        p {
+                            display: inline-block;
+                            max-width: 400px;
+                        }
+                    }
                 }
             }
 

@@ -1,23 +1,23 @@
 use anyhow::{bail, Result};
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub enum Transcript {
     Normal([Panel; 3]),
     Sunday([Panel; 7]),
 }
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct Panel {
     pub lines: Vec<Line>,
 }
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct Line {
     pub speaker: Speaker,
     pub text: String,
 }
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub enum Speaker {
     Sound,
     Text,
@@ -29,6 +29,30 @@ impl Transcript {
         match self {
             Self::Normal(panels) => panels,
             Self::Sunday(panels) => panels,
+        }
+    }
+
+    pub fn names(&self) -> Vec<(String, bool)> {
+        self.panels()
+            .into_iter()
+            .map(|panel| {
+                panel
+                    .lines
+                    .iter()
+                    .filter_map(|line| line.speaker.character())
+                    .map(|(name, uncommon)| (name.to_string(), uncommon))
+                    .collect::<Vec<_>>()
+            })
+            .flatten()
+            .collect()
+    }
+}
+
+impl Speaker {
+    pub fn character(&self) -> Option<(&str, bool)> {
+        match self {
+            Self::Character { name, uncommon } => Some((name, *uncommon)),
+            _ => None,
         }
     }
 }

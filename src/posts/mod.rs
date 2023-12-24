@@ -10,7 +10,7 @@ pub type PostRef<'a> = structs::ItemRef<'a, Post>;
 
 pub use structs::{ListEnds, Neighbors};
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct Post {
     pub index: Index,
     pub title: String,
@@ -27,7 +27,7 @@ pub struct Post {
 #[derive(Clone, Copy, Debug)]
 pub struct Index(usize);
 
-#[derive(Debug, Default)]
+#[derive(Clone, Copy, Debug, Default)]
 pub struct Props {
     pub nogarfield: bool,
     pub notext: bool,

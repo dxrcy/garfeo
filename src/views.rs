@@ -190,7 +190,7 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
     }
 }
 
-fn sentence_case(string: &str) -> String {
+pub fn sentence_case(string: &str) -> String {
     let mut output = String::new();
     let mut was_punctuation = true;
 

@@ -1,10 +1,12 @@
 mod at_post;
 mod json;
 
+use std::collections::HashSet;
+
 use ibex::prelude::*;
 
 use crate::posts::{Post, PostList, Special};
-use crate::views::{icons, list_item, use_base};
+use crate::views::{icons, list_item, sentence_case, use_base};
 use crate::URL_ROOT;
 
 pub use at_post::*;
@@ -134,6 +136,20 @@ where
     posts.iter().filter(|post| predicate(post.get())).count() * 100 / posts.len()
 }
 
+fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
+    let mut seen = HashSet::new();
+    let speakers = posts
+        .iter()
+        .filter_map(|post| post.get().transcript.clone())
+        .flat_map(|transcript| transcript.names())
+        .filter(|name| seen.insert(name.clone()));
+
+    let (mut common, mut uncommon): (Vec<_>, Vec<_>) = speakers.partition(|(_, uncommon)| !uncommon);
+    common.sort();
+    uncommon.sort();
+    [common, uncommon]
+}
+
 pub fn at_list(posts: &PostList) -> Document {
     view! { @use_base [
         "Alia listo",
@@ -154,6 +170,27 @@ pub fn at_list(posts: &PostList) -> Document {
                         tr { td { "=" } td { b { i { [percent_total]   "%" }}} td/ }
                     }]
                 }
+            }
+            div ."names" {
+                [:where
+                    let [names_common, names_uncommon] = posts_names(posts);
+                    fn section(title: &str, names: Vec<(String, bool)>) -> View {
+                        view!{
+                            div {
+                                h3 { [title] }
+                                p {
+                                    [:for (i, (name, _)) in names.into_iter().enumerate() {
+                                        [:if i > 0 { ","~ }]
+                                        i { [sentence_case(&name)] }
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                {
+                    @section["Oftaj Nomoj",    names_common]
+                    @section["Maloftaj Nomoj", names_uncommon]
+                }]
             }
             div ."legend" {
                 table {

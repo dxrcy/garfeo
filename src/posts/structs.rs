@@ -3,7 +3,7 @@ pub struct List<T> {
     items: Vec<T>,
 }
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct ItemRef<'a, T> {
     index: usize,
     list: &'a List<T>,
