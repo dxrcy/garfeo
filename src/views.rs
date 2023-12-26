@@ -169,7 +169,7 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
                                         p ."text" { code { [text] } }
                                     },
                                     transcript::Speaker::Character{ name, uncommon } => view! {
-                                        h4 { [:where let name = sentence_case(name) {
+                                        h4 { [:where let name = sentence_case(name, false) {
                                             [:if *uncommon {
                                                 em { [name] }
                                             } else {
@@ -177,7 +177,7 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
                                             }]
                                         }] }
                                         p ."speech" {
-                                            [format_emphasis(&sentence_case(text))]
+                                            [format_emphasis(&sentence_case(text, false))]
                                         }
                                     }
                                 }]
@@ -190,25 +190,26 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
     }
 }
 
-pub fn sentence_case(string: &str) -> String {
+pub fn sentence_case(string: &str, every_word: bool) -> String {
     let mut output = String::new();
     let mut was_punctuation = true;
 
     for ch in string.chars() {
-        let is_uppercase = was_punctuation;
+        output.push(if was_punctuation {
+            ch.to_ascii_uppercase()
+        } else {
+            ch
+        });
         match ch {
             // End of sentence
             '.' | '!' | '?' => was_punctuation = true,
+            // Space, only if every word is capitalized
+            ' ' if every_word => was_punctuation = true,
             // Ignore any punctuation
             _ if ch.is_ascii_punctuation() => (),
             // Any other character
             _ => was_punctuation = false,
         }
-        output.push(if is_uppercase {
-            ch.to_ascii_uppercase()
-        } else {
-            ch
-        });
     }
 
     output

@@ -181,7 +181,7 @@ pub fn at_list(posts: &PostList) -> Document {
                                 p {
                                     [:for (i, (name, _)) in names.into_iter().enumerate() {
                                         [:if i > 0 { ","~ }]
-                                        i { [sentence_case(&name)] }
+                                        i { [sentence_case(&name, true)] }
                                     }]
                                 }
                             }
