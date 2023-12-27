@@ -23,5 +23,6 @@ Made with [Ibex](https://github.com/darccyy/ibex)
                         possible values (separated by linebreak):
                             good, nogarfield, notext, earsback
         /special    If comic is for a special occasion (Eg. Christmas)
+        /notes      If anything is worth noting about the comic 
 ```
 
