@@ -15,7 +15,6 @@ pub use json::*;
 pub fn at_index(posts: &PostList) -> Document {
     view! { @use_base [
         "",
-        view! {},
         None,
         posts,
     ] {
@@ -34,10 +33,11 @@ pub fn at_index(posts: &PostList) -> Document {
 pub fn at_favorites(posts: &PostList) -> Document {
     view! { @use_base [
         "Plej bonaj",
-        view! { "Plej bonaj bildstrioj" },
         None,
         posts,
     ] {
+        h2 { "Plej bonaj bildstrioj" }
+
         h3 { "(Laŭ mia opinio)" }
         ol ."post-list" [
             reversed=true,
@@ -56,7 +56,6 @@ pub fn at_favorites(posts: &PostList) -> Document {
 pub fn at_about(posts: &PostList) -> Document {
     view! { @use_base [
         "Informejo",
-        view! {},
         None,
         posts,
     ] {
@@ -166,7 +165,6 @@ fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
 pub fn at_list(posts: &PostList) -> Document {
     view! { @use_base [
         "Alia listo",
-        view!{},
         None,
         posts,
     ] {
@@ -255,11 +253,11 @@ pub fn at_list(posts: &PostList) -> Document {
 pub fn at_404(posts: &PostList) -> Document {
     view! { @use_base [
         "404",
-        view! { "Paĝo ne trovita!" },
         None,
         &posts,
     ] {
-        center {
+        h3 { "Paĝo ne trovita!" }
+        p {
             "404 - Not found"
         }
     }}

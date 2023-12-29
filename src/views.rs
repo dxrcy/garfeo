@@ -20,7 +20,6 @@ pub mod icons {
 
 pub fn use_base(
     title: &str,
-    header: View,
     image: Option<&str>,
     posts: &PostList,
     children: View,
@@ -55,9 +54,6 @@ pub fn use_base(
         @top_header [posts]
 
         article ."manual-width" {
-            [:if !header.is_empty() {
-                h2 { [header] }
-            }]
             [children]
         }
 

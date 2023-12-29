@@ -10,10 +10,11 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
     view! { @use_base [
         &format!("{} [{}]", post.title, post.index),
-        post_title(&post_ref, false),
         Some(&format!("static/posts/{}/esperanto.png", post.index)),
         post_ref.list(),
     ] {
+        h2 { @post_title[&post_ref, false] }
+
         p ."details" {
             span ."navigate prev" {
                 [:if let Some(prev) = &post_ref.prev() {
