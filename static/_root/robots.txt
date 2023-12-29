@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*
+Allow: /
+Allow: /informejo
+Allow: /plej-bonaj
+Allow: /lasta
+
+Sitemap: https://darccyy.github.io/sitemap.xml
