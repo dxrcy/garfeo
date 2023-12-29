@@ -29,11 +29,19 @@ body {
     a {
         color: inherit;
 
-        text-decoration: none;
-        text-decoration-thickness: 0.5px;
-        &:hover, :focus-within  {
-            text-decoration: underline;
-            text-decoration-color: $c-accent-a;
+        text-decoration-line: none;
+        text-decoration-color: $c-accent-a;
+        &:hover, &:focus-within {
+            text-decoration-line: underline;
+        }
+    }
+
+    .highlight-links {
+        a {
+            text-decoration-line: underline;
+            &:not(&:hover, &:focus-within) {
+                text-decoration-color: $c-accent-b;
+            }
         }
     }
 

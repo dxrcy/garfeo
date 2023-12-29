@@ -60,23 +60,15 @@ pub fn at_about(posts: &PostList) -> Document {
         None,
         posts,
     ] {
-
-        h3 { "Kio estas Garfield-EO?" }
-        p {
-            "Mi tradukas bildstriojn de Garfildo en Esperanton."
-            br/
-            "Parto de" ~ i{"Mondo da Komiksoj"} "."
-        }
-
-        p {
-            "Vidu kiel mi kreas kaj alŝutas tradukojn,"
-            ~ a [href=url!("instrukcio")] { i{"ĉi tie"} } "."
+        h3 { "Oftaj Demandoj" }
+        p ."highlight-links" {
+            a[href=url!("respondaro")] {"Troviĝas ĉi tie"}
         }
 
         h3 { "Ligiloj" }
         ul ."links" {
             li { a [href="https://github.com/darccyy/garfeo"]
-                { strong { "Fonta Kodo kaj ĉiu bildstrio" }
+                { strong { "Fontkodo kaj ĉiu bildstrio" }
                     ~ "- por ĉi tiu retejo (en la angla)" }
             }
             li { a [href="https://github.com/darccyy/garfeo/issues/new"]
@@ -105,6 +97,63 @@ pub fn at_about(posts: &PostList) -> Document {
             }
         }
 
+        @icon_footer[]
+    }}
+    .into()
+}
+
+pub fn at_faq(posts: &PostList) -> Document {
+    view! { @use_base [
+        "Respondaro",
+        view! {"Respondaro"},
+        None,
+        posts,
+    ] {
+        div ."instructions highlight-links" {
+            h3 { "Kio estas Garfield-EO?" }
+            p {
+                "Mi tradukas bildstriojn de Garfildo en Esperanton."
+                br/
+                "Parto de" ~ i{"Mondo da Komiksoj"} "."
+            }
+
+            h3 { "Kiel vi trovas bildstriojn?" }
+            p {
+                "Garfildo-bildstrioj troviĝas je la retejo"~ a[href="https://gocomics.com/garfield"]{"GoComics.com"} "."
+                ~
+                "Oni povas elŝuti"~ i{"ĉiun"} ~"Garfildo-bildstrion per"~ a[href="https://github.com/darccyy/everygarf"]{"EveryGarf"} "."
+            }
+
+            h3 { "Kiel vi redaktas bildstriojn?" }
+            p {
+                "Mi uzas la programon '" a[href="http://inkscape.org/"]{"InkScape"} "' por redakti bildojn."
+                ~
+                "Elŝutu la bildstria-tiparo"~ a[href=url!("static/GarfieldSans-EO-Regular.ttf")]{"ĉi tie"} "."
+                ~
+                "Mi organizi, formati, kaj redakti la bildstriojn per"~ a[href="https://github.com/darccyy/scripts/blob/master/garf"]{"multaj skriptoj"} "."
+            }
+
+            h3 { "Kiel vi kreas ĉi tiun retpaĝo?" }
+            p {
+                "Ĉi tiu retpaĝo estas kreiita per la ret-kadro"~ a[href="https://github.com/darccyy/ibex"]{"Ibex"} ~"programlingvo"~ a[href="https://www.rust-lang.org/"]{"Rust"} "."
+                ~
+                "La fontkodo troviĝas"~ a[href="https://github.com/darccyy/garfeo"]{"ĉi tie"} ","
+                ~"kaj la fonto de ĉiu tradukita bildstrio troviĝas"~ a[href="https://github.com/darccyy/garfeo/blob/master/static/posts"]{"ĉi tie"} "."
+            }
+            h3 { "Mi havas concernon, aŭ alia demandon!" }
+            p {
+                "Informu min per GitHub"~ a[href="https://github.com/darccyy/garfeo/issues/new"]{"ĉi tie"} "."
+            }
+        }
+
+        br/
+        @icon_footer[]
+    }}
+    .into()
+}
+
+fn icon_footer() -> View {
+    view! {
         hr/
         br/
         img ."icon-image" [
@@ -112,21 +161,7 @@ pub fn at_about(posts: &PostList) -> Document {
             alt="La vizaĝo de Garfildo",
             height=400,
         ]/
-    }}
-    .into()
-}
-
-pub fn at_instructions(posts: &PostList) -> Document {
-    view! { @use_base [
-        "Instrukcio",
-        view! {"Instrukcio"},
-        None,
-        posts,
-    ] {
-        p { "Nenio estas ĉi tie..." }
-        p { "Revenu baldaŭ..." }
-    }}
-    .into()
+    }
 }
 
 fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
@@ -144,7 +179,8 @@ fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
         .flat_map(|transcript| transcript.names())
         .filter(|name| seen.insert(name.clone()));
 
-    let (mut common, mut uncommon): (Vec<_>, Vec<_>) = speakers.partition(|(_, uncommon)| !uncommon);
+    let (mut common, mut uncommon): (Vec<_>, Vec<_>) =
+        speakers.partition(|(_, uncommon)| !uncommon);
     common.sort();
     uncommon.sort();
     [common, uncommon]

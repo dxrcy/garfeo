@@ -276,6 +276,20 @@ body {
             height: auto;
         }
 
+        .instructions {
+            max-width: 80vw;
+
+            p {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+
+                br {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+
         .big-list {
             margin-top: 20px;
 
