@@ -18,8 +18,6 @@ fn main() {
             => routes::at_favorites(&posts),
         (/"informejo")
             => routes::at_about(&posts),
-        (/"respondaro")
-            => routes::at_faq(&posts),
         (/"listo")
             => routes::at_list(&posts),
         (/404)

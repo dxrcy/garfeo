@@ -56,59 +56,11 @@ pub fn at_favorites(posts: &PostList) -> Document {
 pub fn at_about(posts: &PostList) -> Document {
     view! { @use_base [
         "Informejo",
-        view! { "Informejo" },
+        view! {},
         None,
         posts,
     ] {
-        h3 { "Oftaj Demandoj" }
-        p ."highlight-links" {
-            a[href=url!("respondaro")] {"Troviĝas ĉi tie"}
-        }
-
-        h3 { "Ligiloj" }
-        ul ."links" {
-            li { a [href="https://github.com/darccyy/garfeo"]
-                { strong { "Fontkodo kaj ĉiu bildstrio" }
-                    ~ "- por ĉi tiu retejo (en la angla)" }
-            }
-            li { a [href="https://github.com/darccyy/garfeo/issues/new"]
-                { strong { "Mi havas concernon!" }
-                    ~ "- Informu min per GitHub" }
-            }
-            li { a [href="https://github.com/darccyy/everygarf"]
-                { strong { "EveryGarf" }
-                    ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune" }
-            }
-            li { a [href="https://mastodon.world/@garfieldeo"]
-                { strong { "Mastodon @garfieldeo@mastodon.world" }
-                    ~ "- Esperantaj Garfildaj bildstrioj" }
-            }
-            li { a [href="https://instagram.com/garfield.eo"]
-                { strong { "Instagram @garfield.eo" }
-                    ~ "- Esperantaj Garfildaj bildstrioj" }
-            }
-            li { a [href="https://instagram.com/mondodakomiksoj"]
-                { strong { "Mondo da Komiksoj" }
-                    ~ "- Grupo de tradukistoj" }
-            }
-            li { a [href=url!("rss.xml")]
-                { strong { "RSS-fluo" }
-                    ~ "- Aboni la RSS-fluon por novajn bildstriojn" }
-            }
-        }
-
-        @icon_footer[]
-    }}
-    .into()
-}
-
-pub fn at_faq(posts: &PostList) -> Document {
-    view! { @use_base [
-        "Respondaro",
-        view! {"Respondaro"},
-        None,
-        posts,
-    ] {
+        h2 { "Oftaj Demandoj" }
         div ."instructions highlight-links" {
             h3 { "Kio estas Garfield-EO?" }
             p {
@@ -146,14 +98,38 @@ pub fn at_faq(posts: &PostList) -> Document {
             }
         }
 
-        br/
-        @icon_footer[]
-    }}
-    .into()
-}
+        h2 { "Ligiloj" }
+        ul ."links" {
+            li { a [href="https://github.com/darccyy/garfeo"]
+                { strong { "Fontkodo kaj ĉiu bildstrio" }
+                    ~ "- por ĉi tiu retejo (en la angla)" }
+            }
+            li { a [href="https://github.com/darccyy/garfeo/issues/new"]
+                { strong { "Mi havas concernon!" }
+                    ~ "- Informu min per GitHub" }
+            }
+            li { a [href="https://github.com/darccyy/everygarf"]
+                { strong { "EveryGarf" }
+                    ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune" }
+            }
+            li { a [href="https://mastodon.world/@garfieldeo"]
+                { strong { "Mastodon @garfieldeo@mastodon.world" }
+                    ~ "- Esperantaj Garfildaj bildstrioj" }
+            }
+            li { a [href="https://instagram.com/garfield.eo"]
+                { strong { "Instagram @garfield.eo" }
+                    ~ "- Esperantaj Garfildaj bildstrioj" }
+            }
+            li { a [href="https://instagram.com/mondodakomiksoj"]
+                { strong { "Mondo da Komiksoj" }
+                    ~ "- Grupo de tradukistoj" }
+            }
+            li { a [href=url!("rss.xml")]
+                { strong { "RSS-fluo" }
+                    ~ "- Aboni la RSS-fluon por novajn bildstriojn" }
+            }
+        }
 
-fn icon_footer() -> View {
-    view! {
         hr/
         br/
         img ."icon-image" [
@@ -161,7 +137,8 @@ fn icon_footer() -> View {
             alt="La vizaĝo de Garfildo",
             height=400,
         ]/
-    }
+    }}
+    .into()
 }
 
 fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
