@@ -40,7 +40,7 @@ body {
         a {
             text-decoration-line: underline;
             &:not(&:hover, &:focus-within) {
-                text-decoration-color: $c-accent-b;
+                text-decoration-color: $c-subtle;
             }
         }
     }
