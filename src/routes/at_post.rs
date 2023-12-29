@@ -1,9 +1,7 @@
 use ibex::prelude::*;
 
 use crate::posts::{PostRef, Special};
-
 use crate::views::{post_title, post_transcript, use_base};
-use crate::URL_ROOT;
 
 pub fn at_post(post_ref: PostRef) -> Document {
     let post = post_ref.get();

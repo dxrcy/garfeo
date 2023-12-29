@@ -3,9 +3,7 @@ use ibex::prelude::*;
 use ibex::ssg;
 
 use crate::posts::PostRef;
-
-use super::posts::{transcript, PostList};
-use super::URL_ROOT;
+use crate::posts::{transcript, PostList};
 
 pub mod icons {
     pub const GOOD: char = '⭐';
