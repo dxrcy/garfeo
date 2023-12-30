@@ -18,10 +18,15 @@ fn main() {
             => routes::at_favorites(&posts),
         (/"informejo")
             => routes::at_about(&posts),
-        (/"listo")
-            => routes::at_list(&posts),
         (/404)
             => routes::at_404(&posts),
+
+        // List of posts
+        (/"listo")
+            => routes::at_list(&posts),
+        // Grid of posts
+        (/"krado")
+            => routes::at_grid(&posts),
 
         // Posts (HTML)
         (/[post.get().index()])

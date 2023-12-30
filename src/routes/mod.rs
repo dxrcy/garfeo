@@ -53,6 +53,20 @@ pub fn at_favorites(posts: &PostList) -> Document {
     .into()
 }
 
+pub fn at_404(posts: &PostList) -> Document {
+    view! { @use_base [
+        "404",
+        None,
+        &posts,
+    ] {
+        h3 { "Paĝo ne trovita!" }
+        p {
+            "404 - Not found"
+        }
+    }}
+    .into()
+}
+
 fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
 where
     F: Fn(&Post) -> bool,
@@ -81,6 +95,7 @@ pub fn at_list(posts: &PostList) -> Document {
         None,
         posts,
     ] {
+        h2 {}
         div ."big-list" {
             div ."stats" {
                 table {
@@ -163,16 +178,41 @@ pub fn at_list(posts: &PostList) -> Document {
     .into()
 }
 
-pub fn at_404(posts: &PostList) -> Document {
-    view! { @use_base [
-        "404",
+pub fn at_grid(posts: &PostList) -> Document {
+    view! { @use_base[
+        "Krado",
         None,
-        &posts,
+        posts,
     ] {
-        h3 { "Paĝo ne trovita!" }
-        p {
-            "404 - Not found"
+        h2 {}
+        div ."grid" {
+            [:for day in ["Lundo", "Marto", "Merkredo", "Ĵaŭdo", "Vendredo", "Sabato", "Dimanĉo"] {
+                div ."item day" {
+                    b { [day] }
+                }
+            }]
+
+            [:for post in posts {
+                [:where
+                    let post = post.get();
+                    let name = format!("[{}] {}", post.index(), post.title);
+                {
+                    div ."item" {
+                        a [
+                            href=url!(post.index()),
+                            title=post.title,
+                        ] {
+                            img [
+                                alt=name,
+                                src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
+                                width=120,
+                                height=120,
+                            ]/
+                        }
+                    }
+                }]
+            }]
         }
-    }}
+    } }
     .into()
 }

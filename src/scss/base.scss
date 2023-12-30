@@ -292,8 +292,6 @@ body {
         }
 
         .big-list {
-            margin-top: 20px;
-
             div {
                 margin-bottom: 10px;
 
@@ -333,6 +331,45 @@ body {
                             &:not(:first-of-type) {
                                 margin-left: 0.5em;
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid {
+            $size: 120px; // must match image `width` and `height` in html
+            $gap: 7px;
+            $gap-sunday: 9px;
+
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: $gap;
+
+            .item {
+                display: inline-block;
+
+                width: $size;
+                height: $size;
+                &.day {
+                    height: initial;
+                    margin-bottom: 10px;
+                }
+
+                &:nth-of-type(7n) {
+                    >* {
+                        margin-left: $gap-sunday;
+                    }
+                }
+
+
+                a {
+
+                    img {
+                        margin: 0;
+                        &:hover {
+                            transform: scale(1.15);
+                            outline: #{$gap - 1px} solid $c-main;
                         }
                     }
                 }
