@@ -5,4 +5,4 @@ Allow: /informejo
 Allow: /plej-bonaj
 Allow: /lasta
 
-Sitemap: https://darccyy.github.io/sitemap.xml
+Sitemap: https://darccyy.github.io/garfeo/sitemap.xml
