@@ -92,7 +92,7 @@ pub fn at_list(posts: &PostList) -> Document {
         None,
         posts,
     ] {
-        h2 {}
+        br/
         div ."big-list" {
             div ."stats" {
                 table {
@@ -179,7 +179,7 @@ pub fn at_grid(posts: &PostList) -> Document {
         None,
         posts,
     ] {
-        h2 {}
+        hr/
         div ."grid" {
             [:for day in ["Lundo", "Marto", "Merkredo", "Ĵaŭdo", "Vendredo", "Sabato", "Dimanĉo"] {
                 div ."item day" {
