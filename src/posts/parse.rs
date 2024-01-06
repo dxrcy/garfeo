@@ -69,6 +69,9 @@ fn parse_post(
         bail!("Missing `title` file");
     }
     let title = fs::read_to_string(path)?.trim().to_string();
+    if title.is_empty() {
+        bail!("Title of {index} is empty")
+    }
     if !title.starts_with("Garfildo ") {
         bail!("Title of {index} does not start with 'Garfildo'");
     }
