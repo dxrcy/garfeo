@@ -6,11 +6,11 @@ use crate::views::{post_title, post_transcript, use_base};
 pub fn at_post(post_ref: PostRef) -> Document {
     let post = post_ref.get();
 
-    view! { @use_base [
+    document! { @use_base [
         &format!("{} [{}]", post.title, post.index),
         Some(&format!("static/posts/{}/esperanto.png", post.index)),
         post_ref.list(),
-    ] {
+    ] { [lang="en"]
         h2 { @post_title[&post_ref, false] }
 
         p ."details" {
@@ -113,5 +113,4 @@ pub fn at_post(post_ref: PostRef) -> Document {
             "Vidu fonton"
         }
     }}
-    .into()
 }

@@ -13,11 +13,11 @@ pub use at_post::*;
 pub use json::*;
 
 pub fn at_index(posts: &PostList) -> Document {
-    view! { @use_base [
+    document! { @use_base [
         "",
         None,
         posts,
-    ] {
+    ] { [lang="en"]
         ol ."post-list" [
             reversed!,
             start=posts.first().index,
@@ -27,15 +27,14 @@ pub fn at_index(posts: &PostList) -> Document {
             }]
         }
     }}
-    .into()
 }
 
 pub fn at_favorites(posts: &PostList) -> Document {
-    view! { @use_base [
+    document! { @use_base [
         "Plej bonaj",
         None,
         posts,
-    ] {
+    ] { [lang="en"]
         h2 { "Plej bonaj bildstrioj" }
 
         h3 { "(Laŭ mia opinio)" }
@@ -50,21 +49,19 @@ pub fn at_favorites(posts: &PostList) -> Document {
             }]
         }
     }}
-    .into()
 }
 
 pub fn at_404(posts: &PostList) -> Document {
-    view! { @use_base [
+    document! { @use_base [
         "404",
         None,
         &posts,
-    ] {
+    ] { [lang="en"]
         h3 { "Paĝo ne trovita!" }
         p {
             "404 - Not found"
         }
     }}
-    .into()
 }
 
 fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
@@ -90,11 +87,11 @@ fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
 }
 
 pub fn at_list(posts: &PostList) -> Document {
-    view! { @use_base [
+    document! { @use_base [
         "Alia listo",
         None,
         posts,
-    ] {
+    ] { [lang="en"]
         h2 {}
         div ."big-list" {
             div ."stats" {
@@ -173,17 +170,15 @@ pub fn at_list(posts: &PostList) -> Document {
                 }]
             }
         }
-
     }}
-    .into()
 }
 
 pub fn at_grid(posts: &PostList) -> Document {
-    view! { @use_base[
+    document! { @use_base[
         "Krado",
         None,
         posts,
-    ] {
+    ] { [lang="en"]
         h2 {}
         div ."grid" {
             [:for day in ["Lundo", "Marto", "Merkredo", "Ĵaŭdo", "Vendredo", "Sabato", "Dimanĉo"] {
@@ -214,5 +209,4 @@ pub fn at_grid(posts: &PostList) -> Document {
             }]
         }
     } }
-    .into()
 }

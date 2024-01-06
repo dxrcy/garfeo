@@ -4,11 +4,11 @@ use crate::posts::PostList;
 use crate::views::use_base;
 
 pub fn at_about(posts: &PostList) -> Document {
-    view! { @use_base [
+    document! { @use_base [
         "Informejo",
         None,
         posts,
-    ] {
+    ] { [lang="en"]
         h2 { "Oftaj Demandoj" }
         div ."instructions highlight-links" {
             h3 { "Kio estas Garfield-EO?" }
@@ -87,5 +87,4 @@ pub fn at_about(posts: &PostList) -> Document {
             height=400,
         ]/
     }}
-    .into()
 }
