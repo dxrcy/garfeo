@@ -144,10 +144,10 @@ impl TryFrom<&str> for Speaker {
             "irma",
             "muso",
             "araneo",
+            "pesilo",
         ];
 
         let name = if uncommon {
-            // println!("{}", name);
             remove_first_char(&name).to_string()
         } else {
             if !COMMON_NAMES.contains(&name.as_str()) {
