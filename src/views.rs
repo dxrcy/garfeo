@@ -51,7 +51,7 @@ pub fn use_base(
 
         @top_header [posts]
 
-        article ."manual-width" {
+        section ."manual-width" {
             [children]
         }
 
