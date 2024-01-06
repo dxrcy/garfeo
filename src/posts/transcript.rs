@@ -34,8 +34,8 @@ impl Transcript {
 
     pub fn names(&self) -> Vec<(String, bool)> {
         self.panels()
-            .into_iter()
-            .map(|panel| {
+            .iter()
+            .flat_map(|panel| {
                 panel
                     .lines
                     .iter()
@@ -43,7 +43,6 @@ impl Transcript {
                     .map(|(name, uncommon)| (name.to_string(), uncommon))
                     .collect::<Vec<_>>()
             })
-            .flatten()
             .collect()
     }
 }
