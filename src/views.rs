@@ -16,12 +16,7 @@ pub mod icons {
     pub const NEW_YEARS: char = '🎉';
 }
 
-pub fn use_base(
-    title: &str,
-    image: Option<&str>,
-    posts: &PostList,
-    children: View,
-) -> View {
+pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: View) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
     if !title.is_empty() {
         full_title += " - ";
@@ -190,7 +185,7 @@ pub fn sentence_case(string: &str, every_word: bool) -> String {
 
     for ch in string.chars() {
         output.push(if was_punctuation {
-            ch.to_ascii_uppercase()
+            ch.to_uppercase().next().unwrap_or(ch) // supports esperanto characters
         } else {
             ch
         });
