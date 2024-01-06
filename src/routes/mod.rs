@@ -19,7 +19,7 @@ pub fn at_index(posts: &PostList) -> Document {
         posts,
     ] {
         ol ."post-list" [
-            reversed=true,
+            reversed!,
             start=posts.first().index,
         ] {
             [:for post in posts.into_iter().rev() {
@@ -40,7 +40,7 @@ pub fn at_favorites(posts: &PostList) -> Document {
 
         h3 { "(Laŭ mia opinio)" }
         ol ."post-list" [
-            reversed=true,
+            reversed!,
             start=posts.first().index,
         ] {
             [:for post in posts.into_iter().rev() {
