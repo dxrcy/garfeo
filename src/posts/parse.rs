@@ -5,7 +5,7 @@ use std::{
     path::Path,
 };
 
-use super::{ Index, Post, PostList, Props, Special, Transcript};
+use super::{Index, Post, PostList, Props, Special, Transcript};
 
 pub fn parse_posts() -> Result<PostList> {
     let dir_posts = Path::new("static/posts");
@@ -209,7 +209,10 @@ impl TryFrom<String> for Props {
             match line.trim() {
                 "good" => props.good = true,
                 "nogarfield" => props.nogarfield = true,
-                "notext" => props.notext = true,
+                "notext" => {
+                    println!("\x1b[33m{}\x1b[0m", "(no text)");
+                    props.notext = true;
+                }
                 "earsback" => props.earsback = true,
                 "" => continue,
                 prop => bail!("Unknown property '{prop}'"),
