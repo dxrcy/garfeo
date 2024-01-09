@@ -5,8 +5,8 @@ mod json;
 use ibex::prelude::*;
 use std::collections::HashSet;
 
-use crate::posts::{Post, PostList, Special};
-use crate::views::{icons, list_item, sentence_case, use_base};
+use crate::posts::{Post, PostList};
+use crate::views::{icons, list_item, post_special_icon, sentence_case, use_base};
 
 pub use at_about::*;
 pub use at_post::*;
@@ -146,11 +146,7 @@ pub fn at_list(posts: &PostList) -> Document {
             table ."graph" {
                 [:for post in posts.into_iter().rev() { [:where let post = post.get(); {
                         tr {
-                            td { [:if let Some(special) = post.special { [match special {
-                                Special::Halloween => icons::HALLOWEEN,
-                                Special::Christmas => icons::CHRISTMAS,
-                                Special::NewYears => icons::NEW_YEARS,
-                            }] }] }
+                            td { @post_special_icon [post.special] }
 
                             td { [:if post.props.good { [icons::GOOD] }] }
 

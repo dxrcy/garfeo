@@ -3,6 +3,7 @@ use ibex::prelude::*;
 use ibex::ssg;
 
 use crate::posts::PostRef;
+use crate::posts::Special;
 use crate::posts::{transcript, PostList};
 
 pub mod icons {
@@ -128,9 +129,28 @@ pub fn post_title(post: &PostRef, italic: bool) -> View {
             )]
 
             // Star if favorite
-            [:if post.props.good {
-                ~ span [title="Bona bildstrio"] { [icons::GOOD] }
+            ~ [:if post.props.good {
+                span [title="Bona bildstrio"] { [icons::GOOD] }
             }]
+            // Icon if special occasion
+            ~ @post_special_icon [post.special]
+        }
+    }
+}
+
+// move to `post_title` inline, if `at_list` is removed
+pub fn post_special_icon(special: Option<Special>) -> View {
+    let Some(special) = special else {
+        return view! {};
+    };
+    let (icon, message) = match special {
+        Special::Halloween => (icons::HALLOWEEN, "Feliĉan Halovenon"),
+        Special::Christmas => (icons::CHRISTMAS, "Feliĉan Kristnaskon"),
+        Special::NewYears => (icons::NEW_YEARS, "Feliĉan Novjaron"),
+    };
+    view! {
+        span [title=message] {
+            [icon]
         }
     }
 }

@@ -210,7 +210,7 @@ impl TryFrom<String> for Props {
                 "good" => props.good = true,
                 "nogarfield" => props.nogarfield = true,
                 "notext" => {
-                    println!("\x1b[33m{}\x1b[0m", "(no text)");
+                    println!("\x1b[33m(no text)\x1b[0m");
                     props.notext = true;
                 }
                 "earsback" => props.earsback = true,
