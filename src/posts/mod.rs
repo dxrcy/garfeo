@@ -30,7 +30,6 @@ pub struct Index(usize);
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Props {
     pub nogarfield: bool,
-    pub notext: bool,
     pub good: bool,
     pub earsback: bool,
 }

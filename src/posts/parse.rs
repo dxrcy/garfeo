@@ -209,10 +209,6 @@ impl TryFrom<String> for Props {
             match line.trim() {
                 "good" => props.good = true,
                 "nogarfield" => props.nogarfield = true,
-                "notext" => {
-                    println!("\x1b[33m(no text)\x1b[0m");
-                    props.notext = true;
-                }
                 "earsback" => props.earsback = true,
                 "" => continue,
                 prop => bail!("Unknown property '{prop}'"),

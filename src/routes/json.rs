@@ -75,13 +75,11 @@ pub fn json_post(post_ref: PostRef) -> String {
         props = {
             let Props {
                 nogarfield,
-                notext,
                 good,
                 earsback,
             } = post.props;
             format!(
                 "{{\"nogarfield\":{nogarfield},\
-                    \"notext\":{notext},\
                     \"good\":{good},\
                     \"earsback\":{earsback}}}"
             )

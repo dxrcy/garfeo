@@ -120,12 +120,10 @@ pub fn post_title(post: &PostRef, italic: bool) -> View {
 
     view! {
         span ."title" {
-            [wrap_if(       italic,            |x| view! { i           {[x]} },
-                wrap_if(    post.props.notext, |x| view! {span ."gray" {[x]} },
-                    wrap_if(post.is_sunday,    |x| view! { b           {[x]} },
-                        view! { [&post.title] }
-                    )
-               )
+            [wrap_if(   italic,         |x| view! { i {[x]} },
+                wrap_if(post.is_sunday, |x| view! { b {[x]} },
+                    view! { [&post.title] }
+                )
             )]
 
             // Star if favorite
