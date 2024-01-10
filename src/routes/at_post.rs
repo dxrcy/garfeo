@@ -112,8 +112,8 @@ pub fn at_post(post_ref: PostRef) -> Document {
         ] {
             "Vidu fonton"
         }
-        div ."old-version" {
-            [:if post.version > 0 {
+        [:if post.version > 0 {
+            div ."old-version" {
                 details {
                     summary {
                         "Vidu malnovan version"
@@ -124,7 +124,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
                         height=400,
                     ]/
                 }
-            }]
-        }
+            }
+        }]
     }}
 }
