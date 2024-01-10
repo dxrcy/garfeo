@@ -42,7 +42,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
         div {
             img ."comic" [
-                alt="Esperanto bildstrio",
+                alt="Esperanta bildstrio",
                 src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
                 height=400,
             ]/
@@ -111,6 +111,20 @@ pub fn at_post(post_ref: PostRef) -> Document {
             href=format!("https://github.com/darccyy/garfeo/tree/master/static/posts/{}", post.index),
         ] {
             "Vidu fonton"
+        }
+        div ."old-version" {
+            [:if post.version > 0 {
+                details {
+                    summary {
+                        "Vidu malnovan version"
+                    }
+                    img ."comic" [
+                        alt="Malnova esperanta bildstrio",
+                        src=url!(format!("static/old/{}:0/esperanto.png", &post.index)),
+                        height=400,
+                    ]/
+                }
+            }]
         }
     }}
 }
