@@ -22,7 +22,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
             }
             ~
             span ."text" {
-                "[" span { [&post.index()] } "]"
+                "[" span [onclick="copy(this)"] { [&post.index()] } "]"
                 ~
                 a [
                     href=format!("https://gocomics.com/garfield/{}", post.date.replace('-', "/")),
