@@ -17,6 +17,8 @@ pub mod icons {
     pub const NEW_YEARS: char = '🎉';
 }
 
+pub const SITE_DESCRIPTION: &str = "Legu 600+ bildstrioj de Garfildo, tradukitaj en Esperanton!";
+
 pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: View) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
     if !title.is_empty() {
@@ -28,7 +30,7 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
             @use_meta [ibex::meta! {
                 url: url!(),
                 title: &full_title,
-                desc: "Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!",
+                desc: SITE_DESCRIPTION,
                 image: url!(image.unwrap_or("static/icon.png")),
                 author: "darcy",
                 color: "#ffb24e",

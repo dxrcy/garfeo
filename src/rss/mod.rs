@@ -1,9 +1,9 @@
-use crate::posts::PostList;
+use crate::{posts::PostList, views::SITE_DESCRIPTION};
 
 pub fn generate_rss(posts: PostList) -> String {
     let title = "Garfildo Esperanta";
     let url = "https://darccyy.github.io/garfeo";
-    let description = "Legu 500+ bildstrioj de Garfildo, tradukitaj en Esperanton!";
+    let description = SITE_DESCRIPTION;
 
     format!(
         include_str!("file.rss"),
@@ -20,6 +20,7 @@ pub fn generate_rss(posts: PostList) -> String {
                     url = url,
                     title = post.title,
                     index = post.index,
+                    description = description,
                     date = post.date,
                     image_bytes = post.image_bytes,
                 )
