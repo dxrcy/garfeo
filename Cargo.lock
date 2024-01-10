@@ -119,11 +119,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 
 [[package]]
-name = "core"
-version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#9e537ae9df0f9bf257f48be557d90306397896e8"
-
-[[package]]
 name = "garfeo"
 version = "0.1.0"
 dependencies = [
@@ -184,12 +179,28 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 [[package]]
 name = "ibex"
 version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#9e537ae9df0f9bf257f48be557d90306397896e8"
+source = "git+https://github.com/darccyy/ibex#9c8eec48af48d5f6e5f49c247676307e14dff324"
 dependencies = [
- "core",
  "grass",
- "macros",
+ "ibex_core",
+ "ibex_macros",
  "symlink",
+]
+
+[[package]]
+name = "ibex_core"
+version = "0.1.0"
+source = "git+https://github.com/darccyy/ibex#9c8eec48af48d5f6e5f49c247676307e14dff324"
+
+[[package]]
+name = "ibex_macros"
+version = "0.1.0"
+source = "git+https://github.com/darccyy/ibex#9c8eec48af48d5f6e5f49c247676307e14dff324"
+dependencies = [
+ "ibex_core",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.41",
 ]
 
 [[package]]
@@ -216,17 +227,6 @@ name = "libc"
 version = "0.2.151"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "302d7ab3130588088d277783b1e2d2e10c9e9e4a16dd9050e6ec93fb3e7048f4"
-
-[[package]]
-name = "macros"
-version = "0.1.0"
-source = "git+https://github.com/darccyy/ibex#9e537ae9df0f9bf257f48be557d90306397896e8"
-dependencies = [
- "core",
- "proc-macro2",
- "quote",
- "syn 2.0.41",
-]
 
 [[package]]
 name = "once_cell"
