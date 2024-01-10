@@ -20,8 +20,7 @@ pub mod icons {
 pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: View) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
     if !title.is_empty() {
-        full_title += " - ";
-        full_title += title
+        full_title = format!("{} - {}", title, full_title);
     };
 
     view! {
