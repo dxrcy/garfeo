@@ -138,6 +138,10 @@ body {
             .text {
                 display: inline-block;
                 width: 9em;
+
+                .index:active {
+                    filter: brightness(60%);
+                }
             }
         }
 
