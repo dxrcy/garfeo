@@ -105,9 +105,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.4114339"
-     inkscape:cx="240.53553"
-     inkscape:cy="583.44921"
+     inkscape:zoom="5.6457356"
+     inkscape:cx="256.91958"
+     inkscape:cy="593.10252"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -129,7 +129,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Image 1"
-     style="opacity:1">
+     style="display:inline;opacity:1">
     <rect
        style="opacity:1;fill:#ffffff;stroke-width:0.4"
        id="rect11"
@@ -171,18 +171,18 @@
        transform="translate(36.795392,4.7620404)"><tspan
          x="272.24521"
          y="54.607769"
-         id="tspan14"><tspan
+         id="tspan6"><tspan
            dx="0 0 -0.49999899 0.49999815 0 0 0 0 -0.49999899 0.50000197 0 -0.50000089 0.50000197"
-           id="tspan4">vi estas la plej</tspan><tspan
+           id="tspan2">vi estas la plej</tspan><tspan
            dx="-0.49997991"
-           id="tspan5"></tspan><tspan
+           id="tspan3"></tspan><tspan
            y="54.607769"
-           id="tspan20"> </tspan></tspan><tspan
+           id="tspan7"> </tspan></tspan><tspan
          x="272.24521"
          y="85.941072"
-         id="tspan22"><tspan
+         id="tspan9"><tspan
            dx="0 0 0 0 -0.50000089 0.50000197"
-           id="tspan21">bona koramikino!</tspan></tspan></text>
+           id="tspan8">bona koramikino!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:-0.79px;word-spacing:0.5px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:pre;shape-padding:0;shape-margin:0;inline-size:354.709;display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
@@ -192,18 +192,18 @@
        transform="translate(10.22857,1.953584)"><tspan
          x="914.17828"
          y="57.845009"
-         id="tspan25"><tspan
+         id="tspan12"><tspan
            dx="0 0 0 -0.49999899 0.49999815 0 0 -0.49999613 0.49999434 0 -0.50000089 0.50000197"
-           id="tspan23">kaj vi, la plej</tspan><tspan
+           id="tspan10">kaj vi, la plej</tspan><tspan
            dx="-0.49999517"
-           id="tspan24"></tspan><tspan
+           id="tspan11"></tspan><tspan
            y="57.845009"
-           id="tspan26"> </tspan></tspan><tspan
+           id="tspan13"> </tspan></tspan><tspan
          x="914.17828"
          y="89.178312"
-         id="tspan28"><tspan
+         id="tspan15"><tspan
            dx="0 0 0 0 -0.50000089 0.50000197"
-           id="tspan27">bona dombesto!</tspan></tspan></text>
+           id="tspan14">bona dombesto!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:33.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.78px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:233.632;display:inline;opacity:1;fill:#000000;stroke-width:0.4"
@@ -213,27 +213,29 @@
        transform="translate(20.213987,2.546662)"><tspan
          x="277.24329"
          y="589.34943"
-         id="tspan31"><tspan
+         id="tspan19"><tspan
            dx="0 0 -0.49999881 0.50000024"
-           id="tspan29">ni povus</tspan><tspan
-           dx="-0.50000453"
-           id="tspan30"></tspan><tspan
+           id="tspan16">ni povus</tspan><tspan
+           dx="-0.50000453 0.49999642"
+           id="tspan17"> havi</tspan><tspan
+           dx="-0.50000644"
+           id="tspan18"></tspan><tspan
            y="589.34943"
-           id="tspan32"> </tspan></tspan><tspan
+           id="tspan20"> </tspan></tspan><tspan
          x="277.24329"
          y="620.68273"
-         id="tspan34"><tspan
-           dx="0 0 0 0 -0.49999881 0.49999642 0 0 -0.49999881 0.49999642"
-           id="tspan33">fari pli bone</tspan></tspan></text>
+         id="tspan22"><tspan
+           dx="0 0 0 -0.49999881 0.50000024"
+           id="tspan21">pli bonan</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:33.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.78px;word-spacing:0.5px;text-anchor:middle;opacity:1;fill:#000000;stroke-width:1.4;stroke:#000000;stroke-dasharray:none"
-       x="239.77271"
-       y="591.86523"
-       id="text15"><tspan
-         sodipodi:role="line"
-         id="tspan15"
-         x="239.38271"
-         y="591.86523">ni</tspan></text>
+       style="font-size:33.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.78px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:233.632;display:inline;fill:#000000;stroke-width:1.5;stroke:#000000;stroke-dasharray:none"
+       x="277.24329"
+       y="589.34943"
+       id="text14-3"
+       transform="translate(-78.659234,2.4936946)"><tspan
+         x="277.24329"
+         y="589.34943"
+         id="tspan23">ni</tspan></text>
   </g>
 </svg>
