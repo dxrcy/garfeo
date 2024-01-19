@@ -11,6 +11,6 @@ function select(element) {
 function copy(element) {
     navigator.clipboard.writeText(element.innerText)
         .catch(function(err) {
-            console.error("Failed to copy text: ", err);
+            console.error("Failed to copy text:", err);
         });
 } 
