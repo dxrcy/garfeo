@@ -54,11 +54,6 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         div ."small gray" {
-            [:if post.version > 0 {
-                b { "Revizio:" }
-                ~ [post.version]
-            }]
-            ~
             [:if post.is_old {
                 "(olda)"
             }]
@@ -112,11 +107,16 @@ pub fn at_post(post_ref: PostRef) -> Document {
         ] {
             "Vidu fonton"
         }
+
         [:if post.version > 0 {
             div ."old-version" {
                 details {
                     summary {
                         "Vidu malnovan version"
+                        ~ i {
+                            "(" [post.version]
+                            ~ "revizio" [:if post.version > 1 {"j"}] ")"
+                        }
                     }
                     img ."comic" [
                         alt="Malnova esperanta bildstrio",
