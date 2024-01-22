@@ -96,14 +96,8 @@ pub fn at_list(posts: &PostList) -> Document {
         div ."big-list" {
             div ."stats" {
                 table {
-                    [:where
-                        let percent_new = posts_percent(posts, |post| !post.is_old);
-                        let percent_transcribed = posts_percent(posts, |post| post.transcript.is_some());
-                        let percent_total = (percent_new + percent_transcribed) / 2;
-                    {
+                    [:where let percent_new = posts_percent(posts, |post| !post.is_old); {
                         tr { td/        td { b { [percent_new]         "%" } } td { "Novaj" } }
-                        tr { td/        td { b { [percent_transcribed] "%" } } td { "Transskribitaj" } }
-                        tr { td { "=" } td { b { i { [percent_total]   "%" }}} td/ }
                     }]
                 }
             }
