@@ -2,6 +2,7 @@ use ibex::extras::wrap_if;
 use ibex::prelude::*;
 use ibex::ssg;
 
+use crate::posts::Post;
 use crate::posts::PostRef;
 use crate::posts::Special;
 use crate::posts::{transcript, PostList};
@@ -195,6 +196,41 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
                 }
             }]
         }
+    }
+}
+
+
+pub fn post_copy_caption(post: &Post) -> View {
+    view! {
+        [&post.title] ~ "💚" "&#10;&#10;"
+        "#esperanto #garfield #mondodakomiksoj"
+        ~ "[" [&post.index()] "]"
+    }
+}
+pub fn post_copy_transcript(post: &Post) -> View {
+    let Some(transcript) = &post.transcript else {
+        return view! {};
+    };
+    view! {
+        [:for (i, panel) in transcript.panels().iter().enumerate() {
+            [:if i > 0 { "\n---" } ]
+            [:for transcript::Line { speaker, text } in &panel.lines {
+               "\n"
+                [match speaker {
+                    transcript::Speaker::Sound => view! {
+                        "*" [text] "*"
+                    },
+                    transcript::Speaker::Text => view! {
+                        "[" [text] "]"
+                    },
+                    transcript::Speaker::Character{ name, .. } => view! {
+                        @sentence_case[name, false]
+                        ":" ~
+                        @sentence_case[text, false]
+                    }
+                }]
+            }]
+        }]
     }
 }
 

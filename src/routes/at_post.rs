@@ -1,7 +1,7 @@
 use ibex::prelude::*;
 
 use crate::posts::{PostRef, Special};
-use crate::views::{post_title, post_transcript, use_base};
+use crate::views::{post_copy_caption, post_copy_transcript, post_title, post_transcript, use_base};
 
 pub fn at_post(post_ref: PostRef) -> Document {
     let post = post_ref.get();
@@ -93,13 +93,10 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
         hr/
 
-        div ."caption" {
+        div ."copyable" {
             HEAD { script { [include_str!("../js/copy.js")] } }
-            pre [onclick="copy(this)"] {
-                [&post.title] ~ "💚" "&#10;&#10;"
-                 "#esperanto #garfield #mondodakomiksoj"
-                ~ "[" [&post.index()] "]"
-            }
+            div { pre [onclick="copy(this)"] { @post_copy_caption[&post] } }
+            div { pre [onclick="copy(this)"] { @post_copy_transcript[&post] } }
         }
 
         a ."source" [

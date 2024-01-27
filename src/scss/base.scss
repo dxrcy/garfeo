@@ -242,15 +242,21 @@ body {
             }
         }
 
-        .caption {
-            overflow: scroll;
-            pre {
-                display: inline-block;
-                margin: 10px;
-                padding: 3px 5px;
-                background-color: $c-background;
-                &:active {
-                    filter: brightness(90%);
+        .copyable {
+            margin: 10px;
+
+            div {
+                overflow: scroll;
+                pre {
+                    display: inline-block;
+                    margin: 5px;
+                    padding: 3px 5px;
+                    font-size: 90%;
+                    text-align: left;
+                    background-color: $c-background;
+                    &:active {
+                        filter: brightness(90%);
+                    }
                 }
             }
         }
