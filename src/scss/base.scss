@@ -246,13 +246,14 @@ body {
             margin: 10px;
 
             div {
-                overflow: scroll;
                 pre {
                     display: inline-block;
-                    margin: 5px;
+                    max-width: 70vw;
+                    margin: 5px 0;
                     padding: 3px 5px;
                     font-size: 90%;
                     text-align: left;
+                    overflow: scroll;
                     background-color: $c-background;
                     &:active {
                         filter: brightness(90%);
