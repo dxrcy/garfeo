@@ -8,7 +8,7 @@ $c-bright:     adjust-color($c-main,     $hue: -30deg, $saturation: 5%,   $light
 $c-subtle:     adjust-color($c-bright,   $hue: 10deg,  $saturation: 0%,   $lightness: -30%);
 // Accent colors
 $c-accent-a:   hsl(0deg,   100%, 77%);
-$c-accent-b:   adjust-color($c-accent-a, $hue: -60deg, $saturation: -75%, $lightness: -15%);
+$c-accent-b:   adjust-color($c-accent-a, $hue: -80deg, $saturation: -75%, $lightness: -15%);
 
 // ------ FONTS
 // Serif
