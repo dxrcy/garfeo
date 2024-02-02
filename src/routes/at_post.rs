@@ -100,7 +100,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         a ."source" [
-            href=format!("https://github.com/darccyy/garfeo/tree/master/static/posts/{}", post.index),
+            href=format!("https://github.com/dxrcy/garfeo/tree/master/static/posts/{}", post.index),
         ] {
             "Vidu fonton"
         }

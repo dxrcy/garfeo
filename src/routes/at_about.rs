@@ -22,7 +22,7 @@ pub fn at_about(posts: &PostList) -> Document {
             p {
                 "Garfildo-bildstrioj troviĝas je la retejo"~ a[href="https://gocomics.com/garfield"]{"GoComics.com"} "."
                 ~
-                "Oni povas elŝuti"~ i{"ĉiun"} ~"Garfildo-bildstrion per"~ a[href="https://github.com/darccyy/everygarf"]{"EveryGarf"} "."
+                "Oni povas elŝuti"~ i{"ĉiun"} ~"Garfildo-bildstrion per"~ a[href="https://github.com/dxrcy/everygarf"]{"EveryGarf"} "."
             }
 
             h3 { "Kiel vi redaktas bildstriojn?" }
@@ -31,33 +31,33 @@ pub fn at_about(posts: &PostList) -> Document {
                 ~
                 "Elŝutu la bildstria-tiparo"~ a[href=url!("static/GarfieldSans-EO-Regular.ttf")]{"ĉi tie"} "."
                 ~
-                "Mi organizi, formati, kaj redakti la bildstriojn per"~ a[href="https://github.com/darccyy/scripts/blob/master/garf"]{"multaj skriptoj"} "."
+                "Mi organizi, formati, kaj redakti la bildstriojn per"~ a[href="https://github.com/dxrcy/scripts/blob/master/garf"]{"multaj skriptoj"} "."
             }
 
             h3 { "Kiel vi kreas ĉi tiun retpaĝo?" }
             p {
-                "Ĉi tiu retpaĝo estas kreiita per la ret-kadro"~ a[href="https://github.com/darccyy/ibex"]{"Ibex"} ~"en la programlingvo"~ a[href="https://www.rust-lang.org/"]{"Rust"} "."
+                "Ĉi tiu retpaĝo estas kreiita per la ret-kadro"~ a[href="https://github.com/dxrcy/ibex"]{"Ibex"} ~"en la programlingvo"~ a[href="https://www.rust-lang.org/"]{"Rust"} "."
                 ~
-                "La fontkodo troviĝas"~ a[href="https://github.com/darccyy/garfeo"]{"ĉi tie"} ","
-                ~"kaj la fonto de ĉiu tradukita bildstrio troviĝas"~ a[href="https://github.com/darccyy/garfeo/blob/master/static/posts"]{"ĉi tie"} "."
+                "La fontkodo troviĝas"~ a[href="https://github.com/dxrcy/garfeo"]{"ĉi tie"} ","
+                ~"kaj la fonto de ĉiu tradukita bildstrio troviĝas"~ a[href="https://github.com/dxrcy/garfeo/blob/master/static/posts"]{"ĉi tie"} "."
             }
             h3 { "Mi havas concernon, aŭ alia demandon!" }
             p {
-                "Informu min per GitHub"~ a[href="https://github.com/darccyy/garfeo/issues/new"]{"ĉi tie"} "."
+                "Informu min per GitHub"~ a[href="https://github.com/dxrcy/garfeo/issues/new"]{"ĉi tie"} "."
             }
         }
 
         h2 { "Ligiloj" }
         ul ."links" {
-            li { a [href="https://github.com/darccyy/garfeo"]
+            li { a [href="https://github.com/dxrcy/garfeo"]
                 { strong { "Fontkodo kaj ĉiu bildstrio" }
                     ~ "- por ĉi tiu retejo (en la angla)" }
             }
-            li { a [href="https://github.com/darccyy/garfeo/issues/new"]
+            li { a [href="https://github.com/dxrcy/garfeo/issues/new"]
                 { strong { "Mi havas concernon!" }
                     ~ "- Informu min per GitHub" }
             }
-            li { a [href="https://github.com/darccyy/everygarf"]
+            li { a [href="https://github.com/dxrcy/everygarf"]
                 { strong { "EveryGarf" }
                     ~ "- Elŝuti ĉiujn Garfildajn bildstriojn ĝisnune" }
             }

@@ -2,7 +2,7 @@ use crate::{posts::PostList, views::SITE_DESCRIPTION};
 
 pub fn generate_rss(posts: PostList) -> String {
     let title = "Garfildo Esperanta";
-    let url = "https://darccyy.github.io/garfeo";
+    let url = "https://dxrcy.github.io/garfeo";
     let description = SITE_DESCRIPTION;
 
     format!(

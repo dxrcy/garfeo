@@ -54,7 +54,7 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
         }
 
         footer {
-            a [href="https://darccyy.github.io"] {
+            a [href="https://dxrcy.github.io"] {
                 "kreita de darcio"
             }
         }

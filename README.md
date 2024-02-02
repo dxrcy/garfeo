@@ -2,9 +2,9 @@
 
 600+ *Garfield* comics translated to Esperanto.
 
--   [See website live now!](https://darccyy.github.io/garfeo) (in Esperanto)
+-   [See website live now!](https://dxrcy.github.io/garfeo) (in Esperanto)
 
-Made with [Ibex](https://github.com/darccyy/ibex)
+Made with [Ibex](https://github.com/dxrcy/ibex)
 
 # File Structure
 
