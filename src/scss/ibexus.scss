@@ -1,14 +1,15 @@
 // ------ COLORS
 // Text color
-$c-text:       hsl(0deg,   0,    90%);
+$c-text:          hsl(0deg,   0,    90%);
 // Main colors (similar)
-$c-main:       hsl(205deg, 19%,  17%);
-$c-background: adjust-color($c-main,     $hue: 0deg,   $saturation: -3%,  $lightness: -3.5%);
-$c-bright:     adjust-color($c-main,     $hue: -30deg, $saturation: 5%,   $lightness: 45%);
-$c-subtle:     adjust-color($c-bright,   $hue: 10deg,  $saturation: 0%,   $lightness: -30%);
+$c-main:          hsl(205deg, 19%,  17%);
+$c-background:    adjust-color($c-main,     $hue: 0deg,   $saturation: -3%,  $lightness: -3.5%);
+$c-bright:        adjust-color($c-main,     $hue: -30deg, $saturation: 5%,   $lightness: 45%);
+$c-subtle-bright: adjust-color($c-bright,   $hue: 0deg,   $saturation: -10%, $lightness: 0%); 
+$c-subtle:        adjust-color($c-bright,   $hue: 10deg,  $saturation: 0%,   $lightness: -30%);
 // Accent colors
-$c-accent-a:   hsl(0deg,   100%, 77%);
-$c-accent-b:   adjust-color($c-accent-a, $hue: -80deg, $saturation: -75%, $lightness: -15%);
+$c-accent-a:      hsl(0deg,   100%, 77%);
+$c-accent-b:      adjust-color($c-accent-a, $hue: -80deg, $saturation: -75%, $lightness: -15%);
 
 // ------ FONTS
 // Serif
