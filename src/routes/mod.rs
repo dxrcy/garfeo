@@ -13,7 +13,7 @@ pub use at_post::*;
 pub use json::*;
 
 pub fn at_index(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         "",
         None,
         posts,
@@ -30,7 +30,7 @@ pub fn at_index(posts: &PostList) -> Document {
 }
 
 pub fn at_favorites(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         "Plej bonaj",
         None,
         posts,
@@ -52,7 +52,7 @@ pub fn at_favorites(posts: &PostList) -> Document {
 }
 
 pub fn at_404(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         "404",
         None,
         &posts,
@@ -87,7 +87,7 @@ fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
 }
 
 pub fn at_list(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         "Alia listo",
         None,
         posts,
@@ -164,7 +164,7 @@ pub fn at_list(posts: &PostList) -> Document {
 }
 
 pub fn at_grid(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base[
+    document! { [lang="eo"] @use_base[
         "Krado",
         None,
         posts,

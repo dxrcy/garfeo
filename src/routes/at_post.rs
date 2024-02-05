@@ -6,7 +6,7 @@ use crate::views::{post_copy_caption, post_copy_transcript, post_title, post_tra
 pub fn at_post(post_ref: PostRef) -> Document {
     let post = post_ref.get();
 
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         &format!("{} [{}]", post.title, post.index),
         Some(&format!("static/posts/{}/esperanto.png", post.index)),
         post_ref.list(),

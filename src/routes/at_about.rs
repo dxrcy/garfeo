@@ -4,7 +4,7 @@ use crate::posts::PostList;
 use crate::views::use_base;
 
 pub fn at_about(posts: &PostList) -> Document {
-    document! { [lang="en"] @use_base [
+    document! { [lang="eo"] @use_base [
         "Informejo",
         None,
         posts,
