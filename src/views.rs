@@ -44,12 +44,13 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
             @ssg::use_autoreload []
 
             script { [format!("const BASE_URL = '{}'", url!())] }
+            script { [format!("const LAST_INDEX = {}",  posts.last().index.to_string())] }
 
             script { [include_str!("js/navigate.js")] }
             script { [include_str!("js/random.js")] }
         }
 
-        @top_header [posts]
+        @top_header[]
 
         main ."manual-width" {
             [children]
@@ -63,7 +64,7 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
     }
 }
 
-fn top_header(posts: &PostList) -> View {
+fn top_header() -> View {
     view! {
         div ."header" {
             h1 ."title" {
@@ -91,12 +92,7 @@ fn top_header(posts: &PostList) -> View {
                 }
             }
 
-            [:where
-                let first = &posts.first().index;
-                let last = &posts.last().index;
-             {
-                script { [format!("set_random_url('{}', '{}')", first, last)] }
-            }]
+            script [defer=true] { "set_random_url()" }
         }
         hr/
     }
