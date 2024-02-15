@@ -10,7 +10,7 @@ function select(element) {
 // Copy element text to clipboard
 function copy(element) {
     navigator.clipboard.writeText(element.innerText)
-        .catch(function(err) {
+        .catch(function (err) {
             console.error("Failed to copy text:", err);
         });
 } 
