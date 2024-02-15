@@ -44,10 +44,11 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
             @ssg::use_autoreload []
 
             script { [format!("const BASE_URL = '{}'", url!())] }
-            script { [format!("const LAST_INDEX = {}",  posts.last().index.to_string())] }
+            script { [format!("const LAST_INDEX = {}",  posts.last().index.as_int())] } // as_int
 
             script { [include_str!("js/navigate.js")] }
             script { [include_str!("js/random.js")] }
+            script { [include_str!("js/goto.js")] }
         }
 
         @top_header[]
@@ -92,7 +93,7 @@ fn top_header() -> View {
                 }
             }
 
-            script [defer=true] { "set_random_url()" }
+            script { "set_random_url()" }
         }
         hr/
     }
