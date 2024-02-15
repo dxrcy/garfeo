@@ -43,6 +43,8 @@ pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: Vi
             link [rel="stylesheet",    href=url!("css/base.css")]/
             @ssg::use_autoreload []
 
+            script { [format!("const BASE_URL = '{}'", url!())] }
+
             script { [include_str!("js/navigate.js")] }
             script { [include_str!("js/random.js")] }
         }
@@ -93,7 +95,7 @@ fn top_header(posts: &PostList) -> View {
                 let first = &posts.first().index;
                 let last = &posts.last().index;
              {
-                script { [format!("set_random_url('{}', '{}', '{}')", url!(), first, last)] }
+                script { [format!("set_random_url('{}', '{}')", first, last)] }
             }]
         }
         hr/
@@ -198,7 +200,6 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
         }
     }
 }
-
 
 pub fn post_copy_caption(post: &Post) -> View {
     view! {

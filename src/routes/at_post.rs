@@ -16,7 +16,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
         p ."details" {
             span ."navigate prev" {
                 [:if let Some(prev) = &post_ref.prev() {
-                    HEAD { script { [format!("register_navigation_key('{}', '{}', '{}')", url!(), "p", prev.index())] }}
+                    HEAD { script { [format!("register_navigation_key('{}', '{}')", "p", prev.index())] }}
                     a [href=url!(&prev.index())] { &laquo }
                 }]
             }
@@ -34,7 +34,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
             ~
             span ."navigate next" {
                 [:if let Some(next) = &post_ref.next() {
-                    HEAD { script { [format!("register_navigation_key('{}', '{}', '{}')", url!(), "n", next.index())] }}
+                    HEAD { script { [format!("register_navigation_key('{}', '{}')", "n", next.index())] }}
                     a [href=url!(&next.index())] { &raquo }
                 }]
             }
