@@ -1,3 +1,4 @@
+// Go to a post by index
 window.addEventListener("keydown", (event) => {
     if (event.altKey || event.ctrlKey) {
         return;

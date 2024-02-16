@@ -15,6 +15,7 @@ function copy_text(text) {
         });
 } 
 
+// Copy post index
 function register_copy_key(index) {
     window.addEventListener("keydown", (event) => {
         if (event.altKey || event.ctrlKey) {
