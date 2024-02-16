@@ -8,9 +8,21 @@ function select(element) {
 }
 
 // Copy element text to clipboard
-function copy(element) {
-    navigator.clipboard.writeText(element.innerText)
+function copy_text(text) {
+    navigator.clipboard.writeText(text)
         .catch(function (err) {
             console.error("Failed to copy text:", err);
         });
 } 
+
+function register_copy_key(index) {
+    window.addEventListener("keydown", (event) => {
+        if (event.altKey || event.ctrlKey) {
+            return;
+        }
+        if (event.key == "y") {
+            copy_text(index);
+        }
+    });
+}
+

@@ -1,7 +1,9 @@
 use ibex::prelude::*;
 
 use crate::posts::{PostRef, Special};
-use crate::views::{post_copy_caption, post_copy_transcript, post_title, post_transcript, use_base};
+use crate::views::{
+    post_copy_caption, post_copy_transcript, post_title, post_transcript, use_base,
+};
 
 pub fn at_post(post_ref: PostRef) -> Document {
     let post = post_ref.get();
@@ -11,6 +13,11 @@ pub fn at_post(post_ref: PostRef) -> Document {
         Some(&format!("static/posts/{}/esperanto.png", post.index)),
         post_ref.list(),
     ] {
+        HEAD {
+            script { [include_str!("../js/copy.js")] }
+            script { [format!("register_copy_key('{}')", post.index().to_string())] }
+        }
+
         h2 { @post_title[&post_ref, false] }
 
         p ."details" {
@@ -22,7 +29,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
             }
             ~
             span ."text" {
-                "[" span ."index" [onclick="copy(this)"] { [&post.index()] } "]"
+                "[" span ."index" [onclick="copy_text(this.innerText)"] { [&post.index()] } "]"
                 ~
                 a [
                     href=format!("https://gocomics.com/garfield/{}", post.date.replace('-', "/")),
@@ -94,9 +101,8 @@ pub fn at_post(post_ref: PostRef) -> Document {
         hr/
 
         div ."copyable" {
-            HEAD { script { [include_str!("../js/copy.js")] } }
-            div { pre [onclick="copy(this)"] { @post_copy_caption[&post] } }
-            div { pre [onclick="copy(this)"] { @post_copy_transcript[&post] } }
+            div { pre [onclick="copy_text(this.innerText)"] { @post_copy_caption[&post] } }
+            div { pre [onclick="copy_text(this.innerText)"] { @post_copy_transcript[&post] } }
         }
 
         a ."source" [
