@@ -165,7 +165,7 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
 
                 div ."panel" {
                     [:if panel.lines.is_empty() {
-                        div ."empty" { "(nenio)" }
+                        div ."empty" { "..." }
                     } else {
                         div ."texts" {
                             [:for transcript::Line { speaker, text } in &panel.lines {
