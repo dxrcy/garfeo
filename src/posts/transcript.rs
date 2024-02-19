@@ -108,7 +108,7 @@ impl TryFrom<Vec<&str>> for Panel {
             let Some(text) = strings.next() else {
                 bail!("expected text line after `{}`", string);
             };
-            let text = text.to_string();
+            let text = format_transcript_text(text);
 
             lines.push(Line { speaker, text });
         }
@@ -159,6 +159,10 @@ impl TryFrom<&str> for Speaker {
     }
 }
 
+fn format_transcript_text(string: &str) -> String {
+    string.replace('~', "♫")
+}
+
 fn remove_last_char(string: &str) -> &str {
     let mut chars = string.chars();
     chars.next_back();
@@ -169,3 +173,4 @@ fn remove_first_char(string: &str) -> &str {
     chars.next();
     chars.as_str()
 }
+
