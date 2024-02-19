@@ -1,2 +1,7 @@
 panel count
     support non-standard panel count (eg. 0328)
+
+comic view
+    only show esperanto comic
+        toggle with a button
+    add buttons to download each comic (at bottom)
