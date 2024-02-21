@@ -1,3 +1,6 @@
+transcript formatting
+    ensure sentence case on parse, not render
+
 panel count
     support non-standard panel count (eg. 0328)
 
