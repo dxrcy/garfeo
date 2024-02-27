@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.3433333"
-     inkscape:cx="419.91465"
-     inkscape:cy="127.38265"
+     inkscape:cx="414.15363"
+     inkscape:cy="650.569"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -112,32 +112,31 @@
        transform="translate(0.56676743,7.7072296)"><tspan
          x="956.53174"
          y="52.414371"
-         id="tspan2"><tspan
-           dx="0 0 -0.50000167"
-           id="tspan1">mi</tspan><tspan
-           y="52.414371"
-           id="tspan3"> </tspan></tspan><tspan
+         id="tspan9">mi<tspan
+   dx="-0.50000167"
+   id="tspan6"></tspan><tspan
+   y="52.414371"
+   id="tspan10"> </tspan></tspan><tspan
          x="956.53174"
          y="84.414343"
-         id="tspan4">ŝercas!</tspan></text>
+         id="tspan11">ŝercas!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.24px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:388.418;display:inline;fill:#000000;stroke-width:1.5"
+       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.24px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:342.314;display:inline;fill:#000000;stroke-width:1.5"
        x="390.25937"
        y="595.78485"
        id="text6"
        transform="translate(10.626679,-2.4085272)"><tspan
          x="390.25937"
          y="595.78485"
-         id="tspan8"><tspan
-           dx="0 0 -0.50000167 0.50000119 0 0 0 0 -0.50000358"
-           id="tspan5">vi devas
-</tspan></tspan><tspan
+         id="tspan13"><tspan
+           dx="0 0 -0.50000167 0.50000119 0 0 0 0 -0.50000358 0.50000501 0 0 0 0 -0.49999785"
+           id="tspan12">vi devas lerni</tspan><tspan
+           y="595.78485"
+           id="tspan14"> </tspan></tspan><tspan
          x="390.25937"
          y="627.7848"
-         id="tspan10"><tspan
-           dx="0 0 0 0 0 -0.50000548 0.50000501"
-           id="tspan9">lerni malstreĉi</tspan></tspan></text>
+         id="tspan15">malstreĉiĝi</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:153.771px;line-height:0.96;font-family:Komika;-inkscape-font-specification:Komika;text-align:center;text-decoration-color:#000000;letter-spacing:-5.72032px;word-spacing:2.30658px;text-anchor:middle;fill:#000000;stroke-width:1.5"
