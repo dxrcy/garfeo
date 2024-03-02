@@ -21,7 +21,7 @@ function register_copy_key(index) {
         if (event.altKey || event.ctrlKey) {
             return;
         }
-        if (event.key == "y") {
+        if (event.key == "y" || event.key == "ŭ") {
             copy_text(index);
         }
     });
