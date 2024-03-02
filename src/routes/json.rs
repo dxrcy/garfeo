@@ -27,7 +27,7 @@ pub fn json_post(post_ref: PostRef) -> String {
             "\"transcript\":{transcript},",
             "\"props\":{props},",
             "\"special\":{special},",
-            "\"version\":{version},",
+            "\"is_revised\":{is_revised},",
             "\"is_old\":{is_old},",
             "\"image_bytes\":{image_bytes}",
             "}}"
@@ -90,7 +90,7 @@ pub fn json_post(post_ref: PostRef) -> String {
             Some(Special::Christmas) => "\"kristnasko\"",
             Some(Special::NewYears) => "\"novjaro\"",
         },
-        version = post.version,
+        is_revised = post.is_revised,
         is_old = post.is_old,
         image_bytes = post.image_bytes,
     )

@@ -154,7 +154,7 @@ pub fn at_list(posts: &PostList) -> Document {
                             td { [:if post.transcript.is_some() { [icons::TRANSCRIPT] }] }
 
                             td { [:if post.is_old { [icons::OLD] } else { [icons::NOT_OLD] }] }
-                            td { [:for _ in 0..post.version { span { [icons::REVISED] } }] }
+                            td { [:if post.is_revised { span { [icons::REVISED] } }] }
                         }
                     }]
                 }]

@@ -1,6 +1,6 @@
 use anyhow::{bail, Context, Result};
 use std::{
-    collections::HashMap,
+    collections::HashSet,
     fs::{self, DirEntry},
     path::Path,
 };
@@ -26,12 +26,9 @@ pub fn parse_posts() -> Result<PostList> {
     for (index, folder) in folders.into_iter().enumerate() {
         let index = Index(index);
 
-        let version = old_versions
-            .get(&index.as_int())
-            .map(|version| *version + 1)
-            .unwrap_or(0);
+        let is_revised = old_versions.contains(&index.as_int());
 
-        let post = parse_post(index, folder, version, &existing_titles, &existing_dates)
+        let post = parse_post(index, folder, is_revised, &existing_titles, &existing_dates)
             .with_context(|| format!("For post [{}]", index))?;
 
         existing_titles.push(post.title.clone());
@@ -47,7 +44,7 @@ pub fn parse_posts() -> Result<PostList> {
 fn parse_post(
     index: Index,
     folder: DirEntry,
-    version: u32,
+    is_revised: bool,
     existing_titles: &[String],
     existing_dates: &[String],
 ) -> Result<Post> {
@@ -139,45 +136,29 @@ fn parse_post(
         transcript,
         props,
         special,
-        version,
+        is_revised,
         is_old,
         image_bytes,
     })
 }
 
-fn get_old_versions(dir: &Path) -> Result<HashMap<usize, u32>> {
+fn get_old_versions(dir: &Path) -> Result<HashSet<usize>> {
     let mut old_folders: Vec<_> = fs::read_dir(dir)?.flatten().collect();
     old_folders.sort_by_key(|folder| {
         let path = folder.path();
         path.to_string_lossy().to_string()
     });
 
-    let mut old_versions = HashMap::new();
+    let mut old_versions = HashSet::new();
     for folder in old_folders {
         let name = folder.file_name();
         let name = name.to_string_lossy().to_string();
-        let mut split = name.split(':');
 
-        let index: Option<usize> = split.next().and_then(|string| string.parse().ok());
-        let version: Option<u32> = split.next().and_then(|string| string.parse().ok());
-        let Some((index, version)) = index.zip(version) else {
+        let Some(index) = name.parse::<usize>().ok() else {
             bail!("For folder `{}`", folder.path().display());
         };
 
-        let expected_version = match old_versions.get(&index) {
-            Some(prev) => prev + 1,
-            None => 0,
-        };
-
-        if version != expected_version {
-            bail!(
-                "Revised post version out of order. Expected `:{}`, found `:{}`",
-                expected_version,
-                version
-            );
-        }
-
-        old_versions.insert(index, version);
+        old_versions.insert(index);
     }
 
     Ok(old_versions)

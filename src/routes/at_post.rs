@@ -111,19 +111,15 @@ pub fn at_post(post_ref: PostRef) -> Document {
             "Vidu fonton"
         }
 
-        [:if post.version > 0 {
+        [:if post.is_revised {
             div ."old-version" {
                 details {
                     summary {
                         "Vidu malnovan version"
-                        ~ i {
-                            "(" [post.version]
-                            ~ "revizio" [:if post.version > 1 {"j"}] ")"
-                        }
                     }
                     img ."comic" [
                         alt="Malnova esperanta bildstrio",
-                        src=url!(format!("static/old/{}:0/esperanto.png", &post.index)),
+                        src=url!(format!("static/old/{}/esperanto.png", &post.index)),
                         height=400,
                     ]/
                 }

@@ -19,7 +19,7 @@ pub struct Post {
     pub transcript: Option<Transcript>,
     pub props: Props,
     pub special: Option<Special>,
-    pub version: u32,
+    pub is_revised: bool,
     pub is_old: bool,
     pub image_bytes: u64,
 }
