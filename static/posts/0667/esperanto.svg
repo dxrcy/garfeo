@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.1716667"
-     inkscape:cx="386.62873"
-     inkscape:cy="193.31437"
+     inkscape:cx="386.62872"
+     inkscape:cy="194.16785"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -87,40 +87,42 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:37.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:420.09;fill:#000000;stroke-width:0.6"
+       style="font-size:37.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:420.09;display:inline;fill:#000000;stroke-width:0.6"
        x="225.53873"
        y="65.693733"
        id="text3"
        transform="translate(22.463316,-1.6621705)"><tspan
          x="225.53873"
          y="65.693733"
-         id="tspan2"><tspan
+         id="tspan4"><tspan
            dx="0 0 0 -0.49999809 0.49999523 0 0 0 0 0 0 0 0 0 -0.50001049"
-           id="tspan1">jen fadenbulo,
+           id="tspan3">jen fadenbulo,
 </tspan></tspan><tspan
          x="225.53873"
          y="100.78704"
-         id="tspan6"><tspan
-           dx="0 0 0 -0.50000191 0.50000286 0 0 -0.49999619 0.49999523 0 -0.49999237 0.49999523 0 0 0 0 -0.49999046 0.50001049"
-           id="tspan5">kun kiu vi povas ludi</tspan></tspan></text>
+         id="tspan13">per<tspan
+   dx="-0.49999809 0.50000286 0 0 -0.49998856 0.50000286 0 -0.50000763 0.50000286 0 0 0 0 -0.50000572 0.49997997"
+   id="tspan12"> kiu vi povas ludi</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:37.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:260.214;fill:#000000;stroke-width:0.6"
+       style="font-size:37.3333px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:260.214;display:inline;fill:#000000;stroke-width:0.6"
        x="182.3421"
        y="607.58649"
        id="text4"
        transform="translate(7.3918612,3.9440605)"><tspan
          x="182.3421"
          y="607.58649"
-         id="tspan8"><tspan
-           dx="0 0 0 0 -0.49999619 0.49999523 0 0 -0.49999237"
-           id="tspan7">kiel oni</tspan><tspan
+         id="tspan16"><tspan
+           dx="0 0 0 0 -0.49999619 0.49999523"
+           id="tspan14">kiel oni</tspan><tspan
+           dx="-0.49999237"
+           id="tspan15"></tspan><tspan
            y="607.58649"
-           id="tspan9"> </tspan></tspan><tspan
+           id="tspan17"> </tspan></tspan><tspan
          x="182.3421"
          y="642.6798"
-         id="tspan11"><tspan
+         id="tspan19"><tspan
            dx="0 0 0 0 0 0 -0.49999809 0.49999523"
-           id="tspan10">ŝaltas ĝin?</tspan></tspan></text>
+           id="tspan18">ŝaltas ĝin?</tspan></tspan></text>
   </g>
 </svg>
