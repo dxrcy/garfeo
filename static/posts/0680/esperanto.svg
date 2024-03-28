@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.3776945"
-     inkscape:cx="384.33776"
-     inkscape:cy="711.69626"
+     inkscape:cx="983.16426"
+     inkscape:cy="119.40238"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -103,16 +103,18 @@
        transform="translate(23.561498,-3.6391754)"><tspan
          x="383.96722"
          y="59.985767"
-         id="tspan2"><tspan
-           dx="0 0 0 0 0 0 -0.50000119 0.50000167 0 0 0 0 0 -0.49999738"
-           id="tspan1">nenion daŭras</tspan><tspan
+         id="tspan6"><tspan
+           dx="0 0 0 0 0 -0.5000031 0.50000167"
+           id="tspan4">nenio daŭras</tspan><tspan
+           dx="-0.49999738"
+           id="tspan5"></tspan><tspan
            y="59.985767"
-           id="tspan3"> </tspan></tspan><tspan
+           id="tspan17"> </tspan></tspan><tspan
          x="383.96722"
          y="93.265795"
-         id="tspan8"><tspan
+         id="tspan19"><tspan
            dx="0 0 0 -0.50000119 0.50000167"
-           id="tspan7">por ĉiam</tspan></tspan></text>
+           id="tspan18">por ĉiam</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.3px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:294.5;display:inline;fill:#000000;stroke:none;stroke-width:0.3"
@@ -122,14 +124,16 @@
        transform="translate(20.3997,0.66314031)"><tspan
          x="962.28223"
          y="57.19875"
-         id="tspan10"><tspan
-           dx="0 0 0 -0.50000024 0.49999785 0 -0.5000031 0.50000167 0 -0.50000119 0.50000167 0 0 0 0 -0.49999738"
-           id="tspan9">ho, mi ne diros</tspan><tspan
+         id="tspan22"><tspan
+           dx="0 0 0 -0.50000024 0.49999785 0 -0.5000031 0.50000167 0 -0.50000119 0.50000167"
+           id="tspan20">ho, mi ne dirus</tspan><tspan
+           dx="-0.49998212"
+           id="tspan21"></tspan><tspan
            y="57.19875"
-           id="tspan11"> </tspan></tspan><tspan
+           id="tspan23"> </tspan></tspan><tspan
          x="962.28223"
          y="90.478777"
-         id="tspan12">tion</tspan></text>
+         id="tspan24">tion</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.3px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:323.063;display:inline;fill:#000000;stroke:none;stroke-width:0.3"
@@ -139,14 +143,14 @@
        transform="translate(20.934076,-1.4175654)"><tspan
          x="382.48737"
          y="593.08069"
-         id="tspan14"><tspan
+         id="tspan26"><tspan
            dx="0 0 0 0 0 0 0 -0.49999928"
-           id="tspan13">rigardu
+           id="tspan25">rigardu
 </tspan></tspan><tspan
          x="382.48737"
          y="626.36069"
-         id="tspan16"><tspan
+         id="tspan28"><tspan
            dx="0 0 0 0 0 0 0 -0.49999261 0.50000167"
-           id="tspan15">hodiaŭ, ekzemple</tspan></tspan></text>
+           id="tspan27">hodiaŭ, ekzemple</tspan></tspan></text>
   </g>
 </svg>
