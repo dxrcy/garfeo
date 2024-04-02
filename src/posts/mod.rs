@@ -8,8 +8,6 @@ pub use parse::parse_posts;
 pub type PostList = structs::List<Post>;
 pub type PostRef<'a> = structs::ItemRef<'a, Post>;
 
-pub use structs::{ListEnds, Neighbors};
-
 #[derive(Clone, Debug)]
 pub struct Post {
     pub index: Index,
