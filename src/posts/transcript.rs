@@ -147,7 +147,11 @@ impl TryFrom<&str> for Speaker {
         ];
 
         let name = if uncommon {
-            remove_first_char(&name).to_string()
+            let name = remove_first_char(&name);
+            if COMMON_NAMES.contains(&name) {
+                println!("! ~\x1b[33m{}\x1b[0m", name.to_uppercase());
+            }
+            name.to_string()
         } else {
             if !COMMON_NAMES.contains(&name.as_str()) {
                 println!("? \x1b[33m{}\x1b[0m", name.to_uppercase());
@@ -173,4 +177,3 @@ fn remove_first_char(string: &str) -> &str {
     chars.next();
     chars.as_str()
 }
-
