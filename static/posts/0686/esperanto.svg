@@ -30,7 +30,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.97417709"
      inkscape:cx="737.54557"
-     inkscape:cy="347.47276"
+     inkscape:cy="348.49927"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -87,18 +87,22 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:32px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.1px;word-spacing:0.5px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:3.9;paint-order:markers fill stroke"
+       style="font-size:32px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.1px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:456.418;fill:#000000;fill-opacity:1;stroke-width:3.9;paint-order:markers fill stroke"
        x="903.27814"
        y="59.044632"
-       id="text3"><tspan
-         sodipodi:role="line"
+       id="text3"
+       transform="translate(0,1.0265074)"><tspan
          x="903.27814"
          y="59.044632"
-         id="tspan4">estas morta muŝo</tspan><tspan
-         sodipodi:role="line"
-         x="902.62811"
-         y="89.764633"
-         id="tspan5">flosanta en via kafo</tspan></text>
+         id="tspan2"><tspan
+           dx="0 0 0 0 0 -0.49999845 0.50000155 0 0 0 0 0 0 0 -0.49999082"
+           id="tspan1">estas mortinta
+</tspan></tspan><tspan
+         x="903.27814"
+         y="89.764632"
+         id="tspan5"><tspan
+           dx="0 0 0 0 -0.49999845 0.50000155 0 0 0 0 0 0 0 -0.50000608 0.50000918 0 -0.50000608 0.49999392 0 0 -0.50000608 0.49999392"
+           id="tspan3">muŝo flosanta en via kafo</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.1px;word-spacing:0.5px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:3.9;paint-order:markers fill stroke"
