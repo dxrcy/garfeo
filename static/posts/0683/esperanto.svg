@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.9741771"
-     inkscape:cx="591.26826"
-     inkscape:cy="224.29187"
+     inkscape:cx="591.78151"
+     inkscape:cy="225.31837"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -96,22 +96,22 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.66666667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:234.504;fill:#000000;stroke:none;stroke-width:3.9;paint-order:markers fill stroke"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:234.504;fill:#000000;stroke:none;stroke-width:3.9;paint-order:markers fill stroke"
        x="245.39948"
        y="56.929543"
        id="text4"
        transform="translate(9.91948,1.8452573)"><tspan
          x="245.39948"
          y="56.929543"
-         id="tspan2"><tspan
+         id="tspan5"><tspan
            dx="0 0 0 0 0 0 -0.49999809 0.49999714 0 0 0 -0.49999809 0.49998951 0 -0.49999237"
-           id="tspan1">...kaj tiam mi
+           id="tspan4">...kaj tiam mi
 </tspan></tspan><tspan
          x="245.39948"
          y="88.289575"
-         id="tspan6"><tspan
+         id="tspan15"><tspan
            dx="0 0.5"
-           id="tspan3"> vekiĝis</tspan></tspan></text>
+           id="tspan14"> ekdormis</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.66666667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.5px;word-spacing:0.5px;text-anchor:middle;white-space:pre;inline-size:410.508;fill:#000000;stroke:none;stroke-width:3.9;paint-order:markers fill stroke"
@@ -121,20 +121,24 @@
        transform="translate(11.792304,2.6800456)"><tspan
          x="871.94489"
          y="56.792175"
-         id="tspan8"><tspan
-           dx="0 0 -0.49999809 0.49999714 0 -0.5 0.50000477 0 0 0 0 0 0 0 0 -0.50000477 0.49998951 0 -0.49999809 0.49998951 0 0 0 -0.49999809"
-           id="tspan7">ĉu vi rimarkis, ke ĉiuj</tspan><tspan
+         id="tspan18"><tspan
+           dx="0 0 -0.5 0.5 0 -0.49999523 0.5 0 0 0 0 0 0 0 0 -0.50001049 0.50001526 0 -0.49998093 0.5"
+           id="tspan16">ĉu vi rimarkis, ke ĉiuj</tspan><tspan
+           dx="-0.49998093"
+           id="tspan17"></tspan><tspan
            y="56.792175"
-           id="tspan9"> </tspan></tspan><tspan
+           id="tspan19"> </tspan></tspan><tspan
          x="871.94489"
          y="88.152207"
-         id="tspan11"><tspan
-           dx="0 0 0 0 -0.49999809 0.49999714 0 0 0 0 0 0 0 -0.49999809 0.50000477 0 0 0 0 -0.50000954"
-           id="tspan10">miaj rakontoj finas</tspan><tspan
+         id="tspan22"><tspan
+           dx="0 0 0 0 -0.5 0.5 0 0 0 0 0 0 0 -0.50001144 0.5"
+           id="tspan20">miaj rakontoj finas</tspan><tspan
+           dx="-0.49999046"
+           id="tspan21"></tspan><tspan
            y="88.152207"
-           id="tspan12"> </tspan></tspan><tspan
+           id="tspan23"> </tspan></tspan><tspan
          x="871.94489"
          y="119.51224"
-         id="tspan13">tiel?</tspan></text>
+         id="tspan24">tiel?</tspan></text>
   </g>
 </svg>
