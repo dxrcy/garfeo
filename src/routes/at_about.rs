@@ -1,7 +1,7 @@
 use ibex::prelude::*;
 
 use crate::posts::PostList;
-use crate::views::{use_base, GITHUB_FILES_URL};
+use crate::views::use_base;
 
 pub fn at_about(posts: &PostList) -> Document {
     document! { [lang="eo"] @use_base [
@@ -39,7 +39,7 @@ pub fn at_about(posts: &PostList) -> Document {
                 "Ĉi tiu retpaĝo estas kreiita per la ret-kadro"~ a[href="https://github.com/dxrcy/ibex"]{"Ibex"} ~"en la programlingvo"~ a[href="https://www.rust-lang.org/"]{"Rust"} "."
                 ~
                 "La fontkodo troviĝas"~ a[href="https://github.com/dxrcy/garfeo"]{"ĉi tie"} ","
-                ~"kaj la fonto de ĉiu tradukita bildstrio troviĝas"~ a[href=format!("{}/assets/posts", GITHUB_FILES_URL)]{"ĉi tie"} "."
+                ~"kaj la fonto de ĉiu tradukita bildstrio troviĝas"~ a[href="https://github.com/dxrcy/garfeo/tree/master/assets/posts"]{"ĉi tie"} "."
             }
             h3 { "Mi havas concernon, aŭ alia demandon!" }
             p {

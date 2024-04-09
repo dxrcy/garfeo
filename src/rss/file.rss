@@ -5,7 +5,7 @@
         <link> {url} </link>
         <description> {description} </description>
         <image>
-            <url> {url}/{last_index}/esperanto.png </url>
+            <url> {assets_url}/{last_index}/esperanto.png </url>
             <title> Lasta bildstrio [{last_index}] </title>
             <link> {url} </link>
         </image>

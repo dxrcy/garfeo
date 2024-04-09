@@ -1,12 +1,11 @@
 macro_rules! assets_url {
     ($path:expr) => {
         if ::ibex::is_local() {
-            ""
+            "/assets/"
         } else {
-            $crate::views::GITHUB_FILES_URL
+            "https://raw.githubusercontent.com/dxrcy/garfeo/master/assets/"
         }
         .to_string()
-            + &"/assets/"
             + &$path
     };
 }
@@ -19,8 +18,6 @@ use crate::posts::Post;
 use crate::posts::PostRef;
 use crate::posts::Special;
 use crate::posts::{transcript, PostList};
-
-pub const GITHUB_FILES_URL: &str = "https://github.com/dxrcy/garfeo/tree/master";
 
 pub mod icons {
     pub const GOOD: char = '⭐';

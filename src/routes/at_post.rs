@@ -3,7 +3,6 @@ use ibex::prelude::*;
 use crate::posts::{PostRef, Special};
 use crate::views::{
     post_copy_caption, post_copy_transcript, post_title, post_transcript, use_base,
-    GITHUB_FILES_URL,
 };
 
 pub fn at_post(post_ref: PostRef) -> Document {
@@ -107,7 +106,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         a ."source" [
-            href=format!("{}/assets/posts/{}", GITHUB_FILES_URL, post.index),
+            href=format!("https://github.com/dxrcy/garfeo/tree/master/assets/posts/{}", post.index),
         ] {
             "Vidu fonton"
         }
