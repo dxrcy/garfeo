@@ -7,7 +7,7 @@
         {description}
     </description>
     <enclosure
-        url="{url}/static/posts/{index}/esperanto.png"
+        url="{url}/assets/posts/{index}/esperanto.png"
         length="{image_bytes}"
         type="image/png"
     />

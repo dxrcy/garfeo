@@ -9,7 +9,7 @@ Made with [Ibex](https://github.com/dxrcy/ibex)
 # File Structure
 
 ```
-/static/posts
+/assets/posts
     /<index>        Index in order of creation date, padded to 4 digits
         /esperanto.png
         /english.png

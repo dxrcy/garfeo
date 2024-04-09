@@ -6,7 +6,7 @@ serve port='4000':
 
 # Watch and compile for development
 watch:
-	cargo watch -c -x 'run -- local' -i build -w . -w static
+	cargo watch -c -x 'run -- local' -i build -w . -w static -w assets
 
 # Open a local http server
 listen port='4000':

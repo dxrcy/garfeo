@@ -107,7 +107,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
         }
 
         a ."source" [
-            href=format!("{}/static/posts/{}", GITHUB_FILES_URL, post.index),
+            href=format!("{}/assets/posts/{}", GITHUB_FILES_URL, post.index),
         ] {
             "Vidu fonton"
         }
