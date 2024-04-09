@@ -179,6 +179,7 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 [[package]]
 name = "ibex"
 version = "0.1.0"
+source = "git+https://github.com/dxrcy/ibex#57b2e8c89dd11613c3a1f90633e440c251ea5cce"
 dependencies = [
  "grass",
  "ibex_core",
@@ -189,10 +190,12 @@ dependencies = [
 [[package]]
 name = "ibex_core"
 version = "0.1.0"
+source = "git+https://github.com/dxrcy/ibex#57b2e8c89dd11613c3a1f90633e440c251ea5cce"
 
 [[package]]
 name = "ibex_macros"
 version = "0.1.0"
+source = "git+https://github.com/dxrcy/ibex#57b2e8c89dd11613c3a1f90633e440c251ea5cce"
 dependencies = [
  "ibex_core",
  "proc-macro2",
