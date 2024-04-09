@@ -1,9 +1,11 @@
 use ibex::{routes, ssg};
 
+#[macro_use]
+mod views;
+
 mod posts;
 mod routes;
 mod rss;
-mod views;
 
 const URL_ROOT: &str = "/garfeo/";
 
@@ -50,5 +52,11 @@ fn main() {
     ];
 
     ssg::quick_build(routes).expect("Failed to build");
+
+    if ibex::is_local() {
+        ssg::copy_or_symlink_dir("assets", "build/assets", true)
+            .expect("Failed to copy or symlink assets");
+    }
+
     println!("\x1b[34;1mBuilt successfully!\x1b[0m");
 }

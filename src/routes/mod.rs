@@ -189,7 +189,7 @@ pub fn at_grid(posts: &PostList) -> Document {
                         ] {
                             img [
                                 alt=name,
-                                src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
+                                src=assets_url!(format!("posts/{}/esperanto.png", &post.index)),
                                 width=120,
                                 height=120,
                             ]/

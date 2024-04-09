@@ -10,7 +10,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
 
     document! { [lang="eo"] @use_base [
         &format!("{} [{}]", post.title, post.index),
-        Some(&format!("static/posts/{}/esperanto.png", post.index)),
+        Some(&assets_url!(format!("posts/{}/esperanto.png", post.index))),
         post_ref.list(),
     ] {
         HEAD {
@@ -50,12 +50,12 @@ pub fn at_post(post_ref: PostRef) -> Document {
         div {
             img ."comic" [
                 alt="Esperanta bildstrio",
-                src=url!(format!("static/posts/{}/esperanto.png", &post.index)),
+                src=assets_url!(format!("posts/{}/esperanto.png", &post.index)),
                 height=400,
             ]/
             img ."comic" [
                 alt="Angla bildstrio",
-                src=url!(format!("static/posts/{}/english.png", &post.index)),
+                src=assets_url!(format!("posts/{}/english.png", &post.index)),
                 height=400,
             ]/
         }
@@ -119,7 +119,7 @@ pub fn at_post(post_ref: PostRef) -> Document {
                     }
                     img ."comic" [
                         alt="Malnova esperanta bildstrio",
-                        src=url!(format!("static/old/{}/esperanto.png", &post.index)),
+                        src=assets_url!(format!("old/{}/esperanto.png", &post.index)),
                         height=400,
                     ]/
                 }

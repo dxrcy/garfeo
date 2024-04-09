@@ -8,8 +8,8 @@ use std::{
 use super::{Index, Post, PostList, Props, Special, Transcript};
 
 pub fn parse_posts() -> Result<PostList> {
-    let dir_posts = Path::new("static/posts");
-    let dir_old = Path::new("static/old");
+    let dir_posts = Path::new("assets/posts");
+    let dir_old = Path::new("assets/old");
 
     let mut folders: Vec<_> = fs::read_dir(dir_posts)?.flatten().collect();
     folders.sort_by_key(|folder| {

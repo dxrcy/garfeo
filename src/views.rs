@@ -1,3 +1,15 @@
+macro_rules! assets_url {
+    ($path:expr) => {
+        if ::ibex::is_local() {
+            "/assets/"
+        } else {
+            "https://github.com/dxrcy/garfeo/tree/master/assets/"
+        }
+        .to_string()
+            + &$path
+    };
+}
+
 use ibex::extras::wrap_if;
 use ibex::prelude::*;
 use ibex::ssg;
@@ -107,7 +119,7 @@ pub fn list_item(post_ref: &PostRef) -> View {
                 @post_title [post_ref, false]
                 img [
                     alt="Antaŭrigardo de Esperanta bildstro",
-                    src=url!(format!("static/posts/{}/esperanto.png", post.index)),
+                    src=assets_url!(format!("posts/{}/esperanto.png", post.index)),
                     loading="lazy",
                     height=200, // fallback for css
                 ]/
