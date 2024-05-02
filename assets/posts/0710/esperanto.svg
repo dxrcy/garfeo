@@ -29,7 +29,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.9980345"
-     inkscape:cx="661.29978"
+     inkscape:cx="661.80077"
      inkscape:cy="655.78895"
      inkscape:window-width="1660"
      inkscape:window-height="981"
@@ -88,22 +88,24 @@
          y="62.722034">m</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:33.33333333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:452.797;fill:#000000;stroke-width:0.3;paint-order:fill markers stroke"
+       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:452.797;fill:#000000;stroke-width:0.3;paint-order:fill markers stroke"
        x="288.87039"
        y="587.01825"
        id="text3"
        transform="translate(23.823283,4.3190665)"><tspan
          x="288.87039"
          y="587.01825"
-         id="tspan4"><tspan
-           dx="0 0 -1.5000012 1.4999998 0 -1.500005 1.4999998 0 0 0 0 -1.4999936 1.4999921 0 -1.4999955 1.4999921 0 0 0 0 0 0 0 -1.4999974"
-           id="tspan1">mi ne havis la energion</tspan><tspan
+         id="tspan9"><tspan
+           dx="0 0 -1.5000012 1.4999998 0 -1.500005 1.4999998 0 0 0 0 -1.4999936 1.4999921 0 -1.4999955 1.4999921"
+           id="tspan3">mi ne havis la energion</tspan><tspan
+           dx="-1.4999974"
+           id="tspan8"></tspan><tspan
            y="587.01825"
-           id="tspan5"> </tspan></tspan><tspan
+           id="tspan10"> </tspan></tspan><tspan
          x="288.87039"
          y="619.0182"
-         id="tspan7"><tspan
+         id="tspan12"><tspan
            dx="0 0 0 -1.500005 1.4999998 0 0 0 -1.4999955 1.4999921"
-           id="tspan6">por tuta &quot;mjaŭ&quot;</tspan></tspan></text>
+           id="tspan11">por tuta &quot;miaŭ&quot;</tspan></tspan></text>
   </g>
 </svg>
