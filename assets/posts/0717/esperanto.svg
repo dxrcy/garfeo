@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.97429352"
-     inkscape:cx="931.95735"
-     inkscape:cy="160.62921"
+     inkscape:cx="200.65822"
+     inkscape:cy="742.58936"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -112,16 +112,18 @@
        transform="translate(19.707101,-0.01553611)"><tspan
          x="167.00734"
          y="58.551197"
-         id="tspan2"><tspan
-           dx="0 0 0 0 0 0 0 0 -1.5 1.5 0 0 -1.5"
-           id="tspan1">bonvolu, nur</tspan><tspan
+         id="tspan8"><tspan
+           dx="0 0 0 0 0 0 0 0 -1.5 1.5"
+           id="tspan5">bonvolu, nur</tspan><tspan
+           dx="-1.5"
+           id="tspan7"></tspan><tspan
            y="58.551197"
-           id="tspan3"> </tspan></tspan><tspan
+           id="tspan19"> </tspan></tspan><tspan
          x="167.00734"
          y="94.551197"
-         id="tspan9"><tspan
+         id="tspan21"><tspan
            dx="0 0 0 -1.5 1.5 0 0 0 -1.5 1.5"
-           id="tspan4">unu plia taso</tspan></tspan></text>
+           id="tspan20">unu plia taso</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;line-height:1;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;fill:#000000;stroke-width:0;paint-order:fill markers stroke;stroke:none;stroke-dasharray:none"
@@ -141,14 +143,16 @@
        transform="translate(25.437665,0.97770926)"><tspan
          x="873.25952"
          y="53.613976"
-         id="tspan11"><tspan
-           dx="0 0 -1.5 1.5 0 -1.5 1.5 0 0 -1.5"
-           id="tspan10">al vi jam</tspan><tspan
+         id="tspan24"><tspan
+           dx="0 0 -1.5 1.5 0 -1.5 1.5"
+           id="tspan22">al vi jam</tspan><tspan
+           dx="-1.5"
+           id="tspan23"></tspan><tspan
            y="53.613976"
-           id="tspan12"> </tspan></tspan><tspan
+           id="tspan25"> </tspan></tspan><tspan
          x="873.25952"
          y="89.613976"
-         id="tspan13">sufiĉas</tspan></text>
+         id="tspan26">sufiĉas</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;line-height:1;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:375.291;display:inline;fill:#000000;stroke:none;stroke-width:0;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -158,15 +162,17 @@
        transform="translate(4.0363156,4.2404775)"><tspan
          x="308.85098"
          y="596.40546"
-         id="tspan15"><tspan
-           dx="0 0 0 -1.5 1.5 0 0 -1.5 1.5 0 0 0 0 0 0 -1.5 1.5 0 0 -1.5"
-           id="tspan14">kaj pri precize kio</tspan><tspan
+         id="tspan29"><tspan
+           dx="0 0 0 -1.5 1.5 0 0 -1.5 1.5 0 0 0 0 0 0 -1.5 1.5"
+           id="tspan27">kaj pro precize kio</tspan><tspan
+           dx="-1.5"
+           id="tspan28"></tspan><tspan
            y="596.40546"
-           id="tspan16"> </tspan></tspan><tspan
+           id="tspan30"> </tspan></tspan><tspan
          x="308.85098"
          y="632.40546"
-         id="tspan18"><tspan
+         id="tspan32"><tspan
            dx="0 0 -1.5 1.5 0 0 0 0 -1.5 1.5"
-           id="tspan17">vi diras tion?</tspan></tspan></text>
+           id="tspan31">vi diras tion?</tspan></tspan></text>
   </g>
 </svg>
