@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.5"
-     inkscape:cx="818"
-     inkscape:cy="853"
+     inkscape:zoom="2"
+     inkscape:cx="819.25"
+     inkscape:cy="854.25"
      inkscape:window-width="1660"
      inkscape:window-height="981"
      inkscape:window-x="10"
@@ -168,32 +168,32 @@
        transform="translate(16.195602,1.3954102)"><tspan
          x="181.53456"
          y="803.32166"
-         id="tspan2"><tspan
-           dx="0 0 0 0 0 0 0 -1.5"
-           id="tspan1">novaĵon</tspan><tspan
-           y="803.32166"
-           id="tspan3"> </tspan></tspan><tspan
+         id="tspan11">novaĵon<tspan
+   dx="-1.5"
+   id="tspan10"></tspan><tspan
+   y="803.32166"
+   id="tspan12"> </tspan></tspan><tspan
          x="181.53456"
          y="825.08165"
-         id="tspan4">bonan!</tspan></text>
+         id="tspan16">bonan!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:466.999;display:inline;fill:#000000;fill-opacity:1;stroke-width:0.2;paint-order:fill markers stroke;stroke:#ffffff;stroke-dasharray:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:466.999;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-dasharray:none;paint-order:fill markers stroke"
        x="795.5119"
        y="804.30298"
        id="text11"
        transform="translate(5.5167887,-1.3232944)"><tspan
          x="795.5119"
          y="804.30298"
-         id="tspan6"><tspan
+         id="tspan18"><tspan
            dx="0 0 -1.5 1.500001 0 0 0 0 -1.5000019 1.4999971 0 0 -1.4999952 1.4999895 0 0 0 0 -1.4999952 1.4999895 0 0 0 0 0 0 0 0 0 0 0 0 -1.5000205"
-           id="tspan5">la forno ĵus finis antaŭvarmigi.
+           id="tspan17">la forno ĵus finis antaŭvarmiĝi.
 </tspan></tspan><tspan
          x="795.5119"
          y="826.06297"
-         id="tspan8"><tspan
+         id="tspan20"><tspan
            dx="0 0 -1.5 1.500001 0 0 0 -1.5000019 1.4999971 0 0 0 0 -1.4999952 1.5000048 0 0 0 0 -1.4999943 1.4999895 0 0 0 -1.500001 1.4999895 0 -1.4999943 1.4999895"
-           id="tspan7">la pico estos preta post 20 minutoj!</tspan></tspan></text>
+           id="tspan19">la pico estos preta post 20 minutoj!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.2;paint-order:fill markers stroke;stroke:#ffffff;stroke-dasharray:none"
