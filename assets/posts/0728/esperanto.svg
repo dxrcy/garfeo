@@ -30,11 +30,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.9980345"
      inkscape:cx="595.67079"
-     inkscape:cy="361.20996"
-     inkscape:window-width="1660"
-     inkscape:window-height="981"
-     inkscape:window-x="10"
-     inkscape:window-y="59"
+     inkscape:cy="362.21193"
+     inkscape:window-width="1672"
+     inkscape:window-height="993"
+     inkscape:window-x="4"
+     inkscape:window-y="53"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2" />
   <g
@@ -114,26 +114,26 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:34.6667px;line-height:0.9;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:231.543;display:inline;fill:#000000;stroke-width:1.4;stroke-linejoin:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:231.543;display:inline;fill:#000000;stroke-width:1.4;stroke-linejoin:round;stroke-dasharray:none;paint-order:fill markers stroke"
        x="239.67126"
        y="61.84647"
        id="text6"
        transform="translate(2.8236651,-2.4785349)"><tspan
          x="239.67126"
          y="61.84647"
-         id="tspan4"><tspan
+         id="tspan12"><tspan
            dx="0 0 -1.4999981"
-           id="tspan1">mi </tspan><tspan
+           id="tspan5">mi </tspan><tspan
            dx="1.4999971"
            style="stroke:#000000"
-           id="tspan2">NE</tspan><tspan
+           id="tspan6">NE</tspan><tspan
            dx="-1.4999981 1.4999971 0 0 0 0 -1.5000095"
-           id="tspan3"> estas</tspan><tspan
+           id="tspan11"> estas</tspan><tspan
            y="61.84647"
-           id="tspan5"> </tspan></tspan><tspan
+           id="tspan13"> </tspan></tspan><tspan
          x="239.67126"
-         y="93.046503"
-         id="tspan13">mizera!</tspan></text>
+         y="95.126497"
+         id="tspan18">fuŝulo!</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.9;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;fill:#000000;stroke-width:1.2;stroke-linejoin:round;paint-order:fill markers stroke"
@@ -173,7 +173,7 @@
          sodipodi:role="line"
          id="tspan10"
          x="213.14519"
-         y="605.74628">neofte</tspan></text>
+         y="605.74628">malofte</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.9;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:122.919;display:inline;fill:#000000;stroke-width:1.2;stroke-linejoin:round;paint-order:fill markers stroke"
@@ -183,13 +183,13 @@
        transform="translate(4.4435482,1.5344491)"><tspan
          x="468.93115"
          y="684.97321"
-         id="tspan14">daŭr-</tspan><tspan
+         id="tspan19">daŭr-</tspan><tspan
          x="468.93115"
          y="716.17323"
-         id="tspan16"><tspan
-           dx="0 0 0 -1.4999993"
-           id="tspan15">igu</tspan><tspan
-           y="716.17323"
-           id="tspan17">  </tspan></tspan></text>
+         id="tspan21">igu<tspan
+   dx="-1.4999993"
+   id="tspan20"></tspan><tspan
+   y="716.17323"
+   id="tspan22">  </tspan></tspan></text>
   </g>
 </svg>
