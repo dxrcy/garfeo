@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4393227"
-     inkscape:cx="360.58627"
-     inkscape:cy="718.04608"
+     inkscape:cx="919.87711"
+     inkscape:cy="79.551306"
      inkscape:window-width="1672"
      inkscape:window-height="993"
      inkscape:window-x="4"
@@ -103,16 +103,18 @@
        transform="translate(22.116192,3.5428711)"><tspan
          x="175.72263"
          y="52.986275"
-         id="tspan2"><tspan
-           dx="0 0 0 0 -1.5000038 1.5000048 0 -1.5 1.5000048 0 0 0 0 0 -1.5000095"
-           id="tspan1">kiel vi fartas</tspan><tspan
+         id="tspan7"><tspan
+           dx="0 0 0 0 -1.5000038 1.5000048 0 -1.5 1.5000048"
+           id="tspan4">kiel vi fartas</tspan><tspan
+           dx="-1.5000095"
+           id="tspan6"></tspan><tspan
            y="52.986275"
-           id="tspan3">   </tspan></tspan><tspan
+           id="tspan19">   </tspan></tspan><tspan
          x="175.72263"
          y="86.266306"
-         id="tspan9"><tspan
+         id="tspan21"><tspan
            dx="0 0 0 0 0 0 0 -1.5000048 1.5000048"
-           id="tspan8">hodiaŭ, garfildo?</tspan></tspan></text>
+           id="tspan20">hodiaŭ, garfildo?</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;fill:#000000;stroke-width:1.4;stroke-linejoin:round;paint-order:fill markers stroke"
@@ -125,23 +127,25 @@
          y="57.445038">bonega!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:294.929;display:inline;fill:#000000;stroke-width:1.4;stroke-linejoin:round;paint-order:fill markers stroke"
+       style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:338.392;display:inline;fill:#000000;stroke-width:1.4;stroke-linejoin:round;paint-order:fill markers stroke"
        x="800.82068"
        y="56.610119"
        id="text6"
-       transform="translate(16.680829,-0.71317521)"><tspan
+       transform="translate(23.013196,-0.9906226)"><tspan
          x="800.82068"
          y="56.610119"
-         id="tspan11"><tspan
-           dx="0 0 -1.4999981 1.4999971 0 -1.4999981 1.4999971 0 0 0 0 -1.4999943 1.4999895 0 0 -1.4999924"
-           id="tspan10">mi ne povus pli</tspan><tspan
+         id="tspan23"><tspan
+           dx="0 0 -1.4999981 1.4999971 0 -1.4999981 1.4999971 0 0 0 0 -1.4999943 1.4999895 0 0 0 0 -1.4999924"
+           id="tspan22">mi ne povus farti</tspan><tspan
            y="56.610119"
-           id="tspan12"> </tspan></tspan><tspan
+           id="tspan24"> </tspan></tspan><tspan
          x="800.82068"
          y="89.890146"
-         id="tspan14"><tspan
-           dx="0 0 0 0 0 -1.5000076 1.5000048"
-           id="tspan13">boni! mirinda!</tspan></tspan></text>
+         id="tspan27">pli<tspan
+   dx="-1.5"
+   id="tspan25"> </tspan><tspan
+   dx="1.4999971 0 0 0 0 -1.5 1.5000048"
+   id="tspan26">bone! mirinde!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:586.771;display:inline;fill:#000000;stroke-width:1.4;stroke-linejoin:round;paint-order:fill markers stroke"
@@ -151,14 +155,14 @@
        transform="translate(30.194434,-4.0716461)"><tspan
          x="273.64203"
          y="590.72357"
-         id="tspan16"><tspan
+         id="tspan29"><tspan
            dx="0 0 0 -1.5 1.4999971 0 0 0 0 -1.4999943 1.5000048 0 0 0 0 0 -1.4999924 1.4999895 0 0 0 -1.4999905"
-           id="tspan15">oni devas atenti kion
+           id="tspan28">oni devas atenti kion
 </tspan></tspan><tspan
          x="273.64203"
          y="624.00357"
-         id="tspan18"><tspan
+         id="tspan31"><tspan
            dx="0 0 0 -1.5 1.4999971 0 0 0 0 -1.5000095 1.5000048 0 -1.5000038 1.5000048"
-           id="tspan17">oni diras al bestkuracisto</tspan></tspan></text>
+           id="tspan30">oni diras al bestkuracisto</tspan></tspan></text>
   </g>
 </svg>
