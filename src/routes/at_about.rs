@@ -78,6 +78,14 @@ pub fn at_about(posts: &PostList) -> Document {
                     ~ "- Aboni la RSS-fluon por novajn bildstriojn" }
             }
         }
+        
+        h2 { "Aliaj Ligiloj" }
+        ul ."links" {
+            li { a [href="https://esperaĵo.com"]
+                { strong { "Esperaĵo" }
+                    ~ "- Esperantaj filmoj kaj libroj" }
+            }
+        }
 
         hr/
         br/
