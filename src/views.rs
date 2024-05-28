@@ -212,7 +212,7 @@ pub fn post_transcript(transcript: &transcript::Transcript) -> View {
 
 pub fn post_copy_caption(post: &Post) -> View {
     view! {
-        [&post.title] ~ "💚" "&#10;&#10;"
+        [&post.title] ~ "💚" "&#10;"
         "#esperanto #garfield #mondodakomiksoj"
         ~ "[" [&post.index()] "]"
     }
