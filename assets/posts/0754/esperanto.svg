@@ -30,7 +30,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.0264453"
      inkscape:cx="636.66325"
-     inkscape:cy="661.99339"
+     inkscape:cy="662.96762"
      inkscape:window-width="1672"
      inkscape:window-height="993"
      inkscape:window-x="4"
@@ -121,15 +121,15 @@
        transform="translate(6.4107788,0.63195801)"><tspan
          x="183.35927"
          y="84.14254"
-         id="tspan8"><tspan
+         id="tspan2"><tspan
            dx="0 0 -1.4999981 1.4999971 0 0 0 0 -1.4999981"
-           id="tspan7">ni katoj 
+           id="tspan1">ni katoj 
 </tspan></tspan><tspan
          x="183.35927"
          y="116.0359"
-         id="tspan16"><tspan
+         id="tspan4"><tspan
            dx="0 0 0 0 0 -1.5000019 1.4999971"
-           id="tspan15">estas soluloj</tspan></tspan></text>
+           id="tspan3">estas soluloj</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:214.157;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -139,21 +139,21 @@
        transform="translate(17.980467,3.6485589)"><tspan
          x="824.11627"
          y="47.664413"
-         id="tspan18"><tspan
+         id="tspan6"><tspan
            dx="0 0 0 0 -1.4999981"
-           id="tspan17">eble
+           id="tspan5">eble
 </tspan></tspan><tspan
          x="824.11627"
          y="79.557775"
-         id="tspan20"><tspan
+         id="tspan8"><tspan
            dx="0 0 0 0 -1.4999981 1.5000048 0 0 -1.4999962"
-           id="tspan19">krom unu
+           id="tspan7">krom unu
 </tspan></tspan><tspan
          x="824.11627"
          y="111.45114"
-         id="tspan22"><tspan
+         id="tspan10"><tspan
            dx="0 0 1.5"
-           id="tspan21">  situacio...</tspan></tspan></text>
+           id="tspan9">  situacio...</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:271.95;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -163,33 +163,41 @@
        transform="translate(15.114138,2.5153012)"><tspan
          x="407.12109"
          y="574.23553"
-         id="tspan24"><tspan
-           dx="0 0 -1.4999981 1.4999971 0 0 0 0 -1.4999943 1.4999895 0 0 0 -1.5000076"
-           id="tspan23">ni povas esti</tspan><tspan
+         id="tspan13"><tspan
+           dx="0 0 -1.4999981 1.4999971 0 0 0 0 -1.4999943 1.4999895"
+           id="tspan11">ni povas esti</tspan><tspan
+           dx="-1.5000076"
+           id="tspan12"></tspan><tspan
            y="574.23553"
-           id="tspan25">  </tspan></tspan><tspan
+           id="tspan14">  </tspan></tspan><tspan
          x="407.12109"
          y="606.1289"
-         id="tspan27"><tspan
-           dx="0 0 0 0 0 0 0 0 0 0 -1.4999981"
-           id="tspan26">societemaj</tspan><tspan
+         id="tspan18"><tspan
+           dx="0 0 0 -1.4999981"
+           id="tspan15">tre </tspan><tspan
+           dx="1.4999971"
+           id="tspan16">sociemaj</tspan><tspan
+           dx="-1.5000057"
+           id="tspan17"></tspan><tspan
            y="606.1289"
-           id="tspan28"> </tspan></tspan><tspan
+           id="tspan19"> </tspan></tspan><tspan
          x="407.12109"
          y="638.02228"
-         id="tspan30"><tspan
+         id="tspan21"><tspan
            dx="0 0 0 0 -1.4999981"
-           id="tspan29">kaze
+           id="tspan20">kaze
 </tspan></tspan><tspan
          x="407.12109"
          y="669.91565"
-         id="tspan32"><tspan
-           dx="0 0 0 0 0 -1.4999943 1.4999971 0 0 -1.5000076"
-           id="tspan31">temas pri</tspan><tspan
+         id="tspan36"><tspan
+           dx="0 0 0 0 0 -1.4999943 1.4999971"
+           id="tspan22">temas pri</tspan><tspan
+           dx="-1.5000076"
+           id="tspan35"></tspan><tspan
            y="669.91565"
-           id="tspan33"> </tspan></tspan><tspan
+           id="tspan37"> </tspan></tspan><tspan
          x="407.12109"
          y="701.80902"
-         id="tspan34">manĝaĵo</tspan></text>
+         id="tspan38">manĝaĵo</tspan></text>
   </g>
 </svg>
