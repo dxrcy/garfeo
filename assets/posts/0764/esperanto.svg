@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4049587"
-     inkscape:cx="506.77647"
-     inkscape:cy="598.23824"
+     inkscape:cx="411.75588"
+     inkscape:cy="598.94999"
      inkscape:window-width="1672"
      inkscape:window-height="993"
      inkscape:window-x="4"
@@ -76,22 +76,24 @@
        transform="translate(23.879544,0.28331771)"><tspan
          x="392.29968"
          y="598.92224"
-         id="tspan3"><tspan
-           dx="0 0 0 -1.5 1.4999971 0 0 0 0 -1.4999943 1.4999895 0 0 0 -1.4999924"
-           id="tspan2">oni devus meti</tspan><tspan
+         id="tspan11"><tspan
+           dx="0 0 0 -1.5 1.4999971 0 0 0 0 -1.4999943 1.4999895"
+           id="tspan1">oni devus meti</tspan><tspan
+           dx="-1.4999924"
+           id="tspan10"></tspan><tspan
            y="598.92224"
-           id="tspan4"> </tspan></tspan><tspan
+           id="tspan12"> </tspan></tspan><tspan
          x="392.29968"
          y="632.89565"
-         id="tspan6"><tspan
-           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.4999905"
-           id="tspan5">avert-etikedojn</tspan><tspan
-           y="632.89565"
-           id="tspan7"> </tspan></tspan><tspan
+         id="tspan14">avert-etikedojn<tspan
+   dx="-1.4999905"
+   id="tspan13"></tspan><tspan
+   y="632.89565"
+   id="tspan15"> </tspan></tspan><tspan
          x="392.29968"
          y="666.86904"
-         id="tspan9"><tspan
+         id="tspan17"><tspan
            dx="0 0 0 -1.5000019 1.4999971"
-           id="tspan8">sur tiujn</tspan></tspan></text>
+           id="tspan16">sur tion</tspan></tspan></text>
   </g>
 </svg>
