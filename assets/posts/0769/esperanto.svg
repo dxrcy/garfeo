@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="7.6499998"
-     inkscape:cx="164.70589"
-     inkscape:cy="416.7974"
+     inkscape:cx="361.50328"
+     inkscape:cy="853.00656"
      inkscape:window-width="1672"
      inkscape:window-height="993"
      inkscape:window-x="4"
@@ -233,7 +233,7 @@
          y="840.00177"
          id="tspan18"
          style="line-height:0.86;stroke:#aacd95;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
-         dx="0 0 0 0 0 1.0457517">3: SIDU SUR SOFON, KUN CIPSOJ</tspan></text>
+         dx="0 0 0 0 0 1.0457517">3: SIDU SUR SOFO, KUN CIPSOJ</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38px;line-height:0.86;font-family:Komika;-inkscape-font-specification:Komika;text-align:start;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:start;white-space:pre;inline-size:349.009;display:inline;fill:#000000;fill-opacity:1;stroke:#aacd95;stroke-width:0.398978;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -243,15 +243,15 @@
        transform="matrix(1.0051308,0,0,1,-128.97828,0.214381)"><tspan
          x="769.66754"
          y="811.62415"
-         id="tspan2"><tspan
+         id="tspan31"><tspan
            dx="0 0 -1.5 1.5 0 0 0 0 0 0 -1.5 1.4999924 0 -1.5000076 1.5000076 0 0 0 0 -1.5000153"
-           id="tspan1">4: MANGACU LA TUTAN
+           id="tspan30">4: MANGACU LA TUTAN
 </tspan></tspan><tspan
          x="769.66754"
          y="844.30411"
-         id="tspan4"><tspan
+         id="tspan33"><tspan
            dx="0 0 0 0 1.5 0 0 0 0 0 0 -1.5 1.4999924"
-           id="tspan3">    PAKETON MALATENTE</tspan></tspan></text>
+           id="tspan32">    PAKETON MALATENTE</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38px;line-height:0.86;font-family:Komika;-inkscape-font-specification:Komika;text-align:start;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:start;white-space:pre;inline-size:292.379;display:inline;fill:#000000;fill-opacity:1;stroke:#aacd95;stroke-width:0.404831;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -261,15 +261,15 @@
        transform="matrix(0.97627423,0,0,1,-66.572641,0.26916105)"><tspan
          x="1206.7626"
          y="812.47003"
-         id="tspan6"><tspan
+         id="tspan35"><tspan
            dx="0 0 -1.5 1.5 0 0 0 0 -1.5 1.5 0 0 0 0 -1.5 1.4999924 0 0 -1.4999962"
-           id="tspan5">5: SPARU EROJN POR
+           id="tspan34">5: SPARU EROJN POR
 </tspan></tspan><tspan
          x="1206.7626"
          y="845.15"
-         id="tspan8"><tspan
+         id="tspan37"><tspan
            dx="0 0 0 1.5 0 0 0 0 -1.5 1.5"
-           id="tspan7">   POSTA MANGETO</tspan></tspan></text>
+           id="tspan36">   POSTA MANGETO</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.651px;line-height:0.86;font-family:Komika;-inkscape-font-specification:Komika;text-align:center;text-decoration-color:#000000;letter-spacing:-0.941276px;word-spacing:1.41191px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#aacd95;stroke-width:0.404451;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -323,7 +323,7 @@
        style="font-size:19.4782px;line-height:0.86;font-family:Komika;-inkscape-font-specification:Komika;text-align:center;letter-spacing:-0.486956px;word-spacing:0.730434px;text-anchor:middle;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        id="path27" />
     <path
-       d="m 383.72894,817.17875 -5.07901,5.64247 4.13956,-0.54122 3.30388,-4.14227 3.74195,2.48143 3.7298,-0.88838 -4.78973,-3.42364 z"
+       d="m 367.85966,817.17875 -5.07901,5.64247 4.13956,-0.54122 3.30388,-4.14227 3.74195,2.48143 3.7298,-0.88838 -4.78973,-3.42364 z"
        style="font-size:19.4782px;line-height:0.86;font-family:Komika;-inkscape-font-specification:Komika;text-align:center;letter-spacing:-0.486956px;word-spacing:0.730434px;text-anchor:middle;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        id="path27-2" />
     <path
@@ -356,19 +356,19 @@
        transform="translate(5.6310317,1.4618024)"><tspan
          x="411.93018"
          y="510.25455"
-         id="tspan10"><tspan
+         id="tspan39"><tspan
            dx="0 0 0 0 0 0 0 -1.4999948"
-           id="tspan9">hodiaŬ:
+           id="tspan38">hodiaŬ:
 </tspan></tspan><tspan
          x="411.93018"
          y="533.58782"
-         id="tspan12"><tspan
+         id="tspan41"><tspan
            dx="0 0 0 0 0 0 0 -1.5 1.5000029 0 0 -1.5000048"
-           id="tspan11">&quot;Ĉipsoj sur
+           id="tspan40">&quot;Ĉipsoj sur
 </tspan></tspan><tspan
          x="411.93018"
          y="556.92113"
-         id="tspan15">sofo&quot;!</tspan></text>
+         id="tspan42">sofo&quot;!</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.3333px;line-height:1;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:137.497;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -378,21 +378,21 @@
        transform="translate(0.26143791,0.26143791)"><tspan
          x="1487.3584"
          y="805.0321"
-         id="tspan20"><tspan
+         id="tspan44"><tspan
            dx="0 0 0 0 0 0 0 0 -1.5000024"
-           id="tspan19">venonte:
+           id="tspan43">venonte:
 </tspan></tspan><tspan
          x="1487.3584"
          y="828.36541"
-         id="tspan27"><tspan
+         id="tspan47"><tspan
            dx="0 0 0 0 0 -1.4999981 1.4999952 0 -1.5 1.5000029"
-           id="tspan22">&quot;pico en la</tspan><tspan
+           id="tspan45">&quot;pico en la</tspan><tspan
            dx="-1.5000057"
-           id="tspan26"></tspan><tspan
+           id="tspan46"></tspan><tspan
            y="828.36541"
-           id="tspan28"> </tspan></tspan><tspan
+           id="tspan48"> </tspan></tspan><tspan
          x="1487.3584"
          y="851.69872"
-         id="tspan29">lito&quot;!</tspan></text>
+         id="tspan49">lito&quot;!</tspan></text>
   </g>
 </svg>
