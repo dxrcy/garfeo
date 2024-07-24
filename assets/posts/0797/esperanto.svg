@@ -31,7 +31,7 @@
      showguides="false"
      inkscape:zoom="3.5055174"
      inkscape:cx="1350.4426"
-     inkscape:cy="785.90395"
+     inkscape:cy="785.76133"
      inkscape:window-width="1672"
      inkscape:window-height="993"
      inkscape:window-x="4"
@@ -129,15 +129,17 @@
        transform="translate(6.2893844,2.3042463)"><tspan
          x="1336.4315"
          y="800.05115"
-         id="tspan3"><tspan
-           dx="0 0 0 0 -1.5000006 1.5000013 0 0 0 -1.4999958 1.5000013 0 -1.4999996"
-           id="tspan2">hej, lasu la</tspan><tspan
+         id="tspan10"><tspan
+           dx="0 0 0 0 -1.5000006 1.5000013 0 0 0 -1.4999958 1.5000013"
+           id="tspan1">hej, lasu la</tspan><tspan
+           dx="-1.4999996"
+           id="tspan9"></tspan><tspan
            y="800.05115"
-           id="tspan4"> </tspan></tspan><tspan
+           id="tspan11"> </tspan></tspan><tspan
          x="1336.4315"
          y="821.51777"
-         id="tspan8"><tspan
+         id="tspan13"><tspan
            dx="0 0 0 0 0 0 -1.5000015 1.5000013"
-           id="tspan5">hundon paŭzi</tspan></tspan></text>
+           id="tspan12">hundon ripozi</tspan></tspan></text>
   </g>
 </svg>
