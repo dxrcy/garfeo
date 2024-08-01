@@ -30,11 +30,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.55625733"
      inkscape:cx="463.81411"
-     inkscape:cy="516.84712"
-     inkscape:window-width="1672"
-     inkscape:window-height="993"
-     inkscape:window-x="4"
-     inkscape:window-y="53"
+     inkscape:cy="517.74599"
+     inkscape:window-width="797"
+     inkscape:window-height="1014"
+     inkscape:window-x="875"
+     inkscape:window-y="28"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2" />
   <g
@@ -94,16 +94,16 @@
        transform="translate(23.786622,-1.6629623)"><tspan
          x="257.52084"
          y="62.518589"
-         id="tspan5"><tspan
+         id="tspan6"><tspan
            dx="0 0 -1.5000012 1.5000017"
-           id="tspan3">mi decidis</tspan><tspan
+           id="tspan1">mi decidis</tspan><tspan
            dx="-1.5000126"
-           id="tspan4"></tspan><tspan
+           id="tspan2"></tspan><tspan
            y="62.518589"
-           id="tspan15"> </tspan></tspan><tspan
+           id="tspan7"> </tspan></tspan><tspan
          x="257.52084"
          y="95.105285"
-         id="tspan16">pliboniĝi</tspan></text>
+         id="tspan8">pliboniĝi</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:158.154;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;paint-order:fill markers stroke"
@@ -113,7 +113,7 @@
        transform="translate(10.415786,5.250787)"><tspan
          x="880.45862"
          y="59.475876"
-         id="tspan17">serĉas!</tspan></text>
+         id="tspan9">ŝercas!</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:303.272;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;paint-order:fill markers stroke"
@@ -123,17 +123,17 @@
        transform="translate(-0.90866089,-15.688415)"><tspan
          x="306.85995"
          y="609.92902"
-         id="tspan20"><tspan
+         id="tspan12"><tspan
            dx="0 0 0 0 -1.4999955 1.4999969 0 0 -1.4999955 1.4999969"
-           id="tspan18">kiel tio eĉ</tspan><tspan
+           id="tspan10">kiel tio eĉ</tspan><tspan
            dx="-1.5000031"
-           id="tspan19"></tspan><tspan
+           id="tspan11"></tspan><tspan
            y="609.92902"
-           id="tspan21"> </tspan></tspan><tspan
+           id="tspan13"> </tspan></tspan><tspan
          x="306.85995"
          y="641.88906"
-         id="tspan23"><tspan
+         id="tspan15"><tspan
            dx="0 0 0 0 0 -1.5000031 1.4999969"
-           id="tspan22">estus ebla?</tspan></tspan></text>
+           id="tspan14">estus ebla?</tspan></tspan></text>
   </g>
 </svg>
