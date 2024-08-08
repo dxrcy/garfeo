@@ -30,7 +30,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.68412581"
      inkscape:cx="837.56524"
-     inkscape:cy="544.49049"
+     inkscape:cy="543.75963"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -154,7 +154,7 @@
      inkscape:label="Image 3">
     <text
        xml:space="preserve"
-       style="font-size:26.811px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.618715px;word-spacing:1.16009px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.8;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-size:26.811px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.618715px;word-spacing:1.16009px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.6;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
        x="1201.6826"
        y="234.79016"
        id="text14"
@@ -163,7 +163,7 @@
          id="tspan14"
          x="1201.3733"
          y="234.79016"
-         style="stroke:#000000;stroke-width:0.8;stroke-dasharray:none"
+         style="stroke:#000000;stroke-width:0.6;stroke-dasharray:none"
          dx="0 0.77519381 0.51679587 0.51679587 0.25839794">klak!</tspan></text>
     <text
        xml:space="preserve"
@@ -174,16 +174,18 @@
        transform="translate(32.654962,-2.0883857)"><tspan
          x="258.59985"
          y="402.21005"
-         id="tspan2"><tspan
-           dx="0 0 -1.5000012 1.4999988 0 0 -1.5000031 1.5000045 0 0 0 0 0 0 0 0 0 0 -1.4999878 1.4999969 0 0 0 0 -1.5000184"
-           id="tspan1">mi ĵus preterpasis s-ino</tspan><tspan
+         id="tspan36"><tspan
+           dx="0 0 -1.5000012 1.4999988 0 0 -1.5000031 1.5000045 0 0 0 0 0 0 0 0 0 0 -1.4999878 1.4999969"
+           id="tspan21">mi ĵus preterpasis s-ino</tspan><tspan
+           dx="-1.5000184"
+           id="tspan22"></tspan><tspan
            y="402.21005"
-           id="tspan3"> </tspan></tspan><tspan
+           id="tspan37"> </tspan></tspan><tspan
          x="258.59985"
          y="424.29003"
-         id="tspan5"><tspan
+         id="tspan39"><tspan
            dx="0 0 0 0 0 -1.4999993 1.4999969 0 -1.5000031 1.5000045 0 -1.5000031 1.4999969"
-           id="tspan4">feeny ĉe la trotuaro</tspan></tspan></text>
+           id="tspan38">feeny ĉe la trotuaro</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
@@ -217,16 +219,18 @@
        transform="translate(20.047005,1.1688153)"><tspan
          x="241.42085"
          y="759.17914"
-         id="tspan7"><tspan
-           dx="0 0 -1.5000002 1.5000007 0 -1.4999993 1.4999969 0 0 0 0 -1.5000031 1.4999969 0 0 0 0 0 0 0 -1.4999878"
-           id="tspan6">ŝi ne povas malfermi</tspan><tspan
+         id="tspan42"><tspan
+           dx="0 0 -1.5000002 1.5000007 0 -1.4999993 1.4999969 0 0 0 0 -1.5000031 1.4999969"
+           id="tspan40">ŝi ne povas malfermi</tspan><tspan
+           dx="-1.4999878"
+           id="tspan41"></tspan><tspan
            y="759.17914"
-           id="tspan8"> </tspan></tspan><tspan
+           id="tspan43"> </tspan></tspan><tspan
          x="241.42085"
          y="781.25918"
-         id="tspan10"><tspan
+         id="tspan45"><tspan
            dx="0 0 -1.4999993 1.4999988"
-           id="tspan9">la makzelon</tspan></tspan></text>
+           id="tspan44">la makzelon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:236.41;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
@@ -236,16 +240,18 @@
        transform="translate(13.576489,-2.0008806)"><tspan
          x="665.30463"
          y="762.85358"
-         id="tspan12"><tspan
-           dx="0 0 -1.5000002 1.5000007 0 0 0 0 -1.5000031 1.5000045 0 -1.5000031 1.4999969 0 -1.5000031"
-           id="tspan11">ŝi ĵetis al mi</tspan><tspan
+         id="tspan48"><tspan
+           dx="0 0 -1.5000002 1.5000007 0 0 0 0 -1.5000031 1.5000045 0 -1.5000031 1.4999969"
+           id="tspan46">ŝi ĵetis al mi</tspan><tspan
+           dx="-1.5000031"
+           id="tspan47"></tspan><tspan
            y="762.85358"
-           id="tspan13"> </tspan></tspan><tspan
+           id="tspan49"> </tspan></tspan><tspan
          x="665.30463"
          y="784.93362"
-         id="tspan19"><tspan
+         id="tspan51"><tspan
            dx="0 0 0 0 -1.4999993 1.5000007"
-           id="tspan15">aĉan rigardon</tspan></tspan></text>
+           id="tspan50">aĉan rigardon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:322.437;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
@@ -255,15 +261,15 @@
        transform="translate(14.117479,3.0266498)"><tspan
          x="1308.5046"
          y="760.19495"
-         id="tspan23"><tspan
+         id="tspan53"><tspan
            dx="0 0 -1.5000002 1.5000007 0 0 0 0 -1.5000031 1.5000045 0 -1.5000031 1.4999969 0 0 0 0 -1.5000031 1.5000122 0 0 -1.4999878 1.4999816 0 0 -1.4999878"
-           id="tspan20">vi certe ne scius ion ajn
+           id="tspan52">vi certe ne scius ion ajn
 </tspan></tspan><tspan
          x="1308.5046"
          y="782.27499"
-         id="tspan25"><tspan
+         id="tspan55"><tspan
            dx="0 0 0 0 0 0 0 1.5000007 0 0 -1.5000031 1.4999969 0 -1.5000031 1.5000045 0 0 0 -1.4999878 1.4999969"
-           id="tspan24">       pri ĉi tio, ĉu?</tspan></tspan></text>
+           id="tspan54">       pri ĉi tio, ĉu?</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:333.135;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -273,32 +279,32 @@
        transform="translate(26.689459,2.1885284)"><tspan
          x="1408.7313"
          y="827.18365"
-         id="tspan27"><tspan
+         id="tspan57"><tspan
            dx="0 0 0 -1.5000012 1.5000007 0 0 -1.4999955 1.4999969 0 -1.5000031 1.4999969 0 0 0 0 -1.5000031"
-           id="tspan26">ne, kaj mi ankaŭ
+           id="tspan56">ne, kaj mi ankaŭ
 </tspan></tspan><tspan
          x="1408.7313"
          y="849.26369"
-         id="tspan29"><tspan
+         id="tspan59"><tspan
            dx="0 0 -1.5000002 1.4999988 0 0 0 0 0 -1.4999955 1.4999969 0 0 -1.4999878 1.4999969 0 0 0 0 0 -1.5000031"
-           id="tspan28">ne scias, kio okazis
+           id="tspan58">ne scias, kio okazis
 </tspan></tspan><tspan
          x="1408.7313"
          y="871.34371"
-         id="tspan31"><tspan
+         id="tspan61"><tspan
            dx="0 0 -1.5000012 1.4999988 0 0 -1.5000031"
-           id="tspan30">al via
+           id="tspan60">al via
 </tspan></tspan><tspan
          x="1408.7313"
          y="893.42373"
-         id="tspan33"><tspan
+         id="tspan63"><tspan
            dx="0 0 0 0 0 0 0 -1.4999955 1.4999969 0 -1.5000031"
-           id="tspan32">kolekto de
+           id="tspan62">kolekto de
 </tspan></tspan><tspan
          x="1408.7313"
          y="915.50375"
-         id="tspan35"><tspan
+         id="tspan65"><tspan
            dx="0 0 1.4999998"
-           id="tspan34">  globlagroj</tspan></tspan></text>
+           id="tspan64">  globlagroj</tspan></tspan></text>
   </g>
 </svg>
