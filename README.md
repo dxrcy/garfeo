@@ -1,6 +1,6 @@
 # Garfield Esperanto
 
-600+ *Garfield* comics translated to Esperanto.
+800+ *Garfield* comics translated to Esperanto.
 
 -   [See website live now!](https://dxrcy.dev/garfeo) (in Esperanto)
 

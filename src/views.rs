@@ -30,7 +30,7 @@ pub mod icons {
     pub const NEW_YEARS: char = '🎉';
 }
 
-pub const SITE_DESCRIPTION: &str = "Legu 600+ bildstrioj de Garfildo, tradukitaj en Esperanton!";
+pub const SITE_DESCRIPTION: &str = "Legu 800+ bildstrioj de Garfildo, tradukitaj en Esperanton!";
 
 pub fn use_base(title: &str, image: Option<&str>, posts: &PostList, children: View) -> View {
     let mut full_title = "Garfildo Esperanta".to_string();
