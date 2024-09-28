@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.0258681"
-     inkscape:cx="524.43388"
-     inkscape:cy="272.45217"
+     inkscape:cx="367.49364"
+     inkscape:cy="433.29157"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -94,14 +94,16 @@
        transform="translate(2.6211305,-1.576141)"><tspan
          x="910.37439"
          y="62.00547"
-         id="tspan2"><tspan
-           dx="0 0 0 0 0 0 0 -1.4999993 1.4999921 0 -1.4999955"
-           id="tspan1">&quot;Kial?&quot; vi</tspan><tspan
+         id="tspan13"><tspan
+           dx="0 0 0 0 0 0 0 -1.4999993 1.4999921"
+           id="tspan4">&quot;Kial?&quot; vi</tspan><tspan
+           dx="-1.4999955"
+           id="tspan6"></tspan><tspan
            y="62.00547"
-           id="tspan3"> </tspan></tspan><tspan
+           id="tspan14"> </tspan></tspan><tspan
          x="910.37439"
          y="94.005445"
-         id="tspan5">demandas</tspan></text>
+         id="tspan15">demandas</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32.6667px;line-height:1;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.1px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:387.74;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
@@ -111,14 +113,16 @@
        transform="translate(0,-0.48739208)"><tspan
          x="309.16165"
          y="593.04272"
-         id="tspan10"><tspan
-           dx="0 0 0 -1.5000004 1.4999987 0 0 0 0 -1.5000042 1.4999987 0 0 0 0 -1.5000156"
-           id="tspan9">ĉar katoj havas</tspan><tspan
+         id="tspan18"><tspan
+           dx="0 0 0 -1.5000004 1.4999987 0 0 0 0 -1.5000042 1.4999987"
+           id="tspan16">ĉar katoj havas</tspan><tspan
+           dx="-1.5000156"
+           id="tspan17"></tspan><tspan
            y="593.04272"
-           id="tspan11"> </tspan></tspan><tspan
+           id="tspan19"> </tspan></tspan><tspan
          x="309.16165"
          y="625.70942"
-         id="tspan12">normojn</tspan></text>
+         id="tspan20">principojn</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32.6667px;line-height:1;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.1px;word-spacing:1.5px;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
