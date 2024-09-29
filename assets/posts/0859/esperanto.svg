@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.72539831"
-     inkscape:cx="669.97674"
-     inkscape:cy="507.30749"
+     inkscape:cx="669.97675"
+     inkscape:cy="506.61822"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -94,16 +94,18 @@
        transform="translate(27.658606,0.05309246)"><tspan
          x="272.67776"
          y="61.009403"
-         id="tspan2"><tspan
-           dx="0 0 -1.4999993 1.4999979 0 0 0 0 -1.4999955 1.5000017 0 0 0 -1.4999974"
-           id="tspan1">la mondo amas</tspan><tspan
+         id="tspan5"><tspan
+           dx="0 0 0 0 -1.5000012 1.5000017"
+           id="tspan3">ĉiuj amas</tspan><tspan
+           dx="-1.4999974"
+           id="tspan4"></tspan><tspan
            y="61.009403"
-           id="tspan6"> </tspan></tspan><tspan
+           id="tspan18"> </tspan></tspan><tspan
          x="272.67776"
          y="92.902768"
-         id="tspan8"><tspan
+         id="tspan20"><tspan
            dx="0 0 0 0 0 0 -1.4999936 1.4999864"
-           id="tspan7">hundan salivon!</tspan></tspan></text>
+           id="tspan19">hundan salivon!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:222.651;display:inline;opacity:1;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -113,15 +115,15 @@
        transform="translate(0.59834197,0.55956386)"><tspan
          x="1032.8147"
          y="59.569115"
-         id="tspan10"><tspan
+         id="tspan22"><tspan
            dx="0 0 0 -1.5000002 1.4999979 0 -1.5000031"
-           id="tspan9">ne, ĝi
+           id="tspan21">ne, ĝi
 </tspan></tspan><tspan
          x="1032.8147"
          y="91.462476"
-         id="tspan12"><tspan
+         id="tspan24"><tspan
            dx="0 0 -1.4999993 1.4999979"
-           id="tspan11">ne amas</tspan></tspan></text>
+           id="tspan23">ne amas</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.92;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:1.5px;text-anchor:middle;white-space:pre;inline-size:411.949;display:inline;opacity:1;fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -131,15 +133,17 @@
        transform="translate(18.54509,0.10496489)"><tspan
          x="297.0181"
          y="592.69873"
-         id="tspan14"><tspan
-           dx="0 0 -1.5000012 1.5000017 0 0 0 -1.5000012 1.5000017 0 0 0 0 -1.5000107"
-           id="tspan13">ĉu eble panjo</tspan><tspan
+         id="tspan27"><tspan
+           dx="0 0 -1.5000012 1.5000017 0 0 0 -1.5000012 1.5000017"
+           id="tspan25">ĉu eble panjo</tspan><tspan
+           dx="-1.5000107"
+           id="tspan26"></tspan><tspan
            y="592.69873"
-           id="tspan15"> </tspan></tspan><tspan
+           id="tspan28"> </tspan></tspan><tspan
          x="297.0181"
          y="624.5921"
-         id="tspan17"><tspan
+         id="tspan30"><tspan
            dx="0 0 0 0 0 0 0 0 -1.4999974 1.5000017 0 -1.5000069 1.5000017"
-           id="tspan16">mensogis al mi?</tspan></tspan></text>
+           id="tspan29">mensogis al mi?</tspan></tspan></text>
   </g>
 </svg>
