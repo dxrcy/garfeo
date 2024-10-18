@@ -5,23 +5,35 @@ window.addEventListener("keydown", (event) => {
     }
     if (event.key == "g") {
         // Use prompt input
-        let index = prompt("Iru al bildstrio:");
-        if (index == null) {
+        let input = prompt("Iru al bildstrio:");
+        let path = getUrlPath(input);
+        if (path == null) {
             return;
         }
-        // Validate
-        if (index.startsWith("-")) {
-            index = LAST_INDEX;
-        } else {
-            index = parseInt(index);
-            if (isNaN(index) || index < 0 || index > LAST_INDEX) {
-                return;
-            }
-        }
-        // Add zeros to start
-        index = index.toString();
-        index = "0".repeat(4 - index.length) + index;
-        location.href = BASE_URL + index;
+        location.href = BASE_URL + path;
     }
 });
+
+function getUrlPath(input) {
+    if (input == null || input == undefined || input.length === 0) {
+        return null;
+    }
+    if (input[0].toLowerCase() === "h") { return ""; }
+    if (input[0].toLowerCase() === "k") { return "krado"; }
+    if (input[0].toLowerCase() === "l") { return "listo"; }
+
+    // Parse index
+    let index;
+    if (input[0] == "-") {
+        index = LAST_INDEX;
+    } else {
+        index = parseInt(input);
+        if (isNaN(index) || index < 0 || index > LAST_INDEX) {
+            return null;
+        }
+    }
+    // Add zeros to start
+    index = index.toString();
+    return "0".repeat(4 - index.length) + index;
+}
 
