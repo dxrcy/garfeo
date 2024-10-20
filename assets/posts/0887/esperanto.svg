@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="3.6203867"
-     inkscape:cx="876.56382"
-     inkscape:cy="86.316746"
+     inkscape:zoom="2.56"
+     inkscape:cx="404.88281"
+     inkscape:cy="644.72657"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -128,13 +128,13 @@
        transform="translate(7.4577669,-0.82864077)"><tspan
          x="894.93201"
          y="64.910194"
-         id="tspan2"><tspan
+         id="tspan18"><tspan
            dx="0 0 0 -2 2 0 -2"
-           id="tspan1">&quot;ĉu vi 
+           id="tspan10">&quot;ĉu vi 
 </tspan></tspan><tspan
          x="894.93201"
          y="96.870198"
-         id="tspan3">mordas?&quot;</tspan></text>
+         id="tspan20">mordas?&quot;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
@@ -161,34 +161,38 @@
          id="tspan9">boj?</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:34px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:183.238;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
+       style="font-size:34px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:191.832;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
        x="423.71164"
        y="596.89758"
        id="text10"
        transform="translate(11.600969,-0.82864077)"><tspan
          x="423.71164"
          y="596.89758"
-         id="tspan5"><tspan
-           dx="0 0 0 -2 2 0 -2 2 0 0 -2"
-           id="tspan4">ne, ĉi tiu</tspan><tspan
+         id="tspan23"><tspan
+           dx="0 0 0 -2 2 0 -2 2"
+           id="tspan21">ne, ĉi tiun</tspan><tspan
+           dx="-2"
+           id="tspan22"></tspan><tspan
            y="596.89758"
-           id="tspan6"> </tspan></tspan><tspan
+           id="tspan24"> </tspan></tspan><tspan
          x="423.71164"
          y="628.85762"
-         id="tspan14"><tspan
-           dx="0 0 0 0 0 0 -2 2 0 -2"
-           id="tspan13">letero ne</tspan><tspan
+         id="tspan26"><tspan
+           dx="0 0 0 0 0 0 0 -2"
+           id="tspan25">leteron</tspan><tspan
            y="628.85762"
-           id="tspan15"> </tspan></tspan><tspan
+           id="tspan27"> </tspan></tspan><tspan
          x="423.71164"
          y="660.81765"
-         id="tspan17"><tspan
-           dx="0 0 0 0 0 -2 2 0 -2"
-           id="tspan16">venis el</tspan><tspan
-           y="660.81765"
-           id="tspan18"> </tspan></tspan><tspan
+         id="tspan30">ne<tspan
+   dx="-2 2"
+   id="tspan28"> send</tspan><tspan
+   dx="0 0 -2"
+   id="tspan29">is</tspan><tspan
+   y="660.81765"
+   id="tspan31"> </tspan></tspan><tspan
          x="423.71164"
          y="692.77767"
-         id="tspan19">bifsteko</tspan></text>
+         id="tspan32">bifsteko</tspan></text>
   </g>
 </svg>
