@@ -8,7 +8,7 @@
    height="1087"
    viewBox="0 0 1200 1087"
    sodipodi:docname="esperanto.svg"
-   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    inkscape:export-filename="esperanto.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -29,7 +29,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.50349646"
-     inkscape:cx="572.00005"
+     inkscape:cx="572.99311"
      inkscape:cy="118.17362"
      inkscape:window-width="1668"
      inkscape:window-height="995"
@@ -85,16 +85,18 @@
        transform="translate(11.703286,-0.29893496)"><tspan
          x="166.16306"
          y="59.867878"
-         id="tspan4"><tspan
-           dx="0 0 -1.9999993 1.9999969 0 0 -2.0000031 2.0000045 0 0 0 0 -2.0000031"
-           id="tspan1">ĉi tio estas</tspan><tspan
+         id="tspan9"><tspan
+           dx="0 0 -1.9999993 1.9999969 0 0 -2.0000031 2.0000045"
+           id="tspan2">ĉi tiu estas</tspan><tspan
+           dx="-2.0000031"
+           id="tspan8"></tspan><tspan
            y="59.867878"
-           id="tspan5"> </tspan></tspan><tspan
+           id="tspan10"> </tspan></tspan><tspan
          x="166.16306"
          y="93.70788"
-         id="tspan7"><tspan
+         id="tspan12"><tspan
            dx="0 0 0 0 0 -2.0000031 1.9999969"
-           id="tspan6">amuza libro!</tspan></tspan></text>
+           id="tspan11">amuza libro!</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.8px;word-spacing:2px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-linecap:round;stroke-opacity:1;paint-order:fill markers stroke;stroke-dasharray:none"
