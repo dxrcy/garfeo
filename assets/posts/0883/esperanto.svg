@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="7.984276"
-     inkscape:cx="418.19697"
-     inkscape:cy="699.93823"
+     inkscape:zoom="1.4114339"
+     inkscape:cx="215.73805"
+     inkscape:cy="94.584661"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -96,16 +96,16 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        x="145.28555"
        y="59.690544"
        id="text4"><tspan
          sodipodi:role="line"
          id="tspan4"
          x="145.28555"
-         y="59.690544">ijk!</tspan><tspan
+         y="59.690544">iik!</tspan><tspan
          sodipodi:role="line"
-         x="144.88554"
+         x="144.93555"
          y="91.690514"
          id="tspan5">vampiro!</tspan></text>
     <text
@@ -117,16 +117,18 @@
        transform="translate(-3.2564001,-1.502954)"><tspan
          x="910.28918"
          y="62.122101"
-         id="tspan2"><tspan
-           dx="0 0 -2.0000007 2.0000021 0 0 0 0 0 -2.0000074 1.9999983 0 -1.9999893 1.9999983 0 -1.9999835"
-           id="tspan1">ne zorgu. mi ne</tspan><tspan
+         id="tspan18"><tspan
+           dx="0 0 -2.0000007 2.0000021 0 0 0 0 0 -2.0000074 1.9999983 0 -1.9999893 1.9999983"
+           id="tspan6">ne zorgu. mi ne</tspan><tspan
+           dx="-1.9999835"
+           id="tspan7"></tspan><tspan
            y="62.122101"
-           id="tspan3"> </tspan></tspan><tspan
+           id="tspan19"> </tspan></tspan><tspan
          x="910.28918"
          y="94.122068"
-         id="tspan12"><tspan
+         id="tspan21"><tspan
            dx="0 0 0 0 0 -2.0000007 1.9999983"
-           id="tspan8">mordu vin</tspan></tspan></text>
+           id="tspan20">mordu vin</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:467.849;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
@@ -136,16 +138,18 @@
        transform="translate(16.532495,1.5029541)"><tspan
          x="288.56717"
          y="591.16193"
-         id="tspan14"><tspan
-           dx="0 0 -1.9999988 1.9999983 0 0 0 0 -1.9999874 1.9999983 0 0 0 0 0 -2.0000045 1.9999983 0 -1.9999893"
-           id="tspan13">mi devas viziti la</tspan><tspan
+         id="tspan24"><tspan
+           dx="0 0 -1.9999988 1.9999983 0 0 0 0 -1.9999874 1.9999983 0 0 0 0 0 -2.0000045 1.9999983"
+           id="tspan22">mi devas viziti la</tspan><tspan
+           dx="-1.9999893"
+           id="tspan23"></tspan><tspan
            y="591.16193"
-           id="tspan15"> </tspan></tspan><tspan
+           id="tspan25"> </tspan></tspan><tspan
          x="288.56717"
          y="623.16188"
-         id="tspan17"><tspan
+         id="tspan27"><tspan
            dx="0 0 0 0 0 0 0 0 0 -2.0000064 1.9999983 0 0 -1.999995 1.9999831"
-           id="tspan16">dentiston por operacio</tspan></tspan></text>
+           id="tspan26">dentiston por operacio</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
