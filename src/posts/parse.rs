@@ -1,6 +1,6 @@
 use anyhow::{bail, Context, Result};
 use std::{
-    collections::HashSet,
+    collections::{HashMap, HashSet},
     fs::{self, DirEntry},
     path::Path,
 };
@@ -20,8 +20,8 @@ pub fn parse_posts() -> Result<PostList> {
     let old_versions = get_old_versions(dir_old).with_context(|| "Failed to parse old posts")?;
 
     let mut posts = Vec::new();
-    let mut existing_titles = Vec::new();
-    let mut existing_dates = Vec::new();
+    let mut existing_titles = HashMap::new();
+    let mut existing_dates = HashMap::new();
 
     for (index, folder) in folders.into_iter().enumerate() {
         let index = Index(index);
@@ -31,8 +31,8 @@ pub fn parse_posts() -> Result<PostList> {
         let post = parse_post(index, folder, is_revised, &existing_titles, &existing_dates)
             .with_context(|| format!("For post [{}]", index))?;
 
-        existing_titles.push(post.title.clone());
-        existing_dates.push(post.date.clone());
+        existing_titles.insert(post.title.clone(), index);
+        existing_dates.insert(post.date.clone(), index);
 
         posts.push(post);
     }
@@ -45,8 +45,8 @@ fn parse_post(
     index: Index,
     folder: DirEntry,
     is_revised: bool,
-    existing_titles: &[String],
-    existing_dates: &[String],
+    existing_titles: &HashMap<String, Index>,
+    existing_dates: &HashMap<String, Index>,
 ) -> Result<Post> {
     let folder_name = folder.file_name();
     let folder_name = folder_name.to_string_lossy();
@@ -72,8 +72,12 @@ fn parse_post(
     if !title.starts_with("Garfildo ") {
         bail!("Title of {index} does not start with 'Garfildo'");
     }
-    if existing_titles.contains(&title) {
-        bail!("Multiple posts have '{title}' as title");
+    if let Some(other_index) = existing_titles.get(&title) {
+        bail!(
+            "Multiple posts have '{title}' as title\nPosts {} and {}",
+            other_index,
+            index
+        );
     }
 
     let path = folder_path.join(Path::new("date"));
@@ -84,8 +88,12 @@ fn parse_post(
     if !is_valid_date(&date) {
         bail!("Invalid date `{}`", date);
     }
-    if existing_dates.contains(&date) {
-        bail!("Multiple posts have '{date}' as date");
+    if let Some(other_index) = existing_dates.get(&date) {
+        bail!(
+            "Multiple posts have '{date}' as date\nPosts {} and {}",
+            other_index,
+            index
+        );
     }
 
     let is_sunday = (index.as_int() + 1) % 7 == 0;
