@@ -29,8 +29,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.0762866"
-     inkscape:cx="311.13238"
-     inkscape:cy="802.63484"
+     inkscape:cx="728.70479"
+     inkscape:cy="802.63486"
      inkscape:window-width="1668"
      inkscape:window-height="995"
      inkscape:window-x="4"
@@ -103,40 +103,45 @@
        transform="translate(28.00797,-0.48162907)"><tspan
          x="214.80656"
          y="799.50427"
-         id="tspan2"><tspan
+         id="tspan5"><tspan
            dx="0 0 0 0 0 0 -1.1999969 1.2 0 -1.2000122"
-           id="tspan1">hodiaŭ mi 
+           id="tspan4">hodiaŭ mi 
 </tspan></tspan><tspan
          x="214.80656"
          y="844.62427"
-         id="tspan8"><tspan
+         id="tspan12"><tspan
            dx="0 0 0 -1.1999969 1.2 0 0 0 0 0 -1.1999817 1.2 0 0 -1.1999817"
-           id="tspan3">mem zorgas pri
+           id="tspan6">mem zorgas pri
 </tspan></tspan><tspan
          x="214.80656"
          y="889.74427"
-         id="tspan10"><tspan
-           dx="0 0 0 0 0 0 -1.1999969"
-           id="tspan9">maĉado</tspan><tspan
-           y="889.74427"
-           id="tspan11">  </tspan></tspan></text>
+         id="tspan14">maĉado<tspan
+   dx="-1.1999969"
+   id="tspan13"></tspan><tspan
+   y="889.74427"
+   id="tspan15">  </tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:48px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-size:48px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:234.541;fill:#000000;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        x="638.44061"
        y="797.71881"
        id="text5"><tspan
-         sodipodi:role="line"
-         id="tspan5"
          x="638.44061"
-         y="797.71881">ne</tspan><tspan
-         sodipodi:role="line"
+         y="797.71881"
+         id="tspan17"><tspan
+           dx="0 0 -1.2000008 1.2 0 0 0 -1.1999969"
+           id="tspan16">ne penu</tspan><tspan
+           y="797.71881"
+           id="tspan18"> </tspan></tspan><tspan
          x="638.44061"
          y="842.83881"
-         id="tspan6">streĉu</tspan><tspan
-         sodipodi:role="line"
-         x="638.09064"
+         id="tspan20"><tspan
+           dx="0 0 0 -1.1999969"
+           id="tspan19">tro</tspan><tspan
+           y="842.83881"
+           id="tspan21"> </tspan></tspan><tspan
+         x="638.44061"
          y="887.9588"
-         id="tspan7">ion ajn</tspan></text>
+         id="tspan22">multe</tspan></text>
   </g>
 </svg>
