@@ -21,7 +21,7 @@ Made with [Ibex](https://github.com/dxrcy/ibex)
         /transcipt  Transcription of speech in comic
         /props      If any special properties (optional)
                         possible values (separated by linebreak):
-                            good, nogarfield, notext, earsback
+                            good, nogarfield, earsback
         /special    If comic is for a special occasion (Eg. Christmas)
         /notes      If anything is worth noting about the comic 
 ```
