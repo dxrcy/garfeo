@@ -30,7 +30,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="4.4886481"
      inkscape:cx="450.02414"
-     inkscape:cy="586.14531"
+     inkscape:cy="54.136567"
      inkscape:window-width="1782"
      inkscape:window-height="1054"
      inkscape:window-x="0"
@@ -78,37 +78,37 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:35.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:79.1653;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
+       style="font-size:35.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:79.1653;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
        x="370.93573"
        y="53.690998"
        id="text4"
        transform="translate(6.4607427,1.7822738)"><tspan
          x="370.93573"
          y="53.690998"
-         id="tspan2"><tspan
-           dx="0 0 0 -1.1999998"
-           id="tspan1">ho,</tspan><tspan
-           y="53.690998"
-           id="tspan3"> </tspan></tspan><tspan
+         id="tspan5">ho,<tspan
+   dx="-1.1999998"
+   id="tspan4"></tspan><tspan
+   y="53.690998"
+   id="tspan11"> </tspan></tspan><tspan
          x="370.93573"
          y="87.610969"
-         id="tspan6">ne</tspan></text>
+         id="tspan12">ne</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:200.552;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke"
+       style="font-size:35.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:200.552;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
        x="427.07736"
        y="593.27441"
        id="text5"
        transform="translate(0.44556846)"><tspan
          x="427.07736"
          y="593.27441"
-         id="tspan8"><tspan
-           dx="0 0 0 0 0 0 -1.1999969"
-           id="tspan7">nevola</tspan><tspan
-           y="593.27441"
-           id="tspan9"> </tspan></tspan><tspan
+         id="tspan14">nevola<tspan
+   dx="-1.1999969"
+   id="tspan13"></tspan><tspan
+   y="593.27441"
+   id="tspan15"> </tspan></tspan><tspan
          x="427.07736"
          y="627.19439"
-         id="tspan10">siesto</tspan></text>
+         id="tspan16">siesto</tspan></text>
   </g>
 </svg>
