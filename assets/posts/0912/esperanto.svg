@@ -28,13 +28,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="5.6351729"
-     inkscape:cx="506.81674"
-     inkscape:cy="776.1075"
-     inkscape:window-width="1668"
-     inkscape:window-height="995"
-     inkscape:window-x="4"
-     inkscape:window-y="28"
+     inkscape:zoom="1.9923345"
+     inkscape:cx="922.78682"
+     inkscape:cy="175.67331"
+     inkscape:window-width="1782"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer4" />
   <g
@@ -131,15 +131,15 @@
        transform="translate(4.0230849,1.521161)"><tspan
          x="472.81216"
          y="211.81181"
-         id="tspan12"><tspan
+         id="tspan2"><tspan
            dx="0 0 0 0 0 0 -2.0000057"
-           id="tspan9">lundoj
+           id="tspan1">lundoj
 </tspan></tspan><tspan
          x="472.81216"
          y="243.01183"
-         id="tspan14"><tspan
+         id="tspan4"><tspan
            dx="0 0 0 0 0 -2.0000019 1.9999971"
-           id="tspan13">ĝenas min</tspan></tspan></text>
+           id="tspan3">ĝenas min</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34.6667px;line-height:0.9;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:538.373;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;paint-order:fill markers stroke"
@@ -149,18 +149,18 @@
        transform="translate(21.294821,-2.8393094)"><tspan
          x="897.93158"
          y="59.6255"
-         id="tspan17"><tspan
+         id="tspan7"><tspan
            dx="0 0 0 -2.000001 2.000001 0 0 -1.9999971 2.0000048 0 -2.0000076 2.0000048 0 0 0 0 0 0 -2.0000114 2.00002"
-           id="tspan15">ho, nu, ĝi preskaŭ finiĝas</tspan><tspan
+           id="tspan5">ho, nu, ĝi preskaŭ finiĝas</tspan><tspan
            dx="-2.0000095"
-           id="tspan16"></tspan><tspan
+           id="tspan6"></tspan><tspan
            y="59.6255"
-           id="tspan18"> </tspan></tspan><tspan
+           id="tspan9"> </tspan></tspan><tspan
          x="897.93158"
          y="90.825525"
-         id="tspan24"><tspan
+         id="tspan11"><tspan
            dx="0 0 0 -1.9999981 1.9999971 0 -2 2.0000048 0 0 0 0 0 0 -2.0000114 1.9999895"
-           id="tspan23">kaj mi ankoraŭ restas</tspan></tspan></text>
+           id="tspan10">kaj mi ankoraŭ vivas</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:35.3333px;line-height:0.84;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -196,13 +196,13 @@
        transform="translate(4.6643238,-5.1231892)"><tspan
          x="500.41797"
          y="755.89716"
-         id="tspan26"><tspan
-           dx="0 0 0 0 -1.2000039"
-           id="tspan25">pafu</tspan><tspan
-           y="755.89716"
-           id="tspan27"> </tspan></tspan><tspan
+         id="tspan13">pafu<tspan
+   dx="-1.2000039"
+   id="tspan12"></tspan><tspan
+   y="755.89716"
+   id="tspan14"> </tspan></tspan><tspan
          x="500.41797"
          y="787.69713"
-         id="tspan28">min</tspan></text>
+         id="tspan15">min</tspan></text>
   </g>
 </svg>
