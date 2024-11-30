@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.58123373"
-     inkscape:cx="600.44692"
-     inkscape:cy="643.45887"
+     inkscape:zoom="1.6439772"
+     inkscape:cx="380.47972"
+     inkscape:cy="619.83826"
      inkscape:window-width="1782"
      inkscape:window-height="1054"
      inkscape:window-x="0"
@@ -96,7 +96,7 @@
      inkscape:label="Image 2">
     <text
        xml:space="preserve"
-       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        x="390.8205"
        y="59.00325"
        id="text4"><tspan
@@ -106,12 +106,12 @@
          y="59.00325">ne batu min.</tspan><tspan
          sodipodi:role="line"
          x="390.8205"
-         y="91.003212"
-         id="tspan5">aŭ peidbatu.</tspan><tspan
+         y="91.00322"
+         id="tspan6">nek piedbatu.</tspan><tspan
          sodipodi:role="line"
          x="390.47049"
-         y="123.00318"
-         id="tspan6">aŭ gratu.</tspan></text>
+         y="123.00319"
+         id="tspan1">nek gratu.</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
@@ -128,14 +128,14 @@
          id="tspan8">problemo</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;paint-order:fill markers stroke;stroke-dasharray:none"
+       style="font-size:33.3333px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-0.7px;word-spacing:1.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;paint-order:fill markers stroke"
        x="201.03683"
        y="591.85736"
        id="text9"><tspan
          sodipodi:role="line"
          id="tspan9"
          x="201.03683"
-         y="591.85736">aŭ</tspan><tspan
+         y="591.85736">nek</tspan><tspan
          sodipodi:role="line"
          x="200.68683"
          y="623.8573"
