@@ -1,6 +1,6 @@
 # Runs `watch` and `listen`
 serve port='4000':
-	netstat -tuln | grep -q {{port}} || \
+	netstat -tuln | grep -q ':{{port}}\>' || \
 	( just watch & just listen {{port}} ) \
 	&& echo 'port {{port}} is already in use'
 
