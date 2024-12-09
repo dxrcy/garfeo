@@ -64,11 +64,18 @@ pub fn at_404(posts: &PostList) -> Document {
     }}
 }
 
+fn posts_count<F>(posts: &PostList, predicate: F) -> usize
+where
+    F: Fn(&Post) -> bool,
+{
+    posts.iter().filter(|post| predicate(post.get())).count()
+}
+
 fn posts_percent<F>(posts: &PostList, predicate: F) -> usize
 where
     F: Fn(&Post) -> bool,
 {
-    posts.iter().filter(|post| predicate(post.get())).count() * 100 / posts.len()
+    posts_count(posts, predicate) * 100 / posts.len()
 }
 
 fn posts_names(posts: &PostList) -> [Vec<(String, bool)>; 2] {
@@ -94,13 +101,6 @@ pub fn at_list(posts: &PostList) -> Document {
     ] {
         br/
         div ."big-list" {
-            div ."stats" {
-                table {
-                    [:where let percent_new = posts_percent(posts, |post| !post.is_old); {
-                        tr { td/        td { b { [percent_new]         "%" } } td { "Novaj" } }
-                    }]
-                }
-            }
             div ."names" {
                 [:where
                     let [names_common, names_uncommon] = posts_names(posts);
@@ -122,10 +122,22 @@ pub fn at_list(posts: &PostList) -> Document {
                     @section["Maloftaj Nomoj", names_uncommon]
                 }]
             }
+            hr/
+            div ."stats" {
+                [:where
+                    let count_old = posts.iter().filter(|post| post.get().is_old).count();
+                    let count_total = posts.len();
+                    let percent_new = count_old * 100 / count_total;
+                {
+                        b { [count_old] } ~ "/" ~ b { [count_total] }
+                        ~ "estas oldaj"
+                        ~ "(" b { [percent_new] "%" } ")"
+                }]
+            }
             div ."legend" {
                 table {
                     [:where let percent_good = posts_percent(posts, |post| post.props.good); {
-                        tr { td { [icons::GOOD] }   td { "Bona" ~ i { "(" [percent_good] "%)" } } } }]
+                    tr { td { [icons::GOOD] }       td { "Bona" ~ i { "(" [percent_good] "%)" } } } }]
                     tr { td { [icons::TRANSCRIPT] } td { "Transskribita" } }
                     tr { td { [icons::OLD] }        td { "Estas olda" } }
                     tr { td { [icons::NOT_OLD] }    td { "Estas nova" } }
