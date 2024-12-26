@@ -28,9 +28,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="3.0553109"
-     inkscape:cx="210.12592"
-     inkscape:cy="576.86438"
+     inkscape:zoom="4.3208621"
+     inkscape:cx="583.91125"
+     inkscape:cy="602.77323"
      inkscape:window-width="1710"
      inkscape:window-height="1009"
      inkscape:window-x="0"
@@ -52,7 +52,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Image 1"
-     style="opacity:1">
+     style="display:inline;opacity:1">
     <rect
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.909;stroke-linecap:round;paint-order:fill markers stroke"
        id="rect1"
@@ -216,22 +216,6 @@
                style="line-height:0.86">klak</tspan></tspan></tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:34.6667px;line-height:0.96;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1.3px;word-spacing:-0.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.909;stroke-linecap:round;paint-order:fill markers stroke"
-       x="116.73396"
-       y="592.52448"
-       id="text14"><tspan
-         sodipodi:role="line"
-         id="tspan14"
-         x="116.73396"
-         y="592.52448">kion oni</tspan><tspan
-         sodipodi:role="line"
-         x="116.23396"
-         y="625.8045"
-         id="tspan17"
-         dx="0 -1.1571765 -2.314353 -1.3886118 -0.9257412 -1.1571765 -3.9344001 -1.1571765 -5.0915766"
-         style="letter-spacing:-1px">elsendas?</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-size:34.6667px;line-height:0.94;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:-0.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.909;stroke-linecap:round;paint-order:fill markers stroke"
        x="516.31152"
        y="594.14935"
@@ -245,5 +229,19 @@
          y="626.73602"
          id="tspan16"
          dx="0 0 0 0 0 0 -1.9993813 -3.6655326">zorgas?!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.6667px;line-height:0.97;font-family:'Garfield Sans Esperanto';-inkscape-font-specification:'Garfield Sans Esperanto';text-align:center;text-decoration-color:#000000;letter-spacing:-1px;word-spacing:-0.2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1;stroke-linecap:round;paint-order:fill markers stroke"
+       x="114.65049"
+       y="592.83411"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="114.65048"
+         y="592.83411">kio indas</tspan><tspan
+         sodipodi:role="line"
+         x="114.15049"
+         y="626.46082"
+         id="tspan2">spekti?</tspan></text>
   </g>
 </svg>
