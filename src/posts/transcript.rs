@@ -146,6 +146,7 @@ impl TryFrom<&str> for Speaker {
             "pesilo",
             "patrino",
             "patro",
+            "birdo",
         ];
 
         let name = if uncommon {
