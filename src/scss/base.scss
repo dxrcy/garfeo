@@ -262,7 +262,7 @@ body {
                 }
             }
         }
-        
+
         .source {
             color: $c-bright;
             &:not(:hover, :focus-within) {
@@ -284,6 +284,11 @@ body {
                 margin: 20px 0;
                 &:first-of-type {
                     margin-top: 0;
+                }
+
+                img.icon {
+                    height: 1rem;
+                    margin-bottom: -0.15rem;
                 }
             }
         }

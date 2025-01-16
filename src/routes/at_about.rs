@@ -15,7 +15,11 @@ pub fn at_about(posts: &PostList) -> Document {
             p {
                 "Mi tradukas bildstriojn de Garfildo en Esperanton."
                 br/
-                "Parto de" ~ i{"Mondo da Komiksoj"} "."
+                "Parto de"
+                ~ a [href="https://instagram.com/mondodakomiksoj"] {
+                    i{"Mondo da Komiksoj"}
+                }
+                "."
             }
 
             h3 { "Kiel vi trovas bildstriojn?" }
@@ -29,9 +33,9 @@ pub fn at_about(posts: &PostList) -> Document {
             p {
                 "Mi uzas la programon '" a[href="http://inkscape.org/"]{"InkScape"} "' por redakti bildojn."
                 ~
-                "Elŝutu la bildstria-tiparo"~ a[href=url!("static/GarfieldSans-EO-Regular.ttf")]{"ĉi tie"} "."
+                "Oni povas elŝutu la bildstria-tiparon"~ a[href=url!("static/GarfieldSans-EO-Regular.ttf")]{"ĉi tie"} "."
                 ~
-                "Mi organizi, formati, kaj redakti la bildstriojn per"~ a[href="https://github.com/dxrcy/scripts/tree/master/garf"]{"multaj skriptoj"} "."
+                "Mi organizas, formatas, kaj redaktas la bildstriojn per la skriptaro "~ a[href="https://github.com/dxrcy/garfutils"]{"garfutils"} "."
             }
 
             h3 { "Kiel vi kreas ĉi tiun retpaĝo?" }
@@ -74,11 +78,15 @@ pub fn at_about(posts: &PostList) -> Document {
                     ~ "- Grupo de tradukistoj" }
             }
             li { a [href=url!("rss.xml")]
-                { strong { "RSS-fluo" }
-                    ~ "- Aboni la RSS-fluon por novajn bildstriojn" }
+                { strong {
+                         img ."icon" [src=url!("static/rss.png")]/
+                         ~ "RSS-fluo"
+                     }
+                    ~ "- Aboni la RSS-fluon por novajn bildstriojn"
+                }
             }
         }
-        
+
         h2 { "Aliaj Ligiloj" }
         ul ."links" {
             li { a [href="https://esperaĵo.com"]
