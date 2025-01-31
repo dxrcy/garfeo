@@ -19,6 +19,7 @@ pub struct Post {
     pub special: Option<Special>,
     pub is_revised: bool,
     pub is_old: bool,
+    pub is_simple: bool,
     pub image_bytes: u64,
 }
 

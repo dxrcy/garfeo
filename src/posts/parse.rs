@@ -131,6 +131,7 @@ fn parse_post(
     }
 
     let is_old = !folder_path.join(Path::new("esperanto.svg")).exists();
+    let is_simple = !folder_path.join(Path::new("esperanto.xcf")).exists();
 
     let image_bytes = fs::metadata(image_path)
         .with_context(|| "Reading size of `esperanto.png`")?
@@ -146,6 +147,7 @@ fn parse_post(
         special,
         is_revised,
         is_old,
+        is_simple,
         image_bytes,
     })
 }

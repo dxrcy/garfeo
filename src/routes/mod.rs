@@ -167,6 +167,7 @@ pub fn at_list(posts: &PostList) -> Document {
 
                             td { [:if post.is_old { [icons::OLD] } else { [icons::NOT_OLD] }] }
                             td { [:if post.is_revised { span { [icons::REVISED] } }] }
+                            td { [:if !post.is_simple { span { [icons::COMPLEX] } }] }
                         }
                     }]
                 }]
