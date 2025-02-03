@@ -23,20 +23,20 @@ jobs:
         steps:
             # Access workspace files
             - name: Checkout 🛎️
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             # Run compilation script with Rust
             - name: Build 🔧
               run: cargo run
-            
+
             # Deploy to GitHub pages
             - name: Setup Pages
-              uses: actions/configure-pages@v4
+              uses: actions/configure-pages@v5
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v2
+              uses: actions/upload-pages-artifact@v3
               with:
                 path: 'build' # Build path
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v3
+              uses: actions/deploy-pages@v4
 
